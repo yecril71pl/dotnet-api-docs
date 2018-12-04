@@ -15,6 +15,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Windows.Controls.Primitives.IItemContainerGenerator</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator</InterfaceName>
     </Interface>
     <Interface>
@@ -42,6 +45,7 @@
  ]]></format>
     </remarks>
     <altmember cref="P:System.Windows.Controls.ItemsControl.ItemContainerGenerator" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms750552(v=vs.90)">Get a Combo Box Item</related>
   </Docs>
   <Members>
     <Member MemberName="ContainerFromIndex">
@@ -68,6 +72,7 @@
         <summary>Returns the element corresponding to the item at the given index within the <see cref="T:System.Windows.Controls.ItemCollection" />.</summary>
         <returns>Returns the element corresponding to the item at the given index within the <see cref="T:System.Windows.Controls.ItemCollection" /> or returns <see langword="null" /> if the item is not realized.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms750552(v=vs.90)">Get a Combo Box Item</related>
       </Docs>
     </Member>
     <Member MemberName="ContainerFromItem">
@@ -123,6 +128,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/afc355e6-f0b9-4240-94dd-0d93f17d9fc3">using Statement (C# Reference)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/using-statement.md">Using Statement (Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="IndexFromContainer">
@@ -373,7 +380,7 @@
       <MemberSignature Language="C++ CLI" Value=" virtual System::Windows::DependencyObject ^ System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext([Runtime::InteropServices::Out] bool % isNewlyRealized) = System::Windows::Controls::Primitives::IItemContainerGenerator::GenerateNext;" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext(System.Boolean)</InterfaceMember>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext(System.Boolean@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -532,7 +539,7 @@
       </Parameters>
       <Docs>
         <param name="position">Removes one or more generated (realized) items.</param>
-        <param name="count">The Int32 number of elements to remove, starting at <c>position</c>.</param>
+        <param name="count">The Int32 number of elements to remove, starting at <paramref name="position" />.</param>
         <summary>This member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -660,8 +667,8 @@
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="position">The index of the first element to reuse. <c>position</c> must refer to a previously generated (realized) item.</param>
-        <param name="count">The number of elements to reuse, starting at <c>position</c>.</param>
+        <param name="position">The index of the first element to reuse. <paramref name="position" /> must refer to a previously generated (realized) item.</param>
+        <param name="count">The number of elements to reuse, starting at <paramref name="position" />.</param>
         <summary>This member supports the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
       </Docs>

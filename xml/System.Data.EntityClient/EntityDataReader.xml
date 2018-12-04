@@ -15,6 +15,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Data.IDataRecord</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Data.IExtendedDataRecord</InterfaceName>
     </Interface>
   </Interfaces>
@@ -38,7 +41,7 @@
   
 -   <xref:System.Data.EntityClient.EntityDataReader.Dispose%2A> only disposes of the <xref:System.Data.Common.DbDataReader>, without consuming any pending records or result sets.  
   
- For code examples, see [Working with EntityClient](http://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5).  
+ For code examples, see [Working with EntityClient](https://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5).  
   
  ]]></format>
     </remarks>
@@ -206,6 +209,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5">Working with EntityClient</related>
       </Docs>
     </Member>
     <Member MemberName="GetBoolean">
@@ -396,6 +400,7 @@
         <summary>Returns nested readers as <see cref="T:System.Data.Common.DbDataReader" /> objects.</summary>
         <returns>The nested readers as <see cref="T:System.Data.Common.DbDataReader" /> objects.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5">Working with EntityClient</related>
       </Docs>
     </Member>
     <Member MemberName="GetDataRecord">
@@ -425,6 +430,7 @@
         <summary>Returns a nested <see cref="T:System.Data.Common.DbDataRecord" />.</summary>
         <returns>The nested data record.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5">Working with EntityClient</related>
       </Docs>
     </Member>
     <Member MemberName="GetDataTypeName">
@@ -454,6 +460,7 @@
         <summary>Gets the name of the data type of the specified column.</summary>
         <returns>The name of the data type.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5">Working with EntityClient</related>
       </Docs>
     </Member>
     <Member MemberName="GetDateTime">
@@ -509,6 +516,7 @@
         <summary>Returns a <see cref="T:System.Data.Common.DbDataReader" /> object for the requested column ordinal that can be overridden with a provider-specific implementation.</summary>
         <returns>A data reader.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5">Working with EntityClient</related>
       </Docs>
     </Member>
     <Member MemberName="GetDecimal">
@@ -839,7 +847,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-3.5">
@@ -873,7 +881,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-3.5">
@@ -907,7 +915,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-3.5">
@@ -1006,6 +1014,7 @@
         <summary>Gets the value of the specified column as an instance of <see cref="T:System.Object" />.</summary>
         <returns>The value of the specified column.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5">Working with EntityClient</related>
       </Docs>
     </Member>
     <Member MemberName="GetValues">
@@ -1035,6 +1044,7 @@
         <summary>Populates an array of objects with the column values of the current row.</summary>
         <returns>The number of instances of <see cref="T:System.Object" /> in the array.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5">Working with EntityClient</related>
       </Docs>
     </Member>
     <Member MemberName="HasRows">
@@ -1240,6 +1250,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/dec4728c-8dff-4e30-abe0-0f78fb5d5af5">Working with EntityClient</related>
       </Docs>
     </Member>
     <Member MemberName="RecordsAffected">

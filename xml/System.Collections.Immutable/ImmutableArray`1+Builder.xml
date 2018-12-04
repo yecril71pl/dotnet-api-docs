@@ -34,6 +34,9 @@
     <Interface>
       <InterfaceName>System.Collections.Generic.IReadOnlyList&lt;T&gt;</InterfaceName>
     </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
   </Interfaces>
   <Attributes>
     <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
@@ -48,7 +51,7 @@
   
  A writable array accessor that can be converted into an <see cref="T:System.Collections.Immutable.ImmutableArray`1" /> instance without allocating extra memory.  
   
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)</summary>
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -599,7 +602,7 @@
         <summary>  
   
  Determines the index of a specific item in the array.</summary>
-        <returns>The index of <paramref name="item" /> if it’s found in the list; otherwise, -1.</returns>
+        <returns>The index of <paramref name="item" /> if it's found in the list; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -631,7 +634,7 @@
         <summary>  
   
  Determines the index of the specified item.</summary>
-        <returns>The index of <paramref name="item" /> if it’s found in the list; otherwise, -1.</returns>
+        <returns>The index of <paramref name="item" /> if it's found in the list; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -665,7 +668,7 @@
         <summary>  
   
  Determines the index of the specified item.</summary>
-        <returns>The index of <paramref name="item" /> if it’s found in the list; otherwise, -1.</returns>
+        <returns>The index of <paramref name="item" /> if it's found in the list; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -701,7 +704,7 @@
         <summary>  
   
  Determines the index for the specified item.</summary>
-        <returns>The index of <paramref name="item" /> if it’s found in the list; otherwise, -1.</returns>
+        <returns>The index of <paramref name="item" /> if it's found in the list; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -788,7 +791,7 @@
       <ReturnValue RefType="Readonly">
         <ReturnType>T</ReturnType>
         <Attributes>
-          <Attribute FrameworkAlternate="netcore-2.1">
+          <Attribute FrameworkAlternate="netcore-2.2">
             <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
           </Attribute>
         </Attributes>

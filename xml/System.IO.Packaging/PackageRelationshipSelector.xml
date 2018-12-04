@@ -9,6 +9,7 @@
     <AssemblyName>System.IO.Packaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.2.0</AssemblyVersion>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
@@ -34,6 +35,9 @@
     <altmember cref="T:System.IO.Packaging.PackageRelationshipSelectorType" />
     <altmember cref="T:System.IO.Packaging.PackageRelationship" />
     <altmember cref="T:System.IO.Packaging.PackagePart" />
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=159966">Creating a Package with a Digital Signature Sample</related>
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions (OPC) Specification</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,6 +52,7 @@
         <AssemblyName>System.IO.Packaging</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -61,8 +66,8 @@
       </Parameters>
       <Docs>
         <param name="sourceUri">The [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] of the <see cref="T:System.IO.Packaging.PackagePart" /> or the <see cref="T:System.IO.Packaging.Package" /> (<c>SourceUri</c>="/") that owns the relationship.</param>
-        <param name="selectorType">The type of the <c>selectionCriteria</c>, either by relationship <see cref="F:System.IO.Packaging.PackageRelationshipSelectorType.Id" /> or relationship <see cref="F:System.IO.Packaging.PackageRelationshipSelectorType.Type" />.</param>
-        <param name="selectionCriteria">The qualification string that is used to select the relationships based on the <c>selectorType</c>.</param>
+        <param name="selectorType">The type of the <paramref name="selectionCriteria" />, either by relationship <see cref="F:System.IO.Packaging.PackageRelationshipSelectorType.Id" /> or relationship <see cref="F:System.IO.Packaging.PackageRelationshipSelectorType.Type" />.</param>
+        <param name="selectionCriteria">The qualification string that is used to select the relationships based on the <paramref name="selectorType" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IO.Packaging.PackageRelationshipSelector" /> class.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -73,6 +78,7 @@
         <altmember cref="M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)" />
         <altmember cref="P:System.IO.Packaging.PackageRelationshipSelector.SelectionCriteria" />
         <altmember cref="P:System.IO.Packaging.PackageRelationshipSelector.SelectorType" />
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -86,6 +92,7 @@
         <AssemblyName>System.IO.Packaging</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -103,6 +110,7 @@
         <summary>Returns a list of <see cref="T:System.IO.Packaging.PackageRelationship" /> objects that match the defined <see cref="P:System.IO.Packaging.PackageRelationshipSelector.SourceUri" />, <see cref="P:System.IO.Packaging.PackageRelationshipSelector.SelectorType" />, and <see cref="P:System.IO.Packaging.PackageRelationshipSelector.SelectionCriteria" />.</summary>
         <returns>A list of relationships that match the selection parameters specified to the <see cref="M:System.IO.Packaging.PackageRelationshipSelector.#ctor(System.Uri,System.IO.Packaging.PackageRelationshipSelectorType,System.String)" /> constructor.</returns>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
       </Docs>
     </Member>
     <Member MemberName="SelectionCriteria">
@@ -117,6 +125,7 @@
         <AssemblyName>System.IO.Packaging</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -137,6 +146,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IO.Packaging.PackageRelationshipSelector.SelectorType" />
         <altmember cref="P:System.IO.Packaging.PackageRelationshipSelector.SourceUri" />
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
       </Docs>
     </Member>
     <Member MemberName="SelectorType">
@@ -151,6 +161,7 @@
         <AssemblyName>System.IO.Packaging</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -171,6 +182,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IO.Packaging.PackageRelationshipSelector.SelectionCriteria" />
         <altmember cref="P:System.IO.Packaging.PackageRelationshipSelector.SourceUri" />
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
       </Docs>
     </Member>
     <Member MemberName="SourceUri">
@@ -185,6 +197,7 @@
         <AssemblyName>System.IO.Packaging</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -206,6 +219,7 @@
         <altmember cref="M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)" />
         <altmember cref="P:System.IO.Packaging.PackageRelationshipSelector.SelectionCriteria" />
         <altmember cref="P:System.IO.Packaging.PackageRelationshipSelector.SelectorType" />
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
       </Docs>
     </Member>
   </Members>

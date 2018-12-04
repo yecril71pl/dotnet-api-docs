@@ -75,6 +75,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/8bf0b428-5a21-4299-8d6e-bf8251fd978a">Changes to NTLM authentication for HTTPWebRequest in Version 3.5 SP1</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -327,7 +328,7 @@
       </Parameters>
       <Docs>
         <param name="callback">An <see cref="T:System.AsyncCallback" /> delegate that references the method to invoke when a client request is available.</param>
-        <param name="state">A user-defined object that contains information about the operation. This object is passed to the <c>callback</c> delegate when the operation completes.</param>
+        <param name="state">A user-defined object that contains information about the operation. This object is passed to the <paramref name="callback" /> delegate when the operation completes.</param>
         <summary>Begins asynchronously retrieving an incoming request.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> object that indicates the status of the asynchronous operation.</returns>
         <remarks>
@@ -482,6 +483,7 @@
         <altmember cref="T:System.Net.HttpListener.ExtendedProtectionSelector" />
         <altmember cref="N:System.Security.Authentication.ExtendedProtection" />
         <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName="EndGetContext">
@@ -604,6 +606,7 @@
         <altmember cref="T:System.Net.HttpListener.ExtendedProtectionSelector" />
         <altmember cref="N:System.Security.Authentication.ExtendedProtection" />
         <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName="ExtendedProtectionSelectorDelegate">
@@ -664,6 +667,7 @@
         <altmember cref="T:System.Net.HttpListener.ExtendedProtectionSelector" />
         <altmember cref="N:System.Security.Authentication.ExtendedProtection" />
         <altmember cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" />
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
       </Docs>
     </Member>
     <Member MemberName="GetContext">
@@ -1055,7 +1059,7 @@
  After you have started an <xref:System.Net.HttpListener> object, you can use the <xref:System.Net.HttpListener.Stop%2A> method to stop it.  
   
 > [!NOTE]
->  If this listener instance uses https, you must install and select a Server Certificate. Otherwise, an <xref:System.Net.HttpWebRequest> query of this <xref:System.Net.HttpListener> will fail with an unexpected close of the connection. You can configure Server Certificates and other listener options by using HttpCfg.exe. See [http://msdn.microsoft.com/library/default.asp?url=/library/http/http/httpcfg_exe.asp](http://msdn.microsoft.com/library/default.asp?url=/library/http/http/httpcfg_exe.asp) for more details.  
+>  If this listener instance uses https, you must install and select a Server Certificate. Otherwise, an <xref:System.Net.HttpWebRequest> query of this <xref:System.Net.HttpListener> will fail with an unexpected close of the connection. You can configure Server Certificates and other listener options by using HttpCfg.exe. See [http://msdn.microsoft.com/library/default.asp?url=/library/http/http/httpcfg_exe.asp](https://msdn.microsoft.com/library/default.asp?url=/library/http/http/httpcfg_exe.asp) for more details.  
   
    
   

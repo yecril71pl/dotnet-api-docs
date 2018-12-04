@@ -35,6 +35,12 @@
       <InterfaceName>System.Collections.Generic.IReadOnlyList&lt;T&gt;</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Collections.IList</InterfaceName>
     </Interface>
     <Interface>
@@ -59,7 +65,7 @@
     <typeparam name="T">The type of element stored by the array.</typeparam>
     <summary>Represents an array that is immutable; meaning it cannot be changed once it is created.  
   
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)</summary>
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -72,11 +78,11 @@
   
 -   You need to be able to iterate over the data in performance critical sections  
   
--   You have many instances of immutable collections and you can’t afford keeping the data in trees  
+-   You have many instances of immutable collections and you can't afford keeping the data in trees  
   
  Reasons to use immutable list:  
   
--   Updating the data is common or the number of elements isn’t expected to be small  
+-   Updating the data is common or the number of elements isn't expected to be small  
   
 -   Updating the collection is more performance critical than iterating the contents  
   
@@ -409,7 +415,7 @@
       </Parameters>
       <Docs>
         <param name="destination">The array to copy to.</param>
-        <param name="destinationIndex">The index in <c>array</c> where copying begins.</param>
+        <param name="destinationIndex">The index in <paramref name="array" /> where copying begins.</param>
         <summary>Copies the contents of this array to the specified array starting at the specified destination index.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -441,7 +447,7 @@
       <Docs>
         <param name="sourceIndex">The index of this array where copying begins.</param>
         <param name="destination">The array to copy to.</param>
-        <param name="destinationIndex">The index in <c>array</c> where copying begins.</param>
+        <param name="destinationIndex">The index in <paramref name="array" /> where copying begins.</param>
         <param name="length">The number of elements to copy from this array.</param>
         <summary>Copies the specified items in this array to the specified array at the specified starting index.</summary>
         <remarks>To be added.</remarks>
@@ -969,7 +975,7 @@
       <ReturnValue RefType="Readonly">
         <ReturnType>T</ReturnType>
         <Attributes>
-          <Attribute FrameworkAlternate="netcore-2.1">
+          <Attribute FrameworkAlternate="netcore-2.2">
             <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
           </Attribute>
         </Attributes>

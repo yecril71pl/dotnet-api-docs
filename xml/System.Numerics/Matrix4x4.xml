@@ -316,7 +316,7 @@
       </Parameters>
       <Docs>
         <param name="axis">The axis to rotate around.</param>
-        <param name="angle">The angle to rotate around <c>axis</c>, in radians.</param>
+        <param name="angle">The angle to rotate around <paramref name="axis" />, in radians.</param>
         <summary>Creates a matrix that rotates around an arbitrary vector.</summary>
         <returns>The rotation matrix.</returns>
         <remarks>To be added.</remarks>
@@ -1444,7 +1444,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+        <Attribute FrameworkAlternate="netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;netframework-4.8">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -1554,7 +1554,7 @@
         <param name="obj">The object to compare with the current instance.</param>
         <summary>Returns a value that indicates whether this instance and a specified object are equal.</summary>
         <returns>
-          <see langword="true" /> if the current instance and <paramref name="obj" /> are equal; otherwise, <see langword="false" /><see langword="" />. If <paramref name="obj" /> is <see langword="null" />, the method returns <see langword="false" />.</returns>
+          <see langword="true" /> if the current instance and <paramref name="obj" /> are equal; otherwise, <see langword="false" />. If <paramref name="obj" /> is <see langword="null" />, the method returns <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1775,7 +1775,7 @@
       <Docs>
         <param name="matrix1">The first matrix.</param>
         <param name="matrix2">The second matrix.</param>
-        <param name="amount">The relative weighting of <c>matrix2</c>.</param>
+        <param name="amount">The relative weighting of <paramref name="matrix2" />.</param>
         <summary>Performs a linear interpolation from one matrix to a second matrix based on a value that specifies the weighting of the second matrix.</summary>
         <returns>The interpolated matrix.</returns>
         <remarks>To be added.</remarks>

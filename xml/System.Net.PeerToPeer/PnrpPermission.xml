@@ -13,6 +13,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Security.Permissions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Security.CodeAccessPermission</BaseTypeName>
@@ -22,6 +23,11 @@
       <InterfaceName>System.Security.Permissions.IUnrestrictedPermission</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+      <AttributeName>System.Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Specifies the values that are used in <see cref="N:System.Net.PeerToPeer" /> object permissions.</summary>
     <remarks>
@@ -38,6 +44,7 @@
     <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.FromXml(System.Security.SecurityElement)" />
     <altmember cref="T:System.Net.PeerToPeer.PnrpPermissionAttribute" />
     <altmember cref="N:System.Security.Permissions" />
+    <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink?LinkID=92731">PNRP Namespace Provider API</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +63,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
@@ -95,6 +103,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.IPermission</ReturnType>
@@ -120,6 +129,7 @@
         <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.FromXml(System.Security.SecurityElement)" />
         <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.ToXml" />
         <altmember cref="M:System.Net.PeerToPeer.PnrpPermission.Union(System.Security.IPermission)" />
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink?LinkID=92731">PNRP Namespace Provider API</related>
       </Docs>
     </Member>
     <Member MemberName="FromXml">
@@ -138,6 +148,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -183,6 +194,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.IPermission</ReturnType>
@@ -232,6 +244,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -286,6 +299,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -325,6 +339,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.SecurityElement</ReturnType>
@@ -354,6 +369,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.IPermission</ReturnType>

@@ -39,8 +39,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Mail.SmtpClient> class is used to send email to an SMTP server for delivery. The SMTP protocol is defined in RFC 2821, which is available at [https://www.ietf.org](https://www.ietf.org/).  
-  
+ The `System.Net.Mail.SmtpClient` class is used to send email to an SMTP server for delivery. The SMTP protocol is defined in RFC 2821, which is available at [https://www.ietf.org](https://www.ietf.org/).  
+
+> [!IMPORTANT]
+>  We don't recommend that you use the `SmtpClient` class for new development. For more information, see [SmtpClient shouldn't be used](https://github.com/dotnet/platform-compat/blob/master/docs/DE0005.md) on GitHub.
+
  The classes shown in the following table are used to construct email messages that can be sent using <xref:System.Net.Mail.SmtpClient>.  
   
 |Class|Description|  
@@ -92,6 +95,10 @@
  ]]></format>
     </remarks>
     <altmember cref="N:System.Net.Mime" />
+    <related type="Article" href="~/docs/framework/network-programming/index.md">Network Programming in the .NET Framework</related>
+    <related type="Article" href="~/docs/framework/network-programming/network-programming-samples.md">Network Programming Samples</related>
+    <related type="Article" href="~/docs/framework/network-programming/network-tracing.md">Network Tracing in the .NET Framework</related>
+    <related type="Article" href="~/docs/framework/network-programming/security-in-network-programming.md">Security in Network Programming</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -229,7 +236,7 @@
       </Parameters>
       <Docs>
         <param name="host">A <see cref="T:System.String" /> that contains the name or IP address of the host used for SMTP transactions.</param>
-        <param name="port">An <see cref="T:System.Int32" /> greater than zero that contains the port to be used on <c>host</c>.</param>
+        <param name="port">An <see cref="T:System.Int32" /> greater than zero that contains the port to be used on <paramref name="host" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpClient" /> class that sends email by using the specified SMTP server and port.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -306,6 +313,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md">MailSettings Element (Network Settings)</related>
       </Docs>
     </Member>
     <Member MemberName="Credentials">
@@ -449,6 +457,8 @@
         </remarks>
         <altmember cref="T:System.Net.Configuration.SmtpSection" />
         <altmember cref="P:System.Net.Configuration.SmtpSection.DeliveryMethod" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md">&lt;mailSettings&gt; Element (Network Settings)</related>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/smtp-element-network-settings.md">&lt;smtp&gt; Element (Network Settings)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Dispose">
@@ -656,6 +666,9 @@
         <altmember cref="T:System.Net.Configuration.SmtpSection" />
         <altmember cref="T:System.Net.Configuration.SmtpNetworkElement" />
         <altmember cref="P:System.Net.Configuration.SmtpNetworkElement.EnableSsl" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md">&lt;mailSettings&gt; Element (Network Settings)</related>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/smtp-element-network-settings.md">&lt;smtp&gt; Element (Network Settings)</related>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/network-element-network-settings.md">&lt;network&gt; Element (Network Settings)</related>
       </Docs>
     </Member>
     <Member MemberName="Host">
@@ -717,6 +730,9 @@
         <altmember cref="T:System.Net.Configuration.SmtpNetworkElement" />
         <altmember cref="P:System.Net.Configuration.SmtpNetworkElement.Host" />
         <altmember cref="P:System.Net.Mail.SmtpClient.Port" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md">mailSettings for system.net</related>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/smtp-element-network-settings.md">&lt;smtp&gt; Element (Network Settings)</related>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/network-element-network-settings.md">&lt;network&gt; Element (Network Settings)</related>
       </Docs>
     </Member>
     <Member MemberName="OnSendCompleted">
@@ -762,7 +778,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding <see cref="M:System.Net.Mail.SmtpClient.OnSendCompleted(System.ComponentModel.AsyncCompletedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Net.Mail.SmtpClient.OnSendCompleted(System.ComponentModel.AsyncCompletedEventArgs)" /> method so that registered delegates receive the <see cref="E:System.Net.Mail.SmtpClient.SendCompleted" /> event.</para>
+          <para>When overriding <see cref="M:System.Net.Mail.SmtpClient.OnSendCompleted(System.ComponentModel.AsyncCompletedEventArgs)" /> in a derived class, be sure to call the base class' <see cref="M:System.Net.Mail.SmtpClient.OnSendCompleted(System.ComponentModel.AsyncCompletedEventArgs)" /> method so that registered delegates receive the <see cref="E:System.Net.Mail.SmtpClient.SendCompleted" /> event.</para>
         </block>
       </Docs>
     </Member>
@@ -815,6 +831,8 @@
         </remarks>
         <altmember cref="T:System.Net.Configuration.SmtpSection" />
         <altmember cref="P:System.Net.Configuration.SmtpSection.DeliveryMethod" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md">&lt;mailSettings&gt; Element (Network Settings)</related>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/smtp-element-network-settings.md">&lt;smtp&gt; Element (Network Settings)</related>
       </Docs>
     </Member>
     <Member MemberName="Port">
@@ -874,6 +892,9 @@
         <altmember cref="T:System.Net.Configuration.SmtpNetworkElement" />
         <altmember cref="P:System.Net.Configuration.SmtpNetworkElement.Port" />
         <altmember cref="P:System.Net.Mail.SmtpClient.Host" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md">mailSettings for system.net</related>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/smtp-element-network-settings.md">&lt;smtp&gt; Element (Network Settings)</related>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/network-element-network-settings.md">&lt;network&gt; Element (Network Settings)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Send">
@@ -994,14 +1015,13 @@
       </Docs>
     </Member>
     <Member MemberName="Send">
-      <MemberSignature Language="C#" Value="public void Send (string from, string recipients, string subject, string body);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Send(string from, string recipients, string subject, string body) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpClient.Send(System.String,System.String,System.String,System.String)" FrameworkAlternate="netcore-2.0;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="VB.NET" Value="Public Sub Send (from As String, recipients As String, subject As String, body As String)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Send(System::String ^ from, System::String ^ recipients, System::String ^ subject, System::String ^ body);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="C#" Value="public void Send (string from, string recipients, string subject, string body);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;netcore-2.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Send(string from, string recipients, string subject, string body) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;netcore-2.2" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpClient.Send(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Send (from As String, recipients As String, subject As String, body As String)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;netcore-2.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Send(System::String ^ from, System::String ^ recipients, System::String ^ subject, System::String ^ body);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;netcore-2.2" />
       <MemberSignature Language="C#" Value="public void Send (string from, string to, string subject, string body);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Send(string from, string to, string subject, string body) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpClient.Send(System.String,System.String,System.String,System.String)" FrameworkAlternate="netframework-4.7;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netstandard-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub Send (from As String, to As String, subject As String, body As String)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Send(System::String ^ from, System::String ^ to, System::String ^ subject, System::String ^ body);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="member this.Send : string * string * string * string -&gt; unit" Usage="smtpClient.Send (from, to, subject, body)" />
@@ -1026,7 +1046,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="from" Type="System.String" Index="0" />
-        <Parameter Name="recipients" Type="System.String" Index="1" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+        <Parameter Name="recipients" Type="System.String" Index="1" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;netcore-2.2" />
         <Parameter Name="to" Type="System.String" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
         <Parameter Name="subject" Type="System.String" Index="2" />
         <Parameter Name="body" Type="System.String" Index="3" />
@@ -1236,14 +1256,13 @@
       </Docs>
     </Member>
     <Member MemberName="SendAsync">
-      <MemberSignature Language="C#" Value="public void SendAsync (string from, string recipients, string subject, string body, object userToken);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendAsync(string from, string recipients, string subject, string body, object userToken) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpClient.SendAsync(System.String,System.String,System.String,System.String,System.Object)" FrameworkAlternate="netcore-2.0;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="VB.NET" Value="Public Sub SendAsync (from As String, recipients As String, subject As String, body As String, userToken As Object)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendAsync(System::String ^ from, System::String ^ recipients, System::String ^ subject, System::String ^ body, System::Object ^ userToken);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="C#" Value="public void SendAsync (string from, string recipients, string subject, string body, object userToken);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;netcore-2.2" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendAsync(string from, string recipients, string subject, string body, object userToken) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;netcore-2.2" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpClient.SendAsync(System.String,System.String,System.String,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendAsync (from As String, recipients As String, subject As String, body As String, userToken As Object)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;netcore-2.2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendAsync(System::String ^ from, System::String ^ recipients, System::String ^ subject, System::String ^ body, System::Object ^ userToken);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;netcore-2.2" />
       <MemberSignature Language="C#" Value="public void SendAsync (string from, string to, string subject, string body, object userToken);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendAsync(string from, string to, string subject, string body, object userToken) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpClient.SendAsync(System.String,System.String,System.String,System.String,System.Object)" FrameworkAlternate="netframework-4.7;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7.1;netstandard-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub SendAsync (from As String, to As String, subject As String, body As String, userToken As Object)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendAsync(System::String ^ from, System::String ^ to, System::String ^ subject, System::String ^ body, System::Object ^ userToken);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="member this.SendAsync : string * string * string * string * obj -&gt; unit" Usage="smtpClient.SendAsync (from, to, subject, body, userToken)" />
@@ -1268,7 +1287,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="from" Type="System.String" Index="0" />
-        <Parameter Name="recipients" Type="System.String" Index="1" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+        <Parameter Name="recipients" Type="System.String" Index="1" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netstandard-2.0;netcore-2.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8;netcore-2.2" />
         <Parameter Name="to" Type="System.String" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
         <Parameter Name="subject" Type="System.String" Index="2" />
         <Parameter Name="body" Type="System.String" Index="3" />
@@ -1631,6 +1650,8 @@
  -or-  
   
  <see cref="P:System.Net.Mail.SmtpClient.Port" /> is zero.</exception>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/connectionmanagement-element-network-settings.md">connectionManagement Element (Network Settings)</related>
+        <related type="Article" href="~/docs/framework/network-programming/managing-connections.md">Managing Connections</related>
       </Docs>
     </Member>
     <Member MemberName="TargetName">
@@ -1683,6 +1704,10 @@
         <altmember cref="T:System.Net.Configuration.SmtpSection" />
         <altmember cref="T:System.Net.Configuration.SmtpNetworkElement" />
         <altmember cref="P:System.Net.Configuration.SmtpNetworkElement.TargetName" />
+        <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Integrated Windows Authentication with Extended Protection</related>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/mailsettings-element-network-settings.md">&lt;mailSettings&gt; Element (Network Settings)</related>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/smtp-element-network-settings.md">&lt;smtp&gt; Element (Network Settings)</related>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/network-element-network-settings.md">&lt;network&gt; Element (Network Settings)</related>
       </Docs>
     </Member>
     <Member MemberName="Timeout">

@@ -41,6 +41,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/base-types/composite-formatting.md">Composite Formatting</related>
+    <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -155,6 +157,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/base-types/composite-formatting.md">Composite Formatting</related>
       </Docs>
     </Member>
     <Member MemberName="GetArgument">
@@ -279,7 +282,7 @@
 using static System.FormattableString;  
 ```  
   
- Within the scope that `import` directive, an interpolated string may be formatted using the conventions of the invariant culture by code such as the following:  
+ Within the scope that `using static` directive, an interpolated string may be formatted using the conventions of the invariant culture by code such as the following:  
   
 ```csharp  
 Invariant($"{{ lat = {latitude}; lon = {longitude} }}")   

@@ -21,6 +21,9 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Threading.Tasks.Dataflow.IDataflowBlock</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Threading.Tasks.Dataflow.IPropagatorBlock&lt;TInput,TOutput&gt;</InterfaceName>
     </Interface>
     <Interface>
@@ -230,7 +233,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A dataflow block is considered completed when it is not currently processing a message and when it has guaranteed that it will not process any more messages. The returned <xref:System.Threading.Tasks.Task> will transition to a completed state when the associated block has completed. It will transition to the <xref:System.Threading.Tasks.TaskStatus><xref:System.Threading.Tasks.TaskStatus.RanToCompletion> state when the block completes its processing successfully according to the dataflow block’s defined semantics. It will transition to the <xref:System.Threading.Tasks.TaskStatus><xref:System.Threading.Tasks.TaskStatus.Faulted> state when the dataflow block has completed processing prematurely due to an unhandled exception, and it will transition to the <xref:System.Threading.Tasks.TaskStatus><xref:System.Threading.Tasks.TaskStatus.Canceled> state when the dataflow block has completed processing prematurely due to receiving a cancellation request. If the task completes in the <xref:System.Threading.Tasks.TaskStatus.Faulted> state, its `Exception` property will return an <xref:System.AggregateException> containing the one or more exceptions that caused the block to fail.  
+ A dataflow block is considered completed when it is not currently processing a message and when it has guaranteed that it will not process any more messages. The returned <xref:System.Threading.Tasks.Task> will transition to a completed state when the associated block has completed. It will transition to the <xref:System.Threading.Tasks.TaskStatus><xref:System.Threading.Tasks.TaskStatus.RanToCompletion> state when the block completes its processing successfully according to the dataflow block's defined semantics. It will transition to the <xref:System.Threading.Tasks.TaskStatus><xref:System.Threading.Tasks.TaskStatus.Faulted> state when the dataflow block has completed processing prematurely due to an unhandled exception, and it will transition to the <xref:System.Threading.Tasks.TaskStatus><xref:System.Threading.Tasks.TaskStatus.Canceled> state when the dataflow block has completed processing prematurely due to receiving a cancellation request. If the task completes in the <xref:System.Threading.Tasks.TaskStatus.Faulted> state, its `Exception` property will return an <xref:System.AggregateException> containing the one or more exceptions that caused the block to fail.  
   
  ]]></format>
         </remarks>
@@ -370,7 +373,7 @@
       <MemberSignature Language="C++ CLI" Value=" virtual TOutput System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;.ConsumeMessage(System::Threading::Tasks::Dataflow::DataflowMessageHeader messageHeader, System::Threading::Tasks::Dataflow::ITargetBlock&lt;TOutput&gt; ^ target, [Runtime::InteropServices::Out] bool % messageConsumed) = System::Threading::Tasks::Dataflow::ISourceBlock&lt;TOutput&gt;::ConsumeMessage;" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Threading.Tasks.Dataflow.ISourceBlock`1.ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Boolean)</InterfaceMember>
+        <InterfaceMember>M:System.Threading.Tasks.Dataflow.ISourceBlock`1.ConsumeMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,System.Threading.Tasks.Dataflow.ITargetBlock{`0},System.Boolean@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -584,7 +587,7 @@
       <MemberSignature Language="F#" Value="abstract member TryReceive : Predicate&lt;'Output&gt; *  -&gt; bool&#xA;override this.TryReceive : Predicate&lt;'Output&gt; *  -&gt; bool" Usage="transformManyBlock.TryReceive (filter, item)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1.TryReceive(System.Predicate{`0},`0)</InterfaceMember>
+        <InterfaceMember>M:System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1.TryReceive(System.Predicate{`0},`0@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -601,7 +604,7 @@
         <Parameter Name="item" Type="TOutput" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="filter">The predicate value must successfully pass in order for it to be received.  <c>filter</c> may be <see langword="null" />, in which case all items will pass.</param>
+        <param name="filter">The predicate value must successfully pass in order for it to be received.  <paramref name="filter" /> may be <see langword="null" />, in which case all items will pass.</param>
         <param name="item">The item received from the source.</param>
         <summary>Attempts to synchronously receive an available output item from the <see cref="T:System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1" />.</summary>
         <returns>
@@ -627,7 +630,7 @@
       <MemberSignature Language="F#" Value="abstract member TryReceiveAll :  -&gt; bool&#xA;override this.TryReceiveAll :  -&gt; bool" Usage="transformManyBlock.TryReceiveAll items" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1.TryReceiveAll(System.Collections.Generic.IList{`0})</InterfaceMember>
+        <InterfaceMember>M:System.Threading.Tasks.Dataflow.IReceivableSourceBlock`1.TryReceiveAll(System.Collections.Generic.IList{`0}@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>

@@ -16,10 +16,10 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>Microsoft.VisualBasic.CompilerServices.StandardModule</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.Security.SecurityCritical</AttributeName>
     </Attribute>
   </Attributes>
@@ -40,6 +40,10 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/visual-basic/language-reference/keywords/directories-and-files-summary.md">Directories and Files Summary</related>
+    <related type="Article" href="~/docs/visual-basic/language-reference/keywords/input-and-output-summary.md">Input and Output Summary</related>
+    <related type="Article" href="~/docs/visual-basic/language-reference/keywords/index.md">Keywords (Visual Basic)</related>
+    <related type="Article" href="~/docs/visual-basic/language-reference/runtime-library-members.md">Visual Basic Run-Time Library Members</related>
   </Docs>
   <Members>
     <Member MemberName="ChDir">
@@ -63,7 +67,7 @@
         <Parameter Name="Path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Path">Required. A <see langword="String" /> expression that identifies which directory or folder becomes the new default directory or folder. <c>Path</c> may include the drive. If no drive is specified, <see langword="ChDir" /> changes the default directory or folder on the current drive.</param>
+        <param name="Path">Required. A <see langword="String" /> expression that identifies which directory or folder becomes the new default directory or folder. <paramref name="Path" /> may include the drive. If no drive is specified, <see langword="ChDir" /> changes the default directory or folder on the current drive.</param>
         <summary>Changes the current directory or folder. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than the <see langword="ChDir" /> function. For more information, see <see cref="P:Microsoft.VisualBasic.FileIO.FileSystem.CurrentDirectory" /> .</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -99,6 +103,8 @@
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.RmDir(System.String)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.IO.FileNotFoundException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md">How to: Parse File Paths in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md">Creating, Deleting, and Moving Files and Directories in Visual Basic</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ChDrive">
@@ -131,13 +137,13 @@
         <Parameter Name="Drive" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="Drive">Required. String expression that specifies an existing drive. If you supply a zero-length string (""), the current drive does not change. If the <c>Drive</c> argument is a multiple-character string, <see langword="ChDrive" /> uses only the first letter.</param>
+        <param name="Drive">Required. String expression that specifies an existing drive. If you supply a zero-length string (""), the current drive does not change. If the <paramref name="Drive" /> argument is a multiple-character string, <see langword="ChDrive" /> uses only the first letter.</param>
         <summary>Changes the current drive.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `ChDrive` function requires unmanaged-code permission, which may affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
+ The `ChDrive` function requires unmanaged-code permission, which may affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](https://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
    
   
@@ -155,6 +161,7 @@
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.MkDir(System.String)" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.RmDir(System.String)" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="ChDrive">
@@ -178,13 +185,13 @@
         <Parameter Name="Drive" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Drive">Required. String expression that specifies an existing drive. If you supply a zero-length string (""), the current drive does not change. If the <c>Drive</c> argument is a multiple-character string, <see langword="ChDrive" /> uses only the first letter.</param>
+        <param name="Drive">Required. String expression that specifies an existing drive. If you supply a zero-length string (""), the current drive does not change. If the <paramref name="Drive" /> argument is a multiple-character string, <see langword="ChDrive" /> uses only the first letter.</param>
         <summary>Changes the current drive.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `ChDrive` function requires unmanaged-code permission, which may affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](http://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
+ The `ChDrive` function requires unmanaged-code permission, which may affect its execution in partial-trust situations. For more information, see <xref:System.Security.Permissions.SecurityPermission> and [Code Access Permissions](https://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
    
   
@@ -202,6 +209,7 @@
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.MkDir(System.String)" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.RmDir(System.String)" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CurDir">
@@ -273,7 +281,7 @@
         <Parameter Name="Drive" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="Drive">Optional. <see langword="Char" /> expression that specifies an existing drive. If no drive is specified, or if <c>Drive</c> is a zero-length string (""), <see langword="CurDir" /> returns the path for the current drive.</param>
+        <param name="Drive">Optional. <see langword="Char" /> expression that specifies an existing drive. If no drive is specified, or if <paramref name="Drive" /> is a zero-length string (""), <see langword="CurDir" /> returns the path for the current drive.</param>
         <summary>Returns a string representing the current path. The <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" /> gives you better productivity and performance in file I/O operations than <see langword="CurDir" />. For more information, see <see cref="P:Microsoft.VisualBasic.FileIO.FileSystem.CurrentDirectory" />.</summary>
         <returns>A string representing the current path.</returns>
         <remarks>
@@ -335,7 +343,7 @@
  You must supply a `PathName` the first time that you call the `Dir` function. To retrieve the next item, you can make subsequent calls to the `Dir` function without parameters.  
   
 > [!IMPORTANT]
->  To run correctly, the `Dir` function requires the <xref:System.Security.Permissions.FileIOPermissionAccess.Read> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery> flags of <xref:System.Security.Permissions.FileIOPermission> to be granted to the executing code. For more information, see <xref:System.Security.Permissions.FileIOPermission>, <xref:System.Security.SecurityException>, and [Code Access Permissions](http://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
+>  To run correctly, the `Dir` function requires the <xref:System.Security.Permissions.FileIOPermissionAccess.Read> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery> flags of <xref:System.Security.Permissions.FileIOPermission> to be granted to the executing code. For more information, see <xref:System.Security.Permissions.FileIOPermission>, <xref:System.Security.SecurityException>, and [Code Access Permissions](https://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
  The `Attributes` argument enumeration values are as follows:  
   
@@ -370,14 +378,13 @@
     <Member MemberName="Dir">
       <MemberSignature Language="C#" Value="public static string Dir (string Pathname, Microsoft.VisualBasic.FileAttribute Attributes = Microsoft.VisualBasic.FileAttribute.Normal);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Dir(string Pathname, valuetype Microsoft.VisualBasic.FileAttribute Attributes) cil managed" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Dir(System.String,Microsoft.VisualBasic.FileAttribute)" FrameworkAlternate="netframework-2.0" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Dir(System.String,Microsoft.VisualBasic.FileAttribute)" />
       <MemberSignature Language="VB.NET" Value="Public Function Dir (Pathname As String, Optional Attributes As FileAttribute = Microsoft.VisualBasic.FileAttribute.Normal) As String" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="F#" Value="static member Dir : string * Microsoft.VisualBasic.FileAttribute -&gt; string" Usage="Microsoft.VisualBasic.FileSystem.Dir (Pathname, Attributes)" FrameworkAlternate="netframework-2.0" />
-      <MemberSignature Language="C#" Value="public static string Dir (string PathName, Microsoft.VisualBasic.FileAttribute Attributes = Microsoft.VisualBasic.FileAttribute.Normal);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="ILAsm" Value=".method public static string Dir(string PathName, valuetype Microsoft.VisualBasic.FileAttribute Attributes) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileSystem.Dir(System.String,Microsoft.VisualBasic.FileAttribute)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="VB.NET" Value="Public Function Dir (PathName As String, Optional Attributes As FileAttribute = Microsoft.VisualBasic.FileAttribute.Normal) As String" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
-      <MemberSignature Language="F#" Value="static member Dir : string * Microsoft.VisualBasic.FileAttribute -&gt; string" Usage="Microsoft.VisualBasic.FileSystem.Dir (PathName, Attributes)" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+      <MemberSignature Language="F#" Value="static member Dir : string * Microsoft.VisualBasic.FileAttribute -&gt; string" Usage="Microsoft.VisualBasic.FileSystem.Dir (Pathname, Attributes)" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="C#" Value="public static string Dir (string PathName, Microsoft.VisualBasic.FileAttribute Attributes = Microsoft.VisualBasic.FileAttribute.Normal);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Dir(string PathName, valuetype Microsoft.VisualBasic.FileAttribute Attributes) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="VB.NET" Value="Public Function Dir (PathName As String, Optional Attributes As FileAttribute = Microsoft.VisualBasic.FileAttribute.Normal) As String" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="static member Dir : string * Microsoft.VisualBasic.FileAttribute -&gt; string" Usage="Microsoft.VisualBasic.FileSystem.Dir (PathName, Attributes)" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -390,13 +397,13 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="Pathname" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1" />
-        <Parameter Name="PathName" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2" />
+        <Parameter Name="PathName" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="Attributes" Type="Microsoft.VisualBasic.FileAttribute" Index="1" />
       </Parameters>
       <Docs>
-        <param name="PathName">Optional. <see langword="String" /> expression that specifies a file name, directory or folder name, or drive volume label. A zero-length string (<see langword="&quot;&quot;" />) is returned if <c>PathName</c> is not found.</param>
+        <param name="PathName">Optional. <see langword="String" /> expression that specifies a file name, directory or folder name, or drive volume label. A zero-length string (<see langword="&quot;&quot;" />) is returned if <paramref name="PathName" /> is not found.</param>
         <param name="Pathname">To be added.</param>
-        <param name="Attributes">Optional. Enumeration or numeric expression whose value specifies file attributes. If omitted, <see langword="Dir" /> returns files that match <c>PathName</c> but have no attributes.</param>
+        <param name="Attributes">Optional. Enumeration or numeric expression whose value specifies file attributes. If omitted, <see langword="Dir" /> returns files that match <paramref name="PathName" /> but have no attributes.</param>
         <summary>Returns a string representing the name of a file, directory, or folder that matches a specified pattern or file attribute, or the volume label of a drive. The <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" /> gives you better productivity and performance in file I/O operations than the <see langword="Dir" /> function. See <see cref="M:Microsoft.VisualBasic.FileIO.FileSystem.GetDirectoryInfo(System.String)" /> for more information.</summary>
         <returns>A string representing the name of a file, directory, or folder that matches a specified pattern or file attribute, or the volume label of a drive.</returns>
         <remarks>
@@ -410,7 +417,7 @@
  You must supply a `PathName` the first time that you call the `Dir` function. To retrieve the next item, you can make subsequent calls to the `Dir` function with no parameters.  
   
 > [!IMPORTANT]
->  To run correctly, the `Dir` function requires the <xref:System.Security.Permissions.FileIOPermissionAccess.Read> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery> flags of <xref:System.Security.Permissions.FileIOPermission> to be granted to the executing code. For more information, see <xref:System.Security.Permissions.FileIOPermission>, <xref:System.Security.SecurityException>, and [Code Access Permissions](http://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
+>  To run correctly, the `Dir` function requires the <xref:System.Security.Permissions.FileIOPermissionAccess.Read> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery> flags of <xref:System.Security.Permissions.FileIOPermission> to be granted to the executing code. For more information, see <xref:System.Security.Permissions.FileIOPermission>, <xref:System.Security.SecurityException>, and [Code Access Permissions](https://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
  The `Attributes` argument enumeration values are as follows:  
   
@@ -552,6 +559,7 @@
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.SetAttr(System.String,Microsoft.VisualBasic.FileAttribute)" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FileClose">
@@ -587,7 +595,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `FileClose` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [How to: Read Text from Files with a StreamReader](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-text-from-files-with-a-streamreader.md),[How to: Write Text to Files with a StreamWriter](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md), and [Walkthrough: Manipulating Files and Directories in Visual Basic](~/docs/visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md).  
+ The `FileClose` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [How to: Read Text from Files with a StreamReader](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-text-from-files-with-a-streamreader.md), [How to: Write Text to Files with a StreamWriter](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md), and [Walkthrough: Manipulating Files and Directories in Visual Basic](~/docs/visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md).  
   
  If you omit `FileNumbers`, all active files opened by the `FileOpen` function are closed.  
   
@@ -608,6 +616,9 @@
           <paramref name="FileNumber" /> does not exist.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.Reset" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/end-statement.md">End Statement</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/stop-statement.md">Stop Statement (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FileCopy">
@@ -632,8 +643,8 @@
         <Parameter Name="Destination" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Source">Required. <see langword="String" /> expression that specifies the name of the file to be copied. <c>Source</c> may include the directory or folder, and drive, of the source file.</param>
-        <param name="Destination">Required. <see langword="String" /> expression that specifies the destination file name. <c>Destination</c> may include the directory or folder, and drive, of the destination file.</param>
+        <param name="Source">Required. <see langword="String" /> expression that specifies the name of the file to be copied. <paramref name="Source" /> may include the directory or folder, and drive, of the source file.</param>
+        <param name="Destination">Required. <see langword="String" /> expression that specifies the destination file name. <paramref name="Destination" /> may include the directory or folder, and drive, of the destination file.</param>
         <summary>Copies a file. The <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" /> gives you better productivity and performance in file I/O operations than <see langword="FileCopy" />. See <see cref="M:Microsoft.VisualBasic.FileIO.FileSystem.CopyFile(System.String,System.String)" /> for more information.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -660,6 +671,9 @@
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.IO.IOException" />
         <altmember cref="T:System.IO.FileNotFoundException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-create-a-copy-of-a-file-in-a-different-directory.md">How to: Create a Copy of a File in a Different Directory in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-create-a-copy-of-a-file-in-the-same-directory.md">How to: Create a Copy of a File in the Same Directory in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-copy-a-directory-to-another-directory.md">How to: Copy a Directory to Another Directory in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FileDateTime">
@@ -683,7 +697,7 @@
         <Parameter Name="PathName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="PathName">Required. <see langword="String" /> expression that specifies a file name. <c>PathName</c> may include the directory or folder, and the drive.</param>
+        <param name="PathName">Required. <see langword="String" /> expression that specifies a file name. <paramref name="PathName" /> may include the directory or folder, and the drive.</param>
         <summary>Returns a <see langword="Date" /> value that indicates the date and time a file was written to. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="FileDateTime" />. For more information, see <see cref="M:Microsoft.VisualBasic.FileIO.FileSystem.GetFileInfo(System.String)" /></summary>
         <returns>
           <see langword="Date" /> value that indicates the date and time a file was created or last modified.</returns>
@@ -704,6 +718,7 @@
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.GetAttr(System.String)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.IO.FileNotFoundException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="FileGet">
@@ -798,6 +813,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FileGet">
@@ -883,6 +900,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FileGet">
@@ -968,6 +987,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FileGet">
@@ -1053,6 +1074,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FileGet">
@@ -1138,6 +1161,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FileGet">
@@ -1223,6 +1248,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FileGet">
@@ -1308,6 +1335,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FileGet">
@@ -1393,6 +1422,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FileGet">
@@ -1478,6 +1509,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FileGet">
@@ -1563,6 +1596,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FileGet">
@@ -1648,6 +1683,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FileGet">
@@ -1735,6 +1772,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FileGet">
@@ -1824,6 +1863,8 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileGetObject(System.Int32,System.Object@,System.Int64)" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FileGetObject">
@@ -1908,6 +1949,8 @@
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FileGet" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FileLen">
@@ -1931,7 +1974,7 @@
         <Parameter Name="PathName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="PathName">Required. <see langword="String" /> expression that specifies a file. <c>PathName</c> may include the directory or folder, and the drive.</param>
+        <param name="PathName">Required. <see langword="String" /> expression that specifies a file. <paramref name="PathName" /> may include the directory or folder, and the drive.</param>
         <summary>Returns a <see langword="Long" /> value that specifies the length of a file in bytes. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="FileLen" />. For more information, see <see cref="M:Microsoft.VisualBasic.FileIO.FileSystem.GetFileInfo(System.String)" />.</summary>
         <returns>
           <see langword="Long" /> value that specifies the length of a file in bytes.</returns>
@@ -1958,6 +2001,7 @@
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.GetAttr(System.String)" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.LOF(System.Int32)" />
         <altmember cref="T:System.IO.FileNotFoundException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FileOpen">
@@ -2040,6 +2084,8 @@
           <paramref name="FileName" /> is already open, or <paramref name="FileName" /> is invalid.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileClose(System.Int32[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FreeFile" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="FilePut">
@@ -2144,6 +2190,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -2239,6 +2286,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -2334,6 +2382,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -2429,6 +2478,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -2524,6 +2574,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -2619,6 +2670,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -2714,6 +2766,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -2809,6 +2862,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -2904,6 +2958,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -2999,6 +3054,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -3094,6 +3150,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -3110,7 +3167,7 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.Obsolete("This member has been deprecated. Please use FilePutObject to write Object types, or coerce FileNumber and RecordNumber to Integer for writing non-Object types. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">
@@ -3197,6 +3254,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -3294,6 +3352,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FilePut">
@@ -3393,6 +3452,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FilePutObject">
@@ -3467,6 +3527,7 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Seek" />
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FileWidth">
@@ -3492,7 +3553,7 @@
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. Any valid file number.</param>
-        <param name="RecordWidth">Required. Numeric expression in the range 0–255, inclusive, which indicates how many characters appear on a line before a new line is started. If <c>RecordWidth</c> equals 0, there is no limit to the length of a line. The default value for <c>RecordWidth</c> is 0.</param>
+        <param name="RecordWidth">Required. Numeric expression in the range 0–255, inclusive, which indicates how many characters appear on a line before a new line is started. If <paramref name="RecordWidth" /> equals 0, there is no limit to the length of a line. The default value for <paramref name="RecordWidth" /> is 0.</param>
         <summary>Assigns an output line width to a file opened by using the <see langword="FileOpen" /> function.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3509,6 +3570,7 @@
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="FreeFile">
@@ -3550,6 +3612,7 @@
         <exception cref="T:System.IO.IOException">More than 255 files are in use.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="GetAttr">
@@ -3573,7 +3636,7 @@
         <Parameter Name="PathName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="PathName">Required. <see langword="String" /> expression that specifies a file, directory, or folder name. <c>PathName</c> can include the directory or folder, and the drive.</param>
+        <param name="PathName">Required. <see langword="String" /> expression that specifies a file, directory, or folder name. <paramref name="PathName" /> can include the directory or folder, and the drive.</param>
         <summary>Returns a <see langword="FileAttribute" /> value that represents the attributes of a file, directory, or folder. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="FileAttribute" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
         <returns>The value returned by <see langword="GetAttr" /> is the sum of the following enumeration values:  
   
@@ -3630,6 +3693,8 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="T:System.IO.IOException" />
         <altmember cref="T:System.IO.FileNotFoundException" />
         <altmember cref="T:Microsoft.VisualBasic.FileAttribute" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/and-operator.md">And Operator (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Input">
@@ -3711,6 +3776,9 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md">How to: Write Text to Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md">How to: Write Text to a File with a Streamwriter (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Input">
@@ -3783,6 +3851,9 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md">How to: Write Text to Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md">How to: Write Text to a File with a Streamwriter (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Input">
@@ -3855,6 +3926,9 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md">How to: Write Text to Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md">How to: Write Text to a File with a Streamwriter (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Input">
@@ -3927,6 +4001,9 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md">How to: Write Text to Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md">How to: Write Text to a File with a Streamwriter (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Input">
@@ -3999,6 +4076,9 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md">How to: Write Text to Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md">How to: Write Text to a File with a Streamwriter (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Input">
@@ -4071,6 +4151,9 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md">How to: Write Text to Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md">How to: Write Text to a File with a Streamwriter (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Input">
@@ -4143,6 +4226,9 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md">How to: Write Text to Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md">How to: Write Text to a File with a Streamwriter (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Input">
@@ -4215,6 +4301,9 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md">How to: Write Text to Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md">How to: Write Text to a File with a Streamwriter (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Input">
@@ -4287,6 +4376,9 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md">How to: Write Text to Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md">How to: Write Text to a File with a Streamwriter (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Input">
@@ -4359,6 +4451,9 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md">How to: Write Text to Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md">How to: Write Text to a File with a Streamwriter (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Input">
@@ -4431,6 +4526,9 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md">How to: Write Text to Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md">How to: Write Text to a File with a Streamwriter (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Input">
@@ -4503,6 +4601,9 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md">How to: Write Text to Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md">How to: Write Text to a File with a Streamwriter (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="InputString">
@@ -4560,6 +4661,9 @@ Result = GetAttr(FName) And vbArchive
         <exception cref="T:System.ArgumentException">
           <paramref name="CharCount" /> &lt; 0 or &gt; 214.</exception>
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Input" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md">How to: Write Text to a File with a Streamwriter (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md">How to: Write Text to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="Kill">
@@ -4583,7 +4687,7 @@ Result = GetAttr(FName) And vbArchive
         <Parameter Name="PathName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="PathName">Required. <see langword="String" /> expression that specifies one or more file names to be deleted. <c>PathName</c> can include the directory or folder, and the drive.</param>
+        <param name="PathName">Required. <see langword="String" /> expression that specifies one or more file names to be deleted. <paramref name="PathName" /> can include the directory or folder, and the drive.</param>
         <summary>Deletes files from a disk. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="Kill" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" /> .</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4591,7 +4695,7 @@ Result = GetAttr(FName) And vbArchive
 ## Remarks  
  `Kill` supports the use of multiple-character (`*`) and single-character (`?`) wildcards to specify multiple files.  
   
- **Security Note** In order to execute, the `Kill` function requires `Read` and `PathDiscovery` flags of <xref:System.Security.Permissions.FileIOPermission> to be granted to the executing code. For more information, see <xref:System.Security.SecurityException>[Code Access Permissions](http://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675)  
+ **Security Note** In order to execute, the `Kill` function requires `Read` and `PathDiscovery` flags of <xref:System.Security.Permissions.FileIOPermission> to be granted to the executing code. For more information, see <xref:System.Security.SecurityException>[Code Access Permissions](https://msdn.microsoft.com/library/e5ae402f-6dda-4732-bbe8-77296630f675)  
   
    
   
@@ -4665,6 +4769,9 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="M:Microsoft.VisualBasic.Strings.Chr(System.Int32)" />
         <altmember cref="M:Microsoft.VisualBasic.Strings.ChrW(System.Int32)" />
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.Input" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md">How to: Write Text to a File with a Streamwriter (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md">How to: Write Text to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="Loc">
@@ -4779,6 +4886,7 @@ Result = GetAttr(FName) And vbArchive
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="Lock">
@@ -4830,6 +4938,7 @@ Result = GetAttr(FName) And vbArchive
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="Lock">
@@ -4883,6 +4992,7 @@ Result = GetAttr(FName) And vbArchive
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="LOF">
@@ -4930,6 +5040,8 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.Loc(System.Int32)" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="MkDir">
@@ -4953,7 +5065,7 @@ Result = GetAttr(FName) And vbArchive
         <Parameter Name="Path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Path">Required. <see langword="String" /> expression that identifies the directory to be created. The <c>Path</c> may include the drive. If no drive is specified, <see langword="MkDir" /> creates the new directory on the current drive.</param>
+        <param name="Path">Required. <see langword="String" /> expression that identifies the directory to be created. The <paramref name="Path" /> may include the drive. If no drive is specified, <see langword="MkDir" /> creates the new directory on the current drive.</param>
         <summary>Creates a new directory. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="MkDir" />. For more information, see <see cref="M:Microsoft.VisualBasic.FileIO.FileSystem.CreateDirectory(System.String)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4979,6 +5091,7 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.RmDir(System.String)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-create-a-directory.md">How to: Create a Directory in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="Print">
@@ -5012,11 +5125,11 @@ Result = GetAttr(FName) And vbArchive
         <param name="FileNumber">Required. Any valid file number.</param>
         <param name="Output">Optional. Zero or more comma-delimited expressions to write to a file.  
   
- The <c>Output</c> argument settings are:  
+ The <paramref name="Output" /> argument settings are:  
   
  <see langword="T:System.IO.IOException" />: File mode is invalid.  
   
- <see langword="T:System.IO.IOException" />: <c>FileNumber</c> does not exist.</param>
+ <see langword="T:System.IO.IOException" />: <paramref name="FileNumber" /> does not exist.</param>
         <summary>Writes display-formatted data to a sequential file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5057,6 +5170,9 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.TAB" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md">How to: Write Text to Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md">How to: Write Text to a File with a Streamwriter (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="PrintLine">
@@ -5090,11 +5206,11 @@ Result = GetAttr(FName) And vbArchive
         <param name="FileNumber">Required. Any valid file number.</param>
         <param name="Output">Optional. Zero or more comma-delimited expressions to write to a file.  
   
- The <c>Output</c> argument settings are:  
+ The <paramref name="Output" /> argument settings are:  
   
  <see langword="T:System.IO.IOException" />: File mode is invalid.  
   
- <see langword="T:System.IO.IOException" />: <c>FileNumber</c> does not exist.</param>
+ <see langword="T:System.IO.IOException" />: <paramref name="FileNumber" /> does not exist.</param>
         <summary>Writes display-formatted data to a sequential file.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5135,6 +5251,9 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.TAB" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.Write(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.WriteLine(System.Int32,System.Object[])" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md">How to: Write Text to Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md">How to: Write Text to a File with a Streamwriter (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Rename">
@@ -5159,8 +5278,8 @@ Result = GetAttr(FName) And vbArchive
         <Parameter Name="NewPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="OldPath">Required. <see langword="String" /> expression that specifies the existing file name and location. <c>OldPath</c> may include the directory, and drive, of the file.</param>
-        <param name="NewPath">Required. <see langword="String" /> expression that specifies the new file name and location. <c>NewPath</c> may include directory and drive of the destination location. The file name specified by <c>NewPath</c> cannot already exist.</param>
+        <param name="OldPath">Required. <see langword="String" /> expression that specifies the existing file name and location. <paramref name="OldPath" /> may include the directory, and drive, of the file.</param>
+        <param name="NewPath">Required. <see langword="String" /> expression that specifies the new file name and location. <paramref name="NewPath" /> may include directory and drive of the destination location. The file name specified by <paramref name="NewPath" /> cannot already exist.</param>
         <summary>Renames a disk file or directory. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="Rename" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5190,6 +5309,7 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.IO.FileNotFoundException" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-rename-a-file.md">How to: Rename a File in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -5229,6 +5349,7 @@ Result = GetAttr(FName) And vbArchive
         </remarks>
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileClose(System.Int32[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/end-statement.md">End Statement</related>
       </Docs>
     </Member>
     <Member MemberName="RmDir">
@@ -5252,7 +5373,7 @@ Result = GetAttr(FName) And vbArchive
         <Parameter Name="Path" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Path">Required. <see langword="String" /> expression that identifies the directory or folder to be removed. <c>Path</c> can include the drive. If no drive is specified, <see langword="RmDir" /> removes the directory on the current drive.</param>
+        <param name="Path">Required. <see langword="String" /> expression that identifies the directory or folder to be removed. <paramref name="Path" /> can include the drive. If no drive is specified, <see langword="RmDir" /> removes the directory on the current drive.</param>
         <summary>Removes an existing directory. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="RmDir" />. For more information, see <see cref="Overload:Microsoft.VisualBasic.FileIO.FileSystem.DeleteDirectory" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5357,6 +5478,8 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="Seek">
@@ -5426,6 +5549,8 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md">Reading from Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md">Writing to Files in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="SetAttr">
@@ -5450,7 +5575,7 @@ Result = GetAttr(FName) And vbArchive
         <Parameter Name="Attributes" Type="Microsoft.VisualBasic.FileAttribute" />
       </Parameters>
       <Docs>
-        <param name="PathName">Required. <see langword="String" /> expression that specifies a file name. <c>PathName</c> can include directory or folder, and drive.</param>
+        <param name="PathName">Required. <see langword="String" /> expression that specifies a file name. <paramref name="PathName" /> can include directory or folder, and drive.</param>
         <param name="Attributes">Required. Constant or numeric expression, whose sum specifies file attributes.</param>
         <summary>Sets attribute information for a file. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="SetAttr" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
         <remarks>
@@ -5544,6 +5669,7 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="M:Microsoft.VisualBasic.Strings.Space(System.Int32)" />
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.TAB" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileWidth(System.Int32,System.Int32)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/mod-operator.md">Mod Operator (Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="TAB">
@@ -5607,6 +5733,7 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="M:Microsoft.VisualBasic.Strings.Space(System.Int32)" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.SPC(System.Int16)" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileWidth(System.Int32,System.Int32)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/mod-operator.md">Mod Operator (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="TAB">
@@ -5664,6 +5791,7 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="M:Microsoft.VisualBasic.Strings.Space(System.Int32)" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.SPC(System.Int16)" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileWidth(System.Int32,System.Int32)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/operators/mod-operator.md">Mod Operator (Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Unlock">
@@ -5722,6 +5850,7 @@ Result = GetAttr(FName) And vbArchive
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="Unlock">
@@ -5773,6 +5902,7 @@ Result = GetAttr(FName) And vbArchive
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="Unlock">
@@ -5826,6 +5956,7 @@ Result = GetAttr(FName) And vbArchive
         <exception cref="T:System.IO.IOException">File mode is invalid.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
         <altmember cref="T:System.IO.IOException" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -5904,6 +6035,9 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md">How to: Write Text to Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md">How to: Write Text to a File with a Streamwriter (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -5981,6 +6115,9 @@ Result = GetAttr(FName) And vbArchive
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.FileOpen(System.Int32,System.String,Microsoft.VisualBasic.OpenMode,Microsoft.VisualBasic.OpenAccess,Microsoft.VisualBasic.OpenShare,System.Int32)" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.Print(System.Int32,System.Object[])" />
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.PrintLine(System.Int32,System.Object[])" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md">File Access with Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files.md">How to: Write Text to Files in Visual Basic</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md">How to: Write Text to a File with a Streamwriter (Visual Basic)</related>
       </Docs>
     </Member>
   </Members>

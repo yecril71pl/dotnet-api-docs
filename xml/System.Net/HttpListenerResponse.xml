@@ -120,7 +120,7 @@
       </Parameters>
       <Docs>
         <param name="name">The name of the HTTP header to set.</param>
-        <param name="value">The value for the <c>name</c> header.</param>
+        <param name="value">The value for the <paramref name="name" /> header.</param>
         <summary>Adds the specified header and value to the HTTP headers for this response.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -239,8 +239,8 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the HTTP header to append <c>value</c> to.</param>
-        <param name="value">The value to append to the <c>name</c> header.</param>
+        <param name="name">The name of the HTTP header to append <paramref name="value" /> to.</param>
+        <param name="value">The value to append to the <paramref name="name" /> header.</param>
         <summary>Appends a value to the specified HTTP header to be sent with this response.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -484,7 +484,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `Content-Length` header expresses the length, in bytes, of the response's body data. When using a format that is not send the data chunked or raw, you must set the <xref:System.Net.HttpListenerResponse.ContentLength64%2A> property. If you do not, the <xref:System.Net.HttpListener> does not send the response data.  
+ The `Content-Length` header expresses the length, in bytes, of the response's body data. When using a format that does not send the data chunked or raw, you must set the <xref:System.Net.HttpListenerResponse.ContentLength64%2A> property. If you do not, the <xref:System.Net.HttpListener> does not send the response data.  
   
  For a complete list of response headers, see the <xref:System.Net.HttpResponseHeader> enumeration.  
   

@@ -16,7 +16,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>Microsoft.VisualBasic.CompilerServices.StandardModule</AttributeName>
     </Attribute>
   </Attributes>
@@ -48,6 +48,11 @@ testVbName = VbTypeName(sysBadName)
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/visual-basic/language-reference/keywords/information-and-interaction-summary.md">Information and Interaction Summary</related>
+    <related type="Article" href="~/docs/visual-basic/language-reference/keywords/data-types-summary.md">Data Types Summary</related>
+    <related type="Article" href="~/docs/visual-basic/language-reference/keywords/declarations-and-constants-summary.md">Declarations and Constants Summary</related>
+    <related type="Article" href="~/docs/visual-basic/language-reference/keywords/index.md">Keywords (Visual Basic)</related>
+    <related type="Article" href="~/docs/visual-basic/language-reference/runtime-library-members.md">Visual Basic Run-Time Library Members</related>
   </Docs>
   <Members>
     <Member MemberName="Erl">
@@ -65,7 +70,7 @@ testVbName = VbTypeName(sysBadName)
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
@@ -142,6 +147,12 @@ testVbName = VbTypeName(sysBadName)
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/error-statement.md">Error Statement</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/on-error-statement.md">On Error Statement (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/exit-statement.md">Exit Statement (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/resume-statement.md">Resume Statement</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/error-messages/index.md">Error Messages (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/try-catch-finally-statement.md">Try...Catch...Finally Statement (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="IsArray">
@@ -191,6 +202,7 @@ testVbName = VbTypeName(sysBadName)
         <altmember cref="M:Microsoft.VisualBasic.Information.IsReference(System.Object)" />
         <altmember cref="T:System.Object" />
         <altmember cref="M:Microsoft.VisualBasic.Information.TypeName(System.Object)" />
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/arrays/index.md">Arrays in Visual Basic</related>
       </Docs>
     </Member>
     <Member MemberName="IsDate">
@@ -399,6 +411,7 @@ testVbName = VbTypeName(sysBadName)
         <altmember cref="M:Microsoft.VisualBasic.Information.IsReference(System.Object)" />
         <altmember cref="T:System.Object" />
         <altmember cref="M:Microsoft.VisualBasic.Information.TypeName(System.Object)" />
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md">Value Types and Reference Types</related>
       </Docs>
     </Member>
     <Member MemberName="IsNumeric">
@@ -503,6 +516,7 @@ testVbName = VbTypeName(sysBadName)
         <altmember cref="M:Microsoft.VisualBasic.Information.IsNumeric(System.Object)" />
         <altmember cref="T:System.Object" />
         <altmember cref="M:Microsoft.VisualBasic.Information.TypeName(System.Object)" />
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md">Value Types and Reference Types</related>
       </Docs>
     </Member>
     <Member MemberName="LBound">
@@ -526,7 +540,7 @@ testVbName = VbTypeName(sysBadName)
       </Parameters>
       <Docs>
         <param name="Array">Required. Array of any data type. The array in which you want to find the lowest possible subscript of a dimension.</param>
-        <param name="Rank">Optional. <see langword="Integer" />. The dimension for which the lowest possible subscript is to be returned. Use 1 for the first dimension, 2 for the second, and so on. If <c>Rank</c> is omitted, 1 is assumed.</param>
+        <param name="Rank">Optional. <see langword="Integer" />. The dimension for which the lowest possible subscript is to be returned. Use 1 for the first dimension, 2 for the second, and so on. If <paramref name="Rank" /> is omitted, 1 is assumed.</param>
         <summary>Returns the lowest available subscript for the indicated dimension of an array.</summary>
         <returns>
           <see langword="Integer" />. The lowest value the subscript for the specified dimension can contain. <see langword="LBound" /> always returns 0 as long as <paramref name="Array" /> has been initialized, even if it has no elements, for example if it is a zero-length string. If <paramref name="Array" /> is <see langword="Nothing" />, <see langword="LBound" /> throws an <see cref="T:System.ArgumentNullException" />.</returns>
@@ -564,6 +578,8 @@ Dim a(100, 5, 4) As Byte
         <altmember cref="M:Microsoft.VisualBasic.Information.UBound(System.Array,System.Int32)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.RankException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/dim-statement.md">Dim Statement (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/redim-statement.md">ReDim Statement (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="QBColor">
@@ -729,6 +745,7 @@ Dim a(100, 5, 4) As Byte
         </remarks>
         <altmember cref="T:System.String" />
         <altmember cref="M:Microsoft.VisualBasic.Information.VbTypeName(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="TypeName">
@@ -803,6 +820,7 @@ Dim a(100, 5, 4) As Byte
         <altmember cref="M:Microsoft.VisualBasic.Information.IsNothing(System.Object)" />
         <altmember cref="M:Microsoft.VisualBasic.Information.IsNumeric(System.Object)" />
         <altmember cref="M:Microsoft.VisualBasic.Information.IsReference(System.Object)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="UBound">
@@ -826,7 +844,7 @@ Dim a(100, 5, 4) As Byte
       </Parameters>
       <Docs>
         <param name="Array">Required. Array of any data type. The array in which you want to find the highest possible subscript of a dimension.</param>
-        <param name="Rank">Optional. <see langword="Integer" />. The dimension for which the highest possible subscript is to be returned. Use 1 for the first dimension, 2 for the second, and so on. If <c>Rank</c> is omitted, 1 is assumed.</param>
+        <param name="Rank">Optional. <see langword="Integer" />. The dimension for which the highest possible subscript is to be returned. Use 1 for the first dimension, 2 for the second, and so on. If <paramref name="Rank" /> is omitted, 1 is assumed.</param>
         <summary>Returns the highest available subscript for the indicated dimension of an array.</summary>
         <returns>
           <see langword="Integer" />. The highest value the subscript for the specified dimension can contain. If <paramref name="Array" /> has only one element, <see langword="UBound" /> returns 0. If <paramref name="Array" /> has no elements, for example if it is a zero-length string, <see langword="UBound" /> returns -1.</returns>
@@ -873,6 +891,8 @@ total = (UBound(A, 1) + 1) * (UBound(A, 2) + 1) * (UBound(A, 3) + 1)
         <altmember cref="M:Microsoft.VisualBasic.Information.LBound(System.Array,System.Int32)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.RankException" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/dim-statement.md">Dim Statement (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/statements/redim-statement.md">ReDim Statement (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="VarType">
@@ -929,6 +949,7 @@ total = (UBound(A, 1) + 1) * (UBound(A, 2) + 1) * (UBound(A, 3) + 1)
         </remarks>
         <altmember cref="T:System.Object" />
         <altmember cref="T:Microsoft.VisualBasic.VariantType" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="VbTypeName">
@@ -979,6 +1000,7 @@ total = (UBound(A, 1) + 1) * (UBound(A, 2) + 1) * (UBound(A, 3) + 1)
         </remarks>
         <altmember cref="T:System.String" />
         <altmember cref="M:Microsoft.VisualBasic.Information.SystemTypeName(System.String)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Data Type Summary (Visual Basic)</related>
       </Docs>
     </Member>
   </Members>

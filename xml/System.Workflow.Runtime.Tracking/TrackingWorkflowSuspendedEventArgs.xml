@@ -15,8 +15,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+      <AttributeName>System.Serializable</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -39,13 +42,14 @@
 ## Examples  
  The following code example demonstrates a method, named `WriteSuspendedEventArgs`, which captures a <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowSuspendedEventArgs>. The code writes information from the method's arguments to the console, including the value of the <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowSuspendedEventArgs.Error%2A> property.  
   
- This code example is part of the EventArgs Tracking SDK Sample from the Program.cs file. For more information, see [EventArgs Tracking Sample](http://msdn.microsoft.com/library/94818da2-c3c4-4a13-b47a-a0fb30dbbf1c).  
+ This code example is part of the EventArgs Tracking SDK Sample from the Program.cs file. For more information, see [EventArgs Tracking Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741730(v=vs.90)).  
   
  [!code-csharp[WF_Samples#287](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#287)]
  [!code-vb[WF_Samples#287](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#287)]  
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741730(v=vs.90)">EventArgs Tracking Sample</related>
   </Docs>
   <Members>
     <Member MemberName="Error">

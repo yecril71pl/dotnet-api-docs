@@ -48,7 +48,21 @@
  <xref:System.Numerics.Vector%601> is an immutable structure that represents a single vector of a specified numeric type. The count of a <xref:System.Numerics.Vector%601> instance is fixed, but its upper limit is CPU-register dependent. It is intended to be used as a building block for vectorizing large algorithms.  
   
  The <xref:System.Numerics.Vector%601> structure provides support for hardware acceleration.  
-  
+ 
+ The following table shows which primitive numeric data type and operation combination uses intrinsic instructions for faster executions:
+| | `+` | `-` | `*` | `/` |
+| --- | :---: | :---: | :---: | :---: |
+|`sbyte` | Yes | Yes | No | No |
+|`byte` | Yes | Yes | No | No |
+|`short` | Yes | Yes | Yes | No |
+|`ushort` | Yes | Yes | No | No |
+| `int` | Yes | Yes | Yes | No |
+| `uint` | Yes | Yes | No | No |
+| `long` | Yes | Yes | No | No |
+| `ulong` | Yes | Yes | No | No |
+| `float` | Yes | Yes | Yes | Yes |
+| `double` | Yes | Yes | Yes | Yes |
+
  ]]></format>
     </remarks>
   </Docs>
@@ -184,7 +198,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The array must contain at least [Vector(T) Constructor (T\<xref:System.Numerics.Vector%601.Count%2A?displayProperty=nameWithType> elements from the specified index.  
+ The array must contain at least <xref:System.Numerics.Vector%601.Count%2A?displayProperty=nameWithType> elements from the specified index.  
   
  ]]></format>
         </remarks>
@@ -271,13 +285,13 @@
       </Parameters>
       <Docs>
         <param name="destination">The array to receive a copy of the vector values.</param>
-        <param name="startIndex">The starting index in <c>destination</c> at which to begin the copy operation.</param>
+        <param name="startIndex">The starting index in <paramref name="destination" /> at which to begin the copy operation.</param>
         <summary>Copies the vector instance to a specified destination array starting at a specified index position.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The copy operation begins at index `startIndex` of `destination`. The destination array must have at least `startIndex` + [CopyTo Method (T\<xref:System.Numerics.Vector%601.Count%2A> – 1 elements.  
+ The copy operation begins at index `startIndex` of `destination`. The destination array must have at least `startIndex` + <xref:System.Numerics.Vector%601.Count%2A?displayProperty=nameWithType> elements.  
   
  ]]></format>
         </remarks>
@@ -993,7 +1007,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netcore-2.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1080,7 +1094,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netcore-2.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1126,7 +1140,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netcore-2.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1172,7 +1186,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netcore-2.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1264,8 +1278,8 @@
       <Docs>
         <param name="left">The first vector.</param>
         <param name="right">The second vector.</param>
-        <summary>Multiplies two vectors together.</summary>
-        <returns>The product vector.</returns>
+        <summary>Returns a new vector whose values are the product of each pair of elements in two specified vectors.</summary>
+        <returns>The element-wise product vector.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1350,7 +1364,7 @@
       <Docs>
         <param name="factor">The scalar value.</param>
         <param name="value">The source vector.</param>
-        <summary>Multiplies a vector by the given scalar.</summary>
+        <summary>Multiplies a vector by a specified scalar value.</summary>
         <returns>The scaled vector.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

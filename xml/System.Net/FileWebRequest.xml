@@ -29,6 +29,11 @@
       <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName>System.Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Provides a file system implementation of the <see cref="T:System.Net.WebRequest" /> class.</summary>
     <remarks>
@@ -83,7 +88,7 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
           <AttributeName>System.Obsolete("Serialization is obsoleted for this type. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
         </Attribute>
       </Attributes>
@@ -103,6 +108,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName="Abort">
@@ -205,6 +211,7 @@
         <exception cref="T:System.Net.WebException">The <see cref="T:System.Net.FileWebRequest" /> was aborted.</exception>
         <altmember cref="M:System.Net.FileWebRequest.GetRequestStream" />
         <altmember cref="M:System.Net.FileWebRequest.EndGetRequestStream(System.IAsyncResult)" />
+        <related type="Article" href="~/docs/framework/network-programming/making-asynchronous-requests.md">Making Asynchronous Requests</related>
       </Docs>
     </Member>
     <Member MemberName="BeginGetResponse">
@@ -264,6 +271,7 @@
         <exception cref="T:System.Net.WebException">The <see cref="T:System.Net.FileWebRequest" /> was aborted.</exception>
         <altmember cref="M:System.Net.FileWebRequest.GetResponse" />
         <altmember cref="M:System.Net.FileWebRequest.EndGetResponse(System.IAsyncResult)" />
+        <related type="Article" href="~/docs/framework/network-programming/making-asynchronous-requests.md">Making Asynchronous Requests</related>
       </Docs>
     </Member>
     <Member MemberName="ConnectionGroupName">
@@ -511,6 +519,7 @@
           <paramref name="asyncResult" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.Net.FileWebRequest.GetRequestStream" />
         <altmember cref="M:System.Net.FileWebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)" />
+        <related type="Article" href="~/docs/framework/network-programming/making-asynchronous-requests.md">Making Asynchronous Requests</related>
       </Docs>
     </Member>
     <Member MemberName="EndGetResponse">
@@ -568,6 +577,7 @@
           <paramref name="asyncResult" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.Net.FileWebRequest.GetResponse" />
         <altmember cref="M:System.Net.FileWebRequest.BeginGetResponse(System.AsyncCallback,System.Object)" />
+        <related type="Article" href="~/docs/framework/network-programming/making-asynchronous-requests.md">Making Asynchronous Requests</related>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">

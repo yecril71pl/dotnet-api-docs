@@ -21,6 +21,9 @@
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.Serialization</AssemblyName>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -31,9 +34,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Serialization.XmlMapping> class is the base class for the <xref:System.Xml.Serialization.XmlTypeMapping> and <xref:System.Xml.Serialization.XmlMembersMapping> classes. It supports built-in and custom XML schema data types, plus SOAP encoding (Section 5 of the SOAP 1.1 specification).  
-  
- <xref:System.Xml.Serialization.XmlMapping> exposes no public or protected members. Use the <xref:System.Xml.Serialization.XmlMapping> class instead of deriving a class directly from <xref:System.Xml.Serialization.XmlMapping>.  
+ `XmlMapping` is the base class for the <xref:System.Xml.Serialization.XmlTypeMapping> and <xref:System.Xml.Serialization.XmlMembersMapping> classes. It supports built-in and custom XML schema data types, plus SOAP encoding (Section 5 of the SOAP 1.1 specification). Use the <xref:System.Xml.Serialization.XmlTypeMapping> or <xref:System.Xml.Serialization.XmlMemberMapping> class instead of deriving a class directly from `XmlMapping`.
   
  ]]></format>
     </remarks>
@@ -64,6 +65,9 @@
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Serialization</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -98,6 +102,9 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Serialization</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -130,6 +137,9 @@
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Serialization</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -171,6 +181,9 @@
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Serialization</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

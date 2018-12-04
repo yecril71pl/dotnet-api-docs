@@ -15,22 +15,22 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.ComponentModel.Designer(typeof(System.Workflow.Activities.StateDesigner), typeof(System.ComponentModel.Design.IDesigner))</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.ComponentModel.ToolboxItem(typeof(System.Workflow.ComponentModel.Design.ActivityToolboxItem))</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.Drawing.ToolboxBitmap(typeof(System.Workflow.Activities.StateActivity), "Resources.StateActivity.png")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.Workflow.ComponentModel.Compiler.ActivityValidator(typeof(System.Workflow.Activities.StateActivityValidator))</AttributeName>
     </Attribute>
   </Attributes>
@@ -55,13 +55,14 @@
    
   
 ## Examples  
- The following code example shows how to create a new instance of the <xref:System.Workflow.Activities.StateActivity> class and use it implement a simple state machine to transition between 3 states. This code example is part of the SimpleStateMachineWorkflow SDK sample from the StateMachineWorkflow.cs file. For more information, see [Simple State Machine](http://msdn.microsoft.com/library/1974edbd-253d-4e01-9095-38ff9c3e749e).  
+ The following code example shows how to create a new instance of the <xref:System.Workflow.Activities.StateActivity> class and use it implement a simple state machine to transition between 3 states. This code example is part of the SimpleStateMachineWorkflow SDK sample from the StateMachineWorkflow.cs file. For more information, see [Simple State Machine](https://msdn.microsoft.com/library/1974edbd-253d-4e01-9095-38ff9c3e749e).  
   
  [!code-csharp[wf_samples#181](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#181)]
  [!code-vb[wf_samples#181](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#181)]  
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735957(v=vs.90)">Using the State Activity</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -71,6 +72,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.StateActivity" /> class.</summary>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735957(v=vs.90)">Using the State Activity</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -92,13 +94,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows how to create a new instance of the <xref:System.Workflow.Activities.StateActivity> class.  This code example is part of the SimpleStateMachineWorkflow SDK Sample from the StateMachineWorkflow.cs file. For more information, see [Simple State Machine](http://msdn.microsoft.com/library/1974edbd-253d-4e01-9095-38ff9c3e749e).  
+ The following code example shows how to create a new instance of the <xref:System.Workflow.Activities.StateActivity> class.  This code example is part of the SimpleStateMachineWorkflow SDK Sample from the StateMachineWorkflow.cs file. For more information, see [Simple State Machine](https://msdn.microsoft.com/library/1974edbd-253d-4e01-9095-38ff9c3e749e).  
   
  [!code-csharp[WF_Samples#188](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#188)]
  [!code-vb[WF_Samples#188](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#188)]  
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735957(v=vs.90)">Using the State Activity</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -121,6 +124,7 @@
         <param name="name">The user-defined name of the activity.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.StateActivity" /> class using the name of the activity.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735957(v=vs.90)">Using the State Activity</related>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -147,6 +151,7 @@
         <summary>Cancels the execution of the <see cref="T:System.Workflow.Activities.StateActivity" />.</summary>
         <returns>The current status of the <see cref="T:System.Workflow.ComponentModel.Activity" /> in the running workflow instance.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735957(v=vs.90)">Using the State Activity</related>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -173,6 +178,7 @@
         <summary>Executes the <see cref="T:System.Workflow.Activities.StateActivity" />.</summary>
         <returns>The current status of the <see cref="T:System.Workflow.ComponentModel.Activity" /> in the running workflow instance.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735957(v=vs.90)">Using the State Activity</related>
       </Docs>
     </Member>
     <Member MemberName="GetDynamicActivity">
@@ -200,6 +206,7 @@
         <returns>The dynamic child activities.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The executable activities do not contain the <paramref name="childActivityName" />.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735957(v=vs.90)">Using the State Activity</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -225,6 +232,7 @@
         <param name="provider">The service provider from which to obtain services.</param>
         <summary>Initializes the <see cref="T:System.Workflow.Activities.StateActivity" /> using the service provider.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735957(v=vs.90)">Using the State Activity</related>
       </Docs>
     </Member>
     <Member MemberName="OnActivityChangeAdd">
@@ -259,6 +267,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735957(v=vs.90)">Using the State Activity</related>
       </Docs>
     </Member>
     <Member MemberName="OnClosed">
@@ -305,6 +314,7 @@
       <Docs>
         <summary>Holds the string value of the change tracking data key; "StateActivity.StateChange". This field is a constant.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735957(v=vs.90)">Using the State Activity</related>
       </Docs>
     </Member>
   </Members>

@@ -13,6 +13,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Security.Permissions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Security.CodeAccessPermission</BaseTypeName>
@@ -22,6 +23,11 @@
       <InterfaceName>System.Security.Permissions.IUnrestrictedPermission</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+      <AttributeName>System.Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Specifies the values that define or are used in <see cref="N:System.Net.PeerToPeer.Collaboration" /> object permissions.</summary>
     <remarks>
@@ -55,6 +61,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
@@ -92,6 +99,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.IPermission</ReturnType>
@@ -127,6 +135,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -173,6 +182,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.IPermission</ReturnType>
@@ -222,6 +232,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -248,7 +259,7 @@
   
 -   If X.IsSubsetOf(Y) and Y.IsSubsetOf(Z) both return `true`, X.IsSubsetOf(Z) returns `true`.  
   
- If X represents an empty [IPermission](http://go.microsoft.com/fwlink?LinkID=98303) object with a permission state of None and Y represents an IPermission object that is a `null` reference (`Nothing` in Visual Basic), X.IsSubsetOf(Y) returns `true`. If Z is also an empty permission, the compound set operation X.Union(Z).IsSubsetOf(Y) also returns `true` because the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.Union%2A> of two empty permissions is an empty permission.  
+ If X represents an empty [IPermission](https://go.microsoft.com/fwlink?LinkID=98303) object with a permission state of None and Y represents an IPermission object that is a `null` reference (`Nothing` in Visual Basic), X.IsSubsetOf(Y) returns `true`. If Z is also an empty permission, the compound set operation X.Union(Z).IsSubsetOf(Y) also returns `true` because the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.Union%2A> of two empty permissions is an empty permission.  
   
  ]]></format>
         </remarks>
@@ -274,6 +285,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -312,6 +324,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.SecurityElement</ReturnType>
@@ -348,6 +361,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.IPermission</ReturnType>

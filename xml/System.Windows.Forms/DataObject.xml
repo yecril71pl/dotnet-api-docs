@@ -23,7 +23,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
@@ -51,7 +51,7 @@
  In [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the <xref:System.Windows.Forms.DataObject> class provides additional methods that make it easier to work with data in common formats. To add data of a particular format to the <xref:System.Windows.Forms.DataObject>, use the appropriate `Set`*Format* method, such as <xref:System.Windows.Forms.DataObject.SetText%2A>. To retrieve data of a particular format from the <xref:System.Windows.Forms.DataObject>, first call the appropriate `Contains`*Format* method (such as <xref:System.Windows.Forms.DataObject.ContainsText%2A>) to determine whether the <xref:System.Windows.Forms.DataObject> contains data in that format, then call the appropriate `Get`*Format* method (such as <xref:System.Windows.Forms.DataObject.GetText%2A>) to retrieve the data if the <xref:System.Windows.Forms.DataObject> contains it.  
   
 > [!NOTE]
->  Special considerations may be necessary when using the metafile format with the Clipboard. Due to a limitation in the current implementation of the <xref:System.Windows.Forms.DataObject> class, the metafile format used by the .NET Framework may not be recognized by applications that use an older metafile format. In this case, you must interoperate with the Win32 Clipboard application programming interfaces (APIs). For more information, see article 323530, "Metafiles on Clipboard Are Not Visible to All Applications," in the Microsoft Knowledge Base at http://support.microsoft.com.  
+>  Special considerations may be necessary when using the metafile format with the Clipboard. Due to a limitation in the current implementation of the <xref:System.Windows.Forms.DataObject> class, the metafile format used by the .NET Framework may not be recognized by applications that use an older metafile format. In this case, you must interoperate with the Win32 Clipboard application programming interfaces (APIs).
 >   
 >  An object must be serializable for it to be put on the Clipboard. See <xref:System.Runtime.Serialization> for more information on serialization. If your target application requires a very specific data format, the headers added to the data in the serialization process may prevent the application from recognizing your data. To preserve your data format, add your data as a <xref:System.Byte> array to a <xref:System.IO.MemoryStream> and pass the <xref:System.IO.MemoryStream> to the <xref:System.Windows.Forms.DataObject.SetData%2A> method.  
   
@@ -160,6 +160,7 @@
         <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
         <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
         <altmember cref="M:System.Windows.Forms.DataObject.GetDataPresent(System.Type)" />
+        <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkID=150123">IDataObject</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -1252,6 +1253,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+
  If you do not know the format of the target application, you can store data in multiple formats using this method. Data stored using this method can be converted to a compatible format when it is retrieved.  
   
  The <xref:System.Windows.Forms.DataObject.SetData%28System.Object%29> overload stores the `data` value in a format that it determines by calling the <xref:System.Object.GetType%2A?displayProperty=nameWithType> method. If `data` implements the <xref:System.Runtime.Serialization.ISerializable> interface, this overload also stores the value in the <xref:System.Windows.DataFormats.Serializable> format.  
@@ -1307,6 +1311,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+
  If you do not know the format of the target application, you can store data in multiple formats using this method.  
   
  Data stored using this method can be converted to a compatible format when it is retrieved.  
@@ -1364,6 +1371,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+
  If you do not know the format of the target application, you can store data in multiple formats using this method.  
   
  Data stored using this method can be converted to a compatible format when it is retrieved.  
@@ -1423,6 +1433,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-method-note](~/includes/untrusted-data-method-note.md)]
+
  If you do not know the format of the target application, you can store data in multiple formats using this method.  
   
    
@@ -1735,7 +1748,7 @@
         <Parameter Name="enumAdvise" Type="System.Runtime.InteropServices.ComTypes.IEnumSTATDATA" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="enumAdvise">When this method returns, contains an <see cref="T:System.Runtime.InteropServices.ComTypes.IEnumSTATDATA" /> that receives the interface pointer to the new enumerator object. If the implementation sets <c>enumAdvise</c> to <see langword="null" />, there are no connections to advisory sinks at this time. This parameter is passed uninitialized.</param>
+        <param name="enumAdvise">When this method returns, contains an <see cref="T:System.Runtime.InteropServices.ComTypes.IEnumSTATDATA" /> that receives the interface pointer to the new enumerator object. If the implementation sets <paramref name="enumAdvise" /> to <see langword="null" />, there are no connections to advisory sinks at this time. This parameter is passed uninitialized.</param>
         <summary>Creates an object that can be used to enumerate the current advisory connections.</summary>
         <returns>This method supports the standard return value E_OUTOFMEMORY, as well as the following:  
   

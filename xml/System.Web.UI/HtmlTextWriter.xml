@@ -314,7 +314,7 @@ alert('Hello');
   
  Use the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%28System.String%2CSystem.String%2CSystem.Boolean%29> method with `fEncode` set to `true`, if the attribute can possibly contain a quotation mark ("), a less than sign (<), or an ampersand (&). The method call will encode the attribute to meet the requirements of the requesting device. You can set `fEncode` to `false`, if you know that none of these characters will be generated, or if you know that the attribute is already encoded.  
  
-If the attribute type is `Style`, the value won’t be encoded even if `fEndode` is `true`. Ensure that the style value is CSS-compliant and doesn’t contain malicious code.
+If the attribute type is `Style`, the value won't be encoded even if `fEndode` is `true`. Ensure that the style value is CSS-compliant and doesn't contain malicious code.
   
  The coding pattern for rendering markup elements is as follows:  
   
@@ -427,7 +427,7 @@ If the attribute type is `Style`, the value won’t be encoded even if `fEndode`
   
  Use the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%28System.Web.UI.HtmlTextWriterAttribute%2CSystem.String%2CSystem.Boolean%29> method with `fEncode` set to `true`, if the attribute can possibly contain a quotation mark ("), a less than sign (<), or an ampersand (&). The method call will encode the attribute to meet the requirements of the requesting device. You can set `fEncode` to `false`, if you know that none of these characters will be generated, or if you know that the attribute is already encoded.  
  
- If the attribute type is `Style`, the value won’t be encoded even if `fEncode` is `true`. Ensure that the style value is CSS-compliant and doesn’t contain malicious code.
+ If the attribute type is `Style`, the value won't be encoded even if `fEncode` is `true`. Ensure that the style value is CSS-compliant and doesn't contain malicious code.
 
   
  The coding pattern for rendering markup elements is as follows:  
@@ -1124,7 +1124,7 @@ If the attribute type is `Style`, the value won’t be encoded even if `fEndode`
       </Parameters>
       <Docs>
         <param name="style">A <see cref="T:System.Web.UI.WebControls.Style" /> that specifies the layout and formatting to begin applying to the block of markup.</param>
-        <param name="tag">An <see cref="T:System.Web.UI.HtmlTextWriterTag" /> that specifies the opening tag of the markup element that will contain the style object specified in <c>style</c>.</param>
+        <param name="tag">An <see cref="T:System.Web.UI.HtmlTextWriterTag" /> that specifies the opening tag of the markup element that will contain the style object specified in <paramref name="style" />.</param>
         <summary>Writes the opening tag of a markup element that contains attributes that implement the layout and character formatting of the specified style.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4880,7 +4880,7 @@ If the attribute type is `Style`, the value won’t be encoded even if `fEndode`
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>

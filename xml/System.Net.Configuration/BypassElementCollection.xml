@@ -18,7 +18,7 @@
     <Attribute FrameworkAlternate="xamarinmac-3.0">
       <AttributeName>System.Configuration.ConfigurationCollection(typeof(System.Net.Configuration.BypassElement), CollectionType=System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMap)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.Configuration.ConfigurationCollection(typeof(System.Net.Configuration.BypassElement))</AttributeName>
     </Attribute>
   </Attributes>
@@ -32,6 +32,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,6 +56,7 @@
       <Docs>
         <summary>Initializes an empty instance of the <see cref="T:System.Net.Configuration.BypassElementCollection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -80,6 +82,7 @@
         <param name="element">The <see cref="T:System.Net.Configuration.BypassElement" /> to add to the collection.</param>
         <summary>Adds an element to the collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -250,6 +253,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Net.IAuthenticationModule" />
         <altmember cref="T:System.Net.AuthenticationManager" />
+        <related type="Article" href="~/docs/framework/configure-apps/file-schema/network/index.md">Network Settings Schema</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Remove">

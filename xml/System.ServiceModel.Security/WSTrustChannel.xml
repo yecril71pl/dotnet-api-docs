@@ -17,12 +17,26 @@
       <InterfaceName>System.ServiceModel.Channels.IChannel</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>System.ServiceModel.ICommunicationObject</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.ServiceModel.Security.IWSTrustChannelContract</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Security.IWSTrustContract</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
     <summary>Represents a channel that is used to send WS-Trust messages to a security token service (STS).</summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+
+[!INCLUDE [untrusted-data-class-note](~/includes/untrusted-data-class-note.md)]
+
+]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -836,7 +850,7 @@
       <MemberSignature Language="F#" Value="abstract member EndCancel : IAsyncResult *  -&gt; unit&#xA;override this.EndCancel : IAsyncResult *  -&gt; unit" Usage="wSTrustChannel.EndCancel (result, rstr)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.EndCancel(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse)</InterfaceMember>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.EndCancel(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -929,7 +943,7 @@
       <MemberSignature Language="F#" Value="abstract member EndIssue : IAsyncResult *  -&gt; System.IdentityModel.Tokens.SecurityToken&#xA;override this.EndIssue : IAsyncResult *  -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="wSTrustChannel.EndIssue (result, rstr)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.EndIssue(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse)</InterfaceMember>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.EndIssue(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1023,7 +1037,7 @@
       <MemberSignature Language="F#" Value="abstract member EndRenew : IAsyncResult *  -&gt; unit&#xA;override this.EndRenew : IAsyncResult *  -&gt; unit" Usage="wSTrustChannel.EndRenew (result, rstr)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.EndRenew(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse)</InterfaceMember>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.EndRenew(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1089,7 +1103,7 @@
       <MemberSignature Language="F#" Value="abstract member EndValidate : IAsyncResult *  -&gt; unit&#xA;override this.EndValidate : IAsyncResult *  -&gt; unit" Usage="wSTrustChannel.EndValidate (result, rstr)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.EndValidate(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse)</InterfaceMember>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.EndValidate(System.IAsyncResult,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -1293,7 +1307,7 @@
       <MemberSignature Language="F#" Value="abstract member Issue : System.IdentityModel.Protocols.WSTrust.RequestSecurityToken *  -&gt; System.IdentityModel.Tokens.SecurityToken&#xA;override this.Issue : System.IdentityModel.Protocols.WSTrust.RequestSecurityToken *  -&gt; System.IdentityModel.Tokens.SecurityToken" Usage="wSTrustChannel.Issue (rst, rstr)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.Issue(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse)</InterfaceMember>
+        <InterfaceMember>M:System.ServiceModel.Security.IWSTrustChannelContract.Issue(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

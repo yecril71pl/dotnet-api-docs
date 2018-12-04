@@ -21,7 +21,7 @@
   
  Provides methods for creating an array that is immutable; meaning it cannot be changed once it is created.  
   
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)</summary>
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)</summary>
     <remarks>To be added.</remarks>
     <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
@@ -57,7 +57,7 @@
         <param name="value">The object to search for.</param>
         <summary>  
   
- Searches the sorted immutable array for a specified element using the default comparer and returns the zero-based index of the element, if it’s found.</summary>
+ Searches the sorted immutable array for a specified element using the default comparer and returns the zero-based index of the element, if it's found.</summary>
         <returns>The zero-based index of the item in the array, if item is found; otherwise, a negative number that is the bitwise complement of the index of the next element that is larger than <paramref name="value" /> or, if there is no larger element, the bitwise complement of <see cref="P:System.Collections.Generic.ICollection`1.Count" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">
@@ -97,7 +97,7 @@
         <param name="comparer">The comparer implementation to use when comparing elements, or null to use the default comparer.</param>
         <summary>  
   
- Searches a sorted immutable array for a specified element and returns the zero-based index of the element, if it’s found.</summary>
+ Searches a sorted immutable array for a specified element and returns the zero-based index of the element, if it's found.</summary>
         <returns>The zero-based index of the item in the array, if item is found; otherwise, a negative number that is the bitwise complement of the index of the next element that is larger than <paramref name="value" /> or, if there is no larger element, the bitwise complement of <see cref="P:System.Collections.Generic.ICollection`1.Count" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">
@@ -139,7 +139,7 @@
         <param name="value">The object to search for.</param>
         <summary>  
   
- Searches a sorted immutable array for a specified element and returns the zero-based index of the element, if it’s found.</summary>
+ Searches a sorted immutable array for a specified element and returns the zero-based index of the element, if it's found.</summary>
         <returns>The zero-based index of the item in the array, if item is found; otherwise, a negative number that is the bitwise complement of the index of the next element that is larger than <paramref name="value" /> or, if there is no larger element, the bitwise complement of <see cref="P:System.Collections.Generic.ICollection`1.Count" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">
@@ -360,8 +360,8 @@
       <Docs>
         <typeparam name="T">The type of elements stored in the array.</typeparam>
         <param name="items">The source array of objects.</param>
-        <param name="start">The index of the first element to copy from <c>items</c>.</param>
-        <param name="length">The number of elements from <c>items</c> to include in this immutable array.</param>
+        <param name="start">The index of the first element to copy from <paramref name="items" />.</param>
+        <param name="length">The number of elements from <paramref name="items" /> to include in this immutable array.</param>
         <summary>  
   
  Creates an immutable array with the specified objects from another immutable array.</summary>
@@ -436,8 +436,8 @@
       <Docs>
         <typeparam name="T">The type of elements stored in the array.</typeparam>
         <param name="items">The source array of objects.</param>
-        <param name="start">The index of the first element to copy from <c>items</c>.</param>
-        <param name="length">The number of elements from <c>items</c> to include in this immutable array.</param>
+        <param name="start">The index of the first element to copy from <paramref name="items" />.</param>
+        <param name="length">The number of elements from <paramref name="items" /> to include in this immutable array.</param>
         <summary>  
   
  Creates an immutable array with specified objects from another array.</summary>
@@ -797,7 +797,7 @@
         <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;TSource&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">The type of elements contained in <c>items</c>.</typeparam>
+        <typeparam name="TSource">The type of elements contained in <paramref name="items" />.</typeparam>
         <param name="items">The collection of objects to copy to the immutable array.</param>
         <summary>  
   

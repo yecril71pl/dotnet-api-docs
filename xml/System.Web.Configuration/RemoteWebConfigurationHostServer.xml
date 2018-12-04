@@ -19,16 +19,16 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.Runtime.InteropServices.Guid("9FDB6D2C-90EA-4e42-99E6-38B96E28698E")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.Runtime.InteropServices.ProgId("System.Web.Configuration.RemoteWebConfigurationHostServerV4_32")</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
@@ -126,7 +126,7 @@
       <MemberSignature Language="F#" Value="abstract member GetData : string * bool *  -&gt; byte[]&#xA;override this.GetData : string * bool *  -&gt; byte[]" Usage="remoteWebConfigurationHostServer.GetData (fileName, getReadTimeOnly, readTime)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.Configuration.IRemoteWebConfigurationHostServer.GetData(System.String,System.Boolean,System.Int64)</InterfaceMember>
+        <InterfaceMember>M:System.Web.Configuration.IRemoteWebConfigurationHostServer.GetData(System.String,System.Boolean,System.Int64@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -143,7 +143,7 @@
       </Parameters>
       <Docs>
         <param name="fileName">The path to the remote configuration file to be accessed.</param>
-        <param name="getReadTimeOnly">A Boolean value that specifies whether only the <c>readTime</c> is returned.</param>
+        <param name="getReadTimeOnly">A Boolean value that specifies whether only the <paramref name="readTime" /> is returned.</param>
         <param name="readTime">The time when the file was last accessed.</param>
         <summary>Used internally to support remote access to configuration data.</summary>
         <returns>An <see langword="array" /> of 8-bit unsigned integers (bytes) that contains the configuration data.</returns>
@@ -163,7 +163,7 @@
       <MemberSignature Language="F#" Value="abstract member GetFileDetails : string *  *  *  *  -&gt; unit&#xA;override this.GetFileDetails : string *  *  *  *  -&gt; unit" Usage="remoteWebConfigurationHostServer.GetFileDetails (name, exists, size, createDate, lastWriteDate)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.Configuration.IRemoteWebConfigurationHostServer.GetFileDetails(System.String,System.Boolean,System.Int64,System.Int64,System.Int64)</InterfaceMember>
+        <InterfaceMember>M:System.Web.Configuration.IRemoteWebConfigurationHostServer.GetFileDetails(System.String,System.Boolean@,System.Int64@,System.Int64@,System.Int64@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -241,7 +241,7 @@
       <MemberSignature Language="F#" Value="abstract member WriteData : string * string * byte[] *  -&gt; unit&#xA;override this.WriteData : string * string * byte[] *  -&gt; unit" Usage="remoteWebConfigurationHostServer.WriteData (fileName, templateFileName, data, readTime)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.Configuration.IRemoteWebConfigurationHostServer.WriteData(System.String,System.String,System.Byte[],System.Int64)</InterfaceMember>
+        <InterfaceMember>M:System.Web.Configuration.IRemoteWebConfigurationHostServer.WriteData(System.String,System.String,System.Byte[],System.Int64@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

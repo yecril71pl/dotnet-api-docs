@@ -31,6 +31,15 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IList</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.ComponentModel.IBindingList</InterfaceName>
     </Interface>
     <Interface>
@@ -40,6 +49,11 @@
       <InterfaceName>System.ComponentModel.IRaiseItemChangedEvents</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName>System.Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <typeparam name="T">The type of elements in the list.</typeparam>
     <summary>Provides a generic collection that supports data binding.</summary>
@@ -213,7 +227,7 @@
 ## Remarks  
  The <xref:System.ComponentModel.BindingList%601.AddingNew> event occurs before a new object is added to the collection represented by the <xref:System.Collections.ObjectModel.Collection%601.Items%2A> property. This event is raised after the <xref:System.ComponentModel.BindingList%601.AddNew%2A> method is called, but before the new item is created and added to the internal list. By handling this event, the programmer can provide custom item creation and insertion behavior without being forced to derive from the <xref:System.ComponentModel.BindingList%601> class.  
   
- For more information about supplying custom new item functionality, see the <xref:System.ComponentModel.BindingList%601.AddNew%2A> method. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about supplying custom new item functionality, see the <xref:System.ComponentModel.BindingList%601.AddNew%2A> method. For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -923,7 +937,7 @@
 ## Remarks  
  <xref:System.ComponentModel.BindingList%601.ListChanged> notifications for item value changes are only raised if the list item type implements the <xref:System.ComponentModel.INotifyPropertyChanged> interface.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   

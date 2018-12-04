@@ -25,6 +25,9 @@
       <InterfaceName>System.ServiceModel.Channels.IChannel</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>System.ServiceModel.ICommunicationObject</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.ServiceModel.IDefaultCommunicationTimeouts</InterfaceName>
     </Interface>
   </Interfaces>
@@ -34,6 +37,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-class-note](~/includes/untrusted-data-class-note.md)]
+
  The <xref:System.ServiceModel.Channels.ChannelBase> class provides an abstract base class implementation of the <xref:System.ServiceModel.Channels.IChannel> interface. It also requires that each channel be associated with a channel manager. Note that the only constructor available for creating instances of <xref:System.ServiceModel.Channels.ChannelBase> requires a `channelManager` input parameter.  
   
  State changes are managed by inheriting from the <xref:System.ServiceModel.Channels.CommunicationObject> implementation of the state machine.  

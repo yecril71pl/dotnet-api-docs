@@ -19,6 +19,7 @@
     <summary>Represents an XML element that specifies a binding used to communicate with WS-I Basic Profile 1.1-conformant Web Services like ASMX-based services or to accept messages from ASMX-based clients.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="T:System.ServiceModel.BasicHttpBinding" />
+    <related type="Article" href="https://msdn.microsoft.com/library/85cf1a4f-26c2-48c7-bda6-6c960d5d3fb3">BasicHttpBinding in Configuration</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -103,7 +104,8 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a Boolean value that specifies whether the client accepts cookies and propagates them on future requests. </summary>
-        <value><see langword="true" /> if the client accepts cookies and propagates them on future requests; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <value>
+          <see langword="true" /> if the client accepts cookies and propagates them on future requests; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -303,7 +305,7 @@ In this way, you can be sure that the cookies returned from the server are autom
       <Docs>
         <summary>Gets or sets the maximum size, in bytes, for a message that can be received.</summary>
         <value>The maximum size, in bytes, for a message that can be received by the binding. The default value is 65,536 bytes. </value>
-                <remarks>
+        <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
@@ -331,7 +333,7 @@ The receiver drops the message and creates an entry of the event in the trace lo
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.Configuration.ConfigurationProperty("messageEncoding", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -441,7 +443,7 @@ The receiver drops the message and creates an entry of the event in the trace lo
       <Docs>
         <summary>Gets or sets constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding.</summary>
         <value>The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> that specifies the complexity constraints.</value>
-                <remarks>
+        <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
@@ -467,7 +469,7 @@ The constraints protect against a class of denial of service (DOS) attacks that 
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.Configuration.ConfigurationProperty("security")</AttributeName>
         </Attribute>
       </Attributes>
@@ -560,7 +562,8 @@ The constraints protect against a class of denial of service (DOS) attacks that 
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates whether the auto-configured HTTP proxy of the system should be used, if available.</summary>
-        <value><see langword="true" /> if the auto-configured HTTP proxy of the system should be used, if available; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <value>
+          <see langword="true" /> if the auto-configured HTTP proxy of the system should be used, if available; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

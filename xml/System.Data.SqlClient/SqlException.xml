@@ -9,6 +9,8 @@
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.4.0.0</AssemblyVersion>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
@@ -26,6 +28,11 @@
     <BaseTypeName FrameworkAlternate="netframework-1.1">System.SystemException</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName>System.Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>The exception that is thrown when SQL Server returns a warning or error. This class cannot be inherited.</summary>
     <remarks>
@@ -96,6 +103,7 @@ catch (Exception ex) {
     </remarks>
     <altmember cref="T:System.Data.SqlClient.SqlError" />
     <altmember cref="T:System.Data.SqlClient.SqlErrorCollection" />
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <Member MemberName="Class">
@@ -110,6 +118,8 @@ catch (Exception ex) {
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -156,6 +166,7 @@ catch (Exception ex) {
         <altmember cref="P:System.Data.SqlClient.SqlException.Server" />
         <altmember cref="P:System.Data.SqlClient.SqlException.Procedure" />
         <altmember cref="P:System.Data.SqlClient.SqlException.LineNumber" />
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ClientConnectionId">
@@ -170,6 +181,8 @@ catch (Exception ex) {
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -184,7 +197,7 @@ catch (Exception ex) {
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the client connection ID. For more information, see [Data Tracing in ADO.NET](~/docs/framework/data/adonet/data-tracing.md).</summary>
+        <summary>Represents the client connection ID. For more information, see <see href="https://docs.microsoft.com/dotnet/framework/data/adonet/data-tracing">Data Tracing in ADO.NET</see>.</summary>
         <value>Returns the client connection ID.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -208,6 +221,8 @@ catch (Exception ex) {
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -221,7 +236,7 @@ catch (Exception ex) {
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8">
@@ -254,6 +269,7 @@ catch (Exception ex) {
         </remarks>
         <altmember cref="T:System.Data.SqlClient.SqlErrorCollection" />
         <altmember cref="T:System.Data.SqlClient.SqlError" />
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -274,6 +290,8 @@ catch (Exception ex) {
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -295,6 +313,7 @@ catch (Exception ex) {
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="si" /> parameter is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LineNumber">
@@ -309,6 +328,8 @@ catch (Exception ex) {
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -351,6 +372,7 @@ catch (Exception ex) {
         <altmember cref="P:System.Data.SqlClient.SqlException.Class" />
         <altmember cref="P:System.Data.SqlClient.SqlException.Server" />
         <altmember cref="P:System.Data.SqlClient.SqlException.Procedure" />
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -366,6 +388,9 @@ catch (Exception ex) {
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -388,6 +413,8 @@ catch (Exception ex) {
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -428,6 +455,7 @@ catch (Exception ex) {
         <altmember cref="P:System.Data.SqlClient.SqlException.Server" />
         <altmember cref="P:System.Data.SqlClient.SqlException.Procedure" />
         <altmember cref="P:System.Data.SqlClient.SqlException.LineNumber" />
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Procedure">
@@ -442,6 +470,8 @@ catch (Exception ex) {
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -482,6 +512,7 @@ catch (Exception ex) {
         <altmember cref="P:System.Data.SqlClient.SqlException.Server" />
         <altmember cref="P:System.Data.SqlClient.SqlException.Source" />
         <altmember cref="P:System.Data.SqlClient.SqlException.LineNumber" />
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Server">
@@ -496,6 +527,8 @@ catch (Exception ex) {
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -536,6 +569,7 @@ catch (Exception ex) {
         <altmember cref="P:System.Data.SqlClient.SqlException.Class" />
         <altmember cref="P:System.Data.SqlClient.SqlException.Procedure" />
         <altmember cref="P:System.Data.SqlClient.SqlException.LineNumber" />
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -550,6 +584,8 @@ catch (Exception ex) {
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -590,6 +626,7 @@ catch (Exception ex) {
         <altmember cref="P:System.Data.SqlClient.SqlException.Server" />
         <altmember cref="P:System.Data.SqlClient.SqlException.Procedure" />
         <altmember cref="P:System.Data.SqlClient.SqlException.LineNumber" />
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -604,6 +641,8 @@ catch (Exception ex) {
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -644,6 +683,7 @@ catch (Exception ex) {
         <altmember cref="P:System.Data.SqlClient.SqlException.Server" />
         <altmember cref="P:System.Data.SqlClient.SqlException.Procedure" />
         <altmember cref="P:System.Data.SqlClient.SqlException.LineNumber" />
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -658,6 +698,8 @@ catch (Exception ex) {
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.4.0.0</AssemblyVersion>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

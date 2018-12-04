@@ -20,13 +20,13 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.Web.UI.MobileControls.PersistName("Item")</AttributeName>
     </Attribute>
   </Attributes>
@@ -36,7 +36,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although the class name is <xref:System.Web.UI.MobileControls.MobileListItem>, the element name is `Item`. On a mobile page, you declare an item by using the [\<Item>](http://msdn.microsoft.com/library/7152e195-e1d6-4a91-9dba-e0536a676e79)element.  
+ Although the class name is <xref:System.Web.UI.MobileControls.MobileListItem>, the element name is `Item`. On a mobile page, you declare an item by using the [\<Item>](https://msdn.microsoft.com/library/7152e195-e1d6-4a91-9dba-e0536a676e79) element.  
   
    
   
@@ -50,6 +50,8 @@
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="T:System.Web.UI.MobileControls.List" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -60,6 +62,8 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.MobileListItem" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -87,6 +91,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -118,6 +124,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -149,6 +157,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -182,6 +192,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -217,6 +229,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="DataItem">
@@ -234,7 +248,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
@@ -249,6 +263,8 @@
         <value>The object to which the <see cref="T:System.Web.UI.MobileControls.MobileListItem" /> is bound.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -305,6 +321,8 @@
         <returns>A <see cref="T:System.Web.UI.MobileControls.MobileListItem" /> with an initialized <see cref="P:System.Web.UI.MobileControls.MobileListItem.Text" /> property.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -346,7 +364,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
@@ -362,6 +380,8 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.List" />
         <altmember cref="T:System.Web.UI.MobileControls.MobileListItemCollection" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="IsTrackingViewState">
@@ -386,6 +406,8 @@
           <see langword="true" /> if the list item is tracking changes to its view state; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -412,6 +434,8 @@
         <summary>Loads the current view state into the list item control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -485,6 +509,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -509,6 +535,8 @@
         <returns>An <see cref="T:System.Object" /> that contains the newly saved view state.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -526,7 +554,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -539,6 +567,8 @@
           <see langword="true" /> if the item is selected in its parent <see cref="T:System.Web.UI.MobileControls.SelectionList" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.IsTrackingViewState">
@@ -603,6 +633,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.SaveViewState">
@@ -634,6 +666,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IStateManager.TrackViewState">
@@ -664,6 +698,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -681,7 +717,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
       </Attributes>
@@ -702,6 +738,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -749,6 +787,8 @@
         <summary>Sets the <see cref="P:System.Web.UI.MobileControls.MobileListItem.IsTrackingViewState" /> property to <see langword="true" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -766,7 +806,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
       </Attributes>
@@ -785,6 +825,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.List" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k0c98w93(v=vs.85)">Introduction to the List Control</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/t22xkkc9(v=vs.85)">Introduction to the SelectionList Control</related>
       </Docs>
     </Member>
   </Members>

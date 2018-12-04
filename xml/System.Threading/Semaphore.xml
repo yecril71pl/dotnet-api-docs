@@ -27,7 +27,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
       <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
     </Attribute>
   </Attributes>
@@ -63,6 +63,8 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+    <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -102,7 +104,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+        <Attribute FrameworkAlternate="netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -144,6 +146,8 @@
  -or-  
   
  <paramref name="initialCount" /> is less than 0.</exception>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -227,6 +231,8 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code to create a named system semaphore. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.  
   
  Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />.</permission>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -269,7 +275,7 @@
         <param name="initialCount">The initial number of requests for the semaphore that can be satisfied concurrently.</param>
         <param name="maximumCount">The maximum number of requests for the semaphore that can be satisfied concurrently.</param>
         <param name="name">The name of a named system semaphore object.</param>
-        <param name="createdNew">When this method returns, contains <see langword="true" /> if a local semaphore was created (that is, if <c>name</c> is <see langword="null" /> or an empty string) or if the specified named system semaphore was created; <see langword="false" /> if the specified named system semaphore already existed. This parameter is passed uninitialized.</param>
+        <param name="createdNew">When this method returns, contains <see langword="true" /> if a local semaphore was created (that is, if <paramref name="name" /> is <see langword="null" /> or an empty string) or if the specified named system semaphore was created; <see langword="false" /> if the specified named system semaphore already existed. This parameter is passed uninitialized.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Threading.Semaphore" /> class, specifying the initial number of entries and the maximum number of concurrent entries, optionally specifying the name of a system semaphore object, and specifying a variable that receives a value indicating whether a new system semaphore was created.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -314,6 +320,8 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code to create a named system semaphore. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.  
   
  Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />.</permission>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -329,6 +337,12 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="initialCount" Type="System.Int32" />
         <Parameter Name="maximumCount" Type="System.Int32" />
@@ -340,7 +354,7 @@
         <param name="initialCount">The initial number of requests for the semaphore that can be satisfied concurrently.</param>
         <param name="maximumCount">The maximum number of requests for the semaphore that can be satisfied concurrently.</param>
         <param name="name">The name of a named system semaphore object.</param>
-        <param name="createdNew">When this method returns, contains <see langword="true" /> if a local semaphore was created (that is, if <c>name</c> is <see langword="null" /> or an empty string) or if the specified named system semaphore was created; <see langword="false" /> if the specified named system semaphore already existed. This parameter is passed uninitialized.</param>
+        <param name="createdNew">When this method returns, contains <see langword="true" /> if a local semaphore was created (that is, if <paramref name="name" /> is <see langword="null" /> or an empty string) or if the specified named system semaphore was created; <see langword="false" /> if the specified named system semaphore already existed. This parameter is passed uninitialized.</param>
         <param name="semaphoreSecurity">A <see cref="T:System.Security.AccessControl.SemaphoreSecurity" /> object that represents the access control security to be applied to the named system semaphore.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Threading.Semaphore" /> class, specifying the initial number of entries and the maximum number of concurrent entries, optionally specifying the name of a system semaphore object, specifying a variable that receives a value indicating whether a new system semaphore was created, and specifying security access control for the system semaphore.</summary>
         <remarks>
@@ -393,6 +407,8 @@
         <exception cref="T:System.IO.IOException">A Win32 error occurred.</exception>
         <exception cref="T:System.Threading.WaitHandleCannotBeOpenedException">The named semaphore cannot be created, perhaps because a wait handle of a different type has the same name.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code to create a named system semaphore. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />. Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />.</permission>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
       </Docs>
     </Member>
     <Member MemberName="GetAccessControl">
@@ -408,6 +424,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.SemaphoreSecurity</ReturnType>
@@ -449,6 +471,8 @@
   
  The current <see cref="T:System.Threading.Semaphore" /> object represents a named system semaphore and was not opened with <see cref="F:System.Security.AccessControl.SemaphoreRights.ReadPermissions" /> rights.</exception>
         <exception cref="T:System.NotSupportedException">Not supported for Windows 98 or Windows Millennium Edition.</exception>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="OpenExisting">
@@ -545,6 +569,8 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code to open a named system semaphore. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.  
   
  Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />.</permission>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
       </Docs>
     </Member>
     <Member MemberName="OpenExisting">
@@ -560,6 +586,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Semaphore</ReturnType>
@@ -614,6 +646,8 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code to create a named system semaphore. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.  
   
  Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />.</permission>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Release">
@@ -653,10 +687,10 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
           <AttributeName>System.Runtime.ConstrainedExecution.PrePrepareMethod</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
           <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -700,6 +734,8 @@
  -or-  
   
  The current semaphore represents a named system semaphore, but it was not opened with <see cref="F:System.Security.AccessControl.SemaphoreRights.Modify" />.</exception>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
       </Docs>
     </Member>
     <Member MemberName="Release">
@@ -728,7 +764,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
           <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
         </Attribute>
       </Attributes>
@@ -774,6 +810,8 @@
  -or-  
   
  The current semaphore represents a named system semaphore, but it was not opened with <see cref="F:System.Security.AccessControl.SemaphoreRights.Modify" /> rights.</exception>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
       </Docs>
     </Member>
     <Member MemberName="SetAccessControl">
@@ -788,6 +826,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -831,6 +875,8 @@
   
  The semaphore was not opened with <see cref="F:System.Security.AccessControl.SemaphoreRights.ChangePermissions" /> rights.</exception>
         <exception cref="T:System.NotSupportedException">The current <see cref="T:System.Threading.Semaphore" /> object does not represent a named system semaphore.</exception>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="TryOpenExisting">
@@ -917,6 +963,12 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

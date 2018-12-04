@@ -35,6 +35,9 @@
       <InterfaceName>System.Collections.ICollection</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Collections.Immutable.IImmutableSet&lt;T&gt;</InterfaceName>
     </Interface>
   </Interfaces>
@@ -50,7 +53,7 @@
     <typeparam name="T">The type of elements in the hash set.</typeparam>
     <summary>Represents an immutable, unordered hash set.  
   
- **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#Remarks">about immutable collections and how to install</see>)</summary>
+ **NuGet package**: <see href="https://www.nuget.org/packages/System.Collections.Immutable/">System.Collections.Immutable</see> (<see href="https://docs.microsoft.com/dotnet/api/system.collections.immutable?#remarks">about immutable collections and how to install</see>)</summary>
     <remarks>To be added.</remarks>
     <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
@@ -688,7 +691,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional array that is the destination of the elements copied from the set. The array must have zero-based indexing.</param>
-        <param name="arrayIndex">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="arrayIndex">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the elements of the set to an array, starting at a particular index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1006,7 +1009,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional array that is the destination of the elements copied from the set. The array must have zero-based indexing.</param>
-        <param name="arrayIndex">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="arrayIndex">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the elements of the set to an array, starting at a particular index.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1413,7 +1416,7 @@
       <MemberSignature Language="F#" Value="abstract member TryGetValue : 'T *  -&gt; bool&#xA;override this.TryGetValue : 'T *  -&gt; bool" Usage="immutableHashSet.TryGetValue (equalValue, actualValue)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Collections.Immutable.IImmutableSet`1.TryGetValue(`0,`0)</InterfaceMember>
+        <InterfaceMember>M:System.Collections.Immutable.IImmutableSet`1.TryGetValue(`0,`0@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>

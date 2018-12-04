@@ -25,7 +25,7 @@
   <Base>
     <BaseTypeName>System.IO.Stream</BaseTypeName>
   </Base>
-  <Interfaces />
+  <Interfaces></Interfaces>
   <Docs>
     <summary>Provides the underlying stream of data for network access.</summary>
     <remarks>
@@ -124,6 +124,7 @@
   
  The <paramref name="socket" /> parameter is in a nonblocking state.</exception>
         <altmember cref="M:System.Net.Sockets.NetworkStream.Close(System.Int32)" />
+        <related type="Article" href="~/docs/framework/network-programming/using-streams-on-the-network.md">Using Streams on the Network</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -362,7 +363,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">An array of type <see cref="T:System.Byte" /> that is the location in memory to store data read from the <see cref="T:System.Net.Sockets.NetworkStream" />.</param>
-        <param name="offset">The location in <c>buffer</c> to begin storing the data.</param>
+        <param name="offset">The location in <paramref name="buffer" /> to begin storing the data.</param>
         <param name="size">The number of bytes to read from the <see cref="T:System.Net.Sockets.NetworkStream" />.</param>
         <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that is executed when <see cref="M:System.Net.Sockets.NetworkStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /> completes.</param>
         <param name="state">An object that contains any additional user-defined data.</param>
@@ -459,7 +460,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">An array of type <see cref="T:System.Byte" /> that contains the data to write to the <see cref="T:System.Net.Sockets.NetworkStream" />.</param>
-        <param name="offset">The location in <c>buffer</c> to begin sending the data.</param>
+        <param name="offset">The location in <paramref name="buffer" /> to begin sending the data.</param>
         <param name="size">The number of bytes to write to the <see cref="T:System.Net.Sockets.NetworkStream" />.</param>
         <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that is executed when <see cref="M:System.Net.Sockets.NetworkStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /> completes.</param>
         <param name="state">An object that contains any additional user-defined data.</param>
@@ -722,13 +723,50 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Closes the <see cref="T:System.Net.Sockets.NetworkStream" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+The `Close` method frees both unmanaged and managed resources associated with the <xref:System.Net.Sockets.NetworkStream>. If the <xref:System.Net.Sockets.NetworkStream> owns the underlying <xref:System.Net.Sockets.Socket>, it is closed as well.
+
+If a <xref:System.Net.Sockets.NetworkStream> was associated with a <xref:System.Net.Sockets.TcpClient>, the `Close` method will close the TCP connection, but not dispose of the associated <xref:System.Net.Sockets.TcpClient>.
+
+## Examples  
+The following code example closes the <xref:System.Net.Sockets.NetworkStream>.
+
+```vb
+' Example for closing the NetworkStream.
+' Close the NetworkStream
+myNetworkStream.Close()
+```
+
+```csharp
+// Example for closing the NetworkStream.
+
+// Close the NetworkStream
+myNetworkStream.Close();
+```
+
+```cpp
+// Example for closing the NetworkStream.
+// Close the NetworkStream
+myNetworkStream->Close();
+```
+
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -880,7 +918,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).</para>
         </block>
       </Docs>
     </Member>
@@ -1066,7 +1104,7 @@
 ## Remarks  
  This method overrides <xref:System.Object.Finalize%2A?displayProperty=nameWithType>. Application code should not call this method; an object's <xref:System.Object.Finalize%2A> method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> method.  
   
- For more information about using the Finalize method, see [Finalize Methods and Destructors](http://msdn.microsoft.com/library/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+ For more information about using the Finalize method, see [Finalize Methods and Destructors](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/0s71x931(v%3dvs.100)), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).  
   
  ]]></format>
         </remarks>
@@ -1262,7 +1300,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">An array of type <see cref="T:System.Byte" /> that is the location in memory to store data read from the <see cref="T:System.Net.Sockets.NetworkStream" />.</param>
-        <param name="offset">The location in <c>buffer</c> to begin storing the data to.</param>
+        <param name="offset">The location in <paramref name="buffer" /> to begin storing the data to.</param>
         <param name="size">The number of bytes to read from the <see cref="T:System.Net.Sockets.NetworkStream" />.</param>
         <summary>Reads data from the <see cref="T:System.Net.Sockets.NetworkStream" />.</summary>
         <returns>The number of bytes read from the <see cref="T:System.Net.Sockets.NetworkStream" />, or 0 if the socket is closed.</returns>
@@ -1316,6 +1354,7 @@
         <altmember cref="M:System.Net.Sockets.Socket.Receive(System.Byte[],System.Int32,System.Net.Sockets.SocketFlags)" />
         <altmember cref="P:System.Net.Sockets.NetworkStream.DataAvailable" />
         <altmember cref="P:System.Net.Sockets.NetworkStream.CanRead" />
+        <related type="Article" href="~/docs/framework/network-programming/using-streams-on-the-network.md">Using Streams on the Network</related>
       </Docs>
     </Member>
     <Member MemberName="Readable">
@@ -1393,6 +1432,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
@@ -1614,13 +1659,30 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Releases all resources used by the <see cref="T:System.Net.Sockets.NetworkStream" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+Call `Dispose` when you are finished using the <xref:System.Net.Sockets.NetworkStream>. The `Dispose` method leaves the <xref:System.Net.Sockets.NetworkStream> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Net.Sockets.NetworkStream> so the garbage collector can reclaim the memory that the <xref:System.Net.Sockets.NetworkStream> was occupying. For more information about using the Dispose method, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).
+
+> [!NOTE]
+> Always call `Dispose` before you release your last reference to the <xref:System.Net.Sockets.NetworkStream>. Otherwise, the resources it is using are not freed until the garbage collector calls the <xref:System.Net.Sockets.NetworkStream> object's Finalize method.
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1658,7 +1720,7 @@
       </Parameters>
       <Docs>
         <param name="buffer">An array of type <see cref="T:System.Byte" /> that contains the data to write to the <see cref="T:System.Net.Sockets.NetworkStream" />.</param>
-        <param name="offset">The location in <c>buffer</c> from which to start writing data.</param>
+        <param name="offset">The location in <paramref name="buffer" /> from which to start writing data.</param>
         <param name="size">The number of bytes to write to the <see cref="T:System.Net.Sockets.NetworkStream" />.</param>
         <summary>Writes data to the <see cref="T:System.Net.Sockets.NetworkStream" />.</summary>
         <remarks>
@@ -1783,6 +1845,12 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

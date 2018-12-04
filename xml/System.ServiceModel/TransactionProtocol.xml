@@ -15,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.TransactionProtocolConverter))</AttributeName>
     </Attribute>
   </Attributes>
@@ -30,6 +30,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.ServiceModel.Channels.TransactionFlowBindingElement" />
+    <related type="Article" href="~/docs/framework/wcf/feature-details/enabling-transaction-flow.md">Enabling Transaction Flow</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -83,7 +84,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information on selecting a transaction protocol, see [Enabling Transaction Flow](http://msdn.microsoft.com/library/31a6bc6a-4ef4-45ba-a753-1efa1a19d917).  
+ For more information on selecting a transaction protocol, see [Enabling Transaction Flow](~/docs/framework/wcf/feature-details/enabling-transaction-flow.md).  
   
  ]]></format>
         </remarks>

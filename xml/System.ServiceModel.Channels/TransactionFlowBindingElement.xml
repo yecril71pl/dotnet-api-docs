@@ -24,13 +24,14 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This element allows you to enable or disable incoming transaction flow in an endpoint’s binding settings, as well as to specify the desired protocol format for incoming transactions.  
+ This element allows you to enable or disable incoming transaction flow in an endpoint's binding settings, as well as to specify the desired protocol format for incoming transactions.  
   
 > [!CAUTION]
 >  When using the <xref:System.ServiceModel.TransactionProtocol.OleTransactions%2A> protocol to flow transactions from endpoint to endpoint, the transaction timeout can be lost if the destination endpoint attempts to flow again using any protocol other than <xref:System.ServiceModel.TransactionProtocol.OleTransactions%2A>. This can cause all down-level nodes after the <xref:System.ServiceModel.TransactionProtocol.OleTransactions%2A> hop to timeout later than expected.  
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/wcf/feature-details/enabling-transaction-flow.md">Enabling Transaction Flow</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -87,7 +88,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about choosing the protocol to be used, see [Enabling Transaction Flow](http://msdn.microsoft.com/library/31a6bc6a-4ef4-45ba-a753-1efa1a19d917).  
+ For more information about choosing the protocol to be used, see [Enabling Transaction Flow](~/docs/framework/wcf/feature-details/enabling-transaction-flow.md).  
   
  ]]></format>
         </remarks>
@@ -106,7 +107,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -386,7 +387,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
@@ -460,7 +461,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about choosing the protocol to be used, see [Enabling Transaction Flow](http://msdn.microsoft.com/library/31a6bc6a-4ef4-45ba-a753-1efa1a19d917).  
+ For more information about choosing the protocol to be used, see [Enabling Transaction Flow](~/docs/framework/wcf/feature-details/enabling-transaction-flow.md).  
   
  ]]></format>
         </remarks>

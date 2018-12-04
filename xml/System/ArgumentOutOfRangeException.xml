@@ -28,10 +28,17 @@
   <Base>
     <BaseTypeName>System.ArgumentException</BaseTypeName>
   </Base>
-  <Interfaces />
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName>System.Serializable</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -102,7 +109,7 @@
   
  There are four common causes of this <xref:System.ArgumentOutOfRangeException> exception:  
   
--   You are working with an empty string., or <xref:System.String.Empty?displayProperty=nameWithType>. Because its <xref:System.String.Length%2A?displayProperty=nameWithType> property returns 0, any attempt to manipulate it by index throws an <xref:System.ArgumentOutOfRangeException> exception. The following example, defines a `GetFirstCharacter` method that returns the first character of a string. If the string is empty, as the final string passed to the method is, the method throws an <xref:System.ArgumentOutOfRangeException> exception.  
+-   You are working with an empty string, or <xref:System.String.Empty?displayProperty=nameWithType>. Because its <xref:System.String.Length%2A?displayProperty=nameWithType> property returns 0, any attempt to manipulate it by index throws an <xref:System.ArgumentOutOfRangeException> exception. The following example, defines a `GetFirstCharacter` method that returns the first character of a string. If the string is empty, as the final string passed to the method is, the method throws an <xref:System.ArgumentOutOfRangeException> exception.  
   
      [!code-csharp[System.ArgumentOutOfRangeException#15](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/cs/EmptyString1.cs#15)]
      [!code-vb[System.ArgumentOutOfRangeException#15](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.ArgumentOutOfRangeException/vb/EmptyString1.vb#15)]  
@@ -180,7 +187,7 @@
   
 -   if your app uses an array or collection object, consider using a thread-safe collection class, such as the types in the <xref:System.Collections.Concurrent> namespace or the <xref:System.Collections.Immutable> out-of-band release.  
   
--   Ensure that shared state (that is, resources that can be accessed by multiple threads) is accessed in a thread-safe way, so that only one thread at a time has exclusive access to the resources. A large number of classes, such as <xref:System.Threading.CountdownEvent>, <xref:System.Threading.Interlocked>, <xref:System.Threading.Monitor>, and <xref:System.Threading.Mutex>, are available to synchronize access to resources. For more information, see [Threading](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87). In addition, language support is available through the [lock](~/docs/csharp/language-reference/keywords/lock-statement.md) statement in C# and the [SyncLock](~/docs/visual-basic/language-reference/statements/synclock-statement.md) construct in Visual Basic.  
+-   Ensure that shared state (that is, resources that can be accessed by multiple threads) is accessed in a thread-safe way, so that only one thread at a time has exclusive access to the resources. A large number of classes, such as <xref:System.Threading.CountdownEvent>, <xref:System.Threading.Interlocked>, <xref:System.Threading.Monitor>, and <xref:System.Threading.Mutex>, are available to synchronize access to resources. For more information, see [Threading](~/docs/standard/threading/index.md). In addition, language support is available through the [lock](~/docs/csharp/language-reference/keywords/lock-statement.md) statement in C# and the [SyncLock](~/docs/visual-basic/language-reference/statements/synclock-statement.md) construct in Visual Basic.  
   
  The following example addresses the <xref:System.ArgumentOutOfRangeException> exception and the other issues from the previous example. It replaces the <xref:System.Collections.Generic.List%601> object with a   <xref:System.Collections.Concurrent.ConcurrentBag%601> object to ensure that access to the collection is thread-safe, uses a <xref:System.Threading.CountdownEvent> object to ensure that the application thread continues only after other threads have executed, and uses a lock to ensure that only one thread can  access the `msg` variable at a time.  
   
@@ -363,6 +370,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -600,7 +608,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>

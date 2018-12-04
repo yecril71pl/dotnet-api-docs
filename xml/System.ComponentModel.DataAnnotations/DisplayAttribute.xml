@@ -20,11 +20,8 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8;netcore-2.1;netcore-2.2">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Method | System.AttributeTargets.Parameter | System.AttributeTargets.Property, AllowMultiple=false)</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netcore-2.1">
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Field | System.AttributeTargets.Method | System.AttributeTargets.Parameter | System.AttributeTargets.Property, AllowMultiple=false)</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Method | System.AttributeTargets.Property | System.AttributeTargets.Field | System.AttributeTargets.Parameter, AllowMultiple=false)</AttributeName>
@@ -545,7 +542,7 @@ End Class
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Do not use this property to get the value of the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GroupName%2A> property. Use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GetDescription%2A> method instead. A `null` value or empty string is valid.  
+ Do not use this property to get the value of the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GroupName%2A> property. Use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GetGroupName%2A> method instead. A `null` value or empty string is valid.  
   
  ]]></format>
         </remarks>

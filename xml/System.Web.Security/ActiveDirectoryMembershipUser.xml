@@ -14,6 +14,11 @@
     <BaseTypeName>System.Web.Security.MembershipUser</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+      <AttributeName>System.Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Exposes and updates membership user information stored in an Active Directory data store.</summary>
     <remarks>
@@ -57,6 +62,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980(v=vs.100)">Introduction to Membership</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -210,7 +216,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.ActiveDirectoryMembershipUser.Email%2A> property is mapped to the `Mail` directory attribute. This property can be remapped in the Web.config file by setting the `attributeMapUserName` attribute in the [providers Element for profile (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/9e998377-b07f-44c1-ad9b-20a60e83c18f) element for profiles.  
+ The <xref:System.Web.Security.ActiveDirectoryMembershipUser.Email%2A> property is mapped to the `Mail` directory attribute. This property can be remapped in the Web.config file by setting the `attributeMapUserName` attribute in the [providers Element for profile (ASP.NET Settings Schema)](https://msdn.microsoft.com/library/9e998377-b07f-44c1-ad9b-20a60e83c18f) element for profiles.  
   
  ]]></format>
         </remarks>

@@ -27,12 +27,21 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.Collections.IList</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName>System.Serializable</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -41,7 +50,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Collections.CollectionBase> instance is always modifiable. See <xref:System.Collections.ReadOnlyCollectionBase> for a read-only version of this class.  
+
+> [!IMPORTANT]
+>  We don't recommend that you use the `CollectionBase` class for new development. Instead, we recommend that you use the generic <xref:System.Collections.ObjectModel.Collection%601> class. For more information, see [Non-generic collections shouldn't be used](https://github.com/dotnet/platform-compat/blob/master/docs/DE0006.md) on GitHub.
+
+A <xref:System.Collections.CollectionBase> instance is always modifiable. See <xref:System.Collections.ReadOnlyCollectionBase> for a read-only version of this class.  
   
  The capacity of a <xref:System.Collections.CollectionBase> is the number of elements the <xref:System.Collections.CollectionBase> can hold. As elements are added to a <xref:System.Collections.CollectionBase>, the capacity is automatically increased as required through reallocation. The capacity can be decreased by setting the <xref:System.Collections.CollectionBase.Capacity%2A> property explicitly.  
   
@@ -68,6 +81,7 @@
     <altmember cref="T:System.Collections.IList" />
     <altmember cref="T:System.Collections.ReadOnlyCollectionBase" />
     <altmember cref="N:System.Collections.Generic" />
+    <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -192,7 +206,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -629,8 +643,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert <c>value</c>.</param>
-        <param name="value">The new value of the element at <c>index</c>.</param>
+        <param name="index">The zero-based index at which to insert <paramref name="value" />.</param>
+        <param name="value">The new value of the element at <paramref name="index" />.</param>
         <summary>Performs additional custom processes before inserting a new element into the <see cref="T:System.Collections.CollectionBase" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -702,8 +716,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which to insert <c>value</c>.</param>
-        <param name="value">The new value of the element at <c>index</c>.</param>
+        <param name="index">The zero-based index at which to insert <paramref name="value" />.</param>
+        <param name="value">The new value of the element at <paramref name="index" />.</param>
         <summary>Performs additional custom processes after inserting a new element into the <see cref="T:System.Collections.CollectionBase" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -765,8 +779,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> can be found.</param>
-        <param name="value">The value of the element to remove from <c>index</c>.</param>
+        <param name="index">The zero-based index at which <paramref name="value" /> can be found.</param>
+        <param name="value">The value of the element to remove from <paramref name="index" />.</param>
         <summary>Performs additional custom processes when removing an element from the <see cref="T:System.Collections.CollectionBase" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -837,8 +851,8 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> can be found.</param>
-        <param name="value">The value of the element to remove from <c>index</c>.</param>
+        <param name="index">The zero-based index at which <paramref name="value" /> can be found.</param>
+        <param name="value">The value of the element to remove from <paramref name="index" />.</param>
         <summary>Performs additional custom processes after removing an element from the <see cref="T:System.Collections.CollectionBase" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -901,9 +915,9 @@
         <Parameter Name="newValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>oldValue</c> can be found.</param>
-        <param name="oldValue">The value to replace with <c>newValue</c>.</param>
-        <param name="newValue">The new value of the element at <c>index</c>.</param>
+        <param name="index">The zero-based index at which <paramref name="oldValue" /> can be found.</param>
+        <param name="oldValue">The value to replace with <paramref name="newValue" />.</param>
+        <param name="newValue">The new value of the element at <paramref name="index" />.</param>
         <summary>Performs additional custom processes before setting a value in the <see cref="T:System.Collections.CollectionBase" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -976,9 +990,9 @@
         <Parameter Name="newValue" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>oldValue</c> can be found.</param>
-        <param name="oldValue">The value to replace with <c>newValue</c>.</param>
-        <param name="newValue">The new value of the element at <c>index</c>.</param>
+        <param name="index">The zero-based index at which <paramref name="oldValue" /> can be found.</param>
+        <param name="oldValue">The value to replace with <paramref name="newValue" />.</param>
+        <param name="newValue">The new value of the element at <paramref name="index" />.</param>
         <summary>Performs additional custom processes after setting a value in the <see cref="T:System.Collections.CollectionBase" /> instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1168,7 +1182,7 @@
       </Parameters>
       <Docs>
         <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:System.Collections.CollectionBase" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the entire <see cref="T:System.Collections.CollectionBase" /> to a compatible one-dimensional <see cref="T:System.Array" />, starting at the specified index of the target array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1421,7 +1435,7 @@
   
  This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
- Starting with the .NET Framework 2.0, this method uses the collection’s objects’ <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods on `item` to determine whether `item` exists. In the earlier versions of the .NET Framework, this determination was made by using the <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods of the `item` parameter on the objects in the collection.  
+ Starting with the .NET Framework 2.0, this method uses the collection's objects' <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods on `item` to determine whether `item` exists. In the earlier versions of the .NET Framework, this determination was made by using the <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods of the `item` parameter on the objects in the collection.  
   
    
   
@@ -1435,6 +1449,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Collections.IList.IndexOf(System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -1482,7 +1497,7 @@
   
  This method determines equality by calling <xref:System.Object.Equals%2A?displayProperty=nameWithType>.  
   
- Starting with the .NET Framework 2.0, this method uses the collection’s objects’ <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods on `item` to determine whether `item` exists. In the earlier versions of the .NET Framework, this determination was made by using the <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods of the `item` parameter on the objects in the collection.  
+ Starting with the .NET Framework 2.0, this method uses the collection's objects' <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods on `item` to determine whether `item` exists. In the earlier versions of the .NET Framework, this determination was made by using the <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods of the `item` parameter on the objects in the collection.  
   
    
   
@@ -1496,6 +1511,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Collections.IList.Contains(System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -1533,7 +1549,7 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="index">The zero-based index at which <paramref name="value" /> should be inserted.</param>
         <param name="value">The <see cref="T:System.Object" /> to insert.</param>
         <summary>Inserts an element into the <see cref="T:System.Collections.CollectionBase" /> at the specified index.</summary>
         <remarks>
@@ -1815,6 +1831,7 @@
         <altmember cref="M:System.Collections.CollectionBase.RemoveAt(System.Int32)" />
         <altmember cref="M:System.Collections.IList.Add(System.Object)" />
         <altmember cref="M:System.Collections.IList.Insert(System.Int32,System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
   </Members>

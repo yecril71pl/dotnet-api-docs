@@ -15,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Property, AllowMultiple=false)</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-3.5">
@@ -61,6 +61,7 @@ public int Id
     <altmember cref="T:System.Management.Instrumentation.ManagementProbeAttribute" />
     <altmember cref="T:System.Management.Instrumentation.ManagementConfigurationAttribute" />
     <altmember cref="T:System.Management.Instrumentation.ManagementTaskAttribute" />
+    <related type="Article" href="https://msdn.microsoft.com/library/d7eb170a-f1ba-454c-a8f0-b9acd2008464">WMI.NET Provider Extensions Attributes</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

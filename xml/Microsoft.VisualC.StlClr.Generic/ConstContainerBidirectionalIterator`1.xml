@@ -18,7 +18,22 @@
   </Base>
   <Interfaces>
     <Interface>
+      <InterfaceName>Microsoft.VisualC.StlClr.Generic.IBaseIterator&lt;TValue&gt;</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Microsoft.VisualC.StlClr.Generic.IBidirectionalIterator&lt;TValue&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.VisualC.StlClr.Generic.IForwardIterator&lt;TValue&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.VisualC.StlClr.Generic.IOutputIterator&lt;TValue&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
@@ -62,18 +77,20 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ConstContainerBidirectionalIterator (Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberSignature Language="C#" Value="public ConstContainerBidirectionalIterator (Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1.#ctor(Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (_Right As ConstContainerBidirectionalIterator)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConstContainerBidirectionalIterator(Microsoft::VisualC::StlClr::Generic::ConstContainerBidirectionalIterator ^ _Right);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (_Right As ConstContainerBidirectionalIterator(Of TValue))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConstContainerBidirectionalIterator(Microsoft::VisualC::StlClr::Generic::ConstContainerBidirectionalIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;'Value&gt; : Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;'Value&gt; -&gt; Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;'Value&gt;" Usage="new Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;'Value&gt; _Right" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator" />
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
         <param name="_Right">An existing <see cref="T:Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1" /> object to copy.</param>
@@ -82,18 +99,20 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ConstContainerBidirectionalIterator (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberSignature Language="C#" Value="public ConstContainerBidirectionalIterator (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1.#ctor(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (_Right As ContainerBidirectionalIterator)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConstContainerBidirectionalIterator(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _Right);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (_Right As ContainerBidirectionalIterator(Of TValue))" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConstContainerBidirectionalIterator(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;'Value&gt; : Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;'Value&gt; -&gt; Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;'Value&gt;" Usage="new Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;'Value&gt; _Right" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
         <param name="_Right">An existing <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1" /> object to copy.</param>
@@ -179,21 +198,23 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="equal_to">
-      <MemberSignature Language="C#" Value="public bool equal_to (Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool equal_to(class Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberSignature Language="C#" Value="public bool equal_to (Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool equal_to(class Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1.equal_to(Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      <MemberSignature Language="VB.NET" Value="Public Function equal_to (_Right As ConstContainerBidirectionalIterator) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool equal_to(Microsoft::VisualC::StlClr::Generic::ConstContainerBidirectionalIterator ^ _Right);" />
+      <MemberSignature Language="VB.NET" Value="Public Function equal_to (_Right As ConstContainerBidirectionalIterator(Of TValue)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool equal_to(Microsoft::VisualC::StlClr::Generic::ConstContainerBidirectionalIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="member this.equal_to : Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;'Value&gt; -&gt; bool" Usage="constContainerBidirectionalIterator.equal_to _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator" />
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
         <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1" /> object to compare with the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1" /> object.</param>
@@ -248,8 +269,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the bias of the iterator. The bias is the offset of the iterator from element zero.</summary>
+        <returns>The bias of the iterator.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -271,8 +292,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a constant reference to the element that the iterator is currently pointing to.</summary>
+        <returns>A constant reference to the element that the iterator is currently pointing to.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -294,8 +315,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the node, or element, that the iterator is pointing to.</summary>
+        <returns>The node that the iterator is pointing to.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -317,8 +338,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns a reference to the element that the iterator is currently pointing to.</summary>
+        <returns>A reference to the element that the iterator is currently pointing to.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -354,50 +375,54 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="op_Assign">
-      <MemberSignature Language="C#" Value="public Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator op_Assign (Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) op_Assign(class Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberSignature Language="C#" Value="public Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;TValue&gt; op_Assign (Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1&lt;!TValue&gt; op_Assign(class Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1.op_Assign(Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      <MemberSignature Language="VB.NET" Value="Public op_Assign (_Right As ConstContainerBidirectionalIterator) As ConstContainerBidirectionalIterator" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::VisualC::StlClr::Generic::ConstContainerBidirectionalIterator ^ op_Assign(Microsoft::VisualC::StlClr::Generic::ConstContainerBidirectionalIterator ^ _Right);" />
+      <MemberSignature Language="VB.NET" Value="Public op_Assign (_Right As ConstContainerBidirectionalIterator(Of TValue)) As ConstContainerBidirectionalIterator(Of TValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::VisualC::StlClr::Generic::ConstContainerBidirectionalIterator&lt;TValue&gt; ^ op_Assign(Microsoft::VisualC::StlClr::Generic::ConstContainerBidirectionalIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="member this.op_Assign : Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;'Value&gt; -&gt; Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;'Value&gt;" Usage="constContainerBidirectionalIterator.op_Assign _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator</ReturnType>
+        <ReturnType>Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;TValue&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator" />
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
         <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1" /> object to assign to the current object.</param>
         <summary>Assigns the given <see cref="T:Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1" /> object to the current object.</summary>
-        <returns>The current object (<c>*this</c>).</returns>
+        <returns>The current object (*this).</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Assign">
-      <MemberSignature Language="C#" Value="public Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator op_Assign (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) op_Assign(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberSignature Language="C#" Value="public Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;TValue&gt; op_Assign (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1&lt;!TValue&gt; op_Assign(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1.op_Assign(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      <MemberSignature Language="VB.NET" Value="Public op_Assign (_Right As ContainerBidirectionalIterator) As ConstContainerBidirectionalIterator" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::VisualC::StlClr::Generic::ConstContainerBidirectionalIterator ^ op_Assign(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _Right);" />
+      <MemberSignature Language="VB.NET" Value="Public op_Assign (_Right As ContainerBidirectionalIterator(Of TValue)) As ConstContainerBidirectionalIterator(Of TValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::VisualC::StlClr::Generic::ConstContainerBidirectionalIterator&lt;TValue&gt; ^ op_Assign(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="member this.op_Assign : Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;'Value&gt; -&gt; Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;'Value&gt;" Usage="constContainerBidirectionalIterator.op_Assign _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator</ReturnType>
+        <ReturnType>Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;TValue&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
         <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1" /> object to assign to the current object.</param>
         <summary>Assigns the given <see cref="T:Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1" /> object to the current object.</summary>
-        <returns>The current object (<c>*this</c>).</returns>
+        <returns>The current object (*this).</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -430,7 +455,7 @@
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;TValue&gt;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="">A reference to the current iterator.</param>
         <summary>Decrements the iterator by one element. This is the prefix version of the decrement operator.</summary>
         <returns>An iterator.</returns>
         <remarks>To be added.</remarks>
@@ -457,7 +482,7 @@
         <Parameter Name="A_0" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="">A reference to the current iterator.</param>
         <param name="A_0">An unused parameter that indicates this is the postfix version of the decrement operator.</param>
         <summary>Decrements the iterator by one element. This is the postfix version of the decrement operator.</summary>
         <returns>An iterator.</returns>
@@ -474,18 +499,20 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="op_Equality">
-      <MemberSignature Language="C#" Value="public bool operator == (Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_Equality(class Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberSignature Language="C#" Value="public bool operator == (Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_Equality(class Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1.op_Equality(Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      <MemberSignature Language="VB.NET" Value="Public Operator == (_Right As ConstContainerBidirectionalIterator) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator ==(Microsoft::VisualC::StlClr::Generic::ConstContainerBidirectionalIterator ^ _Right);" />
+      <MemberSignature Language="VB.NET" Value="Public Operator == (_Right As ConstContainerBidirectionalIterator(Of TValue)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator ==(Microsoft::VisualC::StlClr::Generic::ConstContainerBidirectionalIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="member this.( = ) : Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;'Value&gt; -&gt; bool" Usage="= _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
@@ -493,7 +520,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator" />
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
         <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1" /> object to compare with the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1" /> object.</param>
@@ -517,7 +544,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
@@ -587,7 +614,7 @@
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;TValue&gt;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="">A reference to the current iterator.</param>
         <summary>Increments the iterator by one element. This is the prefix version of the increment operator.</summary>
         <returns>An iterator.</returns>
         <remarks>To be added.</remarks>
@@ -614,8 +641,8 @@
         <Parameter Name="A_0" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
-        <param name="A_0">To be added.</param>
+        <param name="">A reference to the current iterator.</param>
+        <param name="A_0">An unused parameter that indicates this is the postfix version of the increment operator.</param>
         <summary>Increments the iterator by one element. This is the postfix version of the increment operator.</summary>
         <returns>An iterator.</returns>
         <remarks>To be added.</remarks>
@@ -631,21 +658,23 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="op_Inequality">
-      <MemberSignature Language="C#" Value="public bool operator != (Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator _Right);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_Inequality(class Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
+      <MemberSignature Language="C#" Value="public bool operator != (Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance bool op_Inequality(class Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1.op_Inequality(Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      <MemberSignature Language="VB.NET" Value="Public Operator != (_Right As ConstContainerBidirectionalIterator) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator !=(Microsoft::VisualC::StlClr::Generic::ConstContainerBidirectionalIterator ^ _Right);" />
+      <MemberSignature Language="VB.NET" Value="Public Operator != (_Right As ConstContainerBidirectionalIterator(Of TValue)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool operator !=(Microsoft::VisualC::StlClr::Generic::ConstContainerBidirectionalIterator&lt;TValue&gt; ^ _Right);" />
+      <MemberSignature Language="F#" Value="member this.op_Inequality : Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;'Value&gt; -&gt; bool" Usage="constContainerBidirectionalIterator.op_Inequality _Right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator" />
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
         <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1" /> object to compare with the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1" /> object.</param>
@@ -683,29 +712,31 @@
       </Docs>
     </Member>
     <Member MemberName="op_MemberSelection">
-      <MemberSignature Language="C#" Value="public static TValue op_MemberSelection (Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator _Left);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname !TValue op_MemberSelection(class Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Left) cil managed" />
+      <MemberSignature Language="C#" Value="public static TValue op_MemberSelection (Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;TValue&gt; _Left);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname !TValue op_MemberSelection(class Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1&lt;!TValue&gt; _Left) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1.op_MemberSelection(Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared op_MemberSelection (_Left As ConstContainerBidirectionalIterator) As TValue" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TValue % op_MemberSelection(Microsoft::VisualC::StlClr::Generic::ConstContainerBidirectionalIterator ^ _Left);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared op_MemberSelection (_Left As ConstContainerBidirectionalIterator(Of TValue)) As TValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TValue % op_MemberSelection(Microsoft::VisualC::StlClr::Generic::ConstContainerBidirectionalIterator&lt;TValue&gt; ^ _Left);" />
+      <MemberSignature Language="F#" Value="static member op_MemberSelection : Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;'Value&gt; -&gt; " Usage="Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;'Value&gt;.op_MemberSelection _Left" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1000")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
-      <ReturnValue>
-        <ReturnType>TValue@</ReturnType>
+      <ReturnValue RefType="Ref">
+        <ReturnType>TValue</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="_Left" Type="Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator" />
+        <Parameter Name="_Left" Type="Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
         <param name="_Left">The iterator that the operator is applied to.</param>
@@ -715,29 +746,31 @@
       </Docs>
     </Member>
     <Member MemberName="op_PointerDereference">
-      <MemberSignature Language="C#" Value="public static TValue op_PointerDereference (Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator _Left);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname !TValue op_PointerDereference(class Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Left) cil managed" />
+      <MemberSignature Language="C#" Value="public static TValue op_PointerDereference (Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;TValue&gt; _Left);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname !TValue op_PointerDereference(class Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1&lt;!TValue&gt; _Left) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator`1.op_PointerDereference(Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared op_PointerDereference (_Left As ConstContainerBidirectionalIterator) As TValue" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TValue % op_PointerDereference(Microsoft::VisualC::StlClr::Generic::ConstContainerBidirectionalIterator ^ _Left);" />
+      <MemberSignature Language="VB.NET" Value="Public Shared op_PointerDereference (_Left As ConstContainerBidirectionalIterator(Of TValue)) As TValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TValue % op_PointerDereference(Microsoft::VisualC::StlClr::Generic::ConstContainerBidirectionalIterator&lt;TValue&gt; ^ _Left);" />
+      <MemberSignature Language="F#" Value="static member op_PointerDereference : Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;'Value&gt; -&gt; " Usage="Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;'Value&gt;.op_PointerDereference _Left" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1000")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
           <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
-      <ReturnValue>
-        <ReturnType>TValue@</ReturnType>
+      <ReturnValue RefType="Ref">
+        <ReturnType>TValue</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="_Left" Type="Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator" />
+        <Parameter Name="_Left" Type="Microsoft.VisualC.StlClr.Generic.ConstContainerBidirectionalIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
         <param name="_Left">The iterator that the operator is applied to.</param>

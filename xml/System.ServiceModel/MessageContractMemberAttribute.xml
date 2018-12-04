@@ -36,7 +36,7 @@
    
   
 ## Examples  
- The following code examples demonstrate a custom message contract that uses the <xref:System.ServiceModel.MessageContractAttribute>, <xref:System.ServiceModel.MessageHeaderAttribute>, and <xref:System.ServiceModel.MessageBodyMemberAttribute> attributes (which all inherit from <xref:System.ServiceModel.MessageContractMemberAttribute>)to create custom typed messages to use in operations. In this case, there are three members that are serialized into the body element of the SOAP message: `sourceAccount`, `targetAccount`, and the `amount` value, (which is serialized into an element with the name `transactionAmount`). In addition, the `IsAudited` SOAP header element resides in the `http://schemas.contosobank.com/auditing/2005` namespace, and `sourceAccount` is encrypted and digitally signed.  
+ The following code examples demonstrate a custom message contract that uses the <xref:System.ServiceModel.MessageContractAttribute>, <xref:System.ServiceModel.MessageHeaderAttribute>, and <xref:System.ServiceModel.MessageBodyMemberAttribute> attributes (which all inherit from <xref:System.ServiceModel.MessageContractMemberAttribute>) to create custom typed messages to use in operations. In this case, there are three members that are serialized into the body element of the SOAP message: `sourceAccount`, `targetAccount`, and the `amount` value, (which is serialized into an element with the name `transactionAmount`). In addition, the `IsAudited` SOAP header element resides in the `http://schemas.contosobank.com/auditing/2005` namespace, and `sourceAccount` is encrypted and digitally signed.  
   
 > [!NOTE]
 >  The `Operation` and `Account` types must have a data contract.  
@@ -104,6 +104,9 @@ public class BankingTransaction
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -210,7 +213,7 @@ public class BankingTransaction
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code examples demonstrate a custom message contract that uses the <xref:System.ServiceModel.MessageContractAttribute>, <xref:System.ServiceModel.MessageHeaderAttribute>, and <xref:System.ServiceModel.MessageBodyMemberAttribute> attributes (which all inherit from <xref:System.ServiceModel.MessageContractMemberAttribute>)to create custom typed messages to use in operations. In this case, there are three members that are serialized into the body element of the SOAP message: `sourceAccount`, `targetAccount`, and the `amount` value, (which is serialized into an element with the name `transactionAmount`). In addition, the `IsAudited` SOAP header element resides in the `http://schemas.contosobank.com/auditing/2005` namespace, and `sourceAccount` is encrypted and digitally signed.  
+ The following code examples demonstrate a custom message contract that uses the <xref:System.ServiceModel.MessageContractAttribute>, <xref:System.ServiceModel.MessageHeaderAttribute>, and <xref:System.ServiceModel.MessageBodyMemberAttribute> attributes (which all inherit from <xref:System.ServiceModel.MessageContractMemberAttribute>) to create custom typed messages to use in operations. In this case, there are three members that are serialized into the body element of the SOAP message: `sourceAccount`, `targetAccount`, and the `amount` value, (which is serialized into an element with the name `transactionAmount`). In addition, the `IsAudited` SOAP header element resides in the `http://schemas.contosobank.com/auditing/2005` namespace, and `sourceAccount` is encrypted and digitally signed.  
   
 > [!NOTE]
 >  The `Operation` and `Account` types must have a data contract.  
@@ -243,6 +246,9 @@ public class BankingTransaction
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">

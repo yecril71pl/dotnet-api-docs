@@ -126,13 +126,29 @@
         <AssemblyName>System.Xml</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the unqualified name of the XML Schema element that represents a SOAP message for which .NET Framework type mapping information is being provided.</summary>
+        <value>Gets the XML Schema element name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+A SOAP message is defined in a Web Services Description Language (WSDL) document using the message element.
+
+See the <xref:System.Xml.Serialization.XmlMembersMapping> class for the conditions under which the <xref:System.Xml.Serialization.XmlMapping.ElementName> property refers to a code entity defined in a Web service method (a parameter or return value) instead of to an extra parent or wrapper element.
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -202,13 +218,27 @@
         <AssemblyName>System.Xml</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets the XML namespace of the XML schema element that represents a SOAP message for which .NET Framework type mapping information is being provided.</summary>
+        <value>The XML namespace of the schema element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+
+## Remarks  
+A SOAP message is defined in a Web Services Description Language (WSDL) document using the message element.
+
+]]></format>
+        </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TypeName">

@@ -19,10 +19,16 @@
   </AssemblyInfo>
   <Interfaces>
     <Interface>
+      <InterfaceName>System.ServiceModel.Channels.IChannel</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>System.ServiceModel.Channels.IInputChannel</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>System.ServiceModel.Channels.IOutputChannel</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.ICommunicationObject</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
@@ -31,6 +37,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-interface-note](~/includes/untrusted-data-interface-note.md)]
+
  The <xref:System.ServiceModel.Channels.IDuplexChannel> interface is the union of the <xref:System.ServiceModel.Channels.IInputChannel> and <xref:System.ServiceModel.Channels.IOutputChannel> interfaces. The <xref:System.ServiceModel.Channels.IDuplexChannel> interface does not mandate any correlation between the <xref:System.ServiceModel.Channels.IInputChannel> and <xref:System.ServiceModel.Channels.IOutputChannel> when implemented. This means, in particular, that the contract does not mandate that the sender of messages that are received through the <xref:System.ServiceModel.Channels.IInputChannel> is equal to the recipient of messages sent through the <xref:System.ServiceModel.Channels.IOutputChannel>.  
   
  ]]></format>

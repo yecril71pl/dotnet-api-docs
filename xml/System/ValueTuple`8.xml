@@ -59,6 +59,14 @@
       <InterfaceName>System.IEquatable&lt;System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,TRest&gt;&gt;</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+      <AttributeName>System.Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <typeparam name="T1">The type of the value tuple's first element.</typeparam>
     <typeparam name="T2">The type of the value tuple's second element.</typeparam>
@@ -920,6 +928,12 @@ The <xref:System.ValueTuple%608> type is not serializable in .NET Core 1.x or in
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -927,7 +941,7 @@ The <xref:System.ValueTuple%608> type is not serializable in .NET Core 1.x or in
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">The value of the specified <see langword="ValueTuple" /> element. <c>index</c> can range from 0 for <see langword="Item1" /> to one less than the number of elements in the <see langword="ValueTuple" />.</param>
+        <param name="index">The value of the specified <see langword="ValueTuple" /> element. <paramref name="index" /> can range from 0 for <see langword="Item1" /> to one less than the number of elements in the <see langword="ValueTuple" />.</param>
         <summary>Gets the value of the specified <see langword="ValueTuple" /> element.</summary>
         <value>The value of the <see langword="ValueTuple" /> element at the specified position.</value>
         <remarks>
@@ -965,6 +979,12 @@ The <xref:System.ValueTuple%608> type is not serializable in .NET Core 1.x or in
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

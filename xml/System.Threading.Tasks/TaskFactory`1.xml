@@ -73,6 +73,7 @@
  ]]></format>
     </remarks>
     <threadsafe>All public and protected members of <see cref="T:System.Threading.Tasks.TaskFactory`1" /> are thread-safe and may be used concurrently from multiple threads.</threadsafe>
+    <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -83,6 +84,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a <see cref="T:System.Threading.Tasks.TaskFactory`1" /> instance.</summary>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -122,6 +124,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -164,6 +167,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -207,6 +211,10 @@
   
  ]]></format>
         </remarks>
+        <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -254,6 +262,9 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="creationOptions" /> or <paramref name="continuationOptions" /> specifies an invalid value.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -304,6 +315,9 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="creationOptions" /> or <paramref name="continuationOptions" /> specifies an invalid value.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="CancellationToken">
@@ -347,6 +361,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="ContinuationOptions">
@@ -390,6 +406,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ContinueWhenAll">
@@ -400,6 +418,9 @@
       </AssemblyInfo>
       <Docs>
         <summary>Creates a continuation task that will be started upon the completion of a set of provided tasks.</summary>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ContinueWhenAll">
@@ -438,7 +459,7 @@
       </Parameters>
       <Docs>
         <param name="tasks">The array of tasks from which to continue.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <paramref name="tasks" /> array have completed.</param>
         <summary>Creates a continuation task that will be started upon the completion of a set of provided tasks.</summary>
         <returns>The new continuation task.</returns>
         <remarks>
@@ -457,6 +478,9 @@
   
  The <paramref name="continuationFunction" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array contains a null value or is empty.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll">
@@ -495,7 +519,7 @@
       </Parameters>
       <Docs>
         <param name="tasks">The array of tasks from which to continue.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <paramref name="tasks" /> array have completed.</param>
         <param name="cancellationToken">The cancellation token that will be assigned to the new continuation task.</param>
         <summary>Creates a continuation task that will be started upon the completion of a set of provided tasks.</summary>
         <returns>The new continuation task.</returns>
@@ -518,6 +542,9 @@
   
  <paramref name="continuationFunction" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array contains a null value or is empty.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll">
@@ -557,7 +584,7 @@
       </Parameters>
       <Docs>
         <param name="tasks">The array of tasks from which to continue.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <paramref name="tasks" /> array have completed.</param>
         <param name="continuationOptions">One of the enumeration values that controls the behavior of the created continuation task. The NotOn* or OnlyOn* values are not valid.</param>
         <summary>Creates a continuation task that will be started upon the completion of a set of provided Tasks.</summary>
         <returns>The new continuation task.</returns>
@@ -577,6 +604,9 @@
  The <paramref name="continuationFunction" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="continuationOptions" /> argument specifies an invalid value.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array contains a null value or is empty.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll">
@@ -617,7 +647,7 @@
       </Parameters>
       <Docs>
         <param name="tasks">The array of tasks from which to continue.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <paramref name="tasks" /> array have completed.</param>
         <param name="cancellationToken">The cancellation token that will be assigned to the new continuation task.</param>
         <param name="continuationOptions">One of the enumeration values that controls the behavior of the created continuation task. The NotOn* or OnlyOn* values are not valid.</param>
         <param name="scheduler">The scheduler that is used to schedule the created continuation task.</param>
@@ -648,6 +678,9 @@
  -or-  
   
  The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll&lt;TAntecedentResult&gt;">
@@ -688,9 +721,9 @@
         <Parameter Name="continuationFunction" Type="System.Func&lt;System.Threading.Tasks.Task&lt;TAntecedentResult&gt;[],TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <paramref name="tasks" />.</typeparam>
         <param name="tasks">The array of tasks from which to continue.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <paramref name="tasks" /> array have completed.</param>
         <summary>Creates a continuation task that will be started upon the completion of a set of provided tasks.</summary>
         <returns>The new continuation task.</returns>
         <remarks>
@@ -708,6 +741,9 @@
   
  The <paramref name="continuationFunction" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array contains a null value or is empty.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll&lt;TAntecedentResult&gt;">
@@ -748,9 +784,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <paramref name="tasks" />.</typeparam>
         <param name="tasks">The array of tasks from which to continue.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <paramref name="tasks" /> array have completed.</param>
         <param name="cancellationToken">The cancellation token that will be assigned to the new continuation task.</param>
         <summary>Creates a continuation task that will be started upon the completion of a set of provided tasks.</summary>
         <returns>The new continuation task.</returns>
@@ -773,6 +809,9 @@
   
  The <paramref name="continuationFunction" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array contains a null value or is empty.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll&lt;TAntecedentResult&gt;">
@@ -814,9 +853,9 @@
         <Parameter Name="continuationOptions" Type="System.Threading.Tasks.TaskContinuationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <paramref name="tasks" />.</typeparam>
         <param name="tasks">The array of tasks from which to continue.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <paramref name="tasks" /> array have completed.</param>
         <param name="continuationOptions">One of the enumeration values that controls the behavior of the created continuation task. The NotOn* or OnlyOn* values are not valid.</param>
         <summary>Creates a continuation task that will be started upon the completion of a set of provided tasks.</summary>
         <returns>The new continuation task.</returns>
@@ -836,6 +875,9 @@
  The <paramref name="continuationFunction" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="continuationOptions" /> argument specifies an invalid value.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array contains a null value or is empty.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll&lt;TAntecedentResult&gt;">
@@ -878,9 +920,9 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <paramref name="tasks" />.</typeparam>
         <param name="tasks">The array of tasks from which to continue.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <c>tasks</c> array have completed.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when all tasks in the <paramref name="tasks" /> array have completed.</param>
         <param name="cancellationToken">The cancellation token that will be assigned to the new continuation task.</param>
         <param name="continuationOptions">One of the enumeration values that controls the behavior of the created continuation task. The NotOn* or OnlyOn* values are not valid.</param>
         <param name="scheduler">The scheduler that is used to schedule the created continuation task.</param>
@@ -910,6 +952,9 @@
  -or-  
   
  The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ContinueWhenAny">
@@ -920,6 +965,9 @@
       </AssemblyInfo>
       <Docs>
         <summary>Creates a continuation task that will be started upon the completion of any task in the provided set.</summary>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ContinueWhenAny">
@@ -958,7 +1006,7 @@
       </Parameters>
       <Docs>
         <param name="tasks">The array of tasks from which to continue when one task completes.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <c>tasks</c> array completes.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <paramref name="tasks" /> array completes.</param>
         <summary>Creates a continuation task that will be started upon the completion of any task in the provided set.</summary>
         <returns>The new continuation task.</returns>
         <remarks>
@@ -976,6 +1024,9 @@
   
  The <paramref name="continuationFunction" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="tasks" /> array contains a null value or is empty.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny">
@@ -1014,7 +1065,7 @@
       </Parameters>
       <Docs>
         <param name="tasks">The array of tasks from which to continue when one task completes.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <c>tasks</c> array completes.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <paramref name="tasks" /> array completes.</param>
         <param name="cancellationToken">The cancellation token that will be assigned to the new continuation task.</param>
         <summary>Creates a continuation task that will be started upon the completion of any task in the provided set.</summary>
         <returns>The new continuation task.</returns>
@@ -1041,6 +1092,9 @@
  -or-  
   
  The <paramref name="tasks" /> array is empty.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny">
@@ -1080,7 +1134,7 @@
       </Parameters>
       <Docs>
         <param name="tasks">The array of tasks from which to continue when one task completes.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <c>tasks</c> array completes.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <paramref name="tasks" /> array completes.</param>
         <param name="continuationOptions">One of the enumeration values that controls the behavior of the created continuation task. The <see langword="NotOn*" /> or <see langword="OnlyOn*" /> values are not valid.</param>
         <summary>Creates a continuation task that will be started upon the completion of any task in the provided set.</summary>
         <returns>The new continuation task.</returns>
@@ -1104,6 +1158,9 @@
  -or-  
   
  The <paramref name="tasks" /> array is empty.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny">
@@ -1144,7 +1201,7 @@
       </Parameters>
       <Docs>
         <param name="tasks">The array of tasks from which to continue when one task completes.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <c>tasks</c> array completes.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <paramref name="tasks" /> array completes.</param>
         <param name="cancellationToken">The cancellation token that will be assigned to the new continuation task.</param>
         <param name="continuationOptions">One of the enumeration values that controls the behavior of the created continuation task. The <see langword="NotOn*" /> or <see langword="OnlyOn*" /> values are not valid.</param>
         <param name="scheduler">The task scheduler that is used to schedule the created continuation task.</param>
@@ -1178,6 +1235,10 @@
  -or-  
   
  The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
+        <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny&lt;TAntecedentResult&gt;">
@@ -1218,9 +1279,9 @@
         <Parameter Name="continuationFunction" Type="System.Func&lt;System.Threading.Tasks.Task&lt;TAntecedentResult&gt;,TResult&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <paramref name="tasks" />.</typeparam>
         <param name="tasks">The array of tasks from which to continue when one task completes.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <c>tasks</c> array completes.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <paramref name="tasks" /> array completes.</param>
         <summary>Creates a continuation task that will be started upon the completion of any task in the provided set.</summary>
         <returns>The new continuation <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
         <remarks>
@@ -1242,6 +1303,9 @@
  -or-  
   
  The <paramref name="tasks" /> array is empty.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny&lt;TAntecedentResult&gt;">
@@ -1282,9 +1346,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <paramref name="tasks" />.</typeparam>
         <param name="tasks">The array of tasks from which to continue when one task completes.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <c>tasks</c> array completes.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <paramref name="tasks" /> array completes.</param>
         <param name="cancellationToken">The cancellation token that will be assigned to the new continuation task.</param>
         <summary>Creates a continuation task that will be started upon the completion of any task in the provided set.</summary>
         <returns>The new continuation task.</returns>
@@ -1311,6 +1375,9 @@
  -or-  
   
  The <paramref name="tasks" /> array is empty.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny&lt;TAntecedentResult&gt;">
@@ -1352,9 +1419,9 @@
         <Parameter Name="continuationOptions" Type="System.Threading.Tasks.TaskContinuationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <paramref name="tasks" />.</typeparam>
         <param name="tasks">The array of tasks from which to continue when one task completes.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <c>tasks</c> array completes.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <paramref name="tasks" /> array completes.</param>
         <param name="continuationOptions">One of the enumeration values that controls the behavior of the created continuation task. The <see langword="NotOn*" /> or <see langword="OnlyOn*" /> values are not valid.</param>
         <summary>Creates a continuation task that will be started upon the completion of any task in the provided set.</summary>
         <returns>The new continuation <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
@@ -1378,6 +1445,9 @@
  -or-  
   
  The <paramref name="tasks" /> array is empty.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny&lt;TAntecedentResult&gt;">
@@ -1420,9 +1490,9 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <typeparam name="TAntecedentResult">The type of the result of the antecedent <c>tasks</c>.</typeparam>
+        <typeparam name="TAntecedentResult">The type of the result of the antecedent <paramref name="tasks" />.</typeparam>
         <param name="tasks">The array of tasks from which to continue when one task completes.</param>
-        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <c>tasks</c> array completes.</param>
+        <param name="continuationFunction">The function delegate to execute asynchronously when one task in the <paramref name="tasks" /> array completes.</param>
         <param name="cancellationToken">The cancellation token that will be assigned to the new continuation task.</param>
         <param name="continuationOptions">One of the enumeration values that controls the behavior of the created continuation task. The <see langword="NotOn*" /> or <see langword="OnlyOn*" /> values are not valid.</param>
         <param name="scheduler">The <see cref="T:System.Threading.Tasks.TaskScheduler" /> that is used to schedule the created continuation <see cref="T:System.Threading.Tasks.Task`1" />.</param>
@@ -1456,6 +1526,9 @@
  -or-  
   
  The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md">Chaining Tasks by Using Continuation Tasks</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </Member>
     <Member MemberName="CreationOptions">
@@ -1499,6 +1572,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="FromAsync">
@@ -1509,6 +1584,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Creates a task instance.</summary>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="FromAsync">
@@ -1546,8 +1623,8 @@
         <Parameter Name="endMethod" Type="System.Func&lt;System.IAsyncResult,TResult&gt;" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> whose completion should trigger the processing of the <c>endMethod</c>.</param>
-        <param name="endMethod">The function delegate that processes the completed <c>asyncResult</c>.</param>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> whose completion should trigger the processing of the <paramref name="endMethod" />.</param>
+        <param name="endMethod">The function delegate that processes the completed <paramref name="asyncResult" />.</param>
         <summary>Creates a task that executes an end method function when a specified <see cref="T:System.IAsyncResult" /> completes.</summary>
         <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> that represents the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
@@ -1556,6 +1633,8 @@
  -or-  
   
  The <paramref name="endMethod" /> argument is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="FromAsync">
@@ -1596,7 +1675,7 @@
       <Docs>
         <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
         <param name="endMethod">The delegate that ends the asynchronous operation.</param>
-        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <param name="state">An object containing data to be used by the <paramref name="beginMethod" /> delegate.</param>
         <summary>Creates a task that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
         <returns>The created task that represents the asynchronous operation.</returns>
         <remarks>
@@ -1612,6 +1691,8 @@
  -or-  
   
  The <paramref name="endMethod" /> argument is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="FromAsync">
@@ -1650,8 +1731,8 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> whose completion should trigger the processing of the <c>endMethod</c>.</param>
-        <param name="endMethod">The function delegate that processes the completed <c>asyncResult</c>.</param>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> whose completion should trigger the processing of the <paramref name="endMethod" />.</param>
+        <param name="endMethod">The function delegate that processes the completed <paramref name="asyncResult" />.</param>
         <param name="creationOptions">One of the enumeration values that controls the behavior of the created task.</param>
         <summary>Creates a task that executes an end method function when a specified <see cref="T:System.IAsyncResult" /> completes.</summary>
         <returns>A task that represents the asynchronous operation.</returns>
@@ -1662,6 +1743,8 @@
   
  The <paramref name="endMethod" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> argument specifies an invalid value.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="FromAsync">
@@ -1703,7 +1786,7 @@
       <Docs>
         <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
         <param name="endMethod">The delegate that ends the asynchronous operation.</param>
-        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <param name="state">An object containing data to be used by the <paramref name="beginMethod" /> delegate.</param>
         <param name="creationOptions">One of the enumeration values that controls the behavior of the created task.</param>
         <summary>Creates a task that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
         <returns>The created <see cref="T:System.Threading.Tasks.Task`1" /> that represents the asynchronous operation.</returns>
@@ -1721,6 +1804,8 @@
   
  The <paramref name="endMethod" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> argument specifies an invalid value.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="FromAsync">
@@ -1760,8 +1845,8 @@
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> whose completion should trigger the processing of the <c>endMethod</c>.</param>
-        <param name="endMethod">The function delegate that processes the completed <c>asyncResult</c>.</param>
+        <param name="asyncResult">The <see cref="T:System.IAsyncResult" /> whose completion should trigger the processing of the <paramref name="endMethod" />.</param>
+        <param name="endMethod">The function delegate that processes the completed <paramref name="asyncResult" />.</param>
         <param name="creationOptions">One of the enumeration values that controls the behavior of the created task.</param>
         <param name="scheduler">The task scheduler that is used to schedule the task that executes the end method.</param>
         <summary>Creates a task that executes an end method function when a specified <see cref="T:System.IAsyncResult" /> completes.</summary>
@@ -1777,6 +1862,8 @@
   
  The <paramref name="scheduler" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> parameter specifies an invalid value.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TArg1&gt;">
@@ -1819,11 +1906,11 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg1">The type of the first argument passed to the <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TArg1">The type of the first argument passed to the <paramref name="beginMethod" /> delegate.</typeparam>
         <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
         <param name="endMethod">The delegate that ends the asynchronous operation.</param>
-        <param name="arg1">The first argument passed to the <c>beginMethod</c> delegate.</param>
-        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <param name="arg1">The first argument passed to the <paramref name="beginMethod" /> delegate.</param>
+        <param name="state">An object containing data to be used by the <paramref name="beginMethod" /> delegate.</param>
         <summary>Creates a task that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
         <returns>The created task that represents the asynchronous operation.</returns>
         <remarks>
@@ -1839,6 +1926,8 @@
  -or-  
   
  The <paramref name="endMethod" /> argument is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TArg1&gt;">
@@ -1882,11 +1971,11 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg1">The type of the first argument passed to the <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TArg1">The type of the first argument passed to the <paramref name="beginMethod" /> delegate.</typeparam>
         <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
         <param name="endMethod">The delegate that ends the asynchronous operation.</param>
-        <param name="arg1">The first argument passed to the <c>beginMethod</c> delegate.</param>
-        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <param name="arg1">The first argument passed to the <paramref name="beginMethod" /> delegate.</param>
+        <param name="state">An object containing data to be used by the <paramref name="beginMethod" /> delegate.</param>
         <param name="creationOptions">One of the enumeration values that controls the behavior of the created task.</param>
         <summary>Creates a task that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
         <returns>The created task that represents the asynchronous operation.</returns>
@@ -1904,6 +1993,8 @@
   
  The <paramref name="endMethod" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> parameter specifies an invalid value.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TArg1,TArg2&gt;">
@@ -1948,13 +2039,13 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg1">The type of the second argument passed to <c>beginMethod</c> delegate.</typeparam>
-        <typeparam name="TArg2">The type of the first argument passed to the <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TArg1">The type of the second argument passed to <paramref name="beginMethod" /> delegate.</typeparam>
+        <typeparam name="TArg2">The type of the first argument passed to the <paramref name="beginMethod" /> delegate.</typeparam>
         <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
         <param name="endMethod">The delegate that ends the asynchronous operation.</param>
-        <param name="arg1">The first argument passed to the <c>beginMethod</c> delegate.</param>
-        <param name="arg2">The second argument passed to the <c>beginMethod</c> delegate.</param>
-        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <param name="arg1">The first argument passed to the <paramref name="beginMethod" /> delegate.</param>
+        <param name="arg2">The second argument passed to the <paramref name="beginMethod" /> delegate.</param>
+        <param name="state">An object containing data to be used by the <paramref name="beginMethod" /> delegate.</param>
         <summary>Creates a task that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
         <returns>The created task that represents the asynchronous operation.</returns>
         <remarks>
@@ -1970,6 +2061,8 @@
  -or-  
   
  The <paramref name="endMethod" /> argument is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TArg1,TArg2&gt;">
@@ -2015,13 +2108,13 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg1">The type of the second argument passed to <c>beginMethod</c> delegate.</typeparam>
-        <typeparam name="TArg2">The type of the first argument passed to the <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TArg1">The type of the second argument passed to <paramref name="beginMethod" /> delegate.</typeparam>
+        <typeparam name="TArg2">The type of the first argument passed to the <paramref name="beginMethod" /> delegate.</typeparam>
         <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
         <param name="endMethod">The delegate that ends the asynchronous operation.</param>
-        <param name="arg1">The first argument passed to the <c>beginMethod</c> delegate.</param>
-        <param name="arg2">The second argument passed to the <c>beginMethod</c> delegate.</param>
-        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <param name="arg1">The first argument passed to the <paramref name="beginMethod" /> delegate.</param>
+        <param name="arg2">The second argument passed to the <paramref name="beginMethod" /> delegate.</param>
+        <param name="state">An object containing data to be used by the <paramref name="beginMethod" /> delegate.</param>
         <param name="creationOptions">An object that controls the behavior of the created <see cref="T:System.Threading.Tasks.Task`1" />.</param>
         <summary>Creates a task that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
         <returns>The created task that represents the asynchronous operation.</returns>
@@ -2039,6 +2132,8 @@
   
  The <paramref name="endMethod" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> parameter specifies an invalid value.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TArg1,TArg2,TArg3&gt;">
@@ -2085,15 +2180,15 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg1">The type of the second argument passed to <c>beginMethod</c> delegate.</typeparam>
-        <typeparam name="TArg2">The type of the third argument passed to <c>beginMethod</c> delegate.</typeparam>
-        <typeparam name="TArg3">The type of the first argument passed to the <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TArg1">The type of the second argument passed to <paramref name="beginMethod" /> delegate.</typeparam>
+        <typeparam name="TArg2">The type of the third argument passed to <paramref name="beginMethod" /> delegate.</typeparam>
+        <typeparam name="TArg3">The type of the first argument passed to the <paramref name="beginMethod" /> delegate.</typeparam>
         <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
         <param name="endMethod">The delegate that ends the asynchronous operation.</param>
-        <param name="arg1">The first argument passed to the <c>beginMethod</c> delegate.</param>
-        <param name="arg2">The second argument passed to the <c>beginMethod</c> delegate.</param>
-        <param name="arg3">The third argument passed to the <c>beginMethod</c> delegate.</param>
-        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <param name="arg1">The first argument passed to the <paramref name="beginMethod" /> delegate.</param>
+        <param name="arg2">The second argument passed to the <paramref name="beginMethod" /> delegate.</param>
+        <param name="arg3">The third argument passed to the <paramref name="beginMethod" /> delegate.</param>
+        <param name="state">An object containing data to be used by the <paramref name="beginMethod" /> delegate.</param>
         <summary>Creates a task that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
         <returns>The created task that represents the asynchronous operation.</returns>
         <remarks>
@@ -2109,6 +2204,8 @@
  -or-  
   
  The <paramref name="endMethod" /> argument is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="FromAsync&lt;TArg1,TArg2,TArg3&gt;">
@@ -2156,15 +2253,15 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="TArg1">The type of the second argument passed to <c>beginMethod</c> delegate.</typeparam>
-        <typeparam name="TArg2">The type of the third argument passed to <c>beginMethod</c> delegate.</typeparam>
-        <typeparam name="TArg3">The type of the first argument passed to the <c>beginMethod</c> delegate.</typeparam>
+        <typeparam name="TArg1">The type of the second argument passed to <paramref name="beginMethod" /> delegate.</typeparam>
+        <typeparam name="TArg2">The type of the third argument passed to <paramref name="beginMethod" /> delegate.</typeparam>
+        <typeparam name="TArg3">The type of the first argument passed to the <paramref name="beginMethod" /> delegate.</typeparam>
         <param name="beginMethod">The delegate that begins the asynchronous operation.</param>
         <param name="endMethod">The delegate that ends the asynchronous operation.</param>
-        <param name="arg1">The first argument passed to the <c>beginMethod</c> delegate.</param>
-        <param name="arg2">The second argument passed to the <c>beginMethod</c> delegate.</param>
-        <param name="arg3">The third argument passed to the <c>beginMethod</c> delegate.</param>
-        <param name="state">An object containing data to be used by the <c>beginMethod</c> delegate.</param>
+        <param name="arg1">The first argument passed to the <paramref name="beginMethod" /> delegate.</param>
+        <param name="arg2">The second argument passed to the <paramref name="beginMethod" /> delegate.</param>
+        <param name="arg3">The third argument passed to the <paramref name="beginMethod" /> delegate.</param>
+        <param name="state">An object containing data to be used by the <paramref name="beginMethod" /> delegate.</param>
         <param name="creationOptions">An object that controls the behavior of the created task.</param>
         <summary>Creates a task that represents a pair of begin and end methods that conform to the Asynchronous Programming Model pattern.</summary>
         <returns>The created task that represents the asynchronous operation.</returns>
@@ -2182,6 +2279,8 @@
   
  The <paramref name="endMethod" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> parameter specifies an invalid value.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="Scheduler">
@@ -2227,6 +2326,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="StartNew">
@@ -2237,6 +2338,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Creates and starts a task.</summary>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="StartNew">
@@ -2287,6 +2390,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="StartNew">
@@ -2325,7 +2430,7 @@
       </Parameters>
       <Docs>
         <param name="function">A function delegate that returns the future result to be available through the task.</param>
-        <param name="state">An object that contains data to be used by the <c>function</c> delegate.</param>
+        <param name="state">An object that contains data to be used by the <paramref name="function" /> delegate.</param>
         <summary>Creates and starts a task.</summary>
         <returns>The started task.</returns>
         <remarks>
@@ -2339,6 +2444,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="StartNew">
@@ -2391,6 +2498,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The cancellation token source that created <paramref name="cancellationToken" /> has already been disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="StartNew">
@@ -2444,6 +2553,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> parameter specifies an invalid value.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="StartNew">
@@ -2482,7 +2593,7 @@
       </Parameters>
       <Docs>
         <param name="function">A function delegate that returns the future result to be available through the task.</param>
-        <param name="state">An object that contains data to be used by the <c>function</c> delegate.</param>
+        <param name="state">An object that contains data to be used by the <paramref name="function" /> delegate.</param>
         <param name="cancellationToken">The cancellation token that will be assigned to the new task.</param>
         <summary>Creates and starts a task.</summary>
         <returns>The started task.</returns>
@@ -2498,6 +2609,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The cancellation token source that created <paramref name="cancellationToken" /> has already been disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="StartNew">
@@ -2537,7 +2650,7 @@
       </Parameters>
       <Docs>
         <param name="function">A function delegate that returns the future result to be available through the task.</param>
-        <param name="state">An object that contains data to be used by the <c>function</c> delegate.</param>
+        <param name="state">An object that contains data to be used by the <paramref name="function" /> delegate.</param>
         <param name="creationOptions">One of the enumeration values that controls the behavior of the created task.</param>
         <summary>Creates and starts a task.</summary>
         <returns>The started task.</returns>
@@ -2553,6 +2666,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> parameter specifies an invalid value.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="StartNew">
@@ -2614,6 +2729,8 @@
   
  The <paramref name="scheduler" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> parameter specifies an invalid value.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
     <Member MemberName="StartNew">
@@ -2654,7 +2771,7 @@
       </Parameters>
       <Docs>
         <param name="function">A function delegate that returns the future result to be available through the task.</param>
-        <param name="state">An object that contains data to be used by the <c>function</c> delegate.</param>
+        <param name="state">An object that contains data to be used by the <paramref name="function" /> delegate.</param>
         <param name="cancellationToken">The cancellation token that will be assigned to the new task.</param>
         <param name="creationOptions">One of the enumeration values that controls the behavior of the created task.</param>
         <param name="scheduler">The task scheduler that is used to schedule the created task.</param>
@@ -2677,6 +2794,8 @@
   
  The <paramref name="scheduler" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> parameter specifies an invalid value.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-parallel-library-tpl.md">Task Parallel Library (TPL)</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
       </Docs>
     </Member>
   </Members>

@@ -19,6 +19,7 @@
     <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.Domain" /> class represents an Active Directory domain.</summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" /></permission>
+    <related type="Article" href="https://msdn.microsoft.com/library/e1df3378-17b0-4429-91c7-13d4a457fb6e">How To: Work with Trusts</related>
   </Docs>
   <Members>
     <Member MemberName="Children">
@@ -98,6 +99,7 @@
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
         <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.CreateTrustRelationship(System.DirectoryServices.ActiveDirectory.Domain,System.DirectoryServices.ActiveDirectory.TrustDirection)" />
         <altmember cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" />
+        <related type="Article" href="https://msdn.microsoft.com/library/e1df3378-17b0-4429-91c7-13d4a457fb6e">How To: Work with Trusts</related>
       </Docs>
     </Member>
     <Member MemberName="CreateTrustRelationship">
@@ -144,6 +146,7 @@
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
         <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.CreateLocalSideOfTrustRelationship(System.String,System.DirectoryServices.ActiveDirectory.TrustDirection,System.String)" />
         <altmember cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" />
+        <related type="Article" href="https://msdn.microsoft.com/library/e1df3378-17b0-4429-91c7-13d4a457fb6e">How To: Work with Trusts</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteLocalSideOfTrustRelationship">
@@ -190,6 +193,7 @@
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
         <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.CreateLocalSideOfTrustRelationship(System.String,System.DirectoryServices.ActiveDirectory.TrustDirection,System.String)" />
         <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.DeleteTrustRelationship(System.DirectoryServices.ActiveDirectory.Domain)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/e1df3378-17b0-4429-91c7-13d4a457fb6e">How To: Work with Trusts</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteTrustRelationship">
@@ -232,6 +236,7 @@
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
         <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.DeleteLocalSideOfTrustRelationship(System.String)" />
         <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.CreateTrustRelationship(System.DirectoryServices.ActiveDirectory.Domain,System.DirectoryServices.ActiveDirectory.TrustDirection)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/e1df3378-17b0-4429-91c7-13d4a457fb6e">How To: Work with Trusts</related>
       </Docs>
     </Member>
     <Member MemberName="DomainControllers">
@@ -827,7 +832,7 @@
           <see langword="true" /> if the authentication of the trust is selective; <see langword="false" /> if the authentication is domain-wide.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryObjectNotFoundException">There is no trust relationship with the <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> that is specified by the <paramref name="targetForestName" /> parameter.</exception>
-        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">The call to LsaQueryTrustedDomainInfoByName failed. For more information, see the topic [LsaQueryTrustedDomainInfoByName](http://msdn.microsoft.com/library/default.asp?url=/library/en-us/secmgmt/security/lsaquerytrusteddomaininfobyname.asp) in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">The call to LsaQueryTrustedDomainInfoByName failed. For more information, see the topic [LsaQueryTrustedDomainInfoByName](https://msdn.microsoft.com/library/default.asp?url=/library/en-us/secmgmt/security/lsaquerytrusteddomaininfobyname.asp) in the MSDN Library at [http://msdn.microsoft.com/library](https://msdn.microsoft.com/library).</exception>
         <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryServerDownException">The target server is either busy or unavailable.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="targetDomainName" /> is an empty string.</exception>
@@ -836,6 +841,7 @@
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
         <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.SetSelectiveAuthenticationStatus(System.String,System.Boolean)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/e1df3378-17b0-4429-91c7-13d4a457fb6e">How To: Work with Trusts</related>
       </Docs>
     </Member>
     <Member MemberName="GetSidFilteringStatus">
@@ -874,6 +880,7 @@
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
         <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.SetSidFilteringStatus(System.String,System.Boolean)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/e1df3378-17b0-4429-91c7-13d4a457fb6e">How To: Work with Trusts</related>
       </Docs>
     </Member>
     <Member MemberName="GetTrustRelationship">
@@ -1015,7 +1022,7 @@
 ## Remarks  
  The <xref:System.DirectoryServices.ActiveDirectory.DomainMode> value can be raised but not lowered. This means that raising the functionality level of the domain is not reversible and the decision to do this should be made carefully.  
   
- For more information about domain operational modes, see [Domain and forest functionality](http://www.microsoft.com/resources/documentation/WindowsServ/2003/standard/proddocs/en-us/sag_levels.asp).  
+ For more information about domain operational modes, see [Domain and forest functionality](https://www.microsoft.com/resources/documentation/WindowsServ/2003/standard/proddocs/en-us/sag_levels.asp).  
   
  The following table defines the valid values for `domainMode` based on the current operating mode of the domain.  
   
@@ -1166,6 +1173,7 @@
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
         <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.GetSelectiveAuthenticationStatus(System.String)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/e1df3378-17b0-4429-91c7-13d4a457fb6e">How To: Work with Trusts</related>
       </Docs>
     </Member>
     <Member MemberName="SetSidFilteringStatus">
@@ -1204,6 +1212,7 @@
           <paramref name="targetDomainName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The current object has been disposed.</exception>
         <altmember cref="M:System.DirectoryServices.ActiveDirectory.Domain.GetSidFilteringStatus(System.String)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/e1df3378-17b0-4429-91c7-13d4a457fb6e">How To: Work with Trusts</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="UpdateLocalSideOfTrustRelationship">
@@ -1258,6 +1267,7 @@
           <paramref name="targetDomainName" /> or <paramref name="newTrustPassword" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/e1df3378-17b0-4429-91c7-13d4a457fb6e">How To: Work with Trusts</related>
       </Docs>
     </Member>
     <Member MemberName="UpdateLocalSideOfTrustRelationship">
@@ -1300,6 +1310,7 @@
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
         <altmember cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" />
+        <related type="Article" href="https://msdn.microsoft.com/library/e1df3378-17b0-4429-91c7-13d4a457fb6e">How To: Work with Trusts</related>
       </Docs>
     </Member>
     <Member MemberName="UpdateTrustRelationship">
@@ -1338,6 +1349,7 @@
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
         <altmember cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" />
+        <related type="Article" href="https://msdn.microsoft.com/library/e1df3378-17b0-4429-91c7-13d4a457fb6e">How To: Work with Trusts</related>
       </Docs>
     </Member>
     <Member MemberName="VerifyOutboundTrustRelationship">
@@ -1380,6 +1392,7 @@
           <paramref name="targetDomainName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/e1df3378-17b0-4429-91c7-13d4a457fb6e">How To: Work with Trusts</related>
       </Docs>
     </Member>
     <Member MemberName="VerifyTrustRelationship">
@@ -1425,6 +1438,7 @@
         <exception cref="T:System.ObjectDisposedException">The object has been disposed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The specified account does not have permission to perform this operation.</exception>
         <altmember cref="T:System.DirectoryServices.ActiveDirectory.TrustDirection" />
+        <related type="Article" href="https://msdn.microsoft.com/library/e1df3378-17b0-4429-91c7-13d4a457fb6e">How To: Work with Trusts</related>
       </Docs>
     </Member>
   </Members>

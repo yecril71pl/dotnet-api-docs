@@ -24,7 +24,7 @@
 ## Remarks  
  <xref:System.Web.Services.Protocols.LogicalMethodInfo> is used primarily by a SOAP extension to interrogate the details of the XML Web service method with which the SOAP extension is configured to run. Depending on how the SOAP extension is configured, it can find out details about the XML Web service method in the <xref:System.Web.Services.Protocols.SoapExtension.GetInitializer%2A> method of <xref:System.Web.Services.Protocols.SoapExtension> that takes a <xref:System.Web.Services.Protocols.LogicalMethodInfo>. The <xref:System.Web.Services.Protocols.LogicalMethodInfo> provides details such as the XML Web service method's parameters by accessing the <xref:System.Web.Services.Protocols.LogicalMethodInfo.Parameters%2A> property and any custom attributes applied to the XML Web service method using the <xref:System.Web.Services.Protocols.LogicalMethodInfo.GetCustomAttributes%2A> property.  
   
- For more details on SOAP extensions see the <xref:System.Web.Services.Protocols.SoapExtension> class or [&#91;\<topic://cpconAlteringSOAPMessageUsingSOAPExtensions>&#93;](http://msdn.microsoft.com/library/97d81ace-95e7-4acc-ae39-9692a0021e95).  
+ For more details on SOAP extensions see the <xref:System.Web.Services.Protocols.SoapExtension> class or [&#91;\<topic://cpconAlteringSOAPMessageUsingSOAPExtensions>&#93;](https://msdn.microsoft.com/library/97d81ace-95e7-4acc-ae39-9692a0021e95).  
   
  ]]></format>
     </remarks>
@@ -34,12 +34,12 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public LogicalMethodInfo (System.Reflection.MethodInfo methodInfo);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.MethodInfo methodInfo) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; LogicalMethodInfo(System::Reflection::MethodInfo ^ methodInfo);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="C#" Value="public LogicalMethodInfo (System.Reflection.MethodInfo methodInfo);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.MethodInfo methodInfo) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LogicalMethodInfo(System::Reflection::MethodInfo ^ methodInfo);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="C#" Value="public LogicalMethodInfo (System.Reflection.MethodInfo method_info);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.MethodInfo method_info) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.LogicalMethodInfo.#ctor(System.Reflection.MethodInfo)" FrameworkAlternate="xamarinandroid-7.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.LogicalMethodInfo.#ctor(System.Reflection.MethodInfo)" FrameworkAlternate="xamarinandroid-7.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (method_info As MethodInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; LogicalMethodInfo(System::Reflection::MethodInfo ^ method_info);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="new System.Web.Services.Protocols.LogicalMethodInfo : System.Reflection.MethodInfo -&gt; System.Web.Services.Protocols.LogicalMethodInfo" Usage="new System.Web.Services.Protocols.LogicalMethodInfo method_info" />
@@ -52,7 +52,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="methodInfo" Type="System.Reflection.MethodInfo" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+        <Parameter Name="methodInfo" Type="System.Reflection.MethodInfo" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
         <Parameter Name="method_info" Type="System.Reflection.MethodInfo" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
@@ -103,7 +103,7 @@
 ## Remarks  
  The asynchronous design pattern in the common language runtime involves calling a `Begin` method to start the asynchronous method invocation and an `End` method to complete the invocation. The `Begin` method takes two additional parameters besides the parameters defined by the synchronous version of the method: one to store a delegate and one to store any state information that needs to be passed on to the delegate. This property represents the parameter for the delegate with a parameter name of `AsyncCallback`.  
   
- For more information on invoking XML Web services asynchronously, see [&#91;\<topic://cpconInvokingWebServicesAsynchronously>&#93;](http://msdn.microsoft.com/library/f9e26a43-063a-440a-8c73-a02f2ccf3ea0).  
+ For more information on invoking XML Web services asynchronously, see [Communicating with XML Web Services Asynchronously](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/tz4bkcx2(v=vs.100)).  
   
    
   
@@ -117,6 +117,7 @@
         <altmember cref="P:System.Web.Services.Protocols.LogicalMethodInfo.AsyncResultParameter" />
         <altmember cref="P:System.Web.Services.Protocols.LogicalMethodInfo.AsyncStateParameter" />
         <altmember cref="T:System.Reflection.ParameterInfo" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/tz4bkcx2(v=vs.100)">Communicating with XML Web Services Asynchronously</related>
       </Docs>
     </Member>
     <Member MemberName="AsyncResultParameter">
@@ -146,7 +147,7 @@
 ## Remarks  
  The asynchronous design pattern in the common language runtime involves calling a `Begin` method to start the asynchronous method invocation and an `End` method to complete the invocation. The `Begin` method typically returns immediately with an object implementing the <xref:System.IAsyncResult> interface, which can then be passed to the `End` method at a later time to complete the asynchronous method invocation. The returned object implementing the <xref:System.IAsyncResult> interface is represented by this property.  
   
- For more information on invoking XML Web services asynchronously, see [&#91;\<topic://cpconInvokingWebServicesAsynchronously>&#93;](http://msdn.microsoft.com/library/f9e26a43-063a-440a-8c73-a02f2ccf3ea0).  
+ For more information on invoking XML Web services asynchronously, see [Communicating with XML Web Services Asynchronously](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/tz4bkcx2(v=vs.100)).  
   
    
   
@@ -161,6 +162,7 @@
         <altmember cref="P:System.Web.Services.Protocols.LogicalMethodInfo.AsyncStateParameter" />
         <altmember cref="P:System.Web.Services.Protocols.LogicalMethodInfo.AsyncCallbackParameter" />
         <altmember cref="T:System.Reflection.ParameterInfo" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/tz4bkcx2(v=vs.100)">Communicating with XML Web Services Asynchronously</related>
       </Docs>
     </Member>
     <Member MemberName="AsyncStateParameter">
@@ -190,7 +192,7 @@
 ## Remarks  
  The asynchronous design pattern in the common language runtime involves calling a `Begin` method to start the asynchronous method invocation and an `End` method to complete the invocation. The `Begin` method takes two additional parameters besides the parameters defined by the synchronous version of the method: one to store a delegate and one to store any state information that needs to be passed on to the delegate. This property represents the state information that needs to be passed into the delegate.  
   
- For more information on invoking XML Web services asynchronously, see [&#91;\<topic://cpconInvokingWebServicesAsynchronously>&#93;](http://msdn.microsoft.com/library/f9e26a43-063a-440a-8c73-a02f2ccf3ea0).  
+ For more information on invoking XML Web services asynchronously, see [Communicating with XML Web Services Asynchronously](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/tz4bkcx2(v=vs.100)).  
   
    
   
@@ -204,6 +206,7 @@
         <altmember cref="P:System.Web.Services.Protocols.LogicalMethodInfo.AsyncCallbackParameter" />
         <altmember cref="P:System.Web.Services.Protocols.LogicalMethodInfo.AsyncResultParameter" />
         <altmember cref="T:System.Reflection.ParameterInfo" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/tz4bkcx2(v=vs.100)">Communicating with XML Web Services Asynchronously</related>
       </Docs>
     </Member>
     <Member MemberName="BeginInvoke">
@@ -232,8 +235,8 @@
       </Parameters>
       <Docs>
         <param name="target">The instance of the <see cref="T:System.Object" /> on which to invoke the method on.</param>
-        <param name="values">An argument list for the invoked method. This is an array of objects with the same number, order, and type as the parameters of the method. If the method does not require any parameters, <c>values</c> should be <see langword="null" />.</param>
-        <param name="callback">The delegate to call when the asynchronous invoke is complete. If <c>callback</c> is <see langword="null" />, the delegate is not called.</param>
+        <param name="values">An argument list for the invoked method. This is an array of objects with the same number, order, and type as the parameters of the method. If the method does not require any parameters, <paramref name="values" /> should be <see langword="null" />.</param>
+        <param name="callback">The delegate to call when the asynchronous invoke is complete. If <paramref name="callback" /> is <see langword="null" />, the delegate is not called.</param>
         <param name="asyncState">State information that is passed on to the delegate.</param>
         <summary>Begins an asynchronous invocation of the method represented by this <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" />.</summary>
         <returns>An <see cref="T:System.IAsyncResult" /> which is passed to <see cref="M:System.Web.Services.Protocols.LogicalMethodInfo.EndInvoke(System.Object,System.IAsyncResult)" /> to obtain the return values from the remote method call.</returns>
@@ -299,13 +302,13 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="Create">
-      <MemberSignature Language="C#" Value="public static System.Web.Services.Protocols.LogicalMethodInfo[] Create (System.Reflection.MethodInfo[] methodInfos);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Protocols.LogicalMethodInfo[] Create(class System.Reflection.MethodInfo[] methodInfos) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (methodInfos As MethodInfo()) As LogicalMethodInfo()" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Web::Services::Protocols::LogicalMethodInfo ^&gt; ^ Create(cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ methodInfos);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="C#" Value="public static System.Web.Services.Protocols.LogicalMethodInfo[] Create (System.Reflection.MethodInfo[] methodInfos);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Protocols.LogicalMethodInfo[] Create(class System.Reflection.MethodInfo[] methodInfos) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (methodInfos As MethodInfo()) As LogicalMethodInfo()" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Web::Services::Protocols::LogicalMethodInfo ^&gt; ^ Create(cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ methodInfos);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="C#" Value="public static System.Web.Services.Protocols.LogicalMethodInfo[] Create (System.Reflection.MethodInfo[] method_infos);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Protocols.LogicalMethodInfo[] Create(class System.Reflection.MethodInfo[] method_infos) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.LogicalMethodInfo.Create(System.Reflection.MethodInfo[])" FrameworkAlternate="xamarinandroid-7.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.LogicalMethodInfo.Create(System.Reflection.MethodInfo[])" FrameworkAlternate="xamarinandroid-7.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (method_infos As MethodInfo()) As LogicalMethodInfo()" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Web::Services::Protocols::LogicalMethodInfo ^&gt; ^ Create(cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ method_infos);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="static member Create : System.Reflection.MethodInfo[] -&gt; System.Web.Services.Protocols.LogicalMethodInfo[]" Usage="System.Web.Services.Protocols.LogicalMethodInfo.Create method_infos" />
@@ -321,7 +324,7 @@
         <ReturnType>System.Web.Services.Protocols.LogicalMethodInfo[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="methodInfos" Type="System.Reflection.MethodInfo[]" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+        <Parameter Name="methodInfos" Type="System.Reflection.MethodInfo[]" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
         <Parameter Name="method_infos" Type="System.Reflection.MethodInfo[]" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
@@ -344,13 +347,13 @@
       </Docs>
     </Member>
     <Member MemberName="Create">
-      <MemberSignature Language="C#" Value="public static System.Web.Services.Protocols.LogicalMethodInfo[] Create (System.Reflection.MethodInfo[] methodInfos, System.Web.Services.Protocols.LogicalMethodTypes types);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Protocols.LogicalMethodInfo[] Create(class System.Reflection.MethodInfo[] methodInfos, valuetype System.Web.Services.Protocols.LogicalMethodTypes types) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (methodInfos As MethodInfo(), types As LogicalMethodTypes) As LogicalMethodInfo()" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Web::Services::Protocols::LogicalMethodInfo ^&gt; ^ Create(cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ methodInfos, System::Web::Services::Protocols::LogicalMethodTypes types);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="C#" Value="public static System.Web.Services.Protocols.LogicalMethodInfo[] Create (System.Reflection.MethodInfo[] methodInfos, System.Web.Services.Protocols.LogicalMethodTypes types);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Protocols.LogicalMethodInfo[] Create(class System.Reflection.MethodInfo[] methodInfos, valuetype System.Web.Services.Protocols.LogicalMethodTypes types) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (methodInfos As MethodInfo(), types As LogicalMethodTypes) As LogicalMethodInfo()" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Web::Services::Protocols::LogicalMethodInfo ^&gt; ^ Create(cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ methodInfos, System::Web::Services::Protocols::LogicalMethodTypes types);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="C#" Value="public static System.Web.Services.Protocols.LogicalMethodInfo[] Create (System.Reflection.MethodInfo[] method_infos, System.Web.Services.Protocols.LogicalMethodTypes types);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Protocols.LogicalMethodInfo[] Create(class System.Reflection.MethodInfo[] method_infos, valuetype System.Web.Services.Protocols.LogicalMethodTypes types) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.LogicalMethodInfo.Create(System.Reflection.MethodInfo[],System.Web.Services.Protocols.LogicalMethodTypes)" FrameworkAlternate="xamarinandroid-7.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.LogicalMethodInfo.Create(System.Reflection.MethodInfo[],System.Web.Services.Protocols.LogicalMethodTypes)" FrameworkAlternate="xamarinandroid-7.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (method_infos As MethodInfo(), types As LogicalMethodTypes) As LogicalMethodInfo()" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Web::Services::Protocols::LogicalMethodInfo ^&gt; ^ Create(cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ method_infos, System::Web::Services::Protocols::LogicalMethodTypes types);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="static member Create : System.Reflection.MethodInfo[] * System.Web.Services.Protocols.LogicalMethodTypes -&gt; System.Web.Services.Protocols.LogicalMethodInfo[]" Usage="System.Web.Services.Protocols.LogicalMethodInfo.Create (method_infos, types)" />
@@ -366,7 +369,7 @@
         <ReturnType>System.Web.Services.Protocols.LogicalMethodInfo[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="methodInfos" Type="System.Reflection.MethodInfo[]" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+        <Parameter Name="methodInfos" Type="System.Reflection.MethodInfo[]" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
         <Parameter Name="method_infos" Type="System.Reflection.MethodInfo[]" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
         <Parameter Name="types" Type="System.Web.Services.Protocols.LogicalMethodTypes" Index="1" />
       </Parameters>
@@ -679,7 +682,7 @@
       </Parameters>
       <Docs>
         <param name="target">The instance of the <see cref="T:System.Object" /> to invoke the method.</param>
-        <param name="values">An argument list for the invoked method. This is an array of objects with the same number, order, and type as the parameters of the method. If the method does not require any parameters, the <c>values</c> parameter should be <see langword="null" />.</param>
+        <param name="values">An argument list for the invoked method. This is an array of objects with the same number, order, and type as the parameters of the method. If the method does not require any parameters, the <paramref name="values" /> parameter should be <see langword="null" />.</param>
         <summary>Invokes the method represented by the current <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" />.</summary>
         <returns>An array of type <see cref="T:System.Object" /> representing the return value and out parameters of the invoked method.</returns>
         <remarks>
@@ -733,12 +736,12 @@
       </Docs>
     </Member>
     <Member MemberName="IsBeginMethod">
-      <MemberSignature Language="C#" Value="public static bool IsBeginMethod (System.Reflection.MethodInfo methodInfo);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsBeginMethod(class System.Reflection.MethodInfo methodInfo) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsBeginMethod(System::Reflection::MethodInfo ^ methodInfo);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="C#" Value="public static bool IsBeginMethod (System.Reflection.MethodInfo methodInfo);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsBeginMethod(class System.Reflection.MethodInfo methodInfo) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsBeginMethod(System::Reflection::MethodInfo ^ methodInfo);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="C#" Value="public static bool IsBeginMethod (System.Reflection.MethodInfo method_info);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsBeginMethod(class System.Reflection.MethodInfo method_info) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.LogicalMethodInfo.IsBeginMethod(System.Reflection.MethodInfo)" FrameworkAlternate="xamarinandroid-7.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.LogicalMethodInfo.IsBeginMethod(System.Reflection.MethodInfo)" FrameworkAlternate="xamarinandroid-7.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsBeginMethod (method_info As MethodInfo) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsBeginMethod(System::Reflection::MethodInfo ^ method_info);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="static member IsBeginMethod : System.Reflection.MethodInfo -&gt; bool" Usage="System.Web.Services.Protocols.LogicalMethodInfo.IsBeginMethod method_info" />
@@ -754,7 +757,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="methodInfo" Type="System.Reflection.MethodInfo" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+        <Parameter Name="methodInfo" Type="System.Reflection.MethodInfo" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
         <Parameter Name="method_info" Type="System.Reflection.MethodInfo" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
@@ -776,12 +779,12 @@
       </Docs>
     </Member>
     <Member MemberName="IsEndMethod">
-      <MemberSignature Language="C#" Value="public static bool IsEndMethod (System.Reflection.MethodInfo methodInfo);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsEndMethod(class System.Reflection.MethodInfo methodInfo) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsEndMethod(System::Reflection::MethodInfo ^ methodInfo);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="C#" Value="public static bool IsEndMethod (System.Reflection.MethodInfo methodInfo);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsEndMethod(class System.Reflection.MethodInfo methodInfo) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsEndMethod(System::Reflection::MethodInfo ^ methodInfo);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="C#" Value="public static bool IsEndMethod (System.Reflection.MethodInfo method_info);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsEndMethod(class System.Reflection.MethodInfo method_info) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.LogicalMethodInfo.IsEndMethod(System.Reflection.MethodInfo)" FrameworkAlternate="xamarinandroid-7.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.LogicalMethodInfo.IsEndMethod(System.Reflection.MethodInfo)" FrameworkAlternate="xamarinandroid-7.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsEndMethod (method_info As MethodInfo) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsEndMethod(System::Reflection::MethodInfo ^ method_info);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="static member IsEndMethod : System.Reflection.MethodInfo -&gt; bool" Usage="System.Web.Services.Protocols.LogicalMethodInfo.IsEndMethod method_info" />
@@ -797,7 +800,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="methodInfo" Type="System.Reflection.MethodInfo" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0" />
+        <Parameter Name="methodInfo" Type="System.Reflection.MethodInfo" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
         <Parameter Name="method_info" Type="System.Reflection.MethodInfo" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>

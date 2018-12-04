@@ -16,10 +16,10 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+    <Attribute FrameworkAlternate="netcore-2.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;dotnet-plat-ext-2.1;dotnet-plat-ext-2.2">
       <AttributeName>System.DirectoryServices.AccountManagement.DirectoryRdnPrefix("CN")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.Security.SecurityCritical(System.Security.SecurityCriticalScope.Everything)</AttributeName>
     </Attribute>
   </Attributes>
@@ -27,6 +27,7 @@
     <summary>Encapsulates the account and contact data common to principals that can be authenticated.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="N:System.DirectoryServices.AccountManagement" />
+    <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -40,11 +41,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](http://msdn.microsoft.com/library/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
+ Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](https://msdn.microsoft.com/library/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
   
  ]]></format>
         </remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -71,11 +73,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](http://msdn.microsoft.com/library/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
+ Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](https://msdn.microsoft.com/library/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
   
  ]]></format>
         </remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -108,11 +111,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](http://msdn.microsoft.com/library/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
+ Custom extension classes that derive from this class can call this constructor from the derived class constructor to initialize the base class. For more information, see the [Principal Extensions](https://msdn.microsoft.com/library/49d1b257-d652-4224-bdae-2edabced8f00) overview topic.  
   
  ]]></format>
         </remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AccountExpirationDate">
@@ -147,6 +151,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AccountLockoutTime">
@@ -183,6 +188,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AdvancedSearchFilter">
@@ -208,18 +214,20 @@
         <ReturnType>System.DirectoryServices.AccountManagement.AdvancedFilters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns an <see cref="T:System.DirectoryServices.AccountManagement.AdvancedFilters" /> object for use with [Query By Example](http://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) to set read-only properties before passing the object to the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />.</summary>
+        <summary>Returns an <see cref="T:System.DirectoryServices.AccountManagement.AdvancedFilters" /> object for use with [Query By Example](https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) to set read-only properties before passing the object to the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />.</summary>
         <value>An object to use to set read-only properties before passing it to the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See the [Query By Example](http://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) documentation for examples.  
+ See the [Query By Example](https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) documentation for examples.  
   
  ]]></format>
         </remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
         <altmember cref="T:System.DirectoryServices.AccountManagement.AdvancedFilters" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/84ac40bb-04c4-4d0b-adaf-0ddb9253599e">Query By Example</related>
       </Docs>
     </Member>
     <Member MemberName="AllowReversiblePasswordEncryption">
@@ -246,6 +254,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="BadLogonCount">
@@ -271,6 +280,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Certificates">
@@ -361,6 +371,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -395,6 +406,7 @@
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <exception cref="T:System.ArgumentNullException">The application tried to set a null value for this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ExpirePasswordNow">
@@ -427,6 +439,7 @@
         </remarks>
         <exception cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException">An exception occurred when saving the changes to the store.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FindByBadPasswordAttempt">
@@ -459,7 +472,7 @@
       <Docs>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the incorrect password try. This parameter is used with the type parameter to determine the range of time in which the returned objects have an incorrect logon try recorded.</param>
-        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <paramref name="time" /> parameter.</param>
         <summary>Returns a collection of authentication principal objects that have an incorrect password try recorded in the specified date and time range.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> objects, or an empty collection if no results are found.</returns>
         <remarks>
@@ -471,6 +484,7 @@
  ]]></format>
         </remarks>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FindByBadPasswordAttempt&lt;T&gt;">
@@ -502,7 +516,7 @@
         <typeparam name="T">To be added.</typeparam>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the password set. This parameter is used with the type parameter to determine the range of time in which the returned objects have a password set recorded.</param>
-        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <paramref name="time" /> parameter.</param>
         <summary>Returns a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> collection of objects that have a bad password attempt within the specified date and time range. This is the template function for extended classes that wish to implement this functionality.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more objects of the appropriate principal type, or an empty collection if no matches are found.</returns>
         <remarks>
@@ -546,7 +560,7 @@
       <Docs>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the account expiration. This parameter is used with the type parameter to determine the range of time in which the returned objects have an account expiration recorded.</param>
-        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <paramref name="time" /> parameter.</param>
         <summary>Returns a collection of authentication principal objects that have an account expiration time recorded in the specified date and time range.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> objects.</returns>
         <remarks>
@@ -589,7 +603,7 @@
         <typeparam name="T">To be added.</typeparam>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the password set. This parameter is used with the type parameter to determine the range of time in which the returned objects have a password set recorded.</param>
-        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <paramref name="time" /> parameter.</param>
         <summary>Returns a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> collection of objects that have an expiration time within the specified date and time range. This is the template function for extended classes that wish to implement this functionality.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more objects of the appropriate principal type, or an empty collection if no matches are found.</returns>
         <remarks>
@@ -633,7 +647,7 @@
       <Docs>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the account lockout. This parameter is used with the type parameter to determine the range of time in which the returned objects have an account lockout recorded.</param>
-        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <paramref name="time" /> parameter.</param>
         <summary>Returns a collection of authentication principal objects that have an account lockout time recorded in the specified date and time range.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> objects.</returns>
         <remarks>
@@ -676,7 +690,7 @@
         <typeparam name="T">To be added.</typeparam>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the password set. This parameter is used with the type parameter to determine the range of time in which the returned objects have a password set recorded.</param>
-        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <paramref name="time" /> parameter.</param>
         <summary>Returns a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> collection of objects that have a lockout time within the specified date and time range. This is the template function for extended classes that wish to implement this functionality.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more objects of the appropriate principal type, or an empty collection if no matches are found.</returns>
         <remarks>
@@ -720,7 +734,7 @@
       <Docs>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the logon record. This parameter is used with the type parameter to determine the range of time in which the returned objects have an account logon recorded.</param>
-        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <paramref name="time" /> parameter.</param>
         <summary>Returns a collection of authentication principal objects that have an account logon recorded in the specified date and time range.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> objects.</returns>
         <remarks>
@@ -792,7 +806,7 @@ ctx.Dispose();
         <typeparam name="T">To be added.</typeparam>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the password set. This parameter is used with the type parameter to determine the range of time in which the returned objects have a password set recorded.</param>
-        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <paramref name="time" /> parameter.</param>
         <summary>Returns a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> collection of objects that have a logon time within the specified date and time range. This is the template function for extended classes that wish to implement this functionality.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more objects of the appropriate principal type, or an empty collection if no matches are found.</returns>
         <remarks>
@@ -836,7 +850,7 @@ ctx.Dispose();
       <Docs>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the password set. This parameter is used with the type parameter to determine the range of time in which the returned objects have a password set recorded.</param>
-        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <paramref name="time" /> parameter.</param>
         <summary>Returns a collection of authentication principal objects that have an account password set recorded in the specified date and time range.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.AuthenticablePrincipal" /> objects.</returns>
         <remarks>
@@ -879,7 +893,7 @@ ctx.Dispose();
         <typeparam name="T">To be added.</typeparam>
         <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
         <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the password set. This parameter is used with the type parameter to determine the range of time in which the returned objects have a password set recorded.</param>
-        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <paramref name="time" /> parameter.</param>
         <summary>Returns a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> collection of objects that have a password set time within the specified date and time range.  This is the template function for extended classes that wish to implement this functionality.</summary>
         <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more objects of the appropriate principal type, or an empty collection if no matches are found.</returns>
         <remarks>
@@ -916,6 +930,7 @@ ctx.Dispose();
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HomeDrive">
@@ -941,6 +956,7 @@ ctx.Dispose();
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsAccountLockedOut">
@@ -1006,6 +1022,7 @@ ctx.Dispose();
         </remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LastLogon">
@@ -1038,6 +1055,7 @@ ctx.Dispose();
         </remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LastPasswordSet">
@@ -1070,6 +1088,7 @@ ctx.Dispose();
         </remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordNeverExpires">
@@ -1096,6 +1115,7 @@ ctx.Dispose();
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordNotRequired">
@@ -1118,10 +1138,11 @@ ctx.Dispose();
       <Docs>
         <summary>Gets or sets a Boolean value that specifies whether a password is required for this account.</summary>
         <value>
-          <see langword="true" /> if a password is required for this account; otherwise <see langword="false" />.</value>
+          <see langword="false" /> if a password is required for this account; otherwise <see langword="true" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="PermittedLogonTimes">
@@ -1147,6 +1168,7 @@ ctx.Dispose();
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="PermittedWorkstations">
@@ -1172,6 +1194,7 @@ ctx.Dispose();
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RefreshExpiredPassword">
@@ -1197,6 +1220,7 @@ ctx.Dispose();
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException">An exception occurred when saving the changes to the store.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ScriptPath">
@@ -1222,6 +1246,7 @@ ctx.Dispose();
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SetPassword">
@@ -1250,6 +1275,7 @@ ctx.Dispose();
         <remarks>To be added.</remarks>
         <exception cref="T:System.DirectoryServices.AccountManagement.PasswordException">Throws an exception if the caller does not have appropriate rights, the new password does not meet password complexity requirements, or for any other reason that the underlying stores reject the password change.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SmartcardLogonRequired">
@@ -1276,6 +1302,7 @@ ctx.Dispose();
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="UnlockAccount">
@@ -1328,6 +1355,7 @@ ctx.Dispose();
         </remarks>
         <exception cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException">An exception occurred when saving the changes to the store.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
     <Member MemberName="UserCannotChangePassword">
@@ -1362,6 +1390,7 @@ ctx.Dispose();
         <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
         <exception cref="T:System.NotSupportedException">This principal object is not a user.</exception>
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
+        <related type="Article" href="https://msdn.microsoft.com/library/9255c42d-04a6-4727-adf1-bad9e42fa92a">System.DirectoryServices.AccountManagement Namespace Overview</related>
       </Docs>
     </Member>
   </Members>

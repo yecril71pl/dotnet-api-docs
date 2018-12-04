@@ -239,7 +239,7 @@
       </Parameters>
       <Docs>
         <param name="from">A <see cref="T:System.String" /> that contains the address of the sender of the email message.</param>
-        <param name="to">A <see cref="T:System.String" /> that contains the addresses of the recipients of the email message.</param>
+        <param name="to">A <see cref="T:System.String" /> that contains the addresses of the recipients of the email message. Multiple email addresses must be separated with a comma character (",").</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.MailMessage" /> class by using the specified <see cref="T:System.String" /> class objects.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -304,7 +304,7 @@
       </Parameters>
       <Docs>
         <param name="from">A <see cref="T:System.String" /> that contains the address of the sender of the email message.</param>
-        <param name="to">A <see cref="T:System.String" /> that contains the address of the recipient of the email message.</param>
+        <param name="to">A <see cref="T:System.String" /> that contains the addresses of the recipients of the email message. Multiple email addresses must be separated with a comma character (",").</param>
         <param name="subject">A <see cref="T:System.String" /> that contains the subject text.</param>
         <param name="body">A <see cref="T:System.String" /> that contains the message body.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.MailMessage" /> class.</summary>
@@ -840,7 +840,7 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).</para>
         </block>
       </Docs>
     </Member>
@@ -1134,7 +1134,7 @@
         <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Obsolete("Use ReplyToList instead")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;netframework-4.8;netcore-2.2">
           <AttributeName>System.Obsolete("ReplyTo is obsoleted for this type.  Please use ReplyToList instead which can accept multiple addresses. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
         </Attribute>
       </Attributes>

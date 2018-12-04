@@ -28,8 +28,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
       <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName>System.Serializable</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -59,6 +62,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Threading.Mutex" />
+    <related type="Article" href="~/docs/standard/threading/mutexes.md">Mutex</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -117,6 +121,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.Mutex" />
+        <related type="Article" href="~/docs/standard/threading/mutexes.md">Mutex</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -168,6 +173,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.Mutex" />
+        <related type="Article" href="~/docs/standard/threading/mutexes.md">Mutex</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -221,6 +227,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.Mutex" />
+        <related type="Article" href="~/docs/standard/threading/mutexes.md">Mutex</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -268,6 +275,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.Mutex" />
+        <related type="Article" href="~/docs/standard/threading/mutexes.md">Mutex</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -301,7 +309,7 @@
       </Parameters>
       <Docs>
         <param name="message">An error message that explains the reason for the exception.</param>
-        <param name="inner">The exception that is the cause of the current exception. If the <c>inner</c> parameter is not <see langword="null" />, the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
+        <param name="inner">The exception that is the cause of the current exception. If the <paramref name="inner" /> parameter is not <see langword="null" />, the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Threading.AbandonedMutexException" /> class with a specified error message and inner exception.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -323,6 +331,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.Mutex" />
+        <related type="Article" href="~/docs/standard/threading/mutexes.md">Mutex</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -378,6 +387,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.Mutex" />
+        <related type="Article" href="~/docs/standard/threading/mutexes.md">Mutex</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -413,7 +423,7 @@
       </Parameters>
       <Docs>
         <param name="message">An error message that explains the reason for the exception.</param>
-        <param name="inner">The exception that is the cause of the current exception. If the <c>inner</c> parameter is not <see langword="null" />, the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
+        <param name="inner">The exception that is the cause of the current exception. If the <paramref name="inner" /> parameter is not <see langword="null" />, the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
         <param name="location">The index of the abandoned mutex in the array of wait handles if the exception is thrown for the <see cref="Overload:System.Threading.WaitHandle.WaitAny" /> method, or –1 if the exception is thrown for the <see cref="Overload:System.Threading.WaitHandle.WaitOne" /> or <see cref="Overload:System.Threading.WaitHandle.WaitAll" /> methods.</param>
         <param name="handle">A <see cref="T:System.Threading.Mutex" /> object that represents the abandoned mutex.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Threading.AbandonedMutexException" /> class with a specified error message, the inner exception, the index for the abandoned mutex, if applicable, and a <see cref="T:System.Threading.Mutex" /> object that represents the mutex.</summary>
@@ -437,6 +447,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.Mutex" />
+        <related type="Article" href="~/docs/standard/threading/mutexes.md">Mutex</related>
       </Docs>
     </Member>
     <Member MemberName="Mutex">
@@ -479,6 +490,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.Mutex" />
+        <related type="Article" href="~/docs/standard/threading/mutexes.md">Mutex</related>
       </Docs>
     </Member>
     <Member MemberName="MutexIndex">
@@ -533,6 +545,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.Mutex" />
+        <related type="Article" href="~/docs/standard/threading/mutexes.md">Mutex</related>
       </Docs>
     </Member>
   </Members>

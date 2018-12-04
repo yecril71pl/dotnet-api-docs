@@ -26,6 +26,7 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/windows/desktop/ee719902(v=vs.85).aspx">Windows Imaging Component</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -219,7 +220,7 @@
         <param name="context">An object that provides contextual information.</param>
         <param name="culture">The language and culture that are used during the conversion.</param>
         <param name="value">The object you want to convert.</param>
-        <param name="destinationType">The type that <c>value</c> is converted to.</param>
+        <param name="destinationType">The type that <paramref name="value" /> is converted to.</param>
         <summary>Converts a <see cref="T:System.Windows.Media.Color" /> to an object of the specified type.</summary>
         <returns>The new <see cref="T:System.Object" /> of the designated type.</returns>
         <remarks>
@@ -306,6 +307,7 @@
         <returns>A <see cref="T:System.String" /> that represents the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the color context.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="colorContext" /> is <see langword="null" />.</exception>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/windows/desktop/ee719902(v=vs.85).aspx">Windows Imaging Component</related>
       </Docs>
     </Member>
   </Members>

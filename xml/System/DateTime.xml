@@ -49,8 +49,11 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.1">
+    <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
       <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName>System.Serializable</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -65,58 +68,58 @@
 This article includes several examples that use the `DateTime` type:
 
 **Initialization Examples**      
- [Invoke a constructor](#initialization-01)     
- [Invoke the implicit default constructor](#initialization-02)     
- [Assignment from return value](#initialization-03)     
- [Parsing a string that represents a date and time](#initialization-04)     
- [Visual Basic syntax to initialize a date and time](#initialization-05)     
+- [Invoke a constructor](#initialization-01)
+- [Invoke the implicit default constructor](#initialization-02)
+- [Assignment from return value](#initialization-03)
+- [Parsing a string that represents a date and time](#initialization-04)
+- [Visual Basic syntax to initialize a date and time](#initialization-05)
 
 **Formatting `DateTime` objects as strings**  
- [Use the default date time format](#formatting-01)     
- [Format a date and time using a specific culture](#formatting-02)     
- [Format a date time using a standard or custom format string](#formatting-03)     
- [Specify both a format string and a specific culture](#formatting-04)     
- [Format a date time using the ISO 8601 standard for web services](#formatting-05)     
+- [Use the default date time format](#formatting-01)
+- [Format a date and time using a specific culture](#formatting-02)
+- [Format a date time using a standard or custom format string](#formatting-03)
+- [Specify both a format string and a specific culture](#formatting-04)
+- [Format a date time using the ISO 8601 standard for web services](#formatting-05)
 
 **Parsing strings as `DateTime` objects**  
- [Use `Parse` or `TryParse` to convert a string to a date and time](#parsing-01)     
- [Use `ParseExact` or `TryParseExact` to convert a string in a known format](#parsing-02)     
- [Convert from the ISO 8601 string representation to a date and time](#parsing-03)     
+- [Use `Parse` or `TryParse` to convert a string to a date and time](#parsing-01)
+- [Use `ParseExact` or `TryParseExact` to convert a string in a known format](#parsing-02)
+- [Convert from the ISO 8601 string representation to a date and time](#parsing-03)
 
 **`DateTime` resolution**  
- [Explore the resolution of date and time values](#resolution-01)     
- [Comparing for equality within a tolerance](#comparison-01)     
+- [Explore the resolution of date and time values](#resolution-01)
+- [Comparing for equality within a tolerance](#comparison-01)
 
 **Culture and calendars**  
- [Display date and time values using culture specific calendars](#calendars-01)     
- [Parse strings according to a culture specific calendar](#calendars-02)     
- [Initialize a date and time from a specific culture's calendar](#calendars-03)     
- [Accessing date and time properties using a specific culture's calendar](#calendars-04)     
- [Retrieving the week of the year using culture specific calendars](#calendars-05)     
+- [Display date and time values using culture specific calendars](#calendars-01)
+- [Parse strings according to a culture specific calendar](#calendars-02)
+- [Initialize a date and time from a specific culture's calendar](#calendars-03)
+- [Accessing date and time properties using a specific culture's calendar](#calendars-04)
+- [Retrieving the week of the year using culture specific calendars](#calendars-05)
 
 **Persistence**  
- [Persisting date and time values as strings in the local time zone](#persistence-01)     
- [Persisting date and time values as strings in a culture and time invariant format](#persistence-02)     
- [Persisting date and time values as integers](#persistence-03)     
- [Persisting date and time values using the `XmlSerializer`](#persistence-04)     
- [Persisting date and time values using the `BinaryFormatter`](#persistence-05)     
- [Persisting date and time values with time zone data](#persistence-06)     
+- [Persisting date and time values as strings in the local time zone](#persistence-01)
+- [Persisting date and time values as strings in a culture and time invariant format](#persistence-02)
+- [Persisting date and time values as integers](#persistence-03)
+- [Persisting date and time values using the `XmlSerializer`](#persistence-04)
+- [Persisting date and time values using the `BinaryFormatter`](#persistence-05)
+- [Persisting date and time values with time zone data](#persistence-06)
 
 ## Quick links to Remarks topics.
 
 This section contains topics for many common uses of the `DateTime` struct:
   
- [Initializing a `DateTime` object](#initializing-a-datetime-object)   
- [DateTime values and their string representations](#datetime-values-and-their-string-representations)   
- [Parsing DateTime values from strings](#parsing-datetime-values-from-strings)   
- [DateTime values](#datetime-values)   
- [DateTime operations](#datetime-operations)   
- [DateTime resolution](#datetime-resolution)   
- [DateTime values and calendars](#datetime-values-and-calendars)   
- [Persisting DateTime values](#persisting-datetime-values)   
- [DateTime vs. TimeSpan](#datetime-vs-timespan)   
- [Comparing for equality within tolerance](#comparing-for-equality-within-tolerance)
- [COM interop considerations](#com-interop-considerations)  
+- [Initializing a `DateTime` object](#initializing-a-datetime-object)
+- [DateTime values and their string representations](#datetime-values-and-their-string-representations)
+- [Parsing DateTime values from strings](#parsing-datetime-values-from-strings)
+- [DateTime values](#datetime-values)
+- [DateTime operations](#datetime-operations)
+- [DateTime resolution](#datetime-resolution)
+- [DateTime values and calendars](#datetime-values-and-calendars)
+- [Persisting DateTime values](#persisting-datetime-values)
+- [DateTime vs. TimeSpan](#datetime-vs-timespan)
+- [Comparing for equality within tolerance](#comparing-for-equality-within-tolerance)
+- [COM interop considerations](#com-interop-considerations)
    
 The <xref:System.DateTime> value type represents dates and times with values ranging from 00:00:00 (midnight), January 1, 0001 Anno Domini (Common Era) through 11:59:59 P.M., December 31, 9999 A.D. (C.E.) in the Gregorian calendar.  
   
@@ -137,7 +140,7 @@ You can assign an initial value to a new `DateTime` value in many different ways
 - Calling a constructor, either one where you specify arguments for values, or use the implicit default constructor.
 - Assigning a `DateTime` to the return value of a property or method.
 - Parsing a `DateTime` value from its string representation.
-- Using Visual Basic specific language features to instantiate a `DateTime`. 
+- Using Visual Basic-specific language features to instantiate a `DateTime`. 
 
 The following code snippets show examples of each:
 
@@ -210,7 +213,7 @@ You may need to format dates in a specific culture to support web scenarios wher
 
 The <xref:System.DateTime.ToString%28System.String%29?displayProperty=nameWithType> overload can also be used with a custom format string to specify other formats. The following example shows how to format a string using the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) standard format often used for web services. The Iso 8601 format does not have a corresponding standard format string.
 
-<a name="formatting05"></a>
+<a name="formatting-05"></a>
 [!code-csharp-interactive[System.DateTime.Formatting#5](~/samples/snippets/csharp/System.DateTime/StringFormat.cs#5)]
 [!code-vb[System.DateTime.Formatting#5](~/samples/snippets/visualbasic/System.DateTime/StringFormat.vb#5)]  
 
@@ -356,7 +359,7 @@ To successfully restore <xref:System.DateTime> values that are persisted as stri
   
 -   Make the same assumptions about culture-specific formatting when you restore the string as when you persisted it. To ensure that a string can be restored on a system whose current culture is different from the culture of the system it was saved on, call the <xref:System.DateTime.ToString%2A> overload to save the string by using the conventions of the invariant culture. Call the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> or <xref:System.DateTime.TryParse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29> overload to restore the string by using the conventions of the invariant culture. Never use the <xref:System.DateTime.ToString>, <xref:System.DateTime.Parse%28System.String%29>, or <xref:System.DateTime.TryParse%28System.String%2CSystem.DateTime%40%29> overloads, which use the conventions of the current thread culture.  
   
--   If the date represents a single moment of time, ensure that it represents the same moment in time when it's restored, even on a different time zone. Convert the <xref:System.DateTime> value to Coordinated Universal Time (UTC) before saving it. You can also serialize the value along with time zone information. For more information about this approach, see [Serializing DateTime and time zone data](#TimeZone).  
+-   If the date represents a single moment of time, ensure that it represents the same moment in time when it's restored, even on a different time zone. Convert the <xref:System.DateTime> value to Coordinated Universal Time (UTC) before saving it. You can also serialize the value along with time zone information. For more information about this approach, see [Serializing DateTime and time zone data](#serializing-datetime-and-time-zone-data).  
   
  The most common error made when persisting <xref:System.DateTime> values as strings is to rely on the formatting conventions of the default or current culture. Problems arise if the current culture is different when saving and restoring the strings. The following example illustrates these problems. It saves five dates using the formatting conventions of the current culture, which in this case is English (United States). It restores the dates using the formatting conventions of a different culture, which in this case is English (Great Britain). Because the formatting conventions of the two cultures are different, two of the dates can't be restored, and the remaining three dates are interpreted incorrectly. Also, if the original date and time values represent single moments in time, the restored times are incorrect because time zone information is lost.  
   
@@ -447,9 +450,9 @@ You can add or subtract a time interval from a <xref:System.DateTime> object. Ti
 
 Equality comparisons for <xref:System.DateTime> values are exact. That means two values must be expressed as the same number of ticks to be considered equal. That precision is often unecessary or even incorrect for many applications. Often, you want to test if <xref:System.DateTime> objects are **roughly equal**. 
 
-The following example demonstrates how to compare roughly equivalent <xref:System.DateTime> . It accepts a small margin of difference when declaring them equal.  
+The following example demonstrates how to compare roughly equivalent <xref:System.DateTime> values. It accepts a small margin of difference when declaring them equal.  
   
-<a name="comparison-02"></a>
+<a name="comparison-01"></a>
 [!code-csharp[System.DateTime.Comparisons#1](~/samples/snippets/csharp/System.DateTime/DateTimeComparisons.cs#1)]
 [!code-vb[System.DateTime.Comparisons#1](~/samples/snippets/visualbasic/System.DateTime/DateTimeComparisons.vb#1)]  
 
@@ -471,6 +474,9 @@ The behavior of the .NET Framework and COM means that if your application round-
     <altmember cref="T:System.Globalization.Calendar" />
     <altmember cref="M:System.TimeZone.GetUtcOffset(System.DateTime)" />
     <altmember cref="T:System.TimeZoneInfo" />
+    <related type="Article" href="~/docs/standard/datetime/choosing-between-datetime.md">Choosing Between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo</related>
+    <related type="Article" href="~/docs/standard/datetime/working-with-calendars.md">Working with Calendars</related>
+    <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d">Sample: .NET Framework 4 Formatting Utility</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -576,7 +582,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       </Parameters>
       <Docs>
         <param name="ticks">A date and time expressed in the number of 100-nanosecond intervals that have elapsed since January 1, 0001 at 00:00:00.000 in the Gregorian calendar.</param>
-        <param name="kind">One of the enumeration values that indicates whether <c>ticks</c> specifies a local time, Coordinated Universal Time (UTC), or neither.</param>
+        <param name="kind">One of the enumeration values that indicates whether <paramref name="ticks" /> specifies a local time, Coordinated Universal Time (UTC), or neither.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DateTime" /> structure to a specified number of ticks and to Coordinated Universal Time (UTC) or local time.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -628,7 +634,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <Docs>
         <param name="year">The year (1 through 9999).</param>
         <param name="month">The month (1 through 12).</param>
-        <param name="day">The day (1 through the number of days in <c>month</c>).</param>
+        <param name="day">The day (1 through the number of days in <paramref name="month" />).</param>
         <summary>Initializes a new instance of the <see cref="T:System.DateTime" /> structure to the specified year, month, and day.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -690,10 +696,10 @@ The behavior of the .NET Framework and COM means that if your application round-
         <Parameter Name="calendar" Type="System.Globalization.Calendar" />
       </Parameters>
       <Docs>
-        <param name="year">The year (1 through the number of years in <c>calendar</c>).</param>
-        <param name="month">The month (1 through the number of months in <c>calendar</c>).</param>
-        <param name="day">The day (1 through the number of days in <c>month</c>).</param>
-        <param name="calendar">The calendar that is used to interpret <c>year</c>, <c>month</c>, and <c>day</c>.</param>
+        <param name="year">The year (1 through the number of years in <paramref name="calendar" />).</param>
+        <param name="month">The month (1 through the number of months in <paramref name="calendar" />).</param>
+        <param name="day">The day (1 through the number of days in <paramref name="month" />).</param>
+        <param name="calendar">The calendar that is used to interpret <paramref name="year" />, <paramref name="month" />, and <paramref name="day" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DateTime" /> structure to the specified year, month, and day for the specified calendar.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -770,7 +776,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <Docs>
         <param name="year">The year (1 through 9999).</param>
         <param name="month">The month (1 through 12).</param>
-        <param name="day">The day (1 through the number of days in <c>month</c>).</param>
+        <param name="day">The day (1 through the number of days in <paramref name="month" />).</param>
         <param name="hour">The hours (0 through 23).</param>
         <param name="minute">The minutes (0 through 59).</param>
         <param name="second">The seconds (0 through 59).</param>
@@ -858,11 +864,11 @@ The behavior of the .NET Framework and COM means that if your application round-
       <Docs>
         <param name="year">The year (1 through 9999).</param>
         <param name="month">The month (1 through 12).</param>
-        <param name="day">The day (1 through the number of days in <c>month</c>).</param>
+        <param name="day">The day (1 through the number of days in <paramref name="month" />).</param>
         <param name="hour">The hours (0 through 23).</param>
         <param name="minute">The minutes (0 through 59).</param>
         <param name="second">The seconds (0 through 59).</param>
-        <param name="kind">One of the enumeration values that indicates whether <c>year</c>, <c>month</c>, <c>day</c>, <c>hour</c>, <c>minute</c> and <c>second</c> specify a local time, Coordinated Universal Time (UTC), or neither.</param>
+        <param name="kind">One of the enumeration values that indicates whether <paramref name="year" />, <paramref name="month" />, <paramref name="day" />, <paramref name="hour" />, <paramref name="minute" /> and <paramref name="second" /> specify a local time, Coordinated Universal Time (UTC), or neither.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DateTime" /> structure to the specified year, month, day, hour, minute, second, and Coordinated Universal Time (UTC) or local time.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -941,13 +947,13 @@ The behavior of the .NET Framework and COM means that if your application round-
         <Parameter Name="calendar" Type="System.Globalization.Calendar" />
       </Parameters>
       <Docs>
-        <param name="year">The year (1 through the number of years in <c>calendar</c>).</param>
-        <param name="month">The month (1 through the number of months in <c>calendar</c>).</param>
-        <param name="day">The day (1 through the number of days in <c>month</c>).</param>
+        <param name="year">The year (1 through the number of years in <paramref name="calendar" />).</param>
+        <param name="month">The month (1 through the number of months in <paramref name="calendar" />).</param>
+        <param name="day">The day (1 through the number of days in <paramref name="month" />).</param>
         <param name="hour">The hours (0 through 23).</param>
         <param name="minute">The minutes (0 through 59).</param>
         <param name="second">The seconds (0 through 59).</param>
-        <param name="calendar">The calendar that is used to interpret <c>year</c>, <c>month</c>, and <c>day</c>.</param>
+        <param name="calendar">The calendar that is used to interpret <paramref name="year" />, <paramref name="month" />, and <paramref name="day" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DateTime" /> structure to the specified year, month, day, hour, minute, and second for the specified calendar.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1037,7 +1043,7 @@ The behavior of the .NET Framework and COM means that if your application round-
       <Docs>
         <param name="year">The year (1 through 9999).</param>
         <param name="month">The month (1 through 12).</param>
-        <param name="day">The day (1 through the number of days in <c>month</c>).</param>
+        <param name="day">The day (1 through the number of days in <paramref name="month" />).</param>
         <param name="hour">The hours (0 through 23).</param>
         <param name="minute">The minutes (0 through 59).</param>
         <param name="second">The seconds (0 through 59).</param>
@@ -1132,12 +1138,12 @@ The behavior of the .NET Framework and COM means that if your application round-
       <Docs>
         <param name="year">The year (1 through 9999).</param>
         <param name="month">The month (1 through 12).</param>
-        <param name="day">The day (1 through the number of days in <c>month</c>).</param>
+        <param name="day">The day (1 through the number of days in <paramref name="month" />).</param>
         <param name="hour">The hours (0 through 23).</param>
         <param name="minute">The minutes (0 through 59).</param>
         <param name="second">The seconds (0 through 59).</param>
         <param name="millisecond">The milliseconds (0 through 999).</param>
-        <param name="kind">One of the enumeration values that indicates whether <c>year</c>, <c>month</c>, <c>day</c>, <c>hour</c>, <c>minute</c>, <c>second</c>, and <c>millisecond</c> specify a local time, Coordinated Universal Time (UTC), or neither.</param>
+        <param name="kind">One of the enumeration values that indicates whether <paramref name="year" />, <paramref name="month" />, <paramref name="day" />, <paramref name="hour" />, <paramref name="minute" />, <paramref name="second" />, and <paramref name="millisecond" /> specify a local time, Coordinated Universal Time (UTC), or neither.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DateTime" /> structure to the specified year, month, day, hour, minute, second, millisecond, and Coordinated Universal Time (UTC) or local time.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1221,14 +1227,14 @@ The behavior of the .NET Framework and COM means that if your application round-
         <Parameter Name="calendar" Type="System.Globalization.Calendar" />
       </Parameters>
       <Docs>
-        <param name="year">The year (1 through the number of years in <c>calendar</c>).</param>
-        <param name="month">The month (1 through the number of months in <c>calendar</c>).</param>
-        <param name="day">The day (1 through the number of days in <c>month</c>).</param>
+        <param name="year">The year (1 through the number of years in <paramref name="calendar" />).</param>
+        <param name="month">The month (1 through the number of months in <paramref name="calendar" />).</param>
+        <param name="day">The day (1 through the number of days in <paramref name="month" />).</param>
         <param name="hour">The hours (0 through 23).</param>
         <param name="minute">The minutes (0 through 59).</param>
         <param name="second">The seconds (0 through 59).</param>
         <param name="millisecond">The milliseconds (0 through 999).</param>
-        <param name="calendar">The calendar that is used to interpret <c>year</c>, <c>month</c>, and <c>day</c>.</param>
+        <param name="calendar">The calendar that is used to interpret <paramref name="year" />, <paramref name="month" />, and <paramref name="day" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DateTime" /> structure to the specified year, month, day, hour, minute, second, and millisecond for the specified calendar.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1318,15 +1324,15 @@ The behavior of the .NET Framework and COM means that if your application round-
         <Parameter Name="kind" Type="System.DateTimeKind" />
       </Parameters>
       <Docs>
-        <param name="year">The year (1 through the number of years in <c>calendar</c>).</param>
-        <param name="month">The month (1 through the number of months in <c>calendar</c>).</param>
-        <param name="day">The day (1 through the number of days in <c>month</c>).</param>
+        <param name="year">The year (1 through the number of years in <paramref name="calendar" />).</param>
+        <param name="month">The month (1 through the number of months in <paramref name="calendar" />).</param>
+        <param name="day">The day (1 through the number of days in <paramref name="month" />).</param>
         <param name="hour">The hours (0 through 23).</param>
         <param name="minute">The minutes (0 through 59).</param>
         <param name="second">The seconds (0 through 59).</param>
         <param name="millisecond">The milliseconds (0 through 999).</param>
-        <param name="calendar">The calendar that is used to interpret <c>year</c>, <c>month</c>, and <c>day</c>.</param>
-        <param name="kind">One of the enumeration values that indicates whether <c>year</c>, <c>month</c>, <c>day</c>, <c>hour</c>, <c>minute</c>, <c>second</c>, and <c>millisecond</c> specify a local time, Coordinated Universal Time (UTC), or neither.</param>
+        <param name="calendar">The calendar that is used to interpret <paramref name="year" />, <paramref name="month" />, and <paramref name="day" />.</param>
+        <param name="kind">One of the enumeration values that indicates whether <paramref name="year" />, <paramref name="month" />, <paramref name="day" />, <paramref name="hour" />, <paramref name="minute" />, <paramref name="second" />, and <paramref name="millisecond" /> specify a local time, Coordinated Universal Time (UTC), or neither.</param>
         <summary>Initializes a new instance of the <see cref="T:System.DateTime" /> structure to the specified year, month, day, hour, minute, second, millisecond, and Coordinated Universal Time (UTC) or local time for the specified calendar.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1442,6 +1448,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
         <altmember cref="T:System.TimeSpan" />
         <altmember cref="M:System.TimeSpan.Add(System.TimeSpan)" />
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="AddDays">
@@ -1479,7 +1486,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">A number of whole and fractional days. The <c>value</c> parameter can be negative or positive.</param>
+        <param name="value">A number of whole and fractional days. The <paramref name="value" /> parameter can be negative or positive.</param>
         <summary>Returns a new <see cref="T:System.DateTime" /> that adds the specified number of days to the value of this instance.</summary>
         <returns>An object whose value is the sum of the date and time represented by this instance and the number of days represented by <paramref name="value" />.</returns>
         <remarks>
@@ -1544,7 +1551,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">A number of whole and fractional hours. The <c>value</c> parameter can be negative or positive.</param>
+        <param name="value">A number of whole and fractional hours. The <paramref name="value" /> parameter can be negative or positive.</param>
         <summary>Returns a new <see cref="T:System.DateTime" /> that adds the specified number of hours to the value of this instance.</summary>
         <returns>An object whose value is the sum of the date and time represented by this instance and the number of hours represented by <paramref name="value" />.</returns>
         <remarks>
@@ -1571,6 +1578,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
         <altmember cref="M:System.DateTime.Add(System.TimeSpan)" />
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="AddMilliseconds">
@@ -1608,7 +1616,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">A number of whole and fractional milliseconds. The <c>value</c> parameter can be negative or positive. Note that this value is rounded to the nearest integer.</param>
+        <param name="value">A number of whole and fractional milliseconds. The <paramref name="value" /> parameter can be negative or positive. Note that this value is rounded to the nearest integer.</param>
         <summary>Returns a new <see cref="T:System.DateTime" /> that adds the specified number of milliseconds to the value of this instance.</summary>
         <returns>An object whose value is the sum of the date and time represented by this instance and the number of milliseconds represented by <paramref name="value" />.</returns>
         <remarks>
@@ -1633,6 +1641,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
         <altmember cref="T:System.Double" />
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="AddMinutes">
@@ -1670,7 +1679,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">A number of whole and fractional minutes. The <c>value</c> parameter can be negative or positive.</param>
+        <param name="value">A number of whole and fractional minutes. The <paramref name="value" /> parameter can be negative or positive.</param>
         <summary>Returns a new <see cref="T:System.DateTime" /> that adds the specified number of minutes to the value of this instance.</summary>
         <returns>An object whose value is the sum of the date and time represented by this instance and the number of minutes represented by <paramref name="value" />.</returns>
         <remarks>
@@ -1696,6 +1705,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
         <altmember cref="T:System.Double" />
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="AddMonths">
@@ -1733,7 +1743,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         <Parameter Name="months" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="months">A number of months. The <c>months</c> parameter can be negative or positive.</param>
+        <param name="months">A number of months. The <paramref name="months" /> parameter can be negative or positive.</param>
         <summary>Returns a new <see cref="T:System.DateTime" /> that adds the specified number of months to the value of this instance.</summary>
         <returns>An object whose value is the sum of the date and time represented by this instance and <paramref name="months" />.</returns>
         <remarks>
@@ -1798,7 +1808,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="value">A number of whole and fractional seconds. The <c>value</c> parameter can be negative or positive.</param>
+        <param name="value">A number of whole and fractional seconds. The <paramref name="value" /> parameter can be negative or positive.</param>
         <summary>Returns a new <see cref="T:System.DateTime" /> that adds the specified number of seconds to the value of this instance.</summary>
         <returns>An object whose value is the sum of the date and time represented by this instance and the number of seconds represented by <paramref name="value" />.</returns>
         <remarks>
@@ -1823,6 +1833,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
         <altmember cref="T:System.Double" />
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="AddTicks">
@@ -1860,7 +1871,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="value">A number of 100-nanosecond ticks. The <c>value</c> parameter can be positive or negative.</param>
+        <param name="value">A number of 100-nanosecond ticks. The <paramref name="value" /> parameter can be positive or negative.</param>
         <summary>Returns a new <see cref="T:System.DateTime" /> that adds the specified number of ticks to the value of this instance.</summary>
         <returns>An object whose value is the sum of the date and time represented by this instance and the time represented by <paramref name="value" />.</returns>
         <remarks>
@@ -1874,6 +1885,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
         <altmember cref="T:System.Int64" />
         <altmember cref="P:System.DateTime.Ticks" />
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="AddYears">
@@ -1911,7 +1923,7 @@ The behavior of the .NET Framework and COM means that if your application round-
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="value">A number of years. The <c>value</c> parameter can be negative or positive.</param>
+        <param name="value">A number of years. The <paramref name="value" /> parameter can be negative or positive.</param>
         <summary>Returns a new <see cref="T:System.DateTime" /> that adds the specified number of years to the value of this instance.</summary>
         <returns>An object whose value is the sum of the date and time represented by this instance and the number of years represented by <paramref name="value" />.</returns>
         <remarks>
@@ -2986,6 +2998,7 @@ The behavior of the .NET Framework and COM means that if your application round-
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetDateTimeFormats">
@@ -3183,6 +3196,7 @@ July, 2009
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="GetDateTimeFormats">
@@ -3246,6 +3260,7 @@ July, 2009
         </remarks>
         <exception cref="T:System.FormatException">
           <paramref name="format" /> is not a valid standard date and time format specifier character.</exception>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="GetDateTimeFormats">
@@ -3415,6 +3430,7 @@ juillet 2009
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="GetDateTimeFormats">
@@ -3480,6 +3496,7 @@ juillet 2009
         </remarks>
         <exception cref="T:System.FormatException">
           <paramref name="format" /> is not a valid standard date and time format specifier character.</exception>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -4206,6 +4223,7 @@ juillet 2009
         <altmember cref="M:System.DateTime.Add(System.TimeSpan)" />
         <altmember cref="T:System.TimeSpan" />
         <altmember cref="P:System.DateTime.Ticks" />
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -4640,6 +4658,7 @@ juillet 2009
         </remarks>
         <altmember cref="M:System.DateTime.Subtract(System.DateTime)" />
         <altmember cref="P:System.DateTime.Ticks" />
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction">
@@ -4703,6 +4722,7 @@ juillet 2009
         <altmember cref="M:System.DateTime.Subtract(System.TimeSpan)" />
         <altmember cref="P:System.DateTime.Ticks" />
         <altmember cref="T:System.TimeSpan" />
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Parse">
@@ -4721,11 +4741,11 @@ juillet 2009
 ## Remarks  
  In this section:  
   
- [Which method do I call?](#Tasks)   
- [The string to parse](#StringToParse)   
- [Parsing and cultural conventions](#Culture)   
- [Parsing and style elements](#Styles)   
- [The return value and DateTime.Kind](#kind)
+- [Which method do I call?](#Tasks)
+- [The string to parse](#StringToParse)
+- [Parsing and cultural conventions](#Culture)
+- [Parsing and style elements](#Styles)
+- [The return value and DateTime.Kind](#kind)
  
 <a name="Tasks"></a>   
 ### Which method do I call?  
@@ -4946,6 +4966,9 @@ It handles the <xref:System.FormatException> exception that is thrown when the m
         <altmember cref="Overload:System.DateTime.TryParse" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-datetime.md">Parsing Date and Time Strings in the .NET Framework</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -4990,7 +5013,7 @@ It handles the <xref:System.FormatException> exception that is thrown when the m
       </Parameters>
       <Docs>
         <param name="s">A string that contains a date and time to convert. See [The string to parse](#StringToParse) for more information.</param>
-        <param name="provider">An object that supplies culture-specific format information about <c>s</c>.  See [Parsing and cultural conventions](#Culture)</param>
+        <param name="provider">An object that supplies culture-specific format information about <paramref name="s" />.  See [Parsing and cultural conventions](#Culture)</param>
         <summary>Converts the string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent by using culture-specific format information.</summary>
         <returns>An object that is equivalent to the date and time contained in <paramref name="s" /> as specified by <paramref name="provider" />.</returns>
         <remarks>
@@ -5018,6 +5041,9 @@ The following example parses an array of date strings by using the conventions o
         <altmember cref="Overload:System.DateTime.TryParse" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-datetime.md">Parsing Date and Time Strings in the .NET Framework</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -5030,6 +5056,12 @@ The following example parses an array of date strings by using the conventions o
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -5091,8 +5123,8 @@ The following example parses an array of date strings by using the conventions o
       </Parameters>
       <Docs>
         <param name="s">A string that contains a date and time to convert. See [The string to parse](#StringToParse) for more information.</param>
-        <param name="provider">An object that supplies culture-specific formatting information about <c>s</c>.  See [Parsing and cultural conventions](#Culture)</param>
-        <param name="styles">A bitwise combination of the enumeration values that indicates the style elements that can be present in <c>s</c> for the parse operation to succeed, and that defines how to interpret the parsed date in relation to the current time zone or the current date. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
+        <param name="provider">An object that supplies culture-specific formatting information about <paramref name="s" />.  See [Parsing and cultural conventions](#Culture)</param>
+        <param name="styles">A bitwise combination of the enumeration values that indicates the style elements that can be present in <paramref name="s" /> for the parse operation to succeed, and that defines how to interpret the parsed date in relation to the current time zone or the current date. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
         <summary>Converts the string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent by using culture-specific format information and a formatting style.</summary>
         <returns>An object that is equivalent to the date and time contained in <paramref name="s" />, as specified by <paramref name="provider" /> and <paramref name="styles" />.</returns>
         <remarks>
@@ -5127,6 +5159,10 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <altmember cref="Overload:System.DateTime.TryParse" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-datetime.md">Parsing Date and Time Strings in the .NET Framework</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/how-to-round-trip-date-and-time-values.md">How to: Round-trip Date and Time Values</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ParseExact">
@@ -5181,8 +5217,8 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       </Parameters>
       <Docs>
         <param name="s">A string that contains a date and time to convert.</param>
-        <param name="format">A format specifier that defines the required format of <c>s</c>. For more information, see the Remarks section.</param>
-        <param name="provider">An object that supplies culture-specific format information about <c>s</c>.</param>
+        <param name="format">A format specifier that defines the required format of <paramref name="s" />. For more information, see the Remarks section.</param>
+        <param name="provider">An object that supplies culture-specific format information about <paramref name="s" />.</param>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent using the specified format and culture-specific format information. The format of the string representation must match the specified format exactly.</summary>
         <returns>An object that is equivalent to the date and time contained in <paramref name="s" />, as specified by <paramref name="format" /> and <paramref name="provider" />.</returns>
         <remarks>
@@ -5236,6 +5272,9 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <altmember cref="Overload:System.DateTime.TryParseExact" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-datetime.md">Parsing Date and Time Strings in the .NET Framework</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ParseExact">
@@ -5248,6 +5287,12 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -5278,6 +5323,12 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -5337,9 +5388,9 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       </Parameters>
       <Docs>
         <param name="s">A string containing a date and time to convert.</param>
-        <param name="format">A format specifier that defines the required format of <c>s</c>. For more information, see the Remarks section.</param>
-        <param name="provider">An object that supplies culture-specific formatting information about <c>s</c>.</param>
-        <param name="style">A bitwise combination of the enumeration values that provides additional information about <c>s</c>, about style elements that may be present in <c>s</c>, or about the conversion from <c>s</c> to a <see cref="T:System.DateTime" /> value. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
+        <param name="format">A format specifier that defines the required format of <paramref name="s" />. For more information, see the Remarks section.</param>
+        <param name="provider">An object that supplies culture-specific formatting information about <paramref name="s" />.</param>
+        <param name="style">A bitwise combination of the enumeration values that provides additional information about <paramref name="s" />, about style elements that may be present in <paramref name="s" />, or about the conversion from <paramref name="s" /> to a <see cref="T:System.DateTime" /> value. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent using the specified format, culture-specific format information, and style. The format of the string representation must match the specified format exactly or an exception is thrown.</summary>
         <returns>An object that is equivalent to the date and time contained in <paramref name="s" />, as specified by <paramref name="format" />, <paramref name="provider" />, and <paramref name="style" />.</returns>
         <remarks>
@@ -5414,6 +5465,9 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <altmember cref="Overload:System.DateTime.TryParseExact" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-datetime.md">Parsing Date and Time Strings in the .NET Framework</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ParseExact">
@@ -5455,9 +5509,9 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       </Parameters>
       <Docs>
         <param name="s">A string that contains a date and time to convert.</param>
-        <param name="formats">An array of allowable formats of <c>s</c>. For more information, see the Remarks section.</param>
-        <param name="provider">An object that supplies culture-specific format information about <c>s</c>.</param>
-        <param name="style">A bitwise combination of enumeration values that indicates the permitted format of <c>s</c>. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
+        <param name="formats">An array of allowable formats of <paramref name="s" />. For more information, see the Remarks section.</param>
+        <param name="provider">An object that supplies culture-specific format information about <paramref name="s" />.</param>
+        <param name="style">A bitwise combination of enumeration values that indicates the permitted format of <paramref name="s" />. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent using the specified array of formats, culture-specific format information, and style. The format of the string representation must match at least one of the specified formats exactly or an exception is thrown.</summary>
         <returns>An object that is equivalent to the date and time contained in <paramref name="s" />, as specified by <paramref name="formats" />, <paramref name="provider" />, and <paramref name="style" />.</returns>
         <remarks>
@@ -5533,6 +5587,9 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <altmember cref="Overload:System.DateTime.TryParseExact" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-datetime.md">Parsing Date and Time Strings in the .NET Framework</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="Second">
@@ -5653,6 +5710,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md">COM Interoperability in .NET Framework Applications (Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Subtract">
@@ -5736,6 +5794,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The result is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="Subtract">
@@ -5817,6 +5876,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The result is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
         <altmember cref="T:System.TimeSpan" />
+        <related type="Article" href="~/docs/standard/datetime/performing-arithmetic-operations.md">Performing Arithmetic Operations with Dates and Times</related>
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -5836,6 +5896,12 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -5865,6 +5931,12 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TypeCode</ReturnType>
@@ -6560,7 +6632,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -7106,6 +7178,8 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <altmember cref="P:System.Globalization.CultureInfo.DateTimeFormat" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
         <altmember cref="M:System.DateTime.ToString" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ToLongTimeString">
@@ -7169,6 +7243,8 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <altmember cref="P:System.Globalization.CultureInfo.DateTimeFormat" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
         <altmember cref="M:System.DateTime.ToString" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ToOADate">
@@ -7212,7 +7288,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
   
  The <xref:System.DateTime.ToOADate%2A> method throws an <xref:System.OverflowException> if the current instance represents a date that is later than <xref:System.DateTime.MinValue> and earlier than midnight on January1, 0100. However, if the value of the current instance is <xref:System.DateTime.MinValue>, the method returns 0.  
   
- For more information about OLE Automation, see the [MSDN Library](http://go.microsoft.com/fwlink/?linkid=37118).  
+ For more information about OLE Automation, see the [MSDN Library](https://go.microsoft.com/fwlink/?linkid=37118).  
   
  ]]></format>
         </remarks>
@@ -7282,6 +7358,8 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <altmember cref="P:System.Globalization.CultureInfo.DateTimeFormat" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
         <altmember cref="M:System.DateTime.ToString" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ToShortTimeString">
@@ -7345,6 +7423,8 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <altmember cref="P:System.Globalization.CultureInfo.DateTimeFormat" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
         <altmember cref="M:System.DateTime.ToString" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ToString">
@@ -7568,9 +7648,9 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
   
  Some uses of this method include:  
   
--   Getting a string that displays the date and time in the current culture’s short date and time format. To do this, you use the "G" format specifier.  
+-   Getting a string that displays the date and time in the current culture's short date and time format. To do this, you use the "G" format specifier.  
   
--   Getting a string that contains only the month and year. To do this, you use the "MM/yyyy" format string. The format string uses the current culture’s date separator.  
+-   Getting a string that contains only the month and year. To do this, you use the "MM/yyyy" format string. The format string uses the current culture's date separator.  
   
 -   Getting a string that contains the date and time in a specific format. For example, the "MM/dd/yyyyHH:mm" format string displays the date and time string in a fixed format such as "19//03//2013 18:06". The format string uses "/" as a fixed date separator regardless of culture-specific settings.  
   
@@ -7605,6 +7685,9 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         </block>
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
         <altmember cref="T:System.Globalization.CultureInfo" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -7701,6 +7784,10 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         </block>
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
         <altmember cref="T:System.Globalization.CultureInfo" />
+        <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Formatting Types in .NET</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
+        <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d">Sample: .NET Framework 4 Formatting Utility</related>
       </Docs>
     </Member>
     <Member MemberName="ToUniversalTime">
@@ -7800,6 +7887,12 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -7844,6 +7937,12 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -7901,7 +8000,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       </Parameters>
       <Docs>
         <param name="s">A string containing a date and time to convert.</param>
-        <param name="result">When this method returns, contains the <see cref="T:System.DateTime" /> value equivalent to the date and time contained in <c>s</c>, if the conversion succeeded, or <see cref="F:System.DateTime.MinValue" /> if the conversion failed. The conversion fails if the <c>s</c> parameter is <see langword="null" />, is an empty string (""), or does not contain a valid string representation of a date and time. This parameter is passed uninitialized.</param>
+        <param name="result">When this method returns, contains the <see cref="T:System.DateTime" /> value equivalent to the date and time contained in <paramref name="s" />, if the conversion succeeded, or <see cref="F:System.DateTime.MinValue" /> if the conversion failed. The conversion fails if the <paramref name="s" /> parameter is <see langword="null" />, is an empty string (""), or does not contain a valid string representation of a date and time. This parameter is passed uninitialized.</param>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent and returns a value that indicates whether the conversion succeeded.</summary>
         <returns>
           <see langword="true" /> if the <paramref name="s" /> parameter was converted successfully; otherwise, <see langword="false" />.</returns>
@@ -7938,6 +8037,10 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <altmember cref="Overload:System.DateTime.Parse" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-datetime.md">Parsing Date and Time Strings in the .NET Framework</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
+        <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d">Sample: .NET Framework 4 Formatting Utility</related>
       </Docs>
     </Member>
     <Member MemberName="TryParse">
@@ -7951,6 +8054,12 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -8014,9 +8123,9 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       </Parameters>
       <Docs>
         <param name="s">A string containing a date and time to convert.</param>
-        <param name="provider">An object that supplies culture-specific formatting information about <c>s</c>.</param>
+        <param name="provider">An object that supplies culture-specific formatting information about <paramref name="s" />.</param>
         <param name="styles">A bitwise combination of enumeration values that defines how to interpret the parsed date in relation to the current time zone or the current date. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
-        <param name="result">When this method returns, contains the <see cref="T:System.DateTime" /> value equivalent to the date and time contained in <c>s</c>, if the conversion succeeded, or <see cref="F:System.DateTime.MinValue" /> if the conversion failed. The conversion fails if the <c>s</c> parameter is <see langword="null" />, is an empty string (""), or does not contain a valid string representation of a date and time. This parameter is passed uninitialized.</param>
+        <param name="result">When this method returns, contains the <see cref="T:System.DateTime" /> value equivalent to the date and time contained in <paramref name="s" />, if the conversion succeeded, or <see cref="F:System.DateTime.MinValue" /> if the conversion failed. The conversion fails if the <paramref name="s" /> parameter is <see langword="null" />, is an empty string (""), or does not contain a valid string representation of a date and time. This parameter is passed uninitialized.</param>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent using the specified culture-specific format information and formatting style, and returns a value that indicates whether the conversion succeeded.</summary>
         <returns>
           <see langword="true" /> if the <paramref name="s" /> parameter was converted successfully; otherwise, <see langword="false" />.</returns>
@@ -8091,6 +8200,9 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <altmember cref="Overload:System.DateTime.Parse" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-datetime.md">Parsing Date and Time Strings in the .NET Framework</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="TryParseExact">
@@ -8118,6 +8230,12 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -8151,6 +8269,12 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -8212,10 +8336,10 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       </Parameters>
       <Docs>
         <param name="s">A string containing a date and time to convert.</param>
-        <param name="format">The required format of <c>s</c>.</param>
-        <param name="provider">An object that supplies culture-specific formatting information about <c>s</c>.</param>
-        <param name="style">A bitwise combination of one or more enumeration values that indicate the permitted format of <c>s</c>.</param>
-        <param name="result">When this method returns, contains the <see cref="T:System.DateTime" /> value equivalent to the date and time contained in <c>s</c>, if the conversion succeeded, or <see cref="F:System.DateTime.MinValue" /> if the conversion failed. The conversion fails if either the <c>s</c> or <c>format</c> parameter is <see langword="null" />, is an empty string, or does not contain a date and time that correspond to the pattern specified in <c>format</c>. This parameter is passed uninitialized.</param>
+        <param name="format">The required format of <paramref name="s" />.</param>
+        <param name="provider">An object that supplies culture-specific formatting information about <paramref name="s" />.</param>
+        <param name="style">A bitwise combination of one or more enumeration values that indicate the permitted format of <paramref name="s" />.</param>
+        <param name="result">When this method returns, contains the <see cref="T:System.DateTime" /> value equivalent to the date and time contained in <paramref name="s" />, if the conversion succeeded, or <see cref="F:System.DateTime.MinValue" /> if the conversion failed. The conversion fails if either the <paramref name="s" /> or <paramref name="format" /> parameter is <see langword="null" />, is an empty string, or does not contain a date and time that correspond to the pattern specified in <paramref name="format" />. This parameter is passed uninitialized.</param>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent using the specified format, culture-specific format information, and style. The format of the string representation must match the specified format exactly. The method returns a value that indicates whether the conversion succeeded.</summary>
         <returns>
           <see langword="true" /> if <paramref name="s" /> was converted successfully; otherwise, <see langword="false" />.</returns>
@@ -8283,6 +8407,9 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <altmember cref="Overload:System.DateTime.ParseExact" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-datetime.md">Parsing Date and Time Strings in the .NET Framework</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="TryParseExact">
@@ -8324,10 +8451,10 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       </Parameters>
       <Docs>
         <param name="s">A string that contains a date and time to convert.</param>
-        <param name="formats">An array of allowable formats of <c>s</c>.</param>
-        <param name="provider">An object that supplies culture-specific format information about <c>s</c>.</param>
-        <param name="style">A bitwise combination of enumeration values that indicates the permitted format of <c>s</c>. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
-        <param name="result">When this method returns, contains the <see cref="T:System.DateTime" /> value equivalent to the date and time contained in <c>s</c>, if the conversion succeeded, or <see cref="F:System.DateTime.MinValue" /> if the conversion failed. The conversion fails if <c>s</c> or <c>formats</c> is <see langword="null" />, <c>s</c> or an element of <c>formats</c> is an empty string, or the format of <c>s</c> is not exactly as specified by at least one of the format patterns in <c>formats</c>. This parameter is passed uninitialized.</param>
+        <param name="formats">An array of allowable formats of <paramref name="s" />.</param>
+        <param name="provider">An object that supplies culture-specific format information about <paramref name="s" />.</param>
+        <param name="style">A bitwise combination of enumeration values that indicates the permitted format of <paramref name="s" />. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
+        <param name="result">When this method returns, contains the <see cref="T:System.DateTime" /> value equivalent to the date and time contained in <paramref name="s" />, if the conversion succeeded, or <see cref="F:System.DateTime.MinValue" /> if the conversion failed. The conversion fails if <paramref name="s" /> or <paramref name="formats" /> is <see langword="null" />, <paramref name="s" /> or an element of <paramref name="formats" /> is an empty string, or the format of <paramref name="s" /> is not exactly as specified by at least one of the format patterns in <paramref name="formats" />. This parameter is passed uninitialized.</param>
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent using the specified array of formats, culture-specific format information, and style. The format of the string representation must match at least one of the specified formats exactly. The method returns a value that indicates whether the conversion succeeded.</summary>
         <returns>
           <see langword="true" /> if the <paramref name="s" /> parameter was converted successfully; otherwise, <see langword="false" />.</returns>
@@ -8392,6 +8519,9 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <altmember cref="Overload:System.DateTime.ParseExact" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.Globalization.DateTimeFormatInfo" />
+        <related type="Article" href="~/docs/standard/base-types/parsing-datetime.md">Parsing Date and Time Strings in the .NET Framework</related>
+        <related type="Article" href="~/docs/standard/base-types/standard-date-and-time-format-strings.md">Standard Date and Time Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-date-and-time-format-strings.md">Custom Date and Time Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="UnixEpoch">
@@ -8405,6 +8535,12 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -8443,7 +8579,7 @@ The following example demonstrates the <xref:System.DateTime.Parse%28System.Stri
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
           <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">

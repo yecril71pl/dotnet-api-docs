@@ -29,6 +29,8 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <related type="Article" href="https://msdn.microsoft.com/library/a202175f-a85a-44fd-bc35-c8b5c82f31c3">ASP.NET Configuration Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/1298034b-5f7d-464d-abd1-ad9e6b3eeb7e">Configuring ASP.NET Applications</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,7 +74,7 @@
       <MemberSignature Language="F#" Value="abstract member ProtectedConfigAction : int64 * string * string * string * string * string * string * int *  -&gt; unit&#xA;override this.ProtectedConfigAction : int64 * string * string * string * string * string * string * int *  -&gt; unit" Usage="regiisUtility.ProtectedConfigAction (options, firstArgument, secondArgument, providerName, appPath, site, cspOrLocation, keySize, exception)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.Management.IRegiisUtility.ProtectedConfigAction(System.Int64,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.IntPtr)</InterfaceMember>
+        <InterfaceMember>M:System.Web.Management.IRegiisUtility.ProtectedConfigAction(System.Int64,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.IntPtr@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -124,7 +126,7 @@
       <MemberSignature Language="F#" Value="abstract member RegisterAsnetMmcAssembly : int * string * string *  -&gt; unit&#xA;override this.RegisterAsnetMmcAssembly : int * string * string *  -&gt; unit" Usage="regiisUtility.RegisterAsnetMmcAssembly (doReg, typeName, binaryDirectory, exception)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.Management.IRegiisUtility.RegisterAsnetMmcAssembly(System.Int32,System.String,System.String,System.IntPtr)</InterfaceMember>
+        <InterfaceMember>M:System.Web.Management.IRegiisUtility.RegisterAsnetMmcAssembly(System.Int32,System.String,System.String,System.IntPtr@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -166,7 +168,7 @@
       <MemberSignature Language="F#" Value="abstract member RegisterSystemWebAssembly : int *  -&gt; unit&#xA;override this.RegisterSystemWebAssembly : int *  -&gt; unit" Usage="regiisUtility.RegisterSystemWebAssembly (doReg, exception)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.Management.IRegiisUtility.RegisterSystemWebAssembly(System.Int32,System.IntPtr)</InterfaceMember>
+        <InterfaceMember>M:System.Web.Management.IRegiisUtility.RegisterSystemWebAssembly(System.Int32,System.IntPtr@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -204,7 +206,7 @@
       <MemberSignature Language="F#" Value="abstract member RemoveBrowserCaps :  -&gt; unit&#xA;override this.RemoveBrowserCaps :  -&gt; unit" Usage="regiisUtility.RemoveBrowserCaps exception" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Web.Management.IRegiisUtility.RemoveBrowserCaps(System.IntPtr)</InterfaceMember>
+        <InterfaceMember>M:System.Web.Management.IRegiisUtility.RemoveBrowserCaps(System.IntPtr@)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

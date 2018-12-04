@@ -20,6 +20,11 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName>System.Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Provides information about a regular expression that is used to compile a regular expression to a stand-alone assembly.</summary>
     <remarks>
@@ -33,6 +38,7 @@
  ]]></format>
     </remarks>
     <altmember cref="Overload:System.Text.RegularExpressions.Regex.CompileToAssembly" />
+    <related type="Article" href="~/docs/standard/base-types/compilation-and-reuse-in-regular-expressions.md">Compilation and Reuse</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -43,6 +49,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Text.RegularExpressions.RegexCompilationInfo" /> class.</summary>
+        <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Regular Expression Language Elements</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -491,6 +498,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The value for this property is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/base-types/regular-expressions.md">.NET Framework Regular Expressions</related>
+        <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Regular Expression Language Elements</related>
       </Docs>
     </Member>
   </Members>

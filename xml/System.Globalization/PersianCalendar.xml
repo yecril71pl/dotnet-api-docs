@@ -28,6 +28,11 @@
     <BaseTypeName>System.Globalization.Calendar</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName>System.Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents the Persian calendar.</summary>
     <remarks>
@@ -83,6 +88,8 @@
     <altmember cref="T:System.Globalization.Calendar" />
     <altmember cref="P:System.Globalization.CultureInfo.Calendar" />
     <altmember cref="P:System.Globalization.CultureInfo.OptionalCalendars" />
+    <related type="Article" href="~/docs/standard/datetime/working-with-calendars.md">Working with Calendars</related>
+    <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/NET-Framework-4-Calendar-3360a84a">Sample: Calendar Week Range Utility</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -279,6 +286,9 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization.Calendars</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Globalization.CalendarAlgorithmType</ReturnType>
@@ -555,7 +565,7 @@
       </Parameters>
       <Docs>
         <param name="year">An integer from 1 through 9378 that represents the year.</param>
-        <param name="month">An integer that represents the month, and ranges from 1 through 12 if <c>year</c> is not 9378, or 1 through 10 if <c>year</c> is 9378.</param>
+        <param name="month">An integer that represents the month, and ranges from 1 through 12 if <paramref name="year" /> is not 9378, or 1 through 10 if <paramref name="year" /> is 9378.</param>
         <param name="era">An integer from 0 through 1 that represents the era.</param>
         <summary>Returns the number of days in the specified month of the specified year and era.</summary>
         <returns>The number of days in the specified month of the specified year and era.</returns>
@@ -940,7 +950,7 @@
       </Parameters>
       <Docs>
         <param name="year">An integer from 1 through 9378 that represents the year.</param>
-        <param name="month">An integer that represents the month and ranges from 1 through 12 if <c>year</c> is not 9378, or 1 through 10 if <c>year</c> is 9378.</param>
+        <param name="month">An integer that represents the month and ranges from 1 through 12 if <paramref name="year" /> is not 9378, or 1 through 10 if <paramref name="year" /> is 9378.</param>
         <param name="day">An integer from 1 through 31 that represents the day.</param>
         <param name="era">An integer from 0 through 1 that represents the era.</param>
         <summary>Determines whether the specified date is a leap day.</summary>
@@ -1006,7 +1016,7 @@
       </Parameters>
       <Docs>
         <param name="year">An integer from 1 through 9378 that represents the year.</param>
-        <param name="month">An integer that represents the month and ranges from 1 through 12 if <c>year</c> is not 9378, or 1 through 10 if <c>year</c> is 9378.</param>
+        <param name="month">An integer that represents the month and ranges from 1 through 12 if <paramref name="year" /> is not 9378, or 1 through 10 if <paramref name="year" /> is 9378.</param>
         <param name="era">An integer from 0 through 1 that represents the era.</param>
         <summary>Determines whether the specified month in the specified year and era is a leap month.</summary>
         <returns>Always returns <see langword="false" /> because the <see cref="T:System.Globalization.PersianCalendar" /> class does not support the notion of a leap month.</returns>
@@ -1221,6 +1231,9 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization.Calendars</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

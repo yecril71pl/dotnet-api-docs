@@ -26,28 +26,30 @@
     <BaseTypeName>System.Collections.Specialized.NameObjectCollectionBase</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName>System.Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents a collection of associated <see cref="T:System.String" /> keys and <see cref="T:System.String" /> values that can be accessed either with the key or with the index.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- This collection is based on the <xref:System.Collections.Specialized.NameObjectCollectionBase> class. However, unlike the <xref:System.Collections.Specialized.NameObjectCollectionBase>, this class stores multiple string values under a single key.  
+## Remarks
+
+ This collection is based on the <xref:System.Collections.Specialized.NameObjectCollectionBase> class. Each element of the collection is a key/value pair. However, unlike the <xref:System.Collections.Specialized.NameObjectCollectionBase>, this class can store multiple string values under a single key.  
   
  This class can be used for headers, query strings and form data.  
   
- Each element is a key/value pair.  
+ Collections of this type do not preserve the ordering of elements, and no particular ordering is guaranteed when enumerating the collection.  
   
- Collections of this type do not preserve the ordering of element, and no particular ordering is guaranteed when enumerating the collection.  
-  
- The capacity of a <xref:System.Collections.Specialized.NameValueCollection> is the number of elements the <xref:System.Collections.Specialized.NameValueCollection> can hold. As elements are added to a <xref:System.Collections.Specialized.NameValueCollection>, the capacity is automatically increased as required through reallocation.  
+ The capacity of a <xref:System.Collections.Specialized.NameValueCollection> is the number of elements the <xref:System.Collections.Specialized.NameValueCollection> can hold. As elements are added, its capacity is automatically increased as required through reallocation.  
   
  The hash code provider dispenses hash codes for keys in the <xref:System.Collections.Specialized.NameValueCollection>. The default hash code provider is the <xref:System.Collections.CaseInsensitiveHashCodeProvider>.  
   
- The comparer determines whether two keys are equal. The default comparer is the <xref:System.Collections.CaseInsensitiveComparer>.  
-  
- In .NET Framework version 1.0, this class uses culture-sensitive string comparisons. However, in .NET Framework version 1.1 and later, this class uses <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> when comparing strings. For more information about how culture affects comparisons and sorting, see [Performing Culture-Insensitive String Operations](~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md).  
-  
+ The comparer determines whether two keys are equal. The default comparer is a <xref:System.Collections.CaseInsensitiveComparer> that uses the conventions of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture); that is, key comparisons are case-insensitive by default. To perform case-sensitive key comparisons, call the <xref:System.Collections.Specialized.NameValueCollection.%23ctor(System.Collections.IEqualityComparer)?displayProperty=nameWithType> constructor, and provide a value of <xref:System.StringComparer.CurrentCulture?displayProperty=nameWithType>, <xref:System.StringComparer.InvariantCulture?displayProperty=nameWithType>, or <xref:System.StringComparer.Ordinal?displayProperty=nameWithType> as the `equalityComparer` argument. For more information about how culture affects comparisons and sorting, see [Performing Culture-Insensitive String Operations](~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md). 
+
  `null` is allowed as a key or as a value.  
   
 > [!CAUTION]
@@ -68,6 +70,7 @@
   
  Enumerating through a collection is intrinsically not a thread safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.</threadsafe>
     <altmember cref="T:System.Collections.Specialized.NameObjectCollectionBase" />
+    <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -130,6 +133,7 @@
         </remarks>
         <altmember cref="T:System.Collections.CaseInsensitiveHashCodeProvider" />
         <altmember cref="T:System.Collections.CaseInsensitiveComparer" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -182,6 +186,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Collections.IEqualityComparer" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -237,6 +242,7 @@
           <paramref name="col" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Collections.CaseInsensitiveHashCodeProvider" />
         <altmember cref="T:System.Collections.CaseInsensitiveComparer" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -295,6 +301,7 @@
           <paramref name="capacity" /> is less than zero.</exception>
         <altmember cref="T:System.Collections.CaseInsensitiveHashCodeProvider" />
         <altmember cref="T:System.Collections.CaseInsensitiveComparer" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -322,7 +329,7 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
           <AttributeName>System.Obsolete("Please use NameValueCollection(IEqualityComparer) instead.")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -357,6 +364,7 @@
         <altmember cref="T:System.Collections.CaseInsensitiveHashCodeProvider" />
         <altmember cref="T:System.Collections.IComparer" />
         <altmember cref="T:System.Collections.CaseInsensitiveComparer" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -413,6 +421,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="capacity" /> is less than zero.</exception>
         <altmember cref="T:System.Collections.IEqualityComparer" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -470,6 +479,7 @@
           <paramref name="col" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Collections.CaseInsensitiveHashCodeProvider" />
         <altmember cref="T:System.Collections.CaseInsensitiveComparer" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -520,6 +530,7 @@
         <altmember cref="T:System.Runtime.Serialization.ISerializable" />
         <altmember cref="T:System.Runtime.Serialization.SerializationInfo" />
         <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -547,7 +558,7 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
           <AttributeName>System.Obsolete("Please use NameValueCollection(Int32, IEqualityComparer) instead.")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -584,6 +595,7 @@
           <paramref name="capacity" /> is less than zero.</exception>
         <altmember cref="T:System.Collections.CaseInsensitiveHashCodeProvider" />
         <altmember cref="T:System.Collections.CaseInsensitiveComparer" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Add">
@@ -823,7 +835,7 @@
       </Parameters>
       <Docs>
         <param name="dest">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:System.Collections.Specialized.NameValueCollection" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
-        <param name="index">The zero-based index in <c>dest</c> at which copying begins.</param>
+        <param name="index">The zero-based index in <paramref name="dest" /> at which copying begins.</param>
         <summary>Copies the entire <see cref="T:System.Collections.Specialized.NameValueCollection" /> to a compatible one-dimensional <see cref="T:System.Array" />, starting at the specified index of the target array.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -907,6 +919,7 @@
           <paramref name="index" /> is outside the valid range of indexes for the collection.</exception>
         <altmember cref="M:System.Collections.Specialized.NameValueCollection.GetValues(System.String)" />
         <altmember cref="P:System.Collections.Specialized.NameValueCollection.AllKeys" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -958,6 +971,7 @@
         </remarks>
         <altmember cref="M:System.Collections.Specialized.NameValueCollection.GetValues(System.String)" />
         <altmember cref="P:System.Collections.Specialized.NameValueCollection.AllKeys" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="GetKey">
@@ -1065,6 +1079,7 @@
           <paramref name="index" /> is outside the valid range of indexes for the collection.</exception>
         <altmember cref="M:System.Collections.Specialized.NameValueCollection.Get(System.String)" />
         <altmember cref="P:System.Collections.Specialized.NameValueCollection.AllKeys" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="GetValues">
@@ -1116,6 +1131,7 @@
         </remarks>
         <altmember cref="M:System.Collections.Specialized.NameValueCollection.Get(System.String)" />
         <altmember cref="P:System.Collections.Specialized.NameValueCollection.AllKeys" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="HasKeys">
@@ -1277,6 +1293,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is outside the valid range of indexes for the collection.</exception>
         <altmember cref="Overload:System.Collections.Specialized.NameValueCollection.Get" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -1343,6 +1360,7 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only and the operation attempts to modify the collection.</exception>
         <altmember cref="Overload:System.Collections.Specialized.NameValueCollection.Get" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -1383,7 +1401,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Collections.Specialized.NameValueCollection> does not contain an element with the specified key, the <xref:System.Collections.Specialized.NameValueCollection> remains unchanged. No exception is thrown.  
+ If the <xref:System.Collections.Specialized.NameValueCollection> doesn't contain an element with the specified key, the <xref:System.Collections.Specialized.NameValueCollection> remains unchanged. No exception is thrown.
+
+ If you specify a `null` value to the `name` parameter, an entry with a `null` key is removed, if found.
   
  In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table.  
   
@@ -1392,6 +1412,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
     <Member MemberName="Set">
@@ -1444,6 +1465,7 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
         <altmember cref="M:System.Collections.Specialized.NameValueCollection.Add(System.Collections.Specialized.NameValueCollection)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md">Performing Culture-Insensitive String Operations</related>
       </Docs>
     </Member>
   </Members>
