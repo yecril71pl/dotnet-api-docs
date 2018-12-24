@@ -95,7 +95,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -108,7 +108,7 @@
         <param name="obj">The object to compare to the current <see cref="T:System.Data.Common.CommandTrees.DbExpression" />.</param>
         <summary>Determines whether the specified <see cref="T:System.Object" /> is equal to the current DbExpression instance.</summary>
         <returns>
-          <see langword="True" /> if the specified <see cref="T:System.Object" /> is equal to the current DbExpression instance; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the specified <see cref="T:System.Object" /> is equal to the current DbExpression instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -37,7 +37,7 @@
 `Span<T>` is a [ref struct](~/docs/csharp/language-reference/keywords/ref.md#ref-struct-types) that is allocated on the stack rather than on the managed heap. Ref struct types have a number of restrictions to ensure that they cannot be promoted to the managed heap, including that they can't be boxed, they can't be assigned to variables of type <xref:System.Object>, `dynamic` or to any interface type, they can't be fields in a reference type, and they can't be used across `await` and `yield` boundaries. In addition, calls to two methods, <xref:System.Span%601.Equals(System.Object)> and <xref:System.Span%601.GetHashCode%2A>, throw a <xref:System.NotSupportedException>. 
 
 > [!IMPORTANT]
-> Because it is a stack-only type, `Span<T>` is unsuitable for many scenarios that require storing references to buffers on the heap. This is true, for example, of routines that make asynchrous method calls. For such scenarious, you can use the complimentary <xref:System.Memory%601?displayProperty=nameWithType> and <xref:System.ReadOnlyMemory%601?displayProperty=nameWithType> types.
+> Because it is a stack-only type, `Span<T>` is unsuitable for many scenarios that require storing references to buffers on the heap. This is true, for example, of routines that make asynchrous method calls. For such scenarios, you can use the complimentary <xref:System.Memory%601?displayProperty=nameWithType> and <xref:System.ReadOnlyMemory%601?displayProperty=nameWithType> types.
 
 For spans that represent immutable or read-only structures, use <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>.
 
@@ -186,9 +186,15 @@ If `array` is `null`, this constructor returns a `null` `Span<T>`.
         <summary>Creates a new <see cref="T:System.Span`1" /> object that includes a specified number of elements of an array starting at a specified index.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="array" /> is <see langword="null" />, but <paramref name="start" /> or <paramref name="length" /> is non-zero.<p />
-          --or--<p /><paramref name="start" /> is outside the bounds of the array. <p />
-          --or--<p /><paramref name="start" /> and <paramref name="length" /> exceeds the number of elements in the array.
+          <paramref name="array" /> is <see langword="null" />, but <paramref name="start" /> or <paramref name="length" /> is non-zero.
+
+-or-
+
+<paramref name="start" /> is outside the bounds of the array.
+
+-or-
+
+<paramref name="start" /> and <paramref name="length" /> exceeds the number of elements in the array.
         </exception>
         <exception cref="T:System.TypeMismatchException">
           <paramref name="T" /> is a reference type, and <paramref name="array" /> is not an array of type <paramref name="T" />.</exception>

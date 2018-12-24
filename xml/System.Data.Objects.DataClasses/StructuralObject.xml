@@ -261,6 +261,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::ComponentModel::PropertyChangedEventHandler ^ PropertyChanged;" />
       <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -282,6 +285,9 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::ComponentModel::PropertyChangingEventHandler ^ PropertyChanging;" />
       <MemberSignature Language="F#" Value="member this.PropertyChanging : System.ComponentModel.PropertyChangingEventHandler " Usage="member this.PropertyChanging : System.ComponentModel.PropertyChangingEventHandler " />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanging.PropertyChanging</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
@@ -2267,7 +2273,7 @@
         <param name="value">The value passed into the property setter.</param>
         <param name="isNullable">Flag indicating if this property is allowed to be null.</param>
         <param name="propertyName">The name of the property that is being validated.</param>
-        <summary>Makes sure the <see cref="T:System.Byte[]" /> value being set for a property is valid.</summary>
+        <summary>Makes sure the <see cref="T:System.Byte" /> array value being set for a property is valid.</summary>
         <returns>The <see cref="T:System.Byte" /> value being validated.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Data.ConstraintException">If value is null for a non nullable value.</exception>
