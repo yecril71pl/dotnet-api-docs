@@ -14,16 +14,16 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Windows.TemplatePart(Name="PART_MainPanel", Type=typeof(System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarPanel))</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Windows.TemplatePart(Name="PART_OverflowPanel", Type=typeof(System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarOverflowPanel))</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Windows.TemplatePart(Name="PART_OverflowPopup", Type=typeof(System.Windows.Controls.Primitives.Popup))</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Windows.TemplatePart(Name="PART_OverflowButton", Type=typeof(System.Windows.Controls.Ribbon.RibbonToggleButton))</AttributeName>
     </Attribute>
   </Attributes>
@@ -368,6 +368,37 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsOverflowItem">
+      <MemberSignature Language="C#" Value="see GetIsOverflowItem" />
+      <MemberSignature Language="ILAsm" Value="see GetIsOverflowItem" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar.IsOverflowItem" />
+      <MemberSignature Language="VB.NET" Value="see GetIsOverflowItem" />
+      <MemberSignature Language="F#" Value="see GetIsOverflowItem" Usage="see GetIsOverflowItem" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value that indicates whether an item in the Quick Access Toolbar is shown in the overflow menu.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+## Remarks  
+ This property can be attached to items in the Quick Access Toolbar.  
+  
+<a name="dependencyPropertyInfo_IsOverflowItem"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar.IsOverflowItemProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+        <altmember cref="M:System.Windows.Controls.Ribbon.RibbonQuickAccessToolBar.GetIsOverflowItem(System.Windows.DependencyObject)" />
+      </Docs>
+    </Member>
     <Member MemberName="IsOverflowItemProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsOverflowItemProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsOverflowItemProperty" />
@@ -401,7 +432,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>

@@ -9,6 +9,11 @@
     <AssemblyName>System.Memory</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,6 +36,11 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;System.Byte&gt;</ReturnType>
@@ -78,6 +88,11 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;System.Byte&gt;</ReturnType>
@@ -125,6 +140,11 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -139,7 +159,7 @@
         <typeparam name="T">The type of items in the read-only memory buffer.</typeparam>
         <param name="memory">The read-only memory buffer.</param>
         <summary>Creates a <see cref="T:System.Memory`1" /> instance from a <see cref="T:System.ReadOnlyMemory`1" />.</summary>
-        <returns>A memory block that represetns the same memory as the <see cref="T:System.ReadOnlyMemory`1" />.</returns>
+        <returns>A memory block that represents the same memory as the <see cref="T:System.ReadOnlyMemory`1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -149,6 +169,84 @@ This method must be used with extreme caution. <xref:System.ReadOnlyMemory%601> 
 
        ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsRef&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static ref readonly T&amp; AsRef&lt;T&gt; (ReadOnlySpan&lt;byte&gt; span) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig T&amp; modreq(System.Runtime.InteropServices.InAttribute) AsRef&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.AsRef``1(System.ReadOnlySpan{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AsRef(Of T As Structure) (span As ReadOnlySpan(Of Byte)) As T&amp;" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static T&amp; ^ AsRef(ReadOnlySpan&lt;System::Byte&gt; span);" />
+      <MemberSignature Language="F#" Value="static member AsRef : ReadOnlySpan&lt;byte&gt; -&gt; T&amp; (requires 'T : struct)" Usage="System.Runtime.InteropServices.MemoryMarshal.AsRef span" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue RefType="Readonly">
+        <ReturnType>T</ReturnType>
+        <Attributes>
+          <Attribute FrameworkAlternate="netcore-3.0">
+            <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="span">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsRef&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static ref T AsRef&lt;T&gt; (Span&lt;byte&gt; span) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T AsRef&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Span`1&lt;unsigned int8&gt; span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.AsRef``1(System.Span{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AsRef(Of T As Structure) (span As Span(Of Byte)) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static T % AsRef(Span&lt;System::Byte&gt; span);" />
+      <MemberSignature Language="F#" Value="static member AsRef : Span&lt;byte&gt; -&gt;  (requires 'T : struct)" Usage="System.Runtime.InteropServices.MemoryMarshal.AsRef span" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue RefType="Ref">
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="span" Type="System.Span&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="span">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Cast&lt;TFrom,TTo&gt;">
@@ -163,6 +261,11 @@ This method must be used with extreme caution. <xref:System.ReadOnlyMemory%601> 
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;TTo&gt;</ReturnType>
@@ -219,6 +322,11 @@ This method is supported only on platforms that support misaligned memory access
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;TTo&gt;</ReturnType>
@@ -276,6 +384,11 @@ This method is supported only on platforms that support misaligned memory access
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -321,6 +434,11 @@ The array must already be pinned before this method is called, and that array mu
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
@@ -364,6 +482,11 @@ This method can be useful if part of a managed object represents a fixed array.
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
@@ -396,7 +519,7 @@ This method can be useful if part of a managed object represents a fixed array.
       </Docs>
     </Member>
     <Member MemberName="GetReference&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static T GetReference&lt;T&gt; (ReadOnlySpan&lt;T&gt; span);" />
+      <MemberSignature Language="C#" Value="public static ref T GetReference&lt;T&gt; (ReadOnlySpan&lt;T&gt; span);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T GetReference&lt;T&gt;(valuetype System.ReadOnlySpan`1&lt;!!T&gt; span) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.GetReference``1(System.ReadOnlySpan{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetReference(Of T) (span As ReadOnlySpan(Of T)) As T" />
@@ -406,6 +529,11 @@ This method can be useful if part of a managed object represents a fixed array.
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue RefType="Ref">
         <ReturnType>T</ReturnType>
@@ -433,7 +561,7 @@ If the read-only span is empty, this method returns a reference to the location 
       </Docs>
     </Member>
     <Member MemberName="GetReference&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static T GetReference&lt;T&gt; (Span&lt;T&gt; span);" />
+      <MemberSignature Language="C#" Value="public static ref T GetReference&lt;T&gt; (Span&lt;T&gt; span);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T GetReference&lt;T&gt;(valuetype System.Span`1&lt;!!T&gt; span) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.MemoryMarshal.GetReference``1(System.Span{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetReference(Of T) (span As Span(Of T)) As T" />
@@ -443,6 +571,11 @@ If the read-only span is empty, this method returns a reference to the location 
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue RefType="Ref">
         <ReturnType>T</ReturnType>
@@ -481,6 +614,11 @@ If the span is empty, this method returns a reference to the location where the 
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -529,6 +667,11 @@ If the span is empty, this method returns a reference to the location where the 
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
@@ -567,6 +710,11 @@ This method allows a read-only memory buffer to be used in existing APIs that re
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -600,6 +748,10 @@ This method allows a read-only memory buffer to be used in existing APIs that re
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -613,8 +765,8 @@ This method allows a read-only memory buffer to be used in existing APIs that re
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" />
-        <Parameter Name="manager" Type="TManager" RefType="out" />
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="manager" Type="TManager" RefType="out" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of the items in the read-only memory buffer.</typeparam>
@@ -639,6 +791,10 @@ This method allows a read-only memory buffer to be used in existing APIs that re
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -652,10 +808,10 @@ This method allows a read-only memory buffer to be used in existing APIs that re
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" />
-        <Parameter Name="manager" Type="TManager" RefType="out" />
-        <Parameter Name="start" Type="System.Int32" RefType="out" />
-        <Parameter Name="length" Type="System.Int32" RefType="out" />
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="manager" Type="TManager" RefType="out" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="start" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="length" Type="System.Int32" RefType="out" Index="3" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of the items in the read-only memory buffer.</typeparam>
@@ -682,6 +838,11 @@ This method allows a read-only memory buffer to be used in existing APIs that re
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -715,6 +876,11 @@ This method allows a read-only memory buffer to be used in existing APIs that re
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -764,6 +930,11 @@ This method allows a read-only memory buffer to be used in existing APIs that re
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -813,6 +984,11 @@ This method allows a read-only memory buffer to be used in existing APIs that re
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

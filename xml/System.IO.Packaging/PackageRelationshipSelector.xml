@@ -10,6 +10,7 @@
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.2.0</AssemblyVersion>
     <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>4.0.4.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
@@ -53,6 +54,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -98,6 +100,7 @@ The <paramref name="sourceUri" /> is not the <see cref="T:System.IO.Packaging.Pa
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -116,6 +119,8 @@ The <paramref name="sourceUri" /> is not the <see cref="T:System.IO.Packaging.Pa
         <returns>A list of relationships that match the selection parameters specified to the <see cref="M:System.IO.Packaging.PackageRelationshipSelector.#ctor(System.Uri,System.IO.Packaging.PackageRelationshipSelectorType,System.String)" /> constructor.</returns>
         <remarks>To be added.</remarks>
         <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=74494">Digital Signing Framework of the Open Packaging Conventions</related>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="package" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="SelectionCriteria">
@@ -131,6 +136,7 @@ The <paramref name="sourceUri" /> is not the <see cref="T:System.IO.Packaging.Pa
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -167,6 +173,7 @@ The <paramref name="sourceUri" /> is not the <see cref="T:System.IO.Packaging.Pa
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -203,6 +210,7 @@ The <paramref name="sourceUri" /> is not the <see cref="T:System.IO.Packaging.Pa
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

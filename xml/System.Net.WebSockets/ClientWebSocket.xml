@@ -19,6 +19,7 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Net.WebSockets.WebSocket</BaseTypeName>
@@ -61,6 +62,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -90,6 +92,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
@@ -102,7 +105,7 @@
       <Parameters />
       <Docs>
         <summary>Aborts the connection and cancels any pending IO operations.</summary>
-        <remarks>The `ClientWebSocket` cannot be reused once once it is aborted.</remarks>
+        <remarks>The `ClientWebSocket` cannot be reused once it is aborted.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CloseAsync">
@@ -126,6 +129,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
@@ -177,6 +181,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
@@ -229,6 +234,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Net.WebSockets.WebSocketCloseStatus&gt;</ReturnType>
@@ -261,6 +267,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -292,6 +299,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
@@ -349,6 +357,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -381,6 +390,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.ClientWebSocketOptions</ReturnType>
@@ -412,6 +422,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Net.WebSockets.WebSocketReceiveResult&gt;</ReturnType>
@@ -437,6 +448,38 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="ReceiveAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.ValueTask&lt;System.Net.WebSockets.ValueWebSocketReceiveResult&gt; ReceiveAsync (Memory&lt;byte&gt; buffer, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;valuetype System.Net.WebSockets.ValueWebSocketReceiveResult&gt; ReceiveAsync(valuetype System.Memory`1&lt;unsigned int8&gt; buffer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.ClientWebSocket.ReceiveAsync(System.Memory{System.Byte},System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::ValueTask&lt;System::Net::WebSockets::ValueWebSocketReceiveResult&gt; ReceiveAsync(Memory&lt;System::Byte&gt; buffer, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="override this.ReceiveAsync : Memory&lt;byte&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;System.Net.WebSockets.ValueWebSocketReceiveResult&gt;" Usage="clientWebSocket.ReceiveAsync (buffer, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.WebSockets.Client</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask&lt;System.Net.WebSockets.ValueWebSocketReceiveResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Memory&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SendAsync">
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task SendAsync (ArraySegment&lt;byte&gt; buffer, System.Net.WebSockets.WebSocketMessageType messageType, bool endOfMessage, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task SendAsync(valuetype System.ArraySegment`1&lt;unsigned int8&gt; buffer, valuetype System.Net.WebSockets.WebSocketMessageType messageType, bool endOfMessage, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
@@ -458,6 +501,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -487,6 +531,42 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="SendAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.ValueTask SendAsync (ReadOnlyMemory&lt;byte&gt; buffer, System.Net.WebSockets.WebSocketMessageType messageType, bool endOfMessage, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Threading.Tasks.ValueTask SendAsync(valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt; buffer, valuetype System.Net.WebSockets.WebSocketMessageType messageType, bool endOfMessage, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.ClientWebSocket.SendAsync(System.ReadOnlyMemory{System.Byte},System.Net.WebSockets.WebSocketMessageType,System.Boolean,System.Threading.CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::ValueTask SendAsync(ReadOnlyMemory&lt;System::Byte&gt; buffer, System::Net::WebSockets::WebSocketMessageType messageType, bool endOfMessage, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="override this.SendAsync : ReadOnlyMemory&lt;byte&gt; * System.Net.WebSockets.WebSocketMessageType * bool * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask" Usage="clientWebSocket.SendAsync (buffer, messageType, endOfMessage, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.WebSockets.Client</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.ReadOnlyMemory&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="messageType" Type="System.Net.WebSockets.WebSocketMessageType" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="endOfMessage" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="3" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">To be added.</param>
+        <param name="messageType">To be added.</param>
+        <param name="endOfMessage">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="State">
       <MemberSignature Language="C#" Value="public override System.Net.WebSockets.WebSocketState State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.WebSockets.WebSocketState State" />
@@ -509,6 +589,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketState</ReturnType>
@@ -541,6 +622,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

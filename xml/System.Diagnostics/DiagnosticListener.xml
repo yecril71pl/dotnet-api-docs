@@ -12,6 +12,7 @@
     <AssemblyVersion>4.0.2.0</AssemblyVersion>
     <AssemblyVersion>4.0.2.1</AssemblyVersion>
     <AssemblyVersion>4.0.3.0</AssemblyVersion>
+    <AssemblyVersion>4.0.4.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Diagnostics.DiagnosticSource</BaseTypeName>
@@ -44,6 +45,7 @@
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.1</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -69,6 +71,7 @@
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.1</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IObservable&lt;System.Diagnostics.DiagnosticListener&gt;</ReturnType>
@@ -97,6 +100,7 @@
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.1</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -120,6 +124,7 @@
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.1</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -146,6 +151,7 @@
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.1</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -172,14 +178,15 @@
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.1</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="arg1" Type="System.Object" />
-        <Parameter Name="arg2" Type="System.Object" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="arg1" Type="System.Object" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="arg2" Type="System.Object" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
@@ -205,6 +212,7 @@
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.1</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -212,6 +220,56 @@
       <Docs>
         <summary>To be added.</summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnActivityExport">
+      <MemberSignature Language="C#" Value="public override void OnActivityExport (System.Diagnostics.Activity activity, object payload);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnActivityExport(class System.Diagnostics.Activity activity, object payload) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.OnActivityExport(System.Diagnostics.Activity,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnActivityExport(System::Diagnostics::Activity ^ activity, System::Object ^ payload);" />
+      <MemberSignature Language="F#" Value="override this.OnActivityExport : System.Diagnostics.Activity * obj -&gt; unit" Usage="diagnosticListener.OnActivityExport (activity, payload)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="System.Diagnostics.Activity" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="payload" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="activity">To be added.</param>
+        <param name="payload">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnActivityImport">
+      <MemberSignature Language="C#" Value="public override void OnActivityImport (System.Diagnostics.Activity activity, object payload);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnActivityImport(class System.Diagnostics.Activity activity, object payload) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.OnActivityImport(System.Diagnostics.Activity,System.Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnActivityImport(System::Diagnostics::Activity ^ activity, System::Object ^ payload);" />
+      <MemberSignature Language="F#" Value="override this.OnActivityImport : System.Diagnostics.Activity * obj -&gt; unit" Usage="diagnosticListener.OnActivityImport (activity, payload)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="System.Diagnostics.Activity" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="payload" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="activity">To be added.</param>
+        <param name="payload">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -233,6 +291,7 @@
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.1</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IDisposable</ReturnType>
@@ -260,13 +319,14 @@
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.1</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IDisposable</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="observer" Type="System.IObserver&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;" />
-        <Parameter Name="isEnabled" Type="System.Func&lt;System.String,System.Object,System.Object,System.Boolean&gt;" />
+        <Parameter Name="observer" Type="System.IObserver&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="isEnabled" Type="System.Func&lt;System.String,System.Object,System.Object,System.Boolean&gt;" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="observer">To be added.</param>
@@ -291,6 +351,7 @@
         <AssemblyVersion>4.0.2.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.1</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IDisposable</ReturnType>
@@ -302,6 +363,36 @@
       <Docs>
         <param name="observer">To be added.</param>
         <param name="isEnabled">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subscribe">
+      <MemberSignature Language="C#" Value="public virtual IDisposable Subscribe (IObserver&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt; observer, Func&lt;string,object,object,bool&gt; isEnabled, Action&lt;System.Diagnostics.Activity,object&gt; onActivityImport = null, Action&lt;System.Diagnostics.Activity,object&gt; onActivityExport = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IDisposable Subscribe(class System.IObserver`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt; observer, class System.Func`4&lt;string, object, object, bool&gt; isEnabled, class System.Action`2&lt;class System.Diagnostics.Activity, object&gt; onActivityImport, class System.Action`2&lt;class System.Diagnostics.Activity, object&gt; onActivityExport) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.Subscribe(System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Func{System.String,System.Object,System.Object,System.Boolean},System.Action{System.Diagnostics.Activity,System.Object},System.Action{System.Diagnostics.Activity,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Subscribe (observer As IObserver(Of KeyValuePair(Of String, Object)), isEnabled As Func(Of String, Object, Object, Boolean), Optional onActivityImport As Action(Of Activity, Object) = null, Optional onActivityExport As Action(Of Activity, Object) = null) As IDisposable" />
+      <MemberSignature Language="F#" Value="abstract member Subscribe : IObserver&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt; * Func&lt;string, obj, obj, bool&gt; * Action&lt;System.Diagnostics.Activity, obj&gt; * Action&lt;System.Diagnostics.Activity, obj&gt; -&gt; IDisposable&#xA;override this.Subscribe : IObserver&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt; * Func&lt;string, obj, obj, bool&gt; * Action&lt;System.Diagnostics.Activity, obj&gt; * Action&lt;System.Diagnostics.Activity, obj&gt; -&gt; IDisposable" Usage="diagnosticListener.Subscribe (observer, isEnabled, onActivityImport, onActivityExport)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IDisposable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="observer" Type="System.IObserver&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="isEnabled" Type="System.Func&lt;System.String,System.Object,System.Object,System.Boolean&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="onActivityImport" Type="System.Action&lt;System.Diagnostics.Activity,System.Object&gt;" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="onActivityExport" Type="System.Action&lt;System.Diagnostics.Activity,System.Object&gt;" Index="3" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="observer">To be added.</param>
+        <param name="isEnabled">To be added.</param>
+        <param name="onActivityImport">To be added.</param>
+        <param name="onActivityExport">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -319,6 +410,7 @@
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -331,16 +423,18 @@
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public override void Write (string name, object value);" FrameworkAlternate="netcore-1.0;netcore-1.1" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string name, object value) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1" />
-      <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.Write(System.String,System.Object)" FrameworkAlternate="netcore-2.1;netcore-2.0;netcore-1.0;netcore-1.1;netcore-2.2" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (name As String, value As Object)" FrameworkAlternate="netcore-1.0;netcore-1.1" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ name, System::Object ^ value);" FrameworkAlternate="netcore-1.0;netcore-1.1" />
+      <MemberSignature Language="C#" Value="public override void Write (string name, object value);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string name, object value) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.Write(System.String,System.Object)" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (name As String, value As Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ name, System::Object ^ value);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-3.0" />
       <MemberSignature Language="C#" Value="public override void Write (string name, object parameters);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string name, object parameters) cil managed" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (name As String, parameters As Object)" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ name, System::Object ^ parameters);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
-      <MemberSignature Language="F#" Value="override this.Write : string * obj -&gt; unit" Usage="diagnosticListener.Write (name, parameters)" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.Write(System.String,System.Object)" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="F#" Value="override this.Write : string * obj -&gt; unit" Usage="diagnosticListener.Write (name, parameters)" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+      <MemberSignature Language="F#" Value="override this.Write : string * obj -&gt; unit" Usage="diagnosticListener.Write (name, parameters)" FrameworkAlternate="netcore-2.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -348,13 +442,14 @@
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.0.2.1</AssemblyVersion>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="name" Type="System.String" Index="0" />
-        <Parameter Name="value" Type="System.Object" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1" />
+        <Parameter Name="value" Type="System.Object" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-3.0" />
         <Parameter Name="parameters" Type="System.Object" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
       </Parameters>
       <Docs>

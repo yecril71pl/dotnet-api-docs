@@ -7,10 +7,12 @@
   <TypeSignature Language="F#" Value="type BufferBlock&lt;'T&gt; = class&#xA;    interface IDataflowBlock&#xA;    interface IPropagatorBlock&lt;'T, 'T&gt;&#xA;    interface ISourceBlock&lt;'T&gt;&#xA;    interface ITargetBlock&lt;'T&gt;&#xA;    interface IReceivableSourceBlock&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+    <AssemblyVersion>4.5.25.0</AssemblyVersion>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
     <AssemblyVersion>4.6.1.0</AssemblyVersion>
     <AssemblyVersion>4.6.2.0</AssemblyVersion>
     <AssemblyVersion>4.6.3.0</AssemblyVersion>
+    <AssemblyVersion>4.6.4.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -42,16 +44,16 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;dotnet-uwp-10.0">
       <AttributeName>System.Diagnostics.DebuggerDisplay("{DebuggerDisplayContent,nq}")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;dotnet-uwp-10.0">
       <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Threading.Tasks.Dataflow.BufferBlock`1/DebugView))</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
     <typeparam name="T">Specifies the type of the data buffered by this dataflow block.</typeparam>
-    <summary>Provides a buffer for storing data for a <a href="https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming/dataflow-task-parallel-library">Dataflow</a>.</summary>
+    <summary>Provides a buffer for storing data for a <a href="https://docs.microsoft.com/dotnet/standard/parallel-programming/dataflow-task-parallel-library">Dataflow</a>.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -72,10 +74,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -92,10 +96,12 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="dataflowBlockOptions" Type="System.Threading.Tasks.Dataflow.DataflowBlockOptions" />
@@ -120,10 +126,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -154,10 +162,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -185,10 +195,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -212,10 +224,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IDisposable</ReturnType>
@@ -245,10 +259,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -282,10 +298,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -328,10 +346,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -369,10 +389,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -415,10 +437,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Dataflow.DataflowMessageStatus</ReturnType>
@@ -458,10 +482,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -490,10 +516,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -530,10 +558,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+        <AssemblyVersion>4.5.25.0</AssemblyVersion>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
         <AssemblyVersion>4.6.1.0</AssemblyVersion>
         <AssemblyVersion>4.6.2.0</AssemblyVersion>
         <AssemblyVersion>4.6.3.0</AssemblyVersion>
+        <AssemblyVersion>4.6.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

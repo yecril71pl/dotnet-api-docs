@@ -15,10 +15,10 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.None, Readability=System.Windows.Readability.Unreadable)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Windows.Markup.RuntimeNameProperty("Name")</AttributeName>
     </Attribute>
   </Attributes>
@@ -58,7 +58,7 @@
  For an example of a data bound animation, see the [Key Spline Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160011) .  
   
 ## Using a Timeline as a Timer  
- A timeline's clock will only progress when there's an event hander associated with it or (in the case of an <xref:System.Windows.Media.Animation.AnimationClock> object) it is associated with a property. For this reason (and others), it's not recommended that you use a <xref:System.Windows.Media.Animation.Timeline> as a timer.  
+ A timeline's clock will only progress when there's an event handler associated with it or (in the case of an <xref:System.Windows.Media.Animation.AnimationClock> object) it is associated with a property. For this reason (and others), it's not recommended that you use a <xref:System.Windows.Media.Animation.Timeline> as a timer.  
   
  ]]></format>
     </remarks>
@@ -295,7 +295,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1338,10 +1338,10 @@ The following example uses the DesiredFrameRate property to limit several animat
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1519,7 +1519,7 @@ The following example uses the DesiredFrameRate property to limit several animat
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
         </Attribute>
       </Attributes>

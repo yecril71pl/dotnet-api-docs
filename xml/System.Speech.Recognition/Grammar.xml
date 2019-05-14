@@ -15,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Diagnostics.DebuggerDisplay("Grammar: {(_uri != null ? "uri=" + _uri.ToString () + " " : "") + "rule=" + _ruleName }")</AttributeName>
     </Attribute>
   </Attributes>
@@ -703,7 +703,7 @@ namespace SampleRecognition
   
         // Start recognition.  
         recognizer.RecognizeAsync();  
-        Console.WriteLine("Starting aynchronous recognition...");  
+        Console.WriteLine("Starting asynchronous recognition...");  
   
         // Keep the console window open.  
         Console.ReadLine();  
@@ -894,7 +894,7 @@ private static Grammar CreateGrammarFromFile2()
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -1062,7 +1062,7 @@ private static Grammar CreateGrammarFromStream3()
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -1224,7 +1224,7 @@ private static Grammar CreateSrgsDocumentGrammar3()
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1270,7 +1270,7 @@ private static Grammar CreateSrgsDocumentGrammar3()
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1483,7 +1483,7 @@ private static void DumpGrammarStatus(Grammar item)
         <Parameter Name="type" Type="System.Type" />
         <Parameter Name="onInitParameters" Type="System.Object[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -1491,7 +1491,7 @@ private static void DumpGrammarStatus(Grammar item)
       </Parameters>
       <Docs>
         <param name="type">In an assembly, the <see cref="T:System.Type" /> of an object based on <see cref="T:System.Speech.Recognition.Grammar" />.</param>
-        <param name="onInitParameters">Parameters to be passed to an initialization method of the localizedobject based on <see cref="T:System.Speech.Recognition.Grammar" />. This parameter may be null.</param>
+        <param name="onInitParameters">Parameters to be passed to an initialization method of the localized object based on <see cref="T:System.Speech.Recognition.Grammar" />. This parameter may be null.</param>
         <summary>The <see langword="LoadLocalizedGrammarFromType" /> method returns a localized instance of a <see cref="T:System.Speech.Recognition.Grammar" /> object derived from <see cref="T:System.Type" />.</summary>
         <returns>The <see langword="LoadLocalizedGrammarFromType" /> method returns a valid object based on <see cref="T:System.Speech.Recognition.Grammar" />, or <see langword="null" /> if there has been an error.</returns>
         <remarks>

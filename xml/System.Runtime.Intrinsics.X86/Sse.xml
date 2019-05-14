@@ -1,12 +1,16 @@
 ﻿<Type Name="Sse" FullName="System.Runtime.Intrinsics.X86.Sse">
-  <TypeSignature Language="C#" Value="public static class Sse" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Sse extends System.Object" />
+  <TypeSignature Language="C#" Value="public abstract class Sse" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Sse extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Intrinsics.X86.Sse" />
-  <TypeSignature Language="VB.NET" Value="Public Class Sse" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Sse abstract sealed" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Sse" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Sse abstract" />
   <TypeSignature Language="F#" Value="type Sse = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -14,7 +18,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            This class provides access to Intel SSE hardware instructions via intrinsics
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,6 +36,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -40,7 +50,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_add_ps (__m128 a,  __m128 b)
+              ADDPS xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,6 +70,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -67,7 +84,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_add_ss (__m128 a,  __m128 b)
+              ADDSS xmm, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,6 +104,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -94,7 +118,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_and_ps (__m128 a, __m128 b)
+              ANDPS xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -111,6 +138,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -121,7 +152,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_andnot_ps (__m128 a, __m128 b)
+              ANDNPS xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -138,6 +172,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -148,7 +186,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cmpeq_ps (__m128 a,  __m128 b)
+              CMPPS xmm, xmm/m128, imm8(0)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -165,17 +206,24 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_comieq_ss (__m128 a, __m128 b)
+              COMISS xmm, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -192,17 +240,24 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cmpeq_ss (__m128 a,  __m128 b)
+              CMPSS xmm, xmm/m32, imm8(0)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -219,17 +274,24 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_ucomieq_ss (__m128 a, __m128 b)
+              UCOMISS xmm, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -246,6 +308,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -256,7 +322,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cmpgt_ps (__m128 a,  __m128 b)
+              CMPPS xmm, xmm/m128, imm8(6)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -273,17 +342,24 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_comigt_ss (__m128 a, __m128 b)
+              COMISS xmm, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -300,6 +376,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -310,7 +390,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cmpge_ps (__m128 a,  __m128 b)
+              CMPPS xmm, xmm/m128, imm8(5)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -327,17 +410,24 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_comige_ss (__m128 a, __m128 b)
+              COMISS xmm, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -354,17 +444,24 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cmpge_ss (__m128 a,  __m128 b)
+              CMPPS xmm, xmm/m32, imm8(5)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -381,17 +478,24 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_ucomige_ss (__m128 a, __m128 b)
+              UCOMISS xmm, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -408,17 +512,24 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cmpgt_ss (__m128 a,  __m128 b)
+              CMPSS xmm, xmm/m32, imm8(6)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -435,17 +546,24 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_ucomigt_ss (__m128 a, __m128 b)
+              UCOMISS xmm, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -462,6 +580,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -472,7 +594,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cmplt_ps (__m128 a,  __m128 b)
+              CMPPS xmm, xmm/m128, imm8(1)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -489,17 +614,24 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_comilt_ss (__m128 a, __m128 b)
+              COMISS xmm, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -516,6 +648,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -526,7 +662,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cmple_ps (__m128 a,  __m128 b)
+              CMPPS xmm, xmm/m128, imm8(2)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -543,17 +682,24 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_comile_ss (__m128 a, __m128 b)
+              COMISS xmm, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -570,17 +716,24 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cmple_ss (__m128 a,  __m128 b)
+              CMPSS xmm, xmm/m32, imm8(2)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -597,17 +750,24 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_ucomile_ss (__m128 a, __m128 b)
+              UCOMISS xmm, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -624,17 +784,24 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cmplt_ss (__m128 a,  __m128 b)
+              CMPSS xmm, xmm/m32, imm8(1)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -651,17 +818,24 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_ucomilt_ss (__m128 a, __m128 b)
+              UCOMISS xmm, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -678,6 +852,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -688,7 +866,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cmpneq_ps (__m128 a,  __m128 b)
+              CMPPS xmm, xmm/m128, imm8(4)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -705,17 +886,24 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_comineq_ss (__m128 a, __m128 b)
+              COMISS xmm, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -732,17 +920,24 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cmpneq_ss (__m128 a,  __m128 b)
+              CMPSS xmm, xmm/m32, imm8(4)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -759,17 +954,24 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_ucomineq_ss (__m128 a, __m128 b)
+              UCOMISS xmm, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -786,6 +988,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -796,7 +1002,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cmpngt_ps (__m128 a,  __m128 b)
+              CMPPS xmm, xmm/m128, imm8(2)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -813,6 +1022,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -823,7 +1036,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cmpnge_ps (__m128 a,  __m128 b)
+              CMPPS xmm, xmm/m128, imm8(1)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -840,17 +1056,24 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cmpnge_ss (__m128 a,  __m128 b)
+              CMPSS xmm, xmm/m32, imm8(1)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -867,17 +1090,24 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cmpngt_ss (__m128 a,  __m128 b)
+              CMPSS xmm, xmm/m32, imm8(2)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -894,6 +1124,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -904,7 +1138,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cmpnlt_ps (__m128 a,  __m128 b)
+              CMPPS xmm, xmm/m128, imm8(5)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -921,6 +1158,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -931,7 +1172,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cmpnle_ps (__m128 a,  __m128 b)
+              CMPPS xmm, xmm/m128, imm8(6)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -948,17 +1192,24 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cmpnle_ss (__m128 a,  __m128 b)
+              CMPSS xmm, xmm/m32, imm8(6)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -975,17 +1226,24 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cmpnlt_ss (__m128 a,  __m128 b)
+              CMPSS xmm, xmm/m32, imm8(5)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1002,6 +1260,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -1012,7 +1274,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cmpord_ps (__m128 a,  __m128 b)
+              CMPPS xmm, xmm/m128, imm8(7)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1029,12 +1294,667 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>
+            __m128 _mm_cmpord_ss (__m128 a,  __m128 b)
+              CMPSS xmm, xmm/m32, imm8(7)
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarEqual">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; CompareScalarEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; CompareScalarEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; CompareScalarEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarGreaterThan">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; CompareScalarGreaterThan (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; CompareScalarGreaterThan(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarGreaterThan(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarGreaterThan (left As Vector128(Of Single), right As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; CompareScalarGreaterThan(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarGreaterThan : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarGreaterThan (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarGreaterThanOrEqual">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; CompareScalarGreaterThanOrEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; CompareScalarGreaterThanOrEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarGreaterThanOrEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarGreaterThanOrEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; CompareScalarGreaterThanOrEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarGreaterThanOrEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarGreaterThanOrEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarLessThan">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; CompareScalarLessThan (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; CompareScalarLessThan(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarLessThan(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarLessThan (left As Vector128(Of Single), right As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; CompareScalarLessThan(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarLessThan : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarLessThan (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarLessThanOrEqual">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; CompareScalarLessThanOrEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; CompareScalarLessThanOrEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarLessThanOrEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarLessThanOrEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; CompareScalarLessThanOrEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarLessThanOrEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarLessThanOrEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarNotEqual">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; CompareScalarNotEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; CompareScalarNotEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarNotEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarNotEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; CompareScalarNotEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarNotEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarNotEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarNotGreaterThan">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; CompareScalarNotGreaterThan (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; CompareScalarNotGreaterThan(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarNotGreaterThan(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarNotGreaterThan (left As Vector128(Of Single), right As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; CompareScalarNotGreaterThan(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarNotGreaterThan : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarNotGreaterThan (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarNotGreaterThanOrEqual">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; CompareScalarNotGreaterThanOrEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; CompareScalarNotGreaterThanOrEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarNotGreaterThanOrEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarNotGreaterThanOrEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; CompareScalarNotGreaterThanOrEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarNotGreaterThanOrEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarNotGreaterThanOrEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarNotLessThan">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; CompareScalarNotLessThan (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; CompareScalarNotLessThan(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarNotLessThan(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarNotLessThan (left As Vector128(Of Single), right As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; CompareScalarNotLessThan(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarNotLessThan : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarNotLessThan (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarNotLessThanOrEqual">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; CompareScalarNotLessThanOrEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; CompareScalarNotLessThanOrEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarNotLessThanOrEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarNotLessThanOrEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; CompareScalarNotLessThanOrEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarNotLessThanOrEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarNotLessThanOrEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarOrdered">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; CompareScalarOrdered (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; CompareScalarOrdered(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarOrdered(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarOrdered (left As Vector128(Of Single), right As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; CompareScalarOrdered(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarOrdered : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarOrdered (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarOrderedEqual">
+      <MemberSignature Language="C#" Value="public static bool CompareScalarOrderedEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CompareScalarOrderedEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarOrderedEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarOrderedEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CompareScalarOrderedEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarOrderedEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; bool" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarOrderedEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarOrderedGreaterThan">
+      <MemberSignature Language="C#" Value="public static bool CompareScalarOrderedGreaterThan (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CompareScalarOrderedGreaterThan(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarOrderedGreaterThan(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarOrderedGreaterThan (left As Vector128(Of Single), right As Vector128(Of Single)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CompareScalarOrderedGreaterThan(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarOrderedGreaterThan : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; bool" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarOrderedGreaterThan (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarOrderedGreaterThanOrEqual">
+      <MemberSignature Language="C#" Value="public static bool CompareScalarOrderedGreaterThanOrEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CompareScalarOrderedGreaterThanOrEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarOrderedGreaterThanOrEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarOrderedGreaterThanOrEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CompareScalarOrderedGreaterThanOrEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarOrderedGreaterThanOrEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; bool" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarOrderedGreaterThanOrEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarOrderedLessThan">
+      <MemberSignature Language="C#" Value="public static bool CompareScalarOrderedLessThan (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CompareScalarOrderedLessThan(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarOrderedLessThan(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarOrderedLessThan (left As Vector128(Of Single), right As Vector128(Of Single)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CompareScalarOrderedLessThan(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarOrderedLessThan : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; bool" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarOrderedLessThan (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarOrderedLessThanOrEqual">
+      <MemberSignature Language="C#" Value="public static bool CompareScalarOrderedLessThanOrEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CompareScalarOrderedLessThanOrEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarOrderedLessThanOrEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarOrderedLessThanOrEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CompareScalarOrderedLessThanOrEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarOrderedLessThanOrEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; bool" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarOrderedLessThanOrEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarOrderedNotEqual">
+      <MemberSignature Language="C#" Value="public static bool CompareScalarOrderedNotEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CompareScalarOrderedNotEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarOrderedNotEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarOrderedNotEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CompareScalarOrderedNotEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarOrderedNotEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; bool" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarOrderedNotEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarUnordered">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Intrinsics.Vector128&lt;float&gt; CompareScalarUnordered (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; CompareScalarUnordered(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarUnordered(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarUnordered (left As Vector128(Of Single), right As Vector128(Of Single)) As Vector128(Of Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Intrinsics::Vector128&lt;float&gt; CompareScalarUnordered(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarUnordered : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; System.Runtime.Intrinsics.Vector128&lt;single&gt;" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarUnordered (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarUnorderedEqual">
+      <MemberSignature Language="C#" Value="public static bool CompareScalarUnorderedEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CompareScalarUnorderedEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarUnorderedEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarUnorderedEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CompareScalarUnorderedEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarUnorderedEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; bool" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarUnorderedEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarUnorderedGreaterThan">
+      <MemberSignature Language="C#" Value="public static bool CompareScalarUnorderedGreaterThan (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CompareScalarUnorderedGreaterThan(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarUnorderedGreaterThan(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarUnorderedGreaterThan (left As Vector128(Of Single), right As Vector128(Of Single)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CompareScalarUnorderedGreaterThan(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarUnorderedGreaterThan : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; bool" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarUnorderedGreaterThan (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarUnorderedGreaterThanOrEqual">
+      <MemberSignature Language="C#" Value="public static bool CompareScalarUnorderedGreaterThanOrEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CompareScalarUnorderedGreaterThanOrEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarUnorderedGreaterThanOrEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarUnorderedGreaterThanOrEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CompareScalarUnorderedGreaterThanOrEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarUnorderedGreaterThanOrEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; bool" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarUnorderedGreaterThanOrEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarUnorderedLessThan">
+      <MemberSignature Language="C#" Value="public static bool CompareScalarUnorderedLessThan (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CompareScalarUnorderedLessThan(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarUnorderedLessThan(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarUnorderedLessThan (left As Vector128(Of Single), right As Vector128(Of Single)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CompareScalarUnorderedLessThan(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarUnorderedLessThan : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; bool" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarUnorderedLessThan (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarUnorderedLessThanOrEqual">
+      <MemberSignature Language="C#" Value="public static bool CompareScalarUnorderedLessThanOrEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CompareScalarUnorderedLessThanOrEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarUnorderedLessThanOrEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarUnorderedLessThanOrEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CompareScalarUnorderedLessThanOrEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarUnorderedLessThanOrEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; bool" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarUnorderedLessThanOrEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareScalarUnorderedNotEqual">
+      <MemberSignature Language="C#" Value="public static bool CompareScalarUnorderedNotEqual (System.Runtime.Intrinsics.Vector128&lt;float&gt; left, System.Runtime.Intrinsics.Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CompareScalarUnorderedNotEqual(valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; left, valuetype System.Runtime.Intrinsics.Vector128`1&lt;float32&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Intrinsics.X86.Sse.CompareScalarUnorderedNotEqual(System.Runtime.Intrinsics.Vector128{System.Single},System.Runtime.Intrinsics.Vector128{System.Single})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareScalarUnorderedNotEqual (left As Vector128(Of Single), right As Vector128(Of Single)) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CompareScalarUnorderedNotEqual(System::Runtime::Intrinsics::Vector128&lt;float&gt; left, System::Runtime::Intrinsics::Vector128&lt;float&gt; right);" />
+      <MemberSignature Language="F#" Value="static member CompareScalarUnorderedNotEqual : System.Runtime.Intrinsics.Vector128&lt;single&gt; * System.Runtime.Intrinsics.Vector128&lt;single&gt; -&gt; bool" Usage="System.Runtime.Intrinsics.X86.Sse.CompareScalarUnorderedNotEqual (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -1056,6 +1976,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -1066,7 +1990,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cmpunord_ps (__m128 a,  __m128 b)
+              CMPPS xmm, xmm/m128, imm8(3)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1083,17 +2010,24 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="left" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="right" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cmpunord_ss (__m128 a,  __m128 b)
+              CMPSS xmm, xmm/m32, imm8(3)
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1110,6 +2044,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -1120,7 +2058,10 @@
       <Docs>
         <param name="upper">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_cvtsi32_ss (__m128 a, int b)
+              CVTSI2SS xmm, reg/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1141,8 +2082,8 @@
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="upper" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
-        <Parameter Name="value" Type="System.Int64" />
+        <Parameter Name="upper" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="value" Type="System.Int64" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="upper">To be added.</param>
@@ -1164,6 +2105,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1172,7 +2117,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_cvtss_si32 (__m128 a)
+              CVTSS2SI r32, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1189,6 +2137,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1197,7 +2149,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_cvttss_si32 (__m128 a)
+              CVTTSS2SI r32, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1218,7 +2173,7 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -1243,7 +2198,7 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -1268,7 +2223,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -1289,6 +2244,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -1299,7 +2258,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_div_ps (__m128 a,  __m128 b)
+              DIVPS xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1316,6 +2278,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -1326,7 +2292,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_div_ss (__m128 a,  __m128 b)
+              DIVSS xmm, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1341,6 +2310,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1363,6 +2336,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -1371,7 +2348,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_load_ps (float const* mem_address)
+              MOVAPS xmm, m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1387,6 +2367,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -1397,7 +2381,10 @@
       <Docs>
         <param name="lower">To be added.</param>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_loadh_pi (__m128 a, __m64 const* mem_addr)
+              MOVHPS xmm, m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1413,6 +2400,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -1423,7 +2414,10 @@
       <Docs>
         <param name="upper">To be added.</param>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_loadl_pi (__m128 a, __m64 const* mem_addr)
+              MOVLPS xmm, m64
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1439,6 +2433,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -1447,7 +2445,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_load_ss (float const* mem_address)
+              MOVSS xmm, m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1463,6 +2464,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -1471,7 +2476,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_loadu_ps (float const* mem_address)
+              MOVUPS xmm, m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1488,6 +2496,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -1498,7 +2510,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_max_ps (__m128 a,  __m128 b)
+              MAXPS xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1515,6 +2530,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -1525,7 +2544,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_max_ss (__m128 a,  __m128 b)
+              MAXSS xmm, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1542,6 +2564,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -1552,7 +2578,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_min_ps (__m128 a,  __m128 b)
+              MINPS xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1569,6 +2598,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -1579,7 +2612,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_min_ss (__m128 a,  __m128 b)
+              MINSS xmm, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1596,6 +2632,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -1606,7 +2646,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_movehl_ps (__m128 a,  __m128 b)
+              MOVHLPS xmm, xmm
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1623,6 +2666,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -1633,7 +2680,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_movelh_ps (__m128 a,  __m128 b)
+              MOVLHPS xmm, xmm
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1650,6 +2700,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1658,7 +2712,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            int _mm_movemask_ps (__m128 a)
+              MOVMSKPS reg, xmm
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1675,6 +2732,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -1685,7 +2746,10 @@
       <Docs>
         <param name="upper">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_move_ss (__m128 a, __m128 b)
+              MOVSS xmm, xmm
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1702,6 +2766,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -1712,7 +2780,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_mul_ps (__m128 a, __m128 b)
+              MULPS xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1729,6 +2800,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -1739,7 +2814,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_mul_ss (__m128 a, __m128 b)
+              MULPS xmm, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1756,6 +2834,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -1766,7 +2848,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_or_ps (__m128 a,  __m128 b)
+              ORPS xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1782,6 +2867,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1790,7 +2879,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_prefetch(char* p, int i)
+              PREFETCHT0 m8
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1805,6 +2897,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1813,7 +2909,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_prefetch(char* p, int i)
+              PREFETCHT1 m8
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1828,6 +2927,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1836,7 +2939,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_prefetch(char* p, int i)
+              PREFETCHT2 m8
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1851,6 +2957,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1859,7 +2969,10 @@
       </Parameters>
       <Docs>
         <param name="address">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_prefetch(char* p, int i)
+              PREFETCHNTA m8
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1875,6 +2988,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -1883,7 +3000,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_rcp_ps (__m128 a)
+              RCPPS xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1900,6 +3020,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -1908,7 +3032,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_rcp_ss (__m128 a)
+              RCPSS xmm, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1925,6 +3052,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -1935,7 +3066,11 @@
       <Docs>
         <param name="upper">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_rcp_ss (__m128 a, __m128 b)
+              RCPSS xmm, xmm/m32
+            The above native signature does not exist. We provide this additional overload for consistency with the other scalar APIs.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1952,6 +3087,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -1960,7 +3099,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_rsqrt_ps (__m128 a)
+              RSQRTPS xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1977,6 +3119,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -1985,7 +3131,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_rsqrt_ss (__m128 a)
+              RSQRTSS xmm, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2002,6 +3151,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -2012,7 +3165,11 @@
       <Docs>
         <param name="upper">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_rsqrt_ss (__m128 a, __m128 b)
+              RSQRTSS xmm, xmm/m32
+            The above native signature does not exist. We provide this additional overload for consistency with the other scalar APIs.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2033,7 +3190,7 @@
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Single" />
+        <Parameter Name="value" Type="System.Single" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -2058,7 +3215,7 @@
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Single" />
+        <Parameter Name="value" Type="System.Single" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -2083,10 +3240,10 @@
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e3" Type="System.Single" />
-        <Parameter Name="e2" Type="System.Single" />
-        <Parameter Name="e1" Type="System.Single" />
-        <Parameter Name="e0" Type="System.Single" />
+        <Parameter Name="e3" Type="System.Single" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="e2" Type="System.Single" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="e1" Type="System.Single" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
+        <Parameter Name="e0" Type="System.Single" Index="3" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <param name="e3">To be added.</param>
@@ -2132,6 +3289,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -2144,7 +3305,10 @@
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
         <param name="control">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_shuffle_ps (__m128 a,  __m128 b, unsigned int control)
+              SHUFPS xmm, xmm/m128, imm8
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2161,6 +3325,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -2169,7 +3337,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_sqrt_ps (__m128 a)
+              SQRTPS xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2186,6 +3357,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -2194,7 +3369,10 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_sqrt_ss (__m128 a)
+              SQRTSS xmm, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2211,6 +3389,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -2221,7 +3403,11 @@
       <Docs>
         <param name="upper">To be added.</param>
         <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_sqrt_ss (__m128 a, __m128 b)
+              SQRTSS xmm, xmm/m32
+            The above native signature does not exist. We provide this additional overload for consistency with the other scalar APIs.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2258,7 +3444,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;T&gt;" />
+        <Parameter Name="value" Type="System.Runtime.Intrinsics.Vector128&lt;T&gt;" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -2280,6 +3466,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2290,7 +3480,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_storeu_ps (float* mem_addr, __m128 a)
+              MOVUPS m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2305,6 +3498,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2315,7 +3512,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_store_ps (float* mem_addr, __m128 a)
+              MOVAPS m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2330,6 +3530,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2340,7 +3544,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_stream_ps (float* mem_addr, __m128 a)
+              MOVNTPS m128, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2356,12 +3563,19 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_sfence(void)
+              SFENCE
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2376,6 +3590,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2386,7 +3604,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_storeh_pi (__m64* mem_addr, __m128 a)
+              MOVHPS m64, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2401,6 +3622,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2411,7 +3636,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_storel_pi (__m64* mem_addr, __m128 a)
+              MOVLPS m64, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2426,6 +3654,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2436,7 +3668,10 @@
       <Docs>
         <param name="address">To be added.</param>
         <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            void _mm_store_ss (float* mem_addr, __m128 a)
+              MOVSS m32, xmm
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2452,6 +3687,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -2462,7 +3701,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128d _mm_sub_ps (__m128d a, __m128d b)
+              SUBPS xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2479,6 +3721,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -2489,7 +3735,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_sub_ss (__m128 a, __m128 b)
+              SUBSS xmm, xmm/m32
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2506,6 +3755,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -2516,7 +3769,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_unpackhi_ps (__m128 a,  __m128 b)
+              UNPCKHPS xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2533,6 +3789,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -2543,7 +3803,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_unpacklo_ps (__m128 a,  __m128 b)
+              UNPCKLPS xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2560,6 +3823,10 @@
         <AssemblyName>System.Runtime.Intrinsics.Experimental</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Intrinsics</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Intrinsics.Vector128&lt;System.Single&gt;</ReturnType>
       </ReturnValue>
@@ -2570,7 +3837,10 @@
       <Docs>
         <param name="left">To be added.</param>
         <param name="right">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            __m128 _mm_xor_ps (__m128 a,  __m128 b)
+              XORPS xmm, xmm/m128
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

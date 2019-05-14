@@ -21,6 +21,7 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
@@ -87,6 +88,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -147,6 +149,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -207,6 +210,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -263,6 +267,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -311,6 +316,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -370,6 +376,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -413,6 +420,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -458,6 +466,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -506,6 +515,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -528,6 +538,74 @@
   
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static System.Net.IPEndPoint Parse (ReadOnlySpan&lt;char&gt; s);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.IPEndPoint Parse(valuetype System.ReadOnlySpan`1&lt;char&gt; s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.IPEndPoint.Parse(System.ReadOnlySpan{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As ReadOnlySpan(Of Char)) As IPEndPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::IPEndPoint ^ Parse(ReadOnlySpan&lt;char&gt; s);" />
+      <MemberSignature Language="F#" Value="static member Parse : ReadOnlySpan&lt;char&gt; -&gt; System.Net.IPEndPoint" Usage="System.Net.IPEndPoint.Parse s" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.IPEndPoint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static System.Net.IPEndPoint Parse (string s);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.IPEndPoint Parse(string s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.IPEndPoint.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String) As IPEndPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::IPEndPoint ^ Parse(System::String ^ s);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Net.IPEndPoint" Usage="System.Net.IPEndPoint.Parse s" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.IPEndPoint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Port">
@@ -554,6 +632,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -608,6 +687,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -658,6 +738,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -681,6 +762,78 @@
   
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryParse">
+      <MemberSignature Language="C#" Value="public static bool TryParse (ReadOnlySpan&lt;char&gt; s, out System.Net.IPEndPoint result);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(valuetype System.ReadOnlySpan`1&lt;char&gt; s, [out] class System.Net.IPEndPoint&amp; result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.IPEndPoint.TryParse(System.ReadOnlySpan{System.Char},System.Net.IPEndPoint@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (s As ReadOnlySpan(Of Char), ByRef result As IPEndPoint) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(ReadOnlySpan&lt;char&gt; s, [Runtime::InteropServices::Out] System::Net::IPEndPoint ^ % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : ReadOnlySpan&lt;char&gt; *  -&gt; bool" Usage="System.Net.IPEndPoint.TryParse (s, result)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="result" Type="System.Net.IPEndPoint" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="s">To be added.</param>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryParse">
+      <MemberSignature Language="C#" Value="public static bool TryParse (string s, out System.Net.IPEndPoint result);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string s, [out] class System.Net.IPEndPoint&amp; result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.IPEndPoint.TryParse(System.String,System.Net.IPEndPoint@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (s As String, ByRef result As IPEndPoint) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ s, [Runtime::InteropServices::Out] System::Net::IPEndPoint ^ % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="System.Net.IPEndPoint.TryParse (s, result)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="result" Type="System.Net.IPEndPoint" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="s">To be added.</param>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
   </Members>

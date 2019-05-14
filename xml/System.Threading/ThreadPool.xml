@@ -21,6 +21,7 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -123,6 +124,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -130,7 +132,7 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0;netstandard-2.1">
           <AttributeName>System.Obsolete("ThreadPool.BindHandle(IntPtr) has been deprecated.  Please use ThreadPool.BindHandle(SafeHandle) instead.", false)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
@@ -141,7 +143,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="osHandle" Type="System.IntPtr" />
+        <Parameter Name="osHandle" Type="System.IntPtr" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="osHandle">An <see cref="T:System.IntPtr" /> that holds the handle. The handle must have been opened for overlapped I/O on the unmanaged side.</param>
@@ -176,6 +178,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
@@ -189,7 +192,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="osHandle" Type="System.Runtime.InteropServices.SafeHandle" />
+        <Parameter Name="osHandle" Type="System.Runtime.InteropServices.SafeHandle" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="osHandle">A <see cref="T:System.Runtime.InteropServices.SafeHandle" /> that holds the operating system handle. The handle must have been opened for overlapped I/O on the unmanaged side.</param>
@@ -227,6 +230,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -242,8 +246,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="workerThreads" Type="System.Int32" RefType="out" />
-        <Parameter Name="completionPortThreads" Type="System.Int32" RefType="out" />
+        <Parameter Name="workerThreads" Type="System.Int32" RefType="out" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="completionPortThreads" Type="System.Int32" RefType="out" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="workerThreads">The number of available worker threads.</param>
@@ -291,6 +295,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -306,8 +311,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="workerThreads" Type="System.Int32" RefType="out" />
-        <Parameter Name="completionPortThreads" Type="System.Int32" RefType="out" />
+        <Parameter Name="workerThreads" Type="System.Int32" RefType="out" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="completionPortThreads" Type="System.Int32" RefType="out" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="workerThreads">The maximum number of worker threads in the thread pool.</param>
@@ -360,6 +365,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -375,8 +381,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="workerThreads" Type="System.Int32" RefType="out" />
-        <Parameter Name="completionPortThreads" Type="System.Int32" RefType="out" />
+        <Parameter Name="workerThreads" Type="System.Int32" RefType="out" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="completionPortThreads" Type="System.Int32" RefType="out" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="workerThreads">When this method returns, contains the minimum number of worker threads that the thread pool creates on demand.</param>
@@ -441,6 +447,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
@@ -511,6 +518,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
@@ -578,6 +586,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -586,17 +595,19 @@
         <TypeParameter Name="TState" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="callBack" Type="System.Action&lt;TState&gt;" />
-        <Parameter Name="state" Type="TState" />
-        <Parameter Name="preferLocal" Type="System.Boolean" />
+        <Parameter Name="callBack" Type="System.Action&lt;TState&gt;" Index="0" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
+        <Parameter Name="state" Type="TState" Index="1" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
+        <Parameter Name="preferLocal" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <typeparam name="TState">To be added.</typeparam>
-        <param name="callBack">To be added.</param>
-        <param name="state">To be added.</param>
-        <param name="preferLocal">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TState">The type of elements of <paramref name="state" />.</typeparam>
+        <param name="callBack">An <see cref="T:System.Action`1" /> representing the method to execute.</param>
+        <param name="state">An object containing data to be used by the method.</param>
+        <param name="preferLocal">Unlike other QueueUserWorkItem methods, prefer executing in the local thread pool and not the global thread pool.</param>
+        <summary>Queues a method specified by an <see cref="T:System.Action`1" /> delegate for execution, and provides data to be used by the method. The method executes when a thread pool thread becomes available.</summary>
+        <returns>
+          <see langword="true" /> if the method is successfully queued; <see cref="T:System.NotSupportedException" /> is thrown if the work item could not be queued.
+        </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -634,6 +645,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
@@ -674,7 +686,7 @@
  The <xref:System.Threading.ThreadPool.RegisterWaitForSingleObject%2A> method checks the current state of the specified object's <xref:System.Threading.WaitHandle>. If the object's state is unsignaled, the method registers a wait operation. The wait operation is performed by a thread from the thread pool. The delegate is executed by a worker thread when the object's state becomes signaled or the time-out interval elapses. If the `timeOutInterval` parameter is not 0 (zero) and the `executeOnlyOnce` parameter is `false`, the timer is reset every time the event is signaled or the time-out interval elapses.  
   
 > [!IMPORTANT]
->  Using a <xref:System.Threading.Mutex> for `waitObject` does not provide mutual exclusion for the callbacks because the underlying Win32 API uses the default `WT_EXECUTEDEFAULT` flag, so each callback is dispatched on a separate thread pool thread. Instead of a <xref:System.Threading.Mutex>, use a <xref:System.Threading.Semaphore> with a maximum count of 1.  
+>  Using a <xref:System.Threading.Mutex> for `waitObject` does not provide mutual exclusion for the callbacks because the underlying Windows API uses the default `WT_EXECUTEDEFAULT` flag, so each callback is dispatched on a separate thread pool thread. Instead of a <xref:System.Threading.Mutex>, use a <xref:System.Threading.Semaphore> with a maximum count of 1.  
   
  To cancel the wait operation, call the <xref:System.Threading.RegisteredWaitHandle.Unregister%2A?displayProperty=nameWithType> method.  
   
@@ -715,6 +727,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
@@ -755,7 +768,7 @@
  The <xref:System.Threading.ThreadPool.RegisterWaitForSingleObject%2A> method checks the current state of the specified object's <xref:System.Threading.WaitHandle>. If the object's state is unsignaled, the method registers a wait operation. The wait operation is performed by a thread from the thread pool. The delegate is executed by a worker thread when the object's state becomes signaled or the time-out interval elapses. If the `timeOutInterval` parameter is not 0 (zero) and the `executeOnlyOnce` parameter is `false`, the timer is reset every time the event is signaled or the time-out interval elapses.  
   
 > [!IMPORTANT]
->  Using a <xref:System.Threading.Mutex> for `waitObject` does not provide mutual exclusion for the callbacks because the underlying Win32 API uses the default `WT_EXECUTEDEFAULT` flag, so each callback is dispatched on a separate thread pool thread. Instead of a <xref:System.Threading.Mutex>, use a <xref:System.Threading.Semaphore> with a maximum count of 1.  
+>  Using a <xref:System.Threading.Mutex> for `waitObject` does not provide mutual exclusion for the callbacks because the underlying Windows API uses the default `WT_EXECUTEDEFAULT` flag, so each callback is dispatched on a separate thread pool thread. Instead of a <xref:System.Threading.Mutex>, use a <xref:System.Threading.Semaphore> with a maximum count of 1.  
   
  To cancel the wait operation, call the <xref:System.Threading.RegisteredWaitHandle.Unregister%2A?displayProperty=nameWithType> method.  
   
@@ -796,6 +809,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
@@ -836,7 +850,7 @@
  The <xref:System.Threading.ThreadPool.RegisterWaitForSingleObject%2A> method checks the current state of the specified object's <xref:System.Threading.WaitHandle>. If the object's state is unsignaled, the method registers a wait operation. The wait operation is performed by a thread from the thread pool. The delegate is executed by a worker thread when the object's state becomes signaled or the time-out interval elapses. If the `timeOutInterval` parameter is not 0 (zero) and the `executeOnlyOnce` parameter is `false`, the timer is reset every time the event is signaled or the time-out interval elapses.  
   
 > [!IMPORTANT]
->  Using a <xref:System.Threading.Mutex> for `waitObject` does not provide mutual exclusion for the callbacks because the underlying Win32 API uses the default `WT_EXECUTEDEFAULT` flag, so each callback is dispatched on a separate thread pool thread. Instead of a <xref:System.Threading.Mutex>, use a <xref:System.Threading.Semaphore> with a maximum count of 1.  
+>  Using a <xref:System.Threading.Mutex> for `waitObject` does not provide mutual exclusion for the callbacks because the underlying Windows API uses the default `WT_EXECUTEDEFAULT` flag, so each callback is dispatched on a separate thread pool thread. Instead of a <xref:System.Threading.Mutex>, use a <xref:System.Threading.Semaphore> with a maximum count of 1.  
   
  To cancel the wait operation, call the <xref:System.Threading.RegisteredWaitHandle.Unregister%2A?displayProperty=nameWithType> method.  
   
@@ -878,9 +892,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0;netstandard-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
@@ -921,7 +936,7 @@
  The <xref:System.Threading.ThreadPool.RegisterWaitForSingleObject%2A> method checks the current state of the specified object's <xref:System.Threading.WaitHandle>. If the object's state is unsignaled, the method registers a wait operation. The wait operation is performed by a thread from the thread pool. The delegate is executed by a worker thread when the object's state becomes signaled or the time-out interval elapses. If the `timeOutInterval` parameter is not 0 (zero) and the `executeOnlyOnce` parameter is `false`, the timer is reset every time the event is signaled or the time-out interval elapses.  
   
 > [!IMPORTANT]
->  Using a <xref:System.Threading.Mutex> for `waitObject` does not provide mutual exclusion for the callbacks because the underlying Win32 API uses the default `WT_EXECUTEDEFAULT` flag, so each callback is dispatched on a separate thread pool thread. Instead of a <xref:System.Threading.Mutex>, use a <xref:System.Threading.Semaphore> with a maximum count of 1.  
+>  Using a <xref:System.Threading.Mutex> for `waitObject` does not provide mutual exclusion for the callbacks because the underlying Windows API uses the default `WT_EXECUTEDEFAULT` flag, so each callback is dispatched on a separate thread pool thread. Instead of a <xref:System.Threading.Mutex>, use a <xref:System.Threading.Semaphore> with a maximum count of 1.  
   
  To cancel the wait operation, call the <xref:System.Threading.RegisteredWaitHandle.Unregister%2A?displayProperty=nameWithType> method.  
   
@@ -970,6 +985,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -985,8 +1001,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="workerThreads" Type="System.Int32" />
-        <Parameter Name="completionPortThreads" Type="System.Int32" />
+        <Parameter Name="workerThreads" Type="System.Int32" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="completionPortThreads" Type="System.Int32" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="workerThreads">The maximum number of worker threads in the thread pool.</param>
@@ -1033,6 +1049,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -1048,8 +1065,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="workerThreads" Type="System.Int32" />
-        <Parameter Name="completionPortThreads" Type="System.Int32" />
+        <Parameter Name="workerThreads" Type="System.Int32" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="completionPortThreads" Type="System.Int32" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="workerThreads">The minimum number of worker threads that the thread pool creates on demand.</param>
@@ -1068,7 +1085,7 @@
  If you specify a negative number or a number larger than the maximum number of active thread pool threads (obtained using <xref:System.Threading.ThreadPool.GetMaxThreads%2A>), <xref:System.Threading.ThreadPool.SetMinThreads%2A> returns `false` and does not change either of the minimum values.  
   
 > [!CAUTION]
->  By default, the minimum number of threads is set to the number of processors on a system. You can use the <xref:System.Threading.ThreadPool.SetMinThreads%2A> method to increase the minimum number ofthreads. However, unnecessarily increasing these values can cause performance problems. If too many tasks start at the same time, all of them might appear to be slow. In most cases, the thread pool will perform better with its own algorithm for allocating threads. Reducing the minimum to less than the number of processors can also hurt performance.  
+>  By default, the minimum number of threads is set to the number of processors on a system. You can use the <xref:System.Threading.ThreadPool.SetMinThreads%2A> method to increase the minimum number of threads. However, unnecessarily increasing these values can cause performance problems. If too many tasks start at the same time, all of them might appear to be slow. In most cases, the thread pool will perform better with its own algorithm for allocating threads. Reducing the minimum to less than the number of processors can also hurt performance.  
   
    
   
@@ -1103,6 +1120,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -1110,7 +1128,7 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0;netstandard-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
@@ -1121,7 +1139,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="overlapped" Type="System.Threading.NativeOverlapped*" />
+        <Parameter Name="overlapped" Type="System.Threading.NativeOverlapped*" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="overlapped">The <see cref="T:System.Threading.NativeOverlapped" /> structure to queue.</param>
@@ -1143,6 +1161,39 @@
       </Docs>
     </Member>
     <Member MemberName="UnsafeQueueUserWorkItem">
+      <MemberSignature Language="C#" Value="public static bool UnsafeQueueUserWorkItem (System.Threading.IThreadPoolWorkItem callBack, bool preferLocal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool UnsafeQueueUserWorkItem(class System.Threading.IThreadPoolWorkItem callBack, bool preferLocal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.UnsafeQueueUserWorkItem(System.Threading.IThreadPoolWorkItem,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UnsafeQueueUserWorkItem (callBack As IThreadPoolWorkItem, preferLocal As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool UnsafeQueueUserWorkItem(System::Threading::IThreadPoolWorkItem ^ callBack, bool preferLocal);" />
+      <MemberSignature Language="F#" Value="static member UnsafeQueueUserWorkItem : System.Threading.IThreadPoolWorkItem * bool -&gt; bool" Usage="System.Threading.ThreadPool.UnsafeQueueUserWorkItem (callBack, preferLocal)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.ThreadPool</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callBack" Type="System.Threading.IThreadPoolWorkItem" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="preferLocal" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="callBack">To be added.</param>
+        <param name="preferLocal">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsafeQueueUserWorkItem">
       <MemberSignature Language="C#" Value="public static bool UnsafeQueueUserWorkItem (System.Threading.WaitCallback callBack, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool UnsafeQueueUserWorkItem(class System.Threading.WaitCallback callBack, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.UnsafeQueueUserWorkItem(System.Threading.WaitCallback,System.Object)" />
@@ -1160,6 +1211,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -1175,8 +1227,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="callBack" Type="System.Threading.WaitCallback" />
-        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="callBack" Type="System.Threading.WaitCallback" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="state" Type="System.Object" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="callBack">A <see cref="T:System.Threading.WaitCallback" /> that represents the delegate to invoke when a thread in the thread pool picks up the work item.</param>
@@ -1202,6 +1254,46 @@
           <paramref name="callBack" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <related type="Article" href="~/docs/standard/threading/the-managed-thread-pool.md">The Managed Thread Pool</related>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsafeQueueUserWorkItem&lt;TState&gt;">
+      <MemberSignature Language="C#" Value="public static bool UnsafeQueueUserWorkItem&lt;TState&gt; (Action&lt;TState&gt; callBack, TState state, bool preferLocal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool UnsafeQueueUserWorkItem&lt;TState&gt;(class System.Action`1&lt;!!TState&gt; callBack, !!TState state, bool preferLocal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.UnsafeQueueUserWorkItem``1(System.Action{``0},``0,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UnsafeQueueUserWorkItem(Of TState) (callBack As Action(Of TState), state As TState, preferLocal As Boolean) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TState&gt;&#xA; static bool UnsafeQueueUserWorkItem(Action&lt;TState&gt; ^ callBack, TState state, bool preferLocal);" />
+      <MemberSignature Language="F#" Value="static member UnsafeQueueUserWorkItem : Action&lt;'State&gt; * 'State * bool -&gt; bool" Usage="System.Threading.ThreadPool.UnsafeQueueUserWorkItem (callBack, state, preferLocal)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.ThreadPool</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TState" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="callBack" Type="System.Action&lt;TState&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="state" Type="TState" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="preferLocal" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TState">The type of elements of <paramref name="state" />.</typeparam>
+        <param name="callBack">A delegate representing the method to execute.</param>
+        <param name="state">An object containing data to be used by the method.</param>
+        <param name="preferLocal">`true` to execute in the local threadpool; `false` to execute in the global thread pool.</param>
+        <summary>Queues a method specified by an <see cref="T:System.Action`1" /> delegate for execution, and specifies an object containing data to be used by the method. The method executes when a thread pool thread becomes available.</summary>
+        <returns>
+          <see langword="true" /> if the method is successfully queued; <see cref="T:System.NotSupportedException" /> is thrown if the work item could not be queued.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="UnsafeRegisterWaitForSingleObject">
@@ -1232,6 +1324,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -1247,11 +1340,11 @@
         <ReturnType>System.Threading.RegisteredWaitHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitObject" Type="System.Threading.WaitHandle" />
-        <Parameter Name="callBack" Type="System.Threading.WaitOrTimerCallback" />
-        <Parameter Name="state" Type="System.Object" />
-        <Parameter Name="millisecondsTimeOutInterval" Type="System.Int32" />
-        <Parameter Name="executeOnlyOnce" Type="System.Boolean" />
+        <Parameter Name="waitObject" Type="System.Threading.WaitHandle" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="callBack" Type="System.Threading.WaitOrTimerCallback" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="millisecondsTimeOutInterval" Type="System.Int32" Index="3" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="executeOnlyOnce" Type="System.Boolean" Index="4" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="waitObject">The <see cref="T:System.Threading.WaitHandle" /> to register. Use a <see cref="T:System.Threading.WaitHandle" /> other than <see cref="T:System.Threading.Mutex" />.</param>
@@ -1271,7 +1364,7 @@
 > [!CAUTION]
 >  Using <xref:System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject%2A> could inadvertently open up a security hole. Code access security bases its permission checks on the permissions of all the callers on the stack. When work is queued on a thread pool thread using <xref:System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject%2A>, the stack of the thread pool thread will not have the context of the actual callers. Malicious code might be able exploit this to avoid permission checks.  
   
- Using a <xref:System.Threading.Mutex> for `waitObject` does not provide mutual exclusion for the callbacks because the underlying Win32 API uses the default `WT_EXECUTEDEFAULT` flag, so each callback is dispatched on a separate thread pool thread.  
+ Using a <xref:System.Threading.Mutex> for `waitObject` does not provide mutual exclusion for the callbacks because the underlying Windows API uses the default `WT_EXECUTEDEFAULT` flag, so each callback is dispatched on a separate thread pool thread.  
   
  When you are finished using the <xref:System.Threading.RegisteredWaitHandle> that is returned by this method, call its <xref:System.Threading.RegisteredWaitHandle.Unregister%2A?displayProperty=nameWithType> method to release references to the wait handle. We recommend that you always call the <xref:System.Threading.RegisteredWaitHandle.Unregister%2A?displayProperty=nameWithType> method, even if you specify `true` for `executeOnlyOnce`. Garbage collection works more efficiently if you call the <xref:System.Threading.RegisteredWaitHandle.Unregister%2A?displayProperty=nameWithType> method instead of depending on the registered wait handle's finalizer.  
   
@@ -1301,6 +1394,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -1316,11 +1410,11 @@
         <ReturnType>System.Threading.RegisteredWaitHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitObject" Type="System.Threading.WaitHandle" />
-        <Parameter Name="callBack" Type="System.Threading.WaitOrTimerCallback" />
-        <Parameter Name="state" Type="System.Object" />
-        <Parameter Name="millisecondsTimeOutInterval" Type="System.Int64" />
-        <Parameter Name="executeOnlyOnce" Type="System.Boolean" />
+        <Parameter Name="waitObject" Type="System.Threading.WaitHandle" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="callBack" Type="System.Threading.WaitOrTimerCallback" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="millisecondsTimeOutInterval" Type="System.Int64" Index="3" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="executeOnlyOnce" Type="System.Boolean" Index="4" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="waitObject">The <see cref="T:System.Threading.WaitHandle" /> to register. Use a <see cref="T:System.Threading.WaitHandle" /> other than <see cref="T:System.Threading.Mutex" />.</param>
@@ -1340,7 +1434,7 @@
 > [!CAUTION]
 >  Using <xref:System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject%2A> could inadvertently open up a security hole. Code access security bases its permission checks on the permissions of all the callers on the stack. When work is queued on a thread pool thread using <xref:System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject%2A>, the stack of the thread pool thread will not have the context of the actual callers. Malicious code might be able exploit this to avoid permission checks.  
   
- Using a <xref:System.Threading.Mutex> for `waitObject` does not provide mutual exclusion for the callbacks because the underlying Win32 API uses the default `WT_EXECUTEDEFAULT` flag, so each callback is dispatched on a separate thread pool thread.  
+ Using a <xref:System.Threading.Mutex> for `waitObject` does not provide mutual exclusion for the callbacks because the underlying Windows API uses the default `WT_EXECUTEDEFAULT` flag, so each callback is dispatched on a separate thread pool thread.  
   
  When you are finished using the <xref:System.Threading.RegisteredWaitHandle> that is returned by this method, call its <xref:System.Threading.RegisteredWaitHandle.Unregister%2A?displayProperty=nameWithType> method to release references to the wait handle. We recommend that you always call the <xref:System.Threading.RegisteredWaitHandle.Unregister%2A?displayProperty=nameWithType> method, even if you specify `true` for `executeOnlyOnce`. Garbage collection works more efficiently if you call the <xref:System.Threading.RegisteredWaitHandle.Unregister%2A?displayProperty=nameWithType> method instead of depending on the registered wait handle's finalizer.  
   
@@ -1370,6 +1464,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -1385,11 +1480,11 @@
         <ReturnType>System.Threading.RegisteredWaitHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitObject" Type="System.Threading.WaitHandle" />
-        <Parameter Name="callBack" Type="System.Threading.WaitOrTimerCallback" />
-        <Parameter Name="state" Type="System.Object" />
-        <Parameter Name="timeout" Type="System.TimeSpan" />
-        <Parameter Name="executeOnlyOnce" Type="System.Boolean" />
+        <Parameter Name="waitObject" Type="System.Threading.WaitHandle" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="callBack" Type="System.Threading.WaitOrTimerCallback" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="timeout" Type="System.TimeSpan" Index="3" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="executeOnlyOnce" Type="System.Boolean" Index="4" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="waitObject">The <see cref="T:System.Threading.WaitHandle" /> to register. Use a <see cref="T:System.Threading.WaitHandle" /> other than <see cref="T:System.Threading.Mutex" />.</param>
@@ -1409,7 +1504,7 @@
 > [!CAUTION]
 >  Using <xref:System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject%2A> could inadvertently open up a security hole. Code access security bases its permission checks on the permissions of all the callers on the stack. When work is queued on a thread pool thread using <xref:System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject%2A>, the stack of the thread pool thread will not have the context of the actual callers. Malicious code might be able exploit this to avoid permission checks.  
   
- Using a <xref:System.Threading.Mutex> for `waitObject` does not provide mutual exclusion for the callbacks because the underlying Win32 API uses the default `WT_EXECUTEDEFAULT` flag, so each callback is dispatched on a separate thread pool thread.  
+ Using a <xref:System.Threading.Mutex> for `waitObject` does not provide mutual exclusion for the callbacks because the underlying Windows API uses the default `WT_EXECUTEDEFAULT` flag, so each callback is dispatched on a separate thread pool thread.  
   
  When you are finished using the <xref:System.Threading.RegisteredWaitHandle> that is returned by this method, call its <xref:System.Threading.RegisteredWaitHandle.Unregister%2A?displayProperty=nameWithType> method to release references to the wait handle. We recommend that you always call the <xref:System.Threading.RegisteredWaitHandle.Unregister%2A?displayProperty=nameWithType> method, even if you specify `true` for `executeOnlyOnce`. Garbage collection works more efficiently if you call the <xref:System.Threading.RegisteredWaitHandle.Unregister%2A?displayProperty=nameWithType> method instead of depending on the registered wait handle's finalizer.  
   
@@ -1440,6 +1535,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -1447,7 +1543,7 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0;netstandard-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8">
@@ -1458,11 +1554,11 @@
         <ReturnType>System.Threading.RegisteredWaitHandle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="waitObject" Type="System.Threading.WaitHandle" />
-        <Parameter Name="callBack" Type="System.Threading.WaitOrTimerCallback" />
-        <Parameter Name="state" Type="System.Object" />
-        <Parameter Name="millisecondsTimeOutInterval" Type="System.UInt32" />
-        <Parameter Name="executeOnlyOnce" Type="System.Boolean" />
+        <Parameter Name="waitObject" Type="System.Threading.WaitHandle" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="callBack" Type="System.Threading.WaitOrTimerCallback" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="state" Type="System.Object" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="millisecondsTimeOutInterval" Type="System.UInt32" Index="3" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="executeOnlyOnce" Type="System.Boolean" Index="4" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="waitObject">The <see cref="T:System.Threading.WaitHandle" /> to register. Use a <see cref="T:System.Threading.WaitHandle" /> other than <see cref="T:System.Threading.Mutex" />.</param>
@@ -1482,7 +1578,7 @@
 > [!CAUTION]
 >  Using <xref:System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject%2A> could inadvertently open up a security hole. Code access security bases its permission checks on the permissions of all the callers on the stack. When work is queued on a thread pool thread using <xref:System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject%2A>, the stack of the thread pool thread will not have the context of the actual callers. Malicious code might be able exploit this to avoid permission checks.  
   
- Using a <xref:System.Threading.Mutex> for `waitObject` does not provide mutual exclusion for the callbacks because the underlying Win32 API uses the default `WT_EXECUTEDEFAULT` flag, so each callback is dispatched on a separate thread pool thread.  
+ Using a <xref:System.Threading.Mutex> for `waitObject` does not provide mutual exclusion for the callbacks because the underlying Windows API uses the default `WT_EXECUTEDEFAULT` flag, so each callback is dispatched on a separate thread pool thread.  
   
  When you are finished using the <xref:System.Threading.RegisteredWaitHandle> that is returned by this method, call its <xref:System.Threading.RegisteredWaitHandle.Unregister%2A?displayProperty=nameWithType> method to release references to the wait handle. We recommend that you always call the <xref:System.Threading.RegisteredWaitHandle.Unregister%2A?displayProperty=nameWithType> method, even if you specify `true` for `executeOnlyOnce`. Garbage collection works more efficiently if you call the <xref:System.Threading.RegisteredWaitHandle.Unregister%2A?displayProperty=nameWithType> method instead of depending on the registered wait handle's finalizer.  
   

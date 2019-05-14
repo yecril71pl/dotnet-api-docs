@@ -20,6 +20,7 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
@@ -50,9 +51,9 @@
   
  If you have an advanced scenario and want to implement your own collection, consider using <xref:System.Collections.IList>, which provides a non-generic collection of objects that can be individually accessed by index and provides the best performance.  
   
- ]]></format>
+ ]]>      </format>
     </remarks>
-    <related type="ExternalDocumentation" href="http://www.codeproject.com/Articles/1004644/ObservableCollection-Simply-Explained">ObservableCollection Simply Explained</related>
+    <related type="ExternalDocumentation" href="https://www.codeproject.com/Articles/1004644/ObservableCollection-Simply-Explained">ObservableCollection Simply Explained</related>
   </Docs>
   <Members>
     <Member MemberName="CollectionChanged">
@@ -78,6 +79,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -97,7 +99,7 @@
 ## Remarks  
  The event handler receives an argument of type <xref:System.Collections.Specialized.NotifyCollectionChangedEventArgs>,which contains data that is related to this event.  
   
- ]]></format>
+ ]]>          </format>
         </remarks>
       </Docs>
     </Member>

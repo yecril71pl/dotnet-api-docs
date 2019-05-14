@@ -11,6 +11,10 @@
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Permissions</AssemblyName>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Security.CodeAccessPermission</BaseTypeName>
   </Base>
@@ -32,7 +36,7 @@
 ## Remarks  
  The <xref:System.Web.AspNetHostingPermission> class is used in conjunction with code access security to help protect public types in the System.Web namespaces. Code must be assigned at least the <xref:System.Web.AspNetHostingPermissionLevel.Minimal> trust level to access protected ASP.NET classes.  
   
- The <xref:System.Web.AspNetHostingPermission> class's <xref:System.Web.AspNetHostingPermission.Level%2A> property is set by configuring the appropriate trust level in the [trust](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-1.1/tkscy493(v%3dvs.71)) configuration element. By default, the `level` attribute of the `trust` configuration element is set to `Full`. That is, by default, ASP.NET applications run under the <xref:System.Web.AspNetHostingPermissionLevel.Unrestricted> level. When an ASP.NET application domain is created, ASP.NET reads the value specified for the `level` attribute of the `trust` configuration element, creates an instance of the <xref:System.Web.AspNetHostingPermission> class with the specified <xref:System.Web.AspNetHostingPermission.Level%2A> attribute, and then adds the class to the permission set for the application domain. For more information, see [ASP.NET Trust Levels and Policy Files](https://msdn.microsoft.com/library/f897c794-10d3-414c-86b7-59b66564bbf1).  
+ The <xref:System.Web.AspNetHostingPermission> class's <xref:System.Web.AspNetHostingPermission.Level%2A> property is set by configuring the appropriate trust level in the [trust](https://docs.microsoft.com/previous-versions/dotnet/netframework-1.1/tkscy493(v%3dvs.71)) configuration element. By default, the `level` attribute of the `trust` configuration element is set to `Full`. That is, by default, ASP.NET applications run under the <xref:System.Web.AspNetHostingPermissionLevel.Unrestricted> level. When an ASP.NET application domain is created, ASP.NET reads the value specified for the `level` attribute of the `trust` configuration element, creates an instance of the <xref:System.Web.AspNetHostingPermission> class with the specified <xref:System.Web.AspNetHostingPermission.Level%2A> attribute, and then adds the class to the permission set for the application domain. For more information, see [ASP.NET Trust Levels and Policy Files](https://msdn.microsoft.com/library/f897c794-10d3-414c-86b7-59b66564bbf1).  
   
  It is recommended that you set the `level` attribute of the `trust` configuration element to `High` for sites that are trusted. For sites that are not trusted, such as a Web server that hosts sites that run code from an external customer, it is recommended that you set the `level` attribute of the `trust` configuration element to `Medium`.  
   
@@ -78,6 +82,10 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
       </Parameters>
@@ -103,6 +111,10 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="level" Type="System.Web.AspNetHostingPermissionLevel" />
       </Parameters>
@@ -127,6 +139,10 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.IPermission</ReturnType>
       </ReturnValue>
@@ -149,6 +165,10 @@
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -193,6 +213,10 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.IPermission</ReturnType>
       </ReturnValue>
@@ -223,6 +247,10 @@
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -259,6 +287,10 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -283,6 +315,10 @@
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -312,6 +348,10 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.SecurityElement</ReturnType>
       </ReturnValue>
@@ -335,6 +375,10 @@
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.IPermission</ReturnType>

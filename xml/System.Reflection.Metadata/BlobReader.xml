@@ -7,17 +7,19 @@
   <TypeSignature Language="F#" Value="type BlobReader = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.0.22.0</AssemblyVersion>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
     <AssemblyVersion>1.4.2.0</AssemblyVersion>
     <AssemblyVersion>1.4.3.0</AssemblyVersion>
+    <AssemblyVersion>1.4.4.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;dotnet-uwp-10.0">
       <AttributeName>System.Diagnostics.DebuggerDisplay("{GetDebuggerDisplay(),nq}")</AttributeName>
     </Attribute>
   </Attributes>
@@ -35,20 +37,25 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="buffer" Type="System.Byte*" />
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="buffer">A pointer to the start of the memory block.</param>
+        <param name="length">Length in bytes of the memory block.</param>
+        <summary>Creates a reader of the specified memory block.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> is <see langword="null" /> and <paramref name="length" /> is greater than zero.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="length" /> is negative.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The current platform is not little-endian.</exception>
       </Docs>
     </Member>
     <Member MemberName="Align">
@@ -64,16 +71,17 @@
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="alignment" Type="System.Byte" />
+        <Parameter Name="alignment" Type="System.Byte" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="alignment">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>Repositions the reader forward by the number of bytes required to satisfy the given alignment.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,12 +97,13 @@
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte*</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a pointer to the byte at the current position of the reader.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -111,17 +120,18 @@
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Byte" />
+        <Parameter Name="value" Type="System.Byte" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The byte value to find.</param>
+        <summary>Searches for a specified byte in the blob following the current position.</summary>
+        <returns>The index relative to the current position, or -1 if the byte is not found in the blob following the current position.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,16 +145,18 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the total length of the underlying memory block.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -159,18 +171,21 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets or sets the offset from the start of the blob to the current position.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.BadImageFormatException">The offset is set outside the bounds of the underlying reader.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadBlobHandle">
@@ -187,13 +202,14 @@
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.BlobHandle</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Reads a Blob heap handle encoded as a compressed integer.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -208,10 +224,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -233,10 +251,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte</ReturnType>
@@ -258,10 +278,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -270,10 +292,11 @@
         <Parameter Name="byteCount" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="byteCount">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="byteCount">The number of bytes to read.</param>
+        <summary>Reads bytes starting at the current position.</summary>
+        <returns>The byte array.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.BadImageFormatException"><paramref name="byteCount" /> bytes not available.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadBytes">
@@ -289,21 +312,23 @@
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="byteCount" Type="System.Int32" />
-        <Parameter Name="buffer" Type="System.Byte[]" />
-        <Parameter Name="bufferOffset" Type="System.Int32" />
+        <Parameter Name="byteCount" Type="System.Int32" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="buffer" Type="System.Byte[]" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
+        <Parameter Name="bufferOffset" Type="System.Int32" Index="2" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="byteCount">To be added.</param>
-        <param name="buffer">To be added.</param>
-        <param name="bufferOffset">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="byteCount">The number of bytes to read.</param>
+        <param name="buffer">The destination buffer the bytes read will be written to.</param>
+        <param name="bufferOffset">The offset in the destination buffer where the bytes read will be written.</param>
+        <summary>Reads bytes starting at the current position and writes them to the specified buffer starting at the specified offset.</summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.BadImageFormatException"><paramref name="byteCount" /> bytes not available.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadChar">
@@ -316,10 +341,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Char</ReturnType>
@@ -341,19 +368,22 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Reads an unsigned compressed integer value. See Metadata Specification section II.23.2: Blobs and signatures.</summary>
+        <returns>The value of the compressed integer that was read.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.BadImageFormatException">The data at the current position was not a valid compressed integer.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadCompressedSignedInteger">
@@ -366,19 +396,22 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Reads a signed compressed integer value. See Metadata Specification section II.23.2: Blobs and signatures.</summary>
+        <returns>The value of the compressed integer that was read.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.BadImageFormatException">The data at the current position was not a valid compressed integer.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadConstant">
@@ -395,18 +428,21 @@
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="typeCode" Type="System.Reflection.Metadata.ConstantTypeCode" />
+        <Parameter Name="typeCode" Type="System.Reflection.Metadata.ConstantTypeCode" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="typeCode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Reads a constant value (see ECMA-335 Partition II section 22.9) from the current position.</summary>
+        <returns>A boxed constant value. To avoid allocating the object use Read* methods directly.</returns>
+        <remarks>Constants of type <see cref="F:System.Reflection.Metadata.ConstantTypeCode.String" /> are encoded as UTF16 strings, use <see cref="M:System.Reflection.Metadata.BlobReader.ReadUTF16(System.Int32)" /> to read them.</remarks>
+        <exception cref="T:System.BadImageFormatException">Error while reading from the blob.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="typeCode" /> is not a valid <see cref="T:System.Reflection.Metadata.ConstantTypeCode" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadDateTime">
@@ -423,6 +459,7 @@
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -448,15 +485,17 @@
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Decimal</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Reads a <see cref="T:System.Decimal" /> number.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.BadImageFormatException">The data at the current position was not a valid <see cref="T:System.Decimal" /> number.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadDouble">
@@ -469,10 +508,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -498,6 +539,7 @@
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
@@ -519,10 +561,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int16</ReturnType>
@@ -544,10 +588,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -569,10 +615,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -594,10 +642,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.SByte</ReturnType>
@@ -619,18 +669,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.SerializationTypeCode</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Reads a type code encoded in a serialized custom attribute value.</summary>
+        <returns><see cref="F:System.Reflection.Metadata.SerializationTypeCode.Invalid" /> if the encoding is invalid.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -644,19 +696,22 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Reads a string encoded as a compressed integer containing its length followed by its contents in UTF8. Null strings are encoded as a single 0xFF byte.</summary>
+        <returns>A string value, or <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.BadImageFormatException">The encoding is invalid.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadSignatureHeader">
@@ -669,10 +724,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.SignatureHeader</ReturnType>
@@ -694,18 +751,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.SignatureTypeCode</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Reads a type code encoded in a signature.</summary>
+        <returns>The type code encoded in the serialized custom attribute value if the encoding is valid, or <see cref="F:System.Reflection.Metadata.SignatureTypeCode.Invalid" /> if the encoding is invalid.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -719,10 +778,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
@@ -744,18 +805,20 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.EntityHandle</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Reads a type handle encoded in a signature as TypeDefOrRefOrSpecEncoded (see ECMA-335 II.23.2.8).</summary>
+        <returns>The handle when the encoding is valid. Otherwise, a handle where the <see cref="P:System.Reflection.Metadata.EntityHandle.IsNil" /> property is <see langword="true" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -769,10 +832,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.UInt16</ReturnType>
@@ -794,10 +859,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.UInt32</ReturnType>
@@ -819,10 +886,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.UInt64</ReturnType>
@@ -844,10 +913,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -856,10 +927,11 @@
         <Parameter Name="byteCount" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="byteCount">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="byteCount">The number of bytes to read.</param>
+        <summary>Reads a UTF16 (little-endian) encoded string starting at the current position.</summary>
+        <returns>The string.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.BadImageFormatException"><paramref name="byteCount" /> bytes not available.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadUTF8">
@@ -872,10 +944,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -884,10 +958,11 @@
         <Parameter Name="byteCount" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="byteCount">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="byteCount">The number of bytes to read.</param>
+        <summary>Reads a UTF8 encoded string starting at the current position.</summary>
+        <returns>The string.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.BadImageFormatException"><paramref name="byteCount" /> bytes not available.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemainingBytes">
@@ -900,16 +975,18 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the number of bytes remaining from current position to the end of the underlying memory block.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -924,17 +1001,19 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Repositions the reader to the start of the underlying memory block.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -954,7 +1033,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="offset" Type="System.Int32" Index="0" FrameworkAlternate="netcore-1.1" />
       </Parameters>
       <Docs>
         <param name="offset">To be added.</param>
@@ -978,7 +1057,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" Index="0" FrameworkAlternate="netcore-1.1" />
       </Parameters>
       <Docs>
         <param name="count">To be added.</param>
@@ -998,12 +1077,13 @@
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte*</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a pointer to the byte at the start of the underlying memory block.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1018,10 +1098,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1030,9 +1112,9 @@
         <Parameter Name="value" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value of the compressed integer that was read.</param>
+        <summary>Reads an unsigned compressed integer value. See Metadata Specification section II.23.2: Blobs and signatures.</summary>
+        <returns><see langword="true" /> if the value was read successfully. <see langword="false" /> if the data at the current position was not a valid compressed integer.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1046,10 +1128,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.0.22.0</AssemblyVersion>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
         <AssemblyVersion>1.4.2.0</AssemblyVersion>
         <AssemblyVersion>1.4.3.0</AssemblyVersion>
+        <AssemblyVersion>1.4.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1058,9 +1142,9 @@
         <Parameter Name="value" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The value of the compressed integer that was read.</param>
+        <summary>Reads a signed compressed integer value. See Metadata Specification section II.23.2: Blobs and signatures.</summary>
+        <returns><see langword="true" /> if the value was read successfully. <see langword="false" /> if the data at the current position was not a valid compressed integer.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

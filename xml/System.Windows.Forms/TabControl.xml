@@ -16,16 +16,16 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.ComponentModel.DefaultEvent("SelectedIndexChanged")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.ComponentModel.DefaultProperty("TabPages")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
       <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.TabControlDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-1.1">
@@ -34,7 +34,7 @@
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
       <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.TabControlDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
       <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
     </Attribute>
   </Attributes>
@@ -115,8 +115,6 @@
 ## Examples  
  The following code example creates a <xref:System.Windows.Forms.TabControl> with one <xref:System.Windows.Forms.TabPage>. The <xref:System.Windows.Forms.TabControl.%23ctor%2A> constructor creates an instance of `tabControl1`.  
   
- Use the <xref:System.Windows.Forms> namespace for this example.  
-  
  [!code-cpp[TabControl_constructor#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TabControl_constructor/CPP/form1.cpp#1)]
  [!code-csharp[TabControl_constructor#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TabControl_constructor/CS/form1.cs#1)]
  [!code-vb[TabControl_constructor#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TabControl_constructor/VB/form1.vb#1)]  
@@ -140,13 +138,13 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -177,8 +175,6 @@
 ## Examples  
  The following code example creates a <xref:System.Windows.Forms.TabControl> with three <xref:System.Windows.Forms.TabPage> objects. The <xref:System.Windows.Forms.TabControl.Alignment%2A> property is set to `Left`, which positions the tabs of `tabControl1` on the left side.  
   
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
-  
  [!code-cpp[TabAlignment#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TabAlignment/CPP/form1.cpp#1)]
  [!code-csharp[TabAlignment#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TabAlignment/CS/form1.cs#1)]
  [!code-vb[TabAlignment#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TabAlignment/VB/form1.vb#1)]  
@@ -206,10 +202,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -232,8 +228,6 @@
   
 ## Examples  
  The following code example creates a <xref:System.Windows.Forms.TabControl> with two <xref:System.Windows.Forms.TabPage> objects. This example sets the <xref:System.Windows.Forms.TabControl.Appearance%2A> property to `Buttons`, which displays the tabs of the tab pages as buttons.  
-  
- Use the <xref:System.Windows.Forms> namespace for this example.  
   
  [!code-cpp[Appearance#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Appearance/CPP/form1.cpp#1)]
  [!code-csharp[Appearance#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Appearance/CS/form1.cs#1)]
@@ -261,10 +255,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -292,10 +286,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -322,10 +316,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -353,10 +347,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -389,10 +383,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -419,10 +413,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -685,7 +679,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="index">The index in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection of the tab to deselect.</param>
@@ -727,7 +721,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="tabPageName" Type="System.String" />
+        <Parameter Name="tabPageName" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="tabPageName">The <see cref="P:System.Windows.Forms.Control.Name" /> of the tab to deselect.</param>
@@ -772,7 +766,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="tabPage" Type="System.Windows.Forms.TabPage" />
+        <Parameter Name="tabPage" Type="System.Windows.Forms.TabPage" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="tabPage">The <see cref="T:System.Windows.Forms.TabPage" /> to deselect.</param>
@@ -829,8 +823,6 @@
 ## Examples  
  The following code example creates a <xref:System.Windows.Forms.TabControl> with one <xref:System.Windows.Forms.TabPage>. This example uses the <xref:System.Windows.Forms.TabControl.DisplayRectangle%2A> property to draw a <xref:System.Drawing.Rectangle> representing the tab page display area of `tabControl1`. Notice that the example uses the <xref:System.Drawing.Rectangle.Inflate%2A> method; otherwise, the <xref:System.Windows.Forms.TabPage> drawing code overwrites the <xref:System.Drawing.Rectangle> drawn in the `DrawOnTabPage` method.  
   
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
-  
  [!code-cpp[DisplayRectangle1#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DisplayRectangle1/CPP/form1.cpp#1)]
  [!code-csharp[DisplayRectangle1#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DisplayRectangle1/CS/form1.cs#1)]
  [!code-vb[DisplayRectangle1#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DisplayRectangle1/VB/form1.vb#1)]  
@@ -881,7 +873,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -928,8 +920,6 @@
 ## Examples  
  The following code example creates a <xref:System.Windows.Forms.TabControl> with one <xref:System.Windows.Forms.TabPage>. This example declares an event handler that is used to draw a string and `Rectangle` on the tab of `tabPage1`. The event handler is bound to the `DrawItem` event.  
   
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
-  
  [!code-cpp[DrawItem#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DrawItem/CPP/drawitem.cpp#1)]
  [!code-csharp[DrawItem#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DrawItem/CS/drawitem.cs#1)]
  [!code-vb[DrawItem#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DrawItem/VB/drawitem.vb#1)]  
@@ -955,7 +945,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -1009,10 +999,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1040,10 +1030,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1244,7 +1234,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1265,8 +1255,6 @@
   
 ## Examples  
  The following code example creates a <xref:System.Windows.Forms.TabControl> with two <xref:System.Windows.Forms.TabPage> objects. The <xref:System.Windows.Forms.TabControl.HotTrack%2A> property is set to `true`, which highlights the tab <xref:System.Windows.Forms.TabPage.Text%2A>`myTabPage1` or `myTabPage2` when the mouse passes over the tabs.  
-  
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
   
  [!code-cpp[HotTrack#1](~/samples/snippets/cpp/VS_Snippets_Winforms/HotTrack/CPP/form1.cpp#1)]
  [!code-csharp[HotTrack#1](~/samples/snippets/csharp/VS_Snippets_Winforms/HotTrack/CS/form1.cs#1)]
@@ -1291,10 +1279,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -1317,8 +1305,6 @@
   
 ## Examples  
  The following code example creates a <xref:System.Windows.Forms.TabControl> with one <xref:System.Windows.Forms.TabPage>. This example uses the <xref:System.Windows.Forms.TabControl.ImageList%2A> property to display images, from the collection defined by the <xref:System.Windows.Forms.ImageList> named `myImages`, on the tabs of `tabControl1`.  
-  
- Use the <xref:System.Drawing>, <xref:System.ComponentModel>, <xref:System.Windows.Forms>, and <xref:System.Resources> namespaces for this example.  
   
  [!code-cpp[TabControl.ImageList#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TabControl.ImageList/CPP/form1.cpp#1)]
  [!code-csharp[TabControl.ImageList#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TabControl.ImageList/CS/form1.cs#1)]
@@ -1379,7 +1365,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1399,8 +1385,6 @@
   
 ## Examples  
  The following code example creates a <xref:System.Windows.Forms.TabControl> with two <xref:System.Windows.Forms.TabPage> objects. To define the dimensions of the tabs, set the <xref:System.Windows.Forms.TabControl.ItemSize%2A> property equal to a <xref:System.Drawing.Size> structure. In this example, <xref:System.Drawing.Size> defines the tabs 90 pixels wide and 50 pixels high. You cannot change the width of the tabs unless the <xref:System.Windows.Forms.TabControl.SizeMode%2A> property is set to the <xref:System.Windows.Forms.TabSizeMode.Fixed> value.  
-  
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
   
  [!code-cpp[ItemSize#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ItemSize/CPP/form1.cpp#1)]
  [!code-csharp[ItemSize#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ItemSize/CS/form1.cs#1)]
@@ -1427,7 +1411,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1450,8 +1434,6 @@
   
 ## Examples  
  The following code example creates a <xref:System.Windows.Forms.TabControl> with four <xref:System.Windows.Forms.TabPage> objects. The <xref:System.Windows.Forms.TabControl.Multiline%2A> property is set to `true`, which displays two rows of tabs instead of one.  
-  
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
   
  [!code-cpp[Multiline#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Multiline/CPP/form1.cpp#1)]
  [!code-csharp[Multiline#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Multiline/CS/form1.cs#1)]
@@ -1479,7 +1461,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.Forms.TabControlEventArgs" />
+        <Parameter Name="e" Type="System.Windows.Forms.TabControlEventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.TabControlEventArgs" /> that contains the event data.</param>
@@ -1517,7 +1499,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.Forms.TabControlCancelEventArgs" />
+        <Parameter Name="e" Type="System.Windows.Forms.TabControlCancelEventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.TabControlCancelEventArgs" /> that contains the event data.</param>
@@ -1593,7 +1575,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" />
+        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
@@ -1777,7 +1759,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" />
+        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
@@ -1840,7 +1822,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1848,7 +1830,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" />
+        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
@@ -1886,7 +1868,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.Forms.TabControlEventArgs" />
+        <Parameter Name="e" Type="System.Windows.Forms.TabControlEventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.TabControlEventArgs" /> that contains the event data.</param>
@@ -1962,7 +1944,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.Forms.TabControlCancelEventArgs" />
+        <Parameter Name="e" Type="System.Windows.Forms.TabControlCancelEventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.TabControlCancelEventArgs" /> that contains the event data.</param>
@@ -2024,7 +2006,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -2042,8 +2024,6 @@
   
 ## Examples  
  The following code example creates a <xref:System.Windows.Forms.TabControl> with two <xref:System.Windows.Forms.TabPage> objects. The <xref:System.Windows.Forms.TabControl.Padding%2A> property is used to create a cushion of 22 pixels around the tab <xref:System.Windows.Forms.TabPage.Text%2A>`myTabPage1` and `myTabPage2`.  
-  
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
   
  [!code-cpp[Padding#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Padding/CPP/form1.cpp#1)]
  [!code-csharp[Padding#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Padding/CS/form1.cs#1)]
@@ -2070,10 +2050,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -2157,10 +2137,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -2245,10 +2225,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
@@ -2268,8 +2248,6 @@
   
 ## Examples  
  The following code example creates a <xref:System.Windows.Forms.TabControl> with five <xref:System.Windows.Forms.TabPage> objects. This example uses the <xref:System.Windows.Forms.TabControl.RowCount%2A> property to get the number of rows currently in the `tabControl1` tab strip.  
-  
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
   
  [!code-cpp[RowCount#1](~/samples/snippets/cpp/VS_Snippets_Winforms/RowCount/CPP/form1.cpp#1)]
  [!code-csharp[RowCount#1](~/samples/snippets/csharp/VS_Snippets_Winforms/RowCount/CS/form1.cs#1)]
@@ -2293,7 +2271,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -2301,8 +2279,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dx" Type="System.Single" />
-        <Parameter Name="dy" Type="System.Single" />
+        <Parameter Name="dx" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="dy" Type="System.Single" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dx">The horizontal scaling factor.</param>
@@ -2385,10 +2363,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(-1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -2403,8 +2381,6 @@
   
 ## Examples  
  The following code example creates a <xref:System.Windows.Forms.TabControl> with two <xref:System.Windows.Forms.TabPage> objects. The <xref:System.Windows.Forms.TabControl.SelectedIndex%2A> property sets `tabPage2` as the currently selected tab page using its index value.  
-  
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
   
  [!code-cpp[SelectedIndex#1](~/samples/snippets/cpp/VS_Snippets_Winforms/SelectedIndex/CPP/form1.cpp#1)]
  [!code-csharp[SelectedIndex#1](~/samples/snippets/csharp/VS_Snippets_Winforms/SelectedIndex/CS/form1.cs#1)]
@@ -2479,10 +2455,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -2508,8 +2484,6 @@
   
 ## Examples  
  The following code example creates a <xref:System.Windows.Forms.TabControl> with two <xref:System.Windows.Forms.TabPage> objects. The <xref:System.Windows.Forms.TabControl.SelectedTab%2A> property sets `tabPage2` as the currently selected tab page.  
-  
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
   
  [!code-cpp[SelectedTab#1](~/samples/snippets/cpp/VS_Snippets_Winforms/SelectedTab/CPP/form1.cpp#1)]
  [!code-csharp[SelectedTab#1](~/samples/snippets/csharp/VS_Snippets_Winforms/SelectedTab/CS/form1.cs#1)]
@@ -2620,7 +2594,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="index">The index in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection of the tab to select.</param>
@@ -2662,7 +2636,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="tabPageName" Type="System.String" />
+        <Parameter Name="tabPageName" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="tabPageName">The <see cref="P:System.Windows.Forms.Control.Name" /> of the tab to select.</param>
@@ -2707,7 +2681,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="tabPage" Type="System.Windows.Forms.TabPage" />
+        <Parameter Name="tabPage" Type="System.Windows.Forms.TabPage" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="tabPage">The <see cref="T:System.Windows.Forms.TabPage" /> to select.</param>
@@ -2753,10 +2727,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -2777,8 +2751,6 @@
   
 ## Examples  
  The following code example creates a <xref:System.Windows.Forms.TabControl> with two <xref:System.Windows.Forms.TabPage> objects. For tab page ToolTips to display, the <xref:System.Windows.Forms.TabControl.ShowToolTips%2A> property must equal to `true`, as in this example. The <xref:System.Windows.Forms.TabPage.ToolTipText%2A> property is used to assign string values to the ToolTips.  
-  
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
   
  [!code-cpp[ToolTipText#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ToolTipText/CPP/form1.cpp#1)]
  [!code-csharp[ToolTipText#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ToolTipText/CS/form1.cs#1)]
@@ -2804,10 +2776,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -2825,8 +2797,6 @@
   
 ## Examples  
  The following code example creates a <xref:System.Windows.Forms.TabControl> with five <xref:System.Windows.Forms.TabPage>. This example sets the <xref:System.Windows.Forms.TabControl.SizeMode%2A> property to `FillToRight`, which sizes the tabs so that each row fills the entire width of `tabControl1`.  
-  
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
   
  [!code-cpp[SizeMode#1](~/samples/snippets/cpp/VS_Snippets_Winforms/SizeMode/CPP/form1.cpp#1)]
  [!code-csharp[SizeMode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/SizeMode/CS/form1.cs#1)]
@@ -2853,10 +2823,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -2874,8 +2844,6 @@
   
 ## Examples  
  The following code example creates a <xref:System.Windows.Forms.TabControl> with five <xref:System.Windows.Forms.TabPage> objects. This example uses the <xref:System.Windows.Forms.TabControl.TabCount%2A> property to get the number of tabs currently in the `tabControl1` tab strip.  
-  
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
   
  [!code-cpp[TabCount#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TabCount/CPP/form1.cpp#1)]
  [!code-csharp[TabCount#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TabCount/CS/form1.cs#1)]
@@ -2900,16 +2868,16 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.TabPageCollectionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
@@ -2936,8 +2904,6 @@
 ## Examples  
  The following code example creates a <xref:System.Windows.Forms.TabControl> with one <xref:System.Windows.Forms.TabPage>. This example uses the <xref:System.Windows.Forms.TabControl.TabPageCollection.Add%2A> method to add a single tab page to the `tabControl1` tab control. Notice the <xref:System.Windows.Forms.TabControl.TabPages%2A> property is used to get the `tabControl1` controls collection to add the `tabPage1` to this collection.  
   
- Use the <xref:System.Drawing> and <xref:System.Windows.Forms> namespaces for this example.  
-  
  [!code-cpp[TabPageCollection.Add#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TabPageCollection.Add/CPP/form1.cpp#1)]
  [!code-csharp[TabPageCollection.Add#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TabPageCollection.Add/CS/form1.cs#1)]
  [!code-vb[TabPageCollection.Add#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TabPageCollection.Add/VB/form1.vb#1)]  
@@ -2963,13 +2929,13 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -2997,10 +2963,10 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3053,15 +3019,16 @@
     <Member MemberName="UpdateTabSelection">
       <MemberSignature Language="C#" Value="protected void UpdateTabSelection (bool uiselected);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void UpdateTabSelection(bool uiselected) cil managed" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.UpdateTabSelection(System.Boolean)" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.UpdateTabSelection(System.Boolean)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="VB.NET" Value="Protected Sub UpdateTabSelection (uiselected As Boolean)" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void UpdateTabSelection(bool uiselected);" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="F#" Value="member this.UpdateTabSelection : bool -&gt; unit" Usage="tabControl.UpdateTabSelection uiselected" FrameworkAlternate="netframework-1.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="C#" Value="protected void UpdateTabSelection (bool updateFocus);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void UpdateTabSelection(bool updateFocus) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub UpdateTabSelection (updateFocus As Boolean)" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void UpdateTabSelection(bool updateFocus);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="member this.UpdateTabSelection : bool -&gt; unit" Usage="tabControl.UpdateTabSelection updateFocus" FrameworkAlternate="netframework-2.0" />
+      <MemberSignature Language="F#" Value="member this.UpdateTabSelection : bool -&gt; unit" Usage="tabControl.UpdateTabSelection uiselected" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="C#" Value="protected void UpdateTabSelection (bool updateFocus);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void UpdateTabSelection(bool updateFocus) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub UpdateTabSelection (updateFocus As Boolean)" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void UpdateTabSelection(bool updateFocus);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+      <MemberSignature Language="F#" Value="member this.UpdateTabSelection : bool -&gt; unit" Usage="tabControl.UpdateTabSelection updateFocus" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.UpdateTabSelection(System.Boolean)" FrameworkAlternate="netframework-1.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3073,8 +3040,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
+        <Parameter Name="updateFocus" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
         <Parameter Name="uiselected" Type="System.Boolean" Index="0" FrameworkAlternate="netframework-1.1" />
-        <Parameter Name="updateFocus" Type="System.Boolean" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="updateFocus">

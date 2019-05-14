@@ -9,6 +9,8 @@
     <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
     <AssemblyVersion>4.0.3.0</AssemblyVersion>
     <AssemblyVersion>4.0.3.1</AssemblyVersion>
+    <AssemblyVersion>4.0.4.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,6 +32,8 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest</ReturnType>
@@ -65,6 +69,8 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest</ReturnType>
@@ -100,6 +106,8 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest</ReturnType>
@@ -113,14 +121,15 @@
         <Parameter Name="extensions" Type="System.Security.Cryptography.X509Certificates.X509ExtensionCollection" />
       </Parameters>
       <Docs>
-        <param name="hash">To be added.</param>
-        <param name="hashAlgorithmId">To be added.</param>
-        <param name="requestedPolicyId">To be added.</param>
-        <param name="nonce">To be added.</param>
-        <param name="requestSignerCertificates">To be added.</param>
-        <param name="extensions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="hash">The pre-computed hash value to be timestamped.</param>
+        <param name="hashAlgorithmId">The Object Identifier (OID) for the hash algorithm that produced <paramref name="hash" />.</param>
+        <param name="requestedPolicyId">The Object Identifier (OID) for a timestamp policy the Timestamp Authority (TSA) should use, or <see langword="null" /> to express no preference.</param>
+        <param name="nonce">An optional nonce (number used once) to uniquely identify this request to pair it with the response. The value is interpreted as an unsigned big-endian integer and may be normalized to the encoding format.</param>
+        <param name="requestSignerCertificates">
+          <see langword="true" /> to indicate the Timestamp Authority (TSA) must include the signing certificate in the issued timestamp token; otherwise, <see langword="false" />.</param>
+        <param name="extensions">RFC3161 extensions to present with the request.</param>
+        <summary>Create a timestamp request using a pre-computed hash value.</summary>
+        <returns>An <see cref="T:System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest" /> representing the chosen values.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,6 +143,8 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest</ReturnType>
@@ -170,6 +181,8 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -193,6 +206,8 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509ExtensionCollection</ReturnType>
@@ -216,6 +231,8 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlyMemory&lt;System.Byte&gt;</ReturnType>
@@ -239,6 +256,8 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.ReadOnlyMemory&lt;System.Byte&gt;&gt;</ReturnType>
@@ -262,6 +281,8 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -284,6 +305,8 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Oid</ReturnType>
@@ -306,6 +329,8 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Pkcs.Rfc3161TimestampToken</ReturnType>
@@ -334,6 +359,8 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Oid</ReturnType>
@@ -356,6 +383,8 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -378,6 +407,8 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -408,6 +439,8 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -436,6 +469,8 @@
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.3.1</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

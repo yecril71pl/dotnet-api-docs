@@ -203,8 +203,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="filename" Type="System.String" />
-        <Parameter Name="ensureSecurity" Type="System.Boolean" />
+        <Parameter Name="filename" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="ensureSecurity" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="filename">The name of the remoting configuration file. Can be <see langword="null" />.</param>
@@ -260,7 +260,7 @@
 ## Remarks  
  Complete exception information includes the exact server exception and the server stack trace. Filtered information includes a standard remoting exception but no server stack trace.  
   
- The `CustomErrorsEnabled` method reflects configuration settings that were specified in the `mode` attribute of the `<customErrors>` element of the application configuration file. For more information about configuration options, see [&#91;\<topic://cpconconfiguration>&#93;](https://msdn.microsoft.com/library/92c0c097-d984-4315-835b-7490ecdf1097).  
+ The `CustomErrorsEnabled` method reflects configuration settings that were specified in the `mode` attribute of the `<customErrors>` element of the application configuration file. For more information about configuration options, see [Configuration of Remote Applications](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/b8tysty8(v=vs.100)).  
   
  The following table shows the three server channel property values that specify which callers receive exception information and what type of information they receive.  
   

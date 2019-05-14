@@ -9,6 +9,7 @@
     <AssemblyName>System.IO.Pipelines</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.1</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,10 +31,11 @@
         <AssemblyName>System.IO.Pipelines</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Pipelines.PipeReader" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,6 +51,7 @@
         <AssemblyName>System.IO.Pipelines</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -74,6 +77,7 @@
         <AssemblyName>System.IO.Pipelines</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -92,6 +96,28 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="AsStream">
+      <MemberSignature Language="C#" Value="public virtual System.IO.Stream AsStream ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream AsStream() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipelines.PipeReader.AsStream" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AsStream () As Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IO::Stream ^ AsStream();" />
+      <MemberSignature Language="F#" Value="abstract member AsStream : unit -&gt; System.IO.Stream&#xA;override this.AsStream : unit -&gt; System.IO.Stream" Usage="pipeReader.AsStream " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a read-only <see cref="T:System.IO.Stream" /> that wraps the <see cref="T:System.IO.Pipelines.PipeReader" />.</summary>
+        <returns>The stream that wraps the <see cref="T:System.IO.Pipelines.PipeReader" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CancelPendingRead">
       <MemberSignature Language="C#" Value="public abstract void CancelPendingRead ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CancelPendingRead() cil managed" />
@@ -104,6 +130,7 @@
         <AssemblyName>System.IO.Pipelines</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -124,6 +151,7 @@
         <AssemblyName>System.IO.Pipelines</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -134,6 +162,56 @@
       <Docs>
         <param name="exception">Optional <see cref="T:System.Exception" /> indicating a failure that's causing the pipeline to complete.</param>
         <summary>Signals to the producer that the consumer is done reading.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyToAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task CopyToAsync (System.IO.Stream destination, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task CopyToAsync(class System.IO.Stream destination, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipelines.PipeReader.CopyToAsync(System.IO.Stream,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member CopyToAsync : System.IO.Stream * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.CopyToAsync : System.IO.Stream * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="pipeReader.CopyToAsync (destination, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="System.IO.Stream" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="destination">The stream to which the contents of the current stream will be copied.</param>
+        <param name="cancellationToken">The token to monitor for cancellation requests. The default value is <see cref="P:System.Threading.CancellationToken.None" />.</param>
+        <summary>Asynchronously reads the bytes from the <see cref="T:System.IO.Pipelines.PipeReader" /> and writes them to the specified stream, using a specified cancellation token.</summary>
+        <returns>A task that represents the asynchronous copy operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.IO.Pipelines.PipeReader Create (System.IO.Stream stream, System.IO.Pipelines.StreamPipeReaderOptions readerOptions = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Pipelines.PipeReader Create(class System.IO.Stream stream, class System.IO.Pipelines.StreamPipeReaderOptions readerOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipelines.PipeReader.Create(System.IO.Stream,System.IO.Pipelines.StreamPipeReaderOptions)" />
+      <MemberSignature Language="F#" Value="static member Create : System.IO.Stream * System.IO.Pipelines.StreamPipeReaderOptions -&gt; System.IO.Pipelines.PipeReader" Usage="System.IO.Pipelines.PipeReader.Create (stream, readerOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipelines</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Pipelines.PipeReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="readerOptions" Type="System.IO.Pipelines.StreamPipeReaderOptions" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <param name="readerOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -149,6 +227,7 @@
         <AssemblyName>System.IO.Pipelines</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -174,6 +253,7 @@
         <AssemblyName>System.IO.Pipelines</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask&lt;System.IO.Pipelines.ReadResult&gt;</ReturnType>
@@ -200,6 +280,7 @@
         <AssemblyName>System.IO.Pipelines</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.1</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

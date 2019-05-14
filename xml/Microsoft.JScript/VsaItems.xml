@@ -28,7 +28,7 @@
     <forInternalUseOnly />
     <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItem" />
     <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
-    <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
+    <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,7 +57,7 @@
         <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItem" />
         <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItems" />
         <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -86,7 +86,7 @@
         <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItem" />
         <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItems" />
         <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -118,7 +118,7 @@
         <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItem" />
         <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItems" />
         <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
     <Member MemberName="CreateItem">
@@ -140,9 +140,9 @@
         <ReturnType>Microsoft.JScript.Vsa.IJSVsaItem</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="itemType" Type="Microsoft.JScript.Vsa.JSVsaItemType" />
-        <Parameter Name="itemFlag" Type="Microsoft.JScript.Vsa.JSVsaItemFlag" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="itemType" Type="Microsoft.JScript.Vsa.JSVsaItemType" Index="1" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="itemFlag" Type="Microsoft.JScript.Vsa.JSVsaItemFlag" Index="2" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="name">The name of the new item.</param>
@@ -176,9 +176,9 @@
         <ReturnType>Microsoft.Vsa.IVsaItem</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="itemType" Type="Microsoft.Vsa.VsaItemType" />
-        <Parameter Name="itemFlag" Type="Microsoft.Vsa.VsaItemFlag" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5" />
+        <Parameter Name="itemType" Type="Microsoft.Vsa.VsaItemType" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5" />
+        <Parameter Name="itemFlag" Type="Microsoft.Vsa.VsaItemFlag" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5" />
       </Parameters>
       <Docs>
         <param name="name">The name of the new item.</param>
@@ -221,7 +221,7 @@
         <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItem" />
         <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItems" />
         <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Item">
@@ -235,7 +235,7 @@
         <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItem" />
         <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItems" />
         <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Item">
@@ -270,7 +270,7 @@
         <altmember cref="T:Microsoft.JScript.VsaItem" />
         <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItems" />
         <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -305,7 +305,7 @@
         <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItem" />
         <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItems" />
         <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
     <MemberGroup MemberName="Remove">
@@ -319,7 +319,7 @@
         <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItem" />
         <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItems" />
         <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
       </Docs>
     </MemberGroup>
     <Member MemberName="Remove">
@@ -354,7 +354,7 @@
         <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItem" />
         <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItems" />
         <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -389,7 +389,7 @@
         <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItem" />
         <altmember cref="T:Microsoft.JScript.Vsa.IJSVsaItems" />
         <altmember cref="T:Microsoft.JScript.Vsa.JSVsaItemType" />
-        <altmember cref="T:Microsoft.JScript.Vsa.VsaItemFlag" />
+        <altmember cref="T:Microsoft.Vsa.VsaItemFlag" />
       </Docs>
     </Member>
   </Members>

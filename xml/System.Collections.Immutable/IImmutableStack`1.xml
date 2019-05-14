@@ -7,10 +7,12 @@
   <TypeSignature Language="F#" Value="type IImmutableStack&lt;'T&gt; = interface&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Immutable</AssemblyName>
+    <AssemblyVersion>1.1.37.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.1.0</AssemblyVersion>
     <AssemblyVersion>1.2.2.0</AssemblyVersion>
     <AssemblyVersion>1.2.3.0</AssemblyVersion>
+    <AssemblyVersion>1.2.4.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -41,10 +43,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableStack&lt;T&gt;</ReturnType>
@@ -66,10 +70,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -91,10 +97,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -104,6 +112,7 @@
         <summary>Returns the element at the top of the immutable stack without removing it.</summary>
         <returns>The element at the top of the stack.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The stack is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="Pop">
@@ -116,10 +125,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableStack&lt;T&gt;</ReturnType>
@@ -129,6 +140,7 @@
         <summary>Removes the element at the top of the immutable stack and returns the new stack.</summary>
         <returns>The new stack; never <c>null</c></returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The stack is empty.</exception>
       </Docs>
     </Member>
     <Member MemberName="Push">
@@ -141,10 +153,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableStack&lt;T&gt;</ReturnType>

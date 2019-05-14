@@ -123,7 +123,7 @@
 |<xref:System.Security.Principal.WindowsIdentity.IsAuthenticated%2A>|`false`|  
   
 > [!NOTE]
->  You can retrieve the token represented by `userToken` by calling unmanaged code such as the Win32 API `LogonUser` function. Always release `userToken` by calling the Win32 API `CloseHandle` function. For more information on calling unmanaged code, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
+>  You can retrieve the token represented by `userToken` by calling unmanaged code such as the Windows API `LogonUser` function. Always release `userToken` by calling the Windows API `CloseHandle` function. For more information on calling unmanaged code, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
   
  ]]></format>
         </remarks>
@@ -164,7 +164,7 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="identity" Type="System.Security.Principal.WindowsIdentity" />
+        <Parameter Name="identity" Type="System.Security.Principal.WindowsIdentity" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="identity">The object from which to construct the new instance of <see cref="T:System.Security.Principal.WindowsIdentity" />.</param>
@@ -208,7 +208,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A UPN has the format *username*@*domainname*.com, in other words, an email address. The UPN identified in `sUserPrincipalName` is used to retrieve a token for that user through the Win32 API `LsaLogonUser` function. In turn that token is used to identify the user. An exception might be returned due to the inability to log on using the supplied UPN.  
+ A UPN has the format *username*@*domainname*.com, in other words, an email address. The UPN identified in `sUserPrincipalName` is used to retrieve a token for that user through the Windows API `LsaLogonUser` function. In turn that token is used to identify the user. An exception might be returned due to the inability to log on using the supplied UPN.  
   
 > [!NOTE]
 >  This constructor is intended for use only on computers joined to Windows Server 2003 or later domains. An exception is thrown for earlier domain types. This restriction is due to the fact that this constructor uses the [KERB_S4U_LOGON structure](https://go.microsoft.com/fwlink/?LinkId=143533), which was first introduced in Windows Server 2003.  
@@ -281,7 +281,7 @@
  The value of the `type` parameter is used to set the <xref:System.Security.Principal.WindowsIdentity.AuthenticationType%2A> parameter. If `type` is `null`, the security system sets <xref:System.Security.Principal.WindowsIdentity.AuthenticationType%2A> to `Negotiate` on Windows Vista and later versions of the Windows operating system, and to `Kerberos` on earlier versions of the Windows operating system. The security system does not use this value; it is for informational use only.  
   
 > [!NOTE]
->  You can retrieve the token represented by `userToken` by calling unmanaged code such as the Win32 API `LogonUser` function. Always release `userToken` by calling the Win32 API `CloseHandle` function. For more information on calling unmanaged code, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
+>  You can retrieve the token represented by `userToken` by calling unmanaged code such as the Windows API `LogonUser` function. Always release `userToken` by calling the Windows API `CloseHandle` function. For more information on calling unmanaged code, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
   
    
   
@@ -334,8 +334,8 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
-        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="info">The object containing the account information for the user.</param>
@@ -383,8 +383,8 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="sUserPrincipalName" Type="System.String" />
-        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="sUserPrincipalName" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="type" Type="System.String" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="sUserPrincipalName">The UPN for the user on whose behalf the code is running.</param>
@@ -396,7 +396,7 @@
 ## Remarks  
  The value of the `type` parameter is used to set the <xref:System.Security.Principal.WindowsIdentity.AuthenticationType%2A> parameter. If `type` is `null`, the security system sets <xref:System.Security.Principal.WindowsIdentity.AuthenticationType%2A> to `Negotiate` on Windows Vista and later versions of the Windows operating system, and to `Kerberos` on earlier versions of the Windows operating system. The security system does not use this value; it is for informational use only.  
   
- The UPN identified in `sUserPrincipalName` is used to retrieve a token for that user through the Win32 API `LsaLogonUser` function. In turn that token is used to identify the user. An exception might be returned due to the inability to log on using the supplied UPN.  
+ The UPN identified in `sUserPrincipalName` is used to retrieve a token for that user through the Windows API `LsaLogonUser` function. In turn that token is used to identify the user. An exception might be returned due to the inability to log on using the supplied UPN.  
   
 > [!NOTE]
 >  This constructor is intended for use only on computers joined to Windows Server 2003 or later domains. An exception is thrown for earlier domain types. This restriction is due to the fact that this constructor uses the [KERB_S4U_LOGON structure](https://go.microsoft.com/fwlink/?LinkId=143533), which was first introduced in Windows Server 2003.  
@@ -438,6 +438,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -445,9 +446,9 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="userToken" Type="System.IntPtr" />
-        <Parameter Name="type" Type="System.String" />
-        <Parameter Name="acctType" Type="System.Security.Principal.WindowsAccountType" />
+        <Parameter Name="userToken" Type="System.IntPtr" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="type" Type="System.String" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="acctType" Type="System.Security.Principal.WindowsAccountType" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="userToken">The account token for the user on whose behalf the code is running.</param>
@@ -467,7 +468,7 @@
  The value of the `type` parameter is used to set the <xref:System.Security.Principal.WindowsIdentity.AuthenticationType%2A> parameter. If `type` is `null`, the security system sets <xref:System.Security.Principal.WindowsIdentity.AuthenticationType%2A> to `Negotiate` on Windows Vista and later versions of the Windows operating system, and to `Kerberos` on earlier versions of the Windows operating system. The security system does not use this value; it is for informational use only.  
   
 > [!NOTE]
->  You can retrieve the token represented by `userToken` by calling unmanaged code such as the Win32 API `LogonUser` function. Always release `userToken` by calling the Win32 API `CloseHandle` function. For more information on calling unmanaged code, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
+>  You can retrieve the token represented by `userToken` by calling unmanaged code such as the Windows API `LogonUser` function. Always release `userToken` by calling the Windows API `CloseHandle` function. For more information on calling unmanaged code, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
   
    
   
@@ -511,6 +512,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -518,10 +520,10 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="userToken" Type="System.IntPtr" />
-        <Parameter Name="type" Type="System.String" />
-        <Parameter Name="acctType" Type="System.Security.Principal.WindowsAccountType" />
-        <Parameter Name="isAuthenticated" Type="System.Boolean" />
+        <Parameter Name="userToken" Type="System.IntPtr" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="type" Type="System.String" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="acctType" Type="System.Security.Principal.WindowsAccountType" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="isAuthenticated" Type="System.Boolean" Index="3" FrameworkAlternate="dotnet-plat-ext-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="userToken">The account token for the user on whose behalf the code is running.</param>
@@ -536,7 +538,7 @@
 ## Remarks  
  The value of the `type` parameter is used to set the <xref:System.Security.Principal.WindowsIdentity.AuthenticationType%2A> parameter. If `type` is `null`, the security system sets <xref:System.Security.Principal.WindowsIdentity.AuthenticationType%2A> to `Negotiate` on Windows Vista and later versions of the Windows operating system, and to `Kerberos` on earlier versions of the Windows operating system. The security system does not use this value; it is for informational use only.  
   
- You can retrieve the token represented by `userToken` by calling unmanaged code such as the Win32 API `LogonUser` function. Always release `userToken` by calling the Win32 API `CloseHandle` function. For more information on calling unmanaged code, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
+ You can retrieve the token represented by `userToken` by calling unmanaged code such as the Windows API `LogonUser` function. Always release `userToken` by calling the Windows API `CloseHandle` function. For more information on calling unmanaged code, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
   
    
   
@@ -681,7 +683,7 @@
         <Attribute FrameworkAlternate="netframework-4.6">
           <AttributeName>get: System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Security.Principal.WindowsIdentity/&lt;get_Claims&gt;d__1))</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0">
           <AttributeName>get: System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Security.Principal.WindowsIdentity/&lt;get_Claims&gt;d__79))</AttributeName>
         </Attribute>
       </Attributes>
@@ -867,7 +869,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="disposing" Type="System.Boolean" />
+        <Parameter Name="disposing" Type="System.Boolean" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="disposing">
@@ -1069,7 +1071,7 @@ Application code does not call this method; it is automatically invoked during g
         <ReturnType>System.Security.Principal.WindowsIdentity</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ifImpersonating" Type="System.Boolean" />
+        <Parameter Name="ifImpersonating" Type="System.Boolean" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="ifImpersonating">
@@ -1116,7 +1118,7 @@ Application code does not call this method; it is automatically invoked during g
         <ReturnType>System.Security.Principal.WindowsIdentity</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="desiredAccess" Type="System.Security.Principal.TokenAccessLevels" />
+        <Parameter Name="desiredAccess" Type="System.Security.Principal.TokenAccessLevels" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="desiredAccess">A bitwise combination of the enumeration values.</param>
@@ -1271,10 +1273,10 @@ Application code does not call this method; it is automatically invoked during g
         <ReturnType>System.Security.Principal.WindowsImpersonationContext</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="userToken" Type="System.IntPtr" />
+        <Parameter Name="userToken" Type="System.IntPtr" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="userToken">The handle of a Windows account token. This token is usually retrieved through a call to unmanaged code, such as a call to the Win32 API <see langword="LogonUser" /> function.</param>
+        <param name="userToken">The handle of a Windows account token. This token is usually retrieved through a call to unmanaged code, such as a call to the Windows API <see langword="LogonUser" /> function.</param>
         <summary>Impersonates the user represented by the specified user token.</summary>
         <returns>An object that represents the Windows user prior to impersonation; this object can be used to revert to the original user's context.</returns>
         <remarks>
@@ -1677,8 +1679,8 @@ Application code does not call this method; it is automatically invoked during g
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="safeAccessTokenHandle" Type="Microsoft.Win32.SafeHandles.SafeAccessTokenHandle" />
-        <Parameter Name="action" Type="System.Action" />
+        <Parameter Name="safeAccessTokenHandle" Type="Microsoft.Win32.SafeHandles.SafeAccessTokenHandle" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="action" Type="System.Action" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="safeAccessTokenHandle">The SafeAccessTokenHandle of the impersonated Windows identity.</param>
@@ -1799,8 +1801,8 @@ public class ImpersonationDemo
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="safeAccessTokenHandle" Type="Microsoft.Win32.SafeHandles.SafeAccessTokenHandle" />
-        <Parameter Name="func" Type="System.Func&lt;T&gt;" />
+        <Parameter Name="safeAccessTokenHandle" Type="Microsoft.Win32.SafeHandles.SafeAccessTokenHandle" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="func" Type="System.Func&lt;T&gt;" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of object used by and returned by the function.</typeparam>
@@ -1919,7 +1921,7 @@ public class ImpersonationDemo
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="sender" Type="System.Object" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="sender">The source of the deserialization event.</param>
@@ -1958,8 +1960,8 @@ public class ImpersonationDemo
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
-        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="info">An object containing the information required to serialize the <see cref="T:System.Collections.Hashtable" />.</param>

@@ -34,7 +34,7 @@
     </remarks>
     <threadsafe>Any public <see langword="static" /> members of this type are thread safe. Any instance members are not guaranteed to be thread safe.  
   
- This object can be accessed only from the thread on which it was created. Attempts to access it from other threads will throw an <see cref="T:System.InvalidOperationException" />. <see cref="M:System.Windows.Threading.Dispatcher.Invoke(System.Windows.Threading.DispatcherPriority,System.Delegate)" /> or <see cref="M:System.Windows.Threading.Dispatcher.BeginInvoke(System.Windows.Threading.DispatcherPriority,System.Delegate)" /> provide support for marshalling work to the correct thread.</threadsafe>
+ This object can be accessed only from the thread on which it was created. Attempts to access it from other threads will throw an <see cref="T:System.InvalidOperationException" />. <see cref="M:System.Windows.Threading.Dispatcher.Invoke(System.Windows.Threading.DispatcherPriority,System.Delegate)" /> or <see cref="M:System.Windows.Threading.Dispatcher.BeginInvoke(System.Windows.Threading.DispatcherPriority,System.Delegate)" /> provide support for marshaling work to the correct thread.</threadsafe>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -69,7 +69,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -119,7 +119,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -156,7 +156,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>

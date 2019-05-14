@@ -93,8 +93,8 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
-        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
@@ -264,7 +264,7 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapException(System::String ^ message, System::Xml::XmlQualifiedName ^ code, System::Web::Services::Protocols::SoapFaultSubCode ^ subCode);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="C#" Value="public SoapException (string message, System.Xml.XmlQualifiedName code, System.Web.Services.Protocols.SoapFaultSubCode subcode);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Xml.XmlQualifiedName code, class System.Web.Services.Protocols.SoapFaultSubCode subcode) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.#ctor(System.String,System.Xml.XmlQualifiedName,System.Web.Services.Protocols.SoapFaultSubCode)" FrameworkAlternate="xamarinandroid-7.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.#ctor(System.String,System.Xml.XmlQualifiedName,System.Web.Services.Protocols.SoapFaultSubCode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, code As XmlQualifiedName, subcode As SoapFaultSubCode)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapException(System::String ^ message, System::Xml::XmlQualifiedName ^ code, System::Web::Services::Protocols::SoapFaultSubCode ^ subcode);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="new System.Web.Services.Protocols.SoapException : string * System.Xml.XmlQualifiedName * System.Web.Services.Protocols.SoapFaultSubCode -&gt; System.Web.Services.Protocols.SoapException" Usage="new System.Web.Services.Protocols.SoapException (message, code, subcode)" />
@@ -276,8 +276,8 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="message" Type="System.String" Index="0" />
-        <Parameter Name="code" Type="System.Xml.XmlQualifiedName" Index="1" />
+        <Parameter Name="message" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="code" Type="System.Xml.XmlQualifiedName" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
         <Parameter Name="subCode" Type="System.Web.Services.Protocols.SoapFaultSubCode" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
         <Parameter Name="subcode" Type="System.Web.Services.Protocols.SoapFaultSubCode" Index="2" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
@@ -332,7 +332,7 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapException(System::String ^ message, System::Xml::XmlQualifiedName ^ code, System::String ^ actor, System::String ^ role, System::Xml::XmlNode ^ detail, System::Web::Services::Protocols::SoapFaultSubCode ^ subCode, Exception ^ innerException);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="C#" Value="public SoapException (string message, System.Xml.XmlQualifiedName code, string actor, string role, System.Xml.XmlNode detail, System.Web.Services.Protocols.SoapFaultSubCode subcode, Exception innerException);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Xml.XmlQualifiedName code, string actor, string role, class System.Xml.XmlNode detail, class System.Web.Services.Protocols.SoapFaultSubCode subcode, class System.Exception innerException) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.#ctor(System.String,System.Xml.XmlQualifiedName,System.String,System.String,System.Xml.XmlNode,System.Web.Services.Protocols.SoapFaultSubCode,System.Exception)" FrameworkAlternate="xamarinandroid-7.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.#ctor(System.String,System.Xml.XmlQualifiedName,System.String,System.String,System.Xml.XmlNode,System.Web.Services.Protocols.SoapFaultSubCode,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, code As XmlQualifiedName, actor As String, role As String, detail As XmlNode, subcode As SoapFaultSubCode, innerException As Exception)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapException(System::String ^ message, System::Xml::XmlQualifiedName ^ code, System::String ^ actor, System::String ^ role, System::Xml::XmlNode ^ detail, System::Web::Services::Protocols::SoapFaultSubCode ^ subcode, Exception ^ innerException);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="new System.Web.Services.Protocols.SoapException : string * System.Xml.XmlQualifiedName * string * string * System.Xml.XmlNode * System.Web.Services.Protocols.SoapFaultSubCode * Exception -&gt; System.Web.Services.Protocols.SoapException" Usage="new System.Web.Services.Protocols.SoapException (message, code, actor, role, detail, subcode, innerException)" />
@@ -344,14 +344,14 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="message" Type="System.String" Index="0" />
-        <Parameter Name="code" Type="System.Xml.XmlQualifiedName" Index="1" />
-        <Parameter Name="actor" Type="System.String" Index="2" />
-        <Parameter Name="role" Type="System.String" Index="3" />
-        <Parameter Name="detail" Type="System.Xml.XmlNode" Index="4" />
+        <Parameter Name="message" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="code" Type="System.Xml.XmlQualifiedName" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="actor" Type="System.String" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="role" Type="System.String" Index="3" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="detail" Type="System.Xml.XmlNode" Index="4" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
         <Parameter Name="subCode" Type="System.Web.Services.Protocols.SoapFaultSubCode" Index="5" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
         <Parameter Name="subcode" Type="System.Web.Services.Protocols.SoapFaultSubCode" Index="5" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="innerException" Type="System.Exception" Index="6" />
+        <Parameter Name="innerException" Type="System.Exception" Index="6" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="message">A message that identifies the reason the exception occurred. This parameter sets the <see cref="P:System.Exception.Message" /> property.</param>
@@ -373,7 +373,7 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapException(System::String ^ message, System::Xml::XmlQualifiedName ^ code, System::String ^ actor, System::String ^ role, System::String ^ lang, System::Xml::XmlNode ^ detail, System::Web::Services::Protocols::SoapFaultSubCode ^ subCode, Exception ^ innerException);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
       <MemberSignature Language="C#" Value="public SoapException (string message, System.Xml.XmlQualifiedName code, string actor, string role, string lang, System.Xml.XmlNode detail, System.Web.Services.Protocols.SoapFaultSubCode subcode, Exception innerException);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Xml.XmlQualifiedName code, string actor, string role, string lang, class System.Xml.XmlNode detail, class System.Web.Services.Protocols.SoapFaultSubCode subcode, class System.Exception innerException) cil managed" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.#ctor(System.String,System.Xml.XmlQualifiedName,System.String,System.String,System.String,System.Xml.XmlNode,System.Web.Services.Protocols.SoapFaultSubCode,System.Exception)" FrameworkAlternate="xamarinandroid-7.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinios-10.8;xamarinmac-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapException.#ctor(System.String,System.Xml.XmlQualifiedName,System.String,System.String,System.String,System.Xml.XmlNode,System.Web.Services.Protocols.SoapFaultSubCode,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, code As XmlQualifiedName, actor As String, role As String, lang As String, detail As XmlNode, subcode As SoapFaultSubCode, innerException As Exception)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapException(System::String ^ message, System::Xml::XmlQualifiedName ^ code, System::String ^ actor, System::String ^ role, System::String ^ lang, System::Xml::XmlNode ^ detail, System::Web::Services::Protocols::SoapFaultSubCode ^ subcode, Exception ^ innerException);" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="new System.Web.Services.Protocols.SoapException : string * System.Xml.XmlQualifiedName * string * string * string * System.Xml.XmlNode * System.Web.Services.Protocols.SoapFaultSubCode * Exception -&gt; System.Web.Services.Protocols.SoapException" Usage="new System.Web.Services.Protocols.SoapException (message, code, actor, role, lang, detail, subcode, innerException)" />
@@ -385,15 +385,15 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="message" Type="System.String" Index="0" />
-        <Parameter Name="code" Type="System.Xml.XmlQualifiedName" Index="1" />
-        <Parameter Name="actor" Type="System.String" Index="2" />
-        <Parameter Name="role" Type="System.String" Index="3" />
-        <Parameter Name="lang" Type="System.String" Index="4" />
-        <Parameter Name="detail" Type="System.Xml.XmlNode" Index="5" />
+        <Parameter Name="message" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="code" Type="System.Xml.XmlQualifiedName" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="actor" Type="System.String" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="role" Type="System.String" Index="3" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="lang" Type="System.String" Index="4" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="detail" Type="System.Xml.XmlNode" Index="5" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
         <Parameter Name="subCode" Type="System.Web.Services.Protocols.SoapFaultSubCode" Index="6" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.8" />
         <Parameter Name="subcode" Type="System.Web.Services.Protocols.SoapFaultSubCode" Index="6" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-        <Parameter Name="innerException" Type="System.Exception" Index="7" />
+        <Parameter Name="innerException" Type="System.Exception" Index="7" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="message">A message that identifies the reason the exception occurred. This parameter sets the <see cref="P:System.Exception.Message" /> property.</param>
@@ -438,7 +438,7 @@
   
  When a SOAP request is made, the message is sent to a recipient, which is specified in a SOAP actor attribute. If an exception occurs within an XML Web service, the value of the SOAP actor attribute is assigned to the <xref:System.Web.Services.Protocols.SoapException.Actor%2A> property. For XML Web services created using ASP.NET, the URL to the XML Web service method is the value of the SOAP actor attribute and is returned in the <xref:System.Web.Services.Protocols.SoapException.Actor%2A> property.  
   
- For more information on the SOAP actor attribute, see the SOAP specification at http://www.w3.org/TR/SOAP/.  
+ For more information on the SOAP actor attribute, see the [SOAP](https://www.w3.org/TR/soap/) specification.
   
    
   
@@ -647,8 +647,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
-        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
@@ -675,7 +675,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="code" Type="System.Xml.XmlQualifiedName" />
+        <Parameter Name="code" Type="System.Xml.XmlQualifiedName" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="code">An <see cref="T:System.Xml.XmlQualifiedName" /> that contains a SOAP fault code.</param>
@@ -713,7 +713,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="code" Type="System.Xml.XmlQualifiedName" />
+        <Parameter Name="code" Type="System.Xml.XmlQualifiedName" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="code">An <see cref="T:System.Xml.XmlQualifiedName" /> that contains a SOAP fault code.</param>
@@ -751,7 +751,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="code" Type="System.Xml.XmlQualifiedName" />
+        <Parameter Name="code" Type="System.Xml.XmlQualifiedName" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="code">An <see cref="T:System.Xml.XmlQualifiedName" /> that contains a SOAP fault code.</param>
@@ -789,7 +789,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="code" Type="System.Xml.XmlQualifiedName" />
+        <Parameter Name="code" Type="System.Xml.XmlQualifiedName" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="code">An <see cref="T:System.Xml.XmlQualifiedName" /> that contains a SOAP fault code.</param>

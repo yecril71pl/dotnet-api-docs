@@ -7,10 +7,12 @@
   <TypeSignature Language="F#" Value="type ImmutableStack = class" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Immutable</AssemblyName>
+    <AssemblyVersion>1.1.37.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.1.0</AssemblyVersion>
     <AssemblyVersion>1.2.2.0</AssemblyVersion>
     <AssemblyVersion>1.2.3.0</AssemblyVersion>
+    <AssemblyVersion>1.2.4.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -34,10 +36,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableStack&lt;T&gt;</ReturnType>
@@ -63,10 +67,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableStack&lt;T&gt;</ReturnType>
@@ -95,10 +101,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableStack&lt;T&gt;</ReturnType>
@@ -109,7 +117,7 @@
       <Parameters>
         <Parameter Name="items" Type="T[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="dotnet-uwp-10.0">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -133,10 +141,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableStack&lt;T&gt;</ReturnType>
@@ -165,10 +175,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableStack&lt;T&gt;</ReturnType>
@@ -187,6 +199,7 @@
         <summary>Removes the specified item from an immutable stack.</summary>
         <returns>A stack; never <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The stack is empty.</exception>
       </Docs>
     </Member>
   </Members>

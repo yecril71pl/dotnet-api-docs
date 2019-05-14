@@ -15,6 +15,7 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -81,6 +82,7 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -136,17 +138,18 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the unqualified name of the XML Schema element that represents a SOAP message for which .NET Framework type mapping information is being provided.</summary>
-        <value>Gets the XML Schema element name.</value>
+        <summary>Gets the unqualified name of the XML Schema element that represents a SOAP message for which .NET type mapping information is being provided.</summary>
+        <value>The unqualified name of the XML Schema element.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[
-
+          <format type="text/markdown"><![CDATA[  
+  
 ## Remarks  
-A SOAP message is defined in a Web Services Description Language (WSDL) document using the message element.
 
-See the <xref:System.Xml.Serialization.XmlMembersMapping> class for the conditions under which the <xref:System.Xml.Serialization.XmlMapping.ElementName> property refers to a code entity defined in a Web service method (a parameter or return value) instead of to an extra parent or wrapper element.
+A SOAP message is defined in a Web Services Description Language (WSDL) document using the **message** element.
 
-]]></format>
+See the <xref:System.Xml.Serialization.XmlMembersMapping> class for the conditions under which the `ElementName` property refers to a code entity defined in a Web service method (a parameter or return value) instead of to an extra parent or wrapper element.
+
+ ]]></format>
         </remarks>
         <forInternalUseOnly />
       </Docs>
@@ -169,6 +172,7 @@ See the <xref:System.Xml.Serialization.XmlMembersMapping> class for the conditio
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -259,6 +263,7 @@ A SOAP message is defined in a Web Services Description Language (WSDL) document
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
@@ -302,6 +307,7 @@ A SOAP message is defined in a Web Services Description Language (WSDL) document
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlSerializer</AssemblyName>

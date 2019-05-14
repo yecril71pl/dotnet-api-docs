@@ -12,6 +12,7 @@
     <AssemblyVersion>4.0.3.0</AssemblyVersion>
     <AssemblyVersion>4.0.4.0</AssemblyVersion>
     <AssemblyVersion>4.0.4.1</AssemblyVersion>
+    <AssemblyVersion>4.0.5.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -35,6 +36,7 @@
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.1</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void*</ReturnType>
@@ -43,8 +45,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="System.Void*" />
-        <Parameter Name="elementOffset" Type="System.Int32" />
+        <Parameter Name="source" Type="System.Void*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="elementOffset" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -167,6 +169,7 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.1</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -175,8 +178,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="left" Type="T" RefType="ref" />
-        <Parameter Name="right" Type="T" RefType="ref" />
+        <Parameter Name="left" Type="T" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-1.1;netcore-3.0" />
+        <Parameter Name="right" Type="T" RefType="ref" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-1.1;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of reference.</typeparam>
@@ -205,6 +208,7 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.1</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -275,6 +279,7 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.1</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void*</ReturnType>
@@ -328,7 +333,7 @@
       </Docs>
     </Member>
     <Member MemberName="AsRef&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static T AsRef&lt;T&gt; (ref T source);" />
+      <MemberSignature Language="C#" Value="public static ref T AsRef&lt;T&gt; (ref T source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T AsRef&lt;T&gt;([in]!!T&amp; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.AsRef``1(``0@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function AsRef(Of T) (ByRef source As T) As T" />
@@ -339,6 +344,7 @@
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.1</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue RefType="Ref">
         <ReturnType>T</ReturnType>
@@ -347,13 +353,13 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="T" RefType="ref" />
+        <Parameter Name="source" Type="T" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of reference.</typeparam>
+        <param name="source">The read-only reference to reinterpret.</param>
+        <summary>Reinterprets the given read-only reference as a reference.</summary>
+        <returns>A reference to a value of type <typeparamref name="T" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -370,6 +376,7 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.1</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
@@ -378,8 +385,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="origin" Type="T" RefType="ref" />
-        <Parameter Name="target" Type="T" RefType="ref" />
+        <Parameter Name="origin" Type="T" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="target" Type="T" RefType="ref" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of reference.</typeparam>
@@ -406,6 +413,7 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.1</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -441,6 +449,7 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.1</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -475,14 +484,15 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.1</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.Byte" RefType="ref" />
-        <Parameter Name="source" Type="System.Byte" RefType="ref" />
-        <Parameter Name="byteCount" Type="System.UInt32" />
+        <Parameter Name="destination" Type="System.Byte" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="source" Type="System.Byte" RefType="ref" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="byteCount" Type="System.UInt32" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="destination">The destination address to copy to.</param>
@@ -508,6 +518,7 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.1</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -540,14 +551,15 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.1</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.Byte" RefType="ref" />
-        <Parameter Name="source" Type="System.Byte" RefType="ref" />
-        <Parameter Name="byteCount" Type="System.UInt32" />
+        <Parameter Name="destination" Type="System.Byte" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="source" Type="System.Byte" RefType="ref" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="byteCount" Type="System.UInt32" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="destination">The destination address to copy to.</param>
@@ -572,14 +584,15 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.1</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.Void*" />
-        <Parameter Name="source" Type="System.Void*" />
-        <Parameter Name="byteCount" Type="System.UInt32" />
+        <Parameter Name="destination" Type="System.Void*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="source" Type="System.Void*" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="byteCount" Type="System.UInt32" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="destination">The destination address to copy to.</param>
@@ -605,14 +618,15 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.1</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="startAddress" Type="System.Byte" RefType="ref" />
-        <Parameter Name="value" Type="System.Byte" />
-        <Parameter Name="byteCount" Type="System.UInt32" />
+        <Parameter Name="startAddress" Type="System.Byte" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="value" Type="System.Byte" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="byteCount" Type="System.UInt32" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="startAddress">The address of the start of the memory block to initialize.</param>
@@ -638,6 +652,7 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.1</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -670,14 +685,15 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.1</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="startAddress" Type="System.Byte" RefType="ref" />
-        <Parameter Name="value" Type="System.Byte" />
-        <Parameter Name="byteCount" Type="System.UInt32" />
+        <Parameter Name="startAddress" Type="System.Byte" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="value" Type="System.Byte" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="byteCount" Type="System.UInt32" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="startAddress">The address of the start of the memory block to initialize.</param>
@@ -702,14 +718,15 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.1</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="startAddress" Type="System.Void*" />
-        <Parameter Name="value" Type="System.Byte" />
-        <Parameter Name="byteCount" Type="System.UInt32" />
+        <Parameter Name="startAddress" Type="System.Void*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="value" Type="System.Byte" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="byteCount" Type="System.UInt32" Index="2" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="startAddress">The address of the start of the memory block to initialize.</param>
@@ -734,6 +751,7 @@
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.1</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -742,8 +760,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="left" Type="T" RefType="ref" />
-        <Parameter Name="right" Type="T" RefType="ref" />
+        <Parameter Name="left" Type="T" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="right" Type="T" RefType="ref" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -766,6 +784,7 @@
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.1</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -774,8 +793,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="left" Type="T" RefType="ref" />
-        <Parameter Name="right" Type="T" RefType="ref" />
+        <Parameter Name="left" Type="T" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="right" Type="T" RefType="ref" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -800,6 +819,7 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.1</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -833,6 +853,7 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.1</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -841,7 +862,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="System.Byte" RefType="ref" />
+        <Parameter Name="source" Type="System.Byte" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type to read.</typeparam>
@@ -866,6 +887,7 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.1</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -874,7 +896,7 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="System.Void*" />
+        <Parameter Name="source" Type="System.Void*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type to read.</typeparam>
@@ -902,6 +924,7 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.1</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -928,6 +951,7 @@
         <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.1</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void*</ReturnType>
@@ -936,8 +960,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="source" Type="System.Void*" />
-        <Parameter Name="elementOffset" Type="System.Int32" />
+        <Parameter Name="source" Type="System.Void*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="elementOffset" Type="System.Int32" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -976,7 +1000,7 @@
         <param name="source">The reference to subtract the offset from.</param>
         <param name="elementOffset">The offset to subtract.</param>
         <summary>Subtracts an element offset from the given reference.</summary>
-        <returns>A new reference that reflects the subraction of offset from pointer.</returns>
+        <returns>A new reference that reflects the subtraction of offset from pointer.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1009,7 +1033,7 @@
         <summary>
         Subtracts an element offset from the given reference.
         </summary>
-        <returns>A new reference that reflects the subraction of offset from pointer.</returns>
+        <returns>A new reference that reflects the subtraction of offset from pointer.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1043,8 +1067,74 @@
         <summary>
         Subtracts a byte offset from the given reference.
         </summary>
-        <returns>A new reference that reflects the subraction of byte offset from pointer.</returns>
+        <returns>A new reference that reflects the subtraction of byte offset from pointer.</returns>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unbox&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static ref T Unbox&lt;T&gt; (object box) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Unbox&lt;struct .ctor (class System.ValueType) T&gt;(object box) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.Unsafe.Unbox``1(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Unbox(Of T As Structure) (box As Object) As T" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static T % Unbox(System::Object ^ box);" />
+      <MemberSignature Language="F#" Value="static member Unbox : obj -&gt;  (requires 'T : struct)" Usage="System.Runtime.CompilerServices.Unsafe.Unbox box" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.CompilerServices.Unsafe</AssemblyName>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue RefType="Ref">
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="box" Type="System.Object" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0;netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type to be unboxed.</typeparam>
+        <param name="box">The value to unbox.</param>
+        <summary>Returns a <see langword="mutable ref" /> to a boxed value.</summary>
+        <returns>A <see langword="mutable ref" /> to the boxed value <paramref name="box" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+
+The `Unbox<T>` method is simply a wrapper for the IL [unbox](xref:System.Reflection.Emit.OpCodes.Unbox) instruction. It is useful as a performance optimization. Whenever an API that takes an <xref:System.Object> needs to be called repeatedly with different values of a value type, the same box object can be reused rather than a new one created each time.
+
+The `Unbox<T>` method has an important usage constraint that is not enforced by language compilers and that is the responsibility of the caller. The IL `unbox` instruction returns a controlled-mutability managed pointer. Because .NET and .NET language compilers cannot represent this constraint, the `Unbox<T>` method returns a normal mutable `ref T`. However developers **must not** mutate the returned reference unless they are certain that `T` is a mutable struct type. For example, because the numeric primitives such as <xref:System.Int32> are not mutable struct types, the following code is not suppported:
+
+```csharp
+Unsafe.Box<int>(obj) = 30;
+```
+
+In contrast, a type such as <xref:System.Drawing.Point?<displayProperty=nameWithType> is a mutable struct with public property setters, so the following code is supported:
+
+```csharp
+Unsafe.Unbox<System.Drawing.Point>(obj).X = 50;
+```
+
+For more information, see sections III.1.8.1.2.2 ("Controlled-muttability managed pointers") and III.4.32 ("unbox -- convert boxed value type to its raw form") in [ECMA-335: Common Language Infrastructure (CLI) Partitions I to VI](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-335.pdf).
+
+         ]]></format>
+        </remarks>
+        <exception cref="T:System.NullReferenceException">
+          <paramref name="box" /> is <see langword="null" />, and <typeparamref name="T" /> is a non-nullable value type.</exception>
+        <exception cref="T:System.InvalidCastException">
+          <paramref name="box" /> is not a boxed value type.
+         
+-or-
+
+<paramref name="box" /> is not a boxed <typeparamref name="T" />.
+         </exception>
+        <exception cref="T:System.TypeLoadException">
+          <typeparamref name="T" /> cannot be found.</exception>
       </Docs>
     </Member>
     <Member MemberName="Write&lt;T&gt;">
@@ -1061,6 +1151,7 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.1</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1095,6 +1186,7 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.1</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1103,8 +1195,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="destination" Type="System.Byte" RefType="ref" />
-        <Parameter Name="value" Type="T" />
+        <Parameter Name="destination" Type="System.Byte" RefType="ref" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="value" Type="T" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of value to write.</typeparam>
@@ -1129,6 +1221,7 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
         <AssemblyVersion>4.0.4.1</AssemblyVersion>
+        <AssemblyVersion>4.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1137,8 +1230,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="destination" Type="System.Void*" />
-        <Parameter Name="value" Type="T" />
+        <Parameter Name="destination" Type="System.Void*" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
+        <Parameter Name="value" Type="T" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">The type of value to write.</typeparam>

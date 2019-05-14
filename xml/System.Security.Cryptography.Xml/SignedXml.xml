@@ -15,6 +15,7 @@
     <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -65,7 +66,7 @@
  The main parts of this structure are:  
   
  The <`CanonicalizationMethod`> element  
- Specifies the rules for rewriting the `Signature` element from XML/text into bytes for signature validation. The default value in the .NET Framework is http://www.w3.org/TR/2001/REC-xml-c14n-20010315, which identifies a trustworthy algorithm. This element is represented by the <xref:System.Security.Cryptography.Xml.SignedInfo.CanonicalizationMethod%2A?displayProperty=nameWithType> property.  
+ Specifies the rules for rewriting the `Signature` element from XML/text into bytes for signature validation. The default value in the .NET Framework is https://www.w3.org/TR/2001/REC-xml-c14n-20010315, which identifies a trustworthy algorithm. This element is represented by the <xref:System.Security.Cryptography.Xml.SignedInfo.CanonicalizationMethod%2A?displayProperty=nameWithType> property.  
   
  The <`SignatureMethod`> element  
  Specifies the algorithm used for signature generation and validation, which was applied to the <`Signature`> element to produce the value in <`SignatureValue`>. In the example above, the value http://www.w3.org/2000/09/xmldsig#rsa-sha1 identifies an RSA PKCS1 SHA-1 signature. This element is represented by the <xref:System.Security.Cryptography.Xml.SignedXml.SignatureMethod%2A> property.  
@@ -91,7 +92,7 @@
   
 -   Each transform algorithm is defined as producing either XML or bytes as the output.  
   
--   If the output of the last transform algorithm is not defined in bytes (or no transforms were specified), then the canonicalization method http://www.w3.org/TR/2001/REC-xml-c14n-20010315 is used as an implicit transform (even if a different algorithm was specified in the <`CanonicalizationMethod`> element).  
+-   If the output of the last transform algorithm is not defined in bytes (or no transforms were specified), then the [canonicalization method](https://www.w3.org/TR/2001/REC-xml-c14n-20010315) is used as an implicit transform (even if a different algorithm was specified in the <`CanonicalizationMethod`> element).  
   
 -   A value of http://www.w3.org/2000/09/xmldsig#enveloped-signature for the transform algorithm encodes a rule which is interpreted as remove the <`Signature`> element from the document. Otherwise, a verifier of an enveloped signature will digest the document, including the signature, but the signer would have digested the document before the signature was applied, leading to different answers.  
   
@@ -99,7 +100,7 @@
  Identifies the digest (cryptographic hash) method to apply on the transformed content identified by the `URI` attribute of the <`Reference`> element. This is represented by the <xref:System.Security.Cryptography.Xml.Reference.DigestMethod%2A?displayProperty=nameWithType> property.  
   
 ## Choosing a canonicalization method  
- Unless interoperating with a specification which requires the use of a different value, we recommend that you use the default canonicalization method in the .NET Framework which is the XML-C14N 1.0 algorithm, whose value is http://www.w3.org/TR/2001/REC-xml-c14n-20010315. The XML-C14N 1.0 algorithm is required to be supported by all implementations of XMLDSIG, particularly as it is an implicit final transform to apply.  
+ Unless interoperating with a specification which requires the use of a different value, we recommend that you use the default canonicalization method in the .NET Framework which is the XML-C14N 1.0 algorithm, whose value is https://www.w3.org/TR/2001/REC-xml-c14n-20010315. The XML-C14N 1.0 algorithm is required to be supported by all implementations of XMLDSIG, particularly as it is an implicit final transform to apply.  
   
  There are versions of canonicalization algorithms which support preserving comments. Comment-preserving canonicalization methods are not recommended because they violate the "sign what is seen" principle. That is, the comments in a <`Signature`> element will not alter the processing logic for how the signature is performed, merely what the signature value is. When combined with a weak signature algorithm, allowing the comments to be included gives an attacker unnecessary freedom to force a hash collision, making a tampered document appear legitimate.  In the .NET Framework, only built-in canonicalizers are supported by default. To support additional or custom canonicalizers, see the <xref:System.Security.Cryptography.Xml.SignedXml.SafeCanonicalizationMethods%2A> property. If the document uses a canonicalization method that is not in the collection represented by the <xref:System.Security.Cryptography.Xml.SignedXml.SafeCanonicalizationMethods%2A> property, then the <xref:System.Security.Cryptography.Xml.SignedXml.CheckSignature%2A> method will return `false`.  
   
@@ -171,7 +172,7 @@
   
  ]]></format>
     </remarks>
-    <related type="ExternalDocumentation" href="http://www.w3.org/TR/xmldsig-bestpractices">XML Signature Best Practices</related>
+    <related type="ExternalDocumentation" href="https://www.w3.org/TR/xmldsig-bestpractices">XML Signature Best Practices</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -200,6 +201,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -248,6 +250,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="document" Type="System.Xml.XmlDocument" />
@@ -304,6 +307,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="elem" Type="System.Xml.XmlElement" />
@@ -332,6 +336,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -382,6 +387,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -454,6 +460,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -523,6 +530,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -583,6 +591,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -642,6 +651,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
@@ -655,8 +665,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" />
-        <Parameter Name="verifySignatureOnly" Type="System.Boolean" />
+        <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" Index="0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="verifySignatureOnly" Type="System.Boolean" Index="1" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="certificate">The <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> object to use to verify the <see cref="P:System.Security.Cryptography.Xml.SignedXml.Signature" /> property.</param>
@@ -709,6 +719,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -778,6 +789,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -839,6 +851,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -903,6 +916,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
@@ -936,6 +950,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlElement</ReturnType>
@@ -970,6 +985,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.AsymmetricAlgorithm</ReturnType>
@@ -1009,6 +1025,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlElement</ReturnType>
@@ -1043,6 +1060,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Xml.KeyInfo</ReturnType>
@@ -1097,6 +1115,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1145,6 +1164,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Xml.Signature</ReturnType>
@@ -1172,6 +1192,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1199,6 +1220,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
@@ -1237,6 +1259,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.String&gt;</ReturnType>
@@ -1248,7 +1271,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Canonicalization methods convert an XML document to its canonical form. For more information about canonical XML, see [Canonical XML](http://www.w3.org/TR/xml-c14n) on the W3C website.  
+ Canonicalization methods convert an XML document to its canonical form. For more information about canonical XML, see [Canonical XML](https://www.w3.org/TR/xml-c14n) on the W3C website.  
   
  ]]></format>
         </remarks>
@@ -1272,6 +1295,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Xml.Signature</ReturnType>
@@ -1324,6 +1348,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Func&lt;System.Security.Cryptography.Xml.SignedXml,System.Boolean&gt;</ReturnType>
@@ -1366,6 +1391,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1394,6 +1420,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1433,6 +1460,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -1472,6 +1500,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.Xml.SignedInfo</ReturnType>
@@ -1511,6 +1540,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.AsymmetricAlgorithm</ReturnType>
@@ -1567,6 +1597,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1594,6 +1625,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1631,6 +1663,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1679,6 +1712,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1689,13 +1723,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigC14NTransformUrl> field is "http://www.w3.org/TR/2001/REC-xml-c14n-20010315".  
+ The value of the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigC14NTransformUrl> field is `http://www.w3.org/TR/2001/REC-xml-c14n-20010315`.  
   
  Use this field to conveniently supply a value to one of the URI attributes of an element used for XMLDSIG.  
   
  The <xref:System.Security.Cryptography.Xml.XmlDsigC14NTransform> class implements the transform described by the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigC14NTransformUrl> field.  
   
- For more information, see the World Wide Web Consortium (W3C) specification at http://www.w3.org/TR/2001/REC-xml-c14n-20010315.  
+ For more information, see the World Wide Web Consortium (W3C) [Canonical XML](https://www.w3.org/TR/2001/REC-xml-c14n-20010315) specification.  
   
  This field has the same value as the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigCanonicalizationUrl> field.  
   
@@ -1729,6 +1763,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1739,13 +1774,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigC14NWithCommentsTransformUrl> field is "http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments ".  
+ The value of the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigC14NWithCommentsTransformUrl> field is `http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments`.  
   
  Use this field to conveniently supply a value to one of the URI attributes of an element used for XMLDSIG.  
   
  The <xref:System.Security.Cryptography.Xml.XmlDsigC14NWithCommentsTransform> class implements the transform described by the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigC14NWithCommentsTransformUrl> field.  
   
- For more information, see the World Wide Web Consortium (W3C) specification at http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments.  
+ For more information, see the World Wide Web Consortium (W3C) [Canonical XML](https://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments) specification.  
   
  This field has the same value as the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigCanonicalizationWithCommentsUrl> field.  
   
@@ -1771,6 +1806,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1781,13 +1817,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigCanonicalizationUrl> field is "http://www.w3.org/TR/2001/REC-xml-c14n-20010315".  
+ The value of the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigCanonicalizationUrl> field is `http://www.w3.org/TR/2001/REC-xml-c14n-20010315`.  
   
  Use this field to conveniently supply a value to one of the URI attributes of an element used for XMLDSIG.  
   
  The <xref:System.Security.Cryptography.Xml.XmlDsigC14NTransform> class implements the transform described by the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigCanonicalizationUrl> field.  
   
- For more information, see the World Wide Web Consortium (W3C) specification at http://www.w3.org/TR/2001/REC-xml-c14n-20010315.  
+ For more information, see the World Wide Web Consortium (W3C) [Canonical XML](https://www.w3.org/TR/2001/REC-xml-c14n-20010315) specification.  
   
  This field has the same value as the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigC14NTransformUrl> field.  
   
@@ -1813,6 +1849,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1823,13 +1860,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigCanonicalizationWithCommentsUrl> field is "http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments".  
+ The value of the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigCanonicalizationWithCommentsUrl> field is `http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments`.  
   
  Use this field to conveniently supply a value to one of the URI attributes of an element used for XMLDSIG.  
   
  The <xref:System.Security.Cryptography.Xml.XmlDsigC14NWithCommentsTransform> class implements the transform described by the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigCanonicalizationWithCommentsUrl> field.  
   
- For more information, see the World Wide Web Consortium (W3C) specification at http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments.  
+ For more information, see the World Wide Web Consortium (W3C) [Canonical XML](https://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments) specification.  
   
  This field has the same value as the <xref:System.Security.Cryptography.Xml.SignedXml.XmlDsigC14NWithCommentsTransformUrl> field.  
   
@@ -1855,6 +1892,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1892,6 +1930,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1940,6 +1979,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1988,6 +2028,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -2037,6 +2078,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -2075,6 +2117,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -2113,6 +2156,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -2151,6 +2195,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -2185,6 +2230,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -2219,6 +2265,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -2253,6 +2300,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -2291,6 +2339,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -2325,6 +2374,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -2339,7 +2389,7 @@
   
  Use this field to conveniently supply a value to one of the URI attributes of an element used for XMLDSIG.  
   
- For more information, see the World Wide Web Consortium (W3C) specification at [http://www.w3.org/2001/04/xmlenc#sha256](http://www.w3.org/2001/04/xmlenc#sha256).  
+ For more information, see the World Wide Web Consortium (W3C) specification at [http://www.w3.org/2001/04/xmlenc#sha256](https://www.w3.org/2001/04/xmlenc#sha256).  
   
  ]]></format>
         </remarks>
@@ -2359,6 +2409,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -2393,6 +2444,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -2407,7 +2459,7 @@
   
  Use this field to conveniently supply a value to one of the URI attributes of an element used for XMLDSIG.  
   
- For more information, see the World Wide Web Consortium (W3C) specification at [http://www.w3.org/2001/04/xmlenc#sha512](http://www.w3.org/2001/04/xmlenc#sha512).  
+ For more information, see the World Wide Web Consortium (W3C) specification at [http://www.w3.org/2001/04/xmlenc#sha512](https://www.w3.org/2001/04/xmlenc#sha512).  
   
  ]]></format>
         </remarks>
@@ -2430,6 +2482,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -2477,6 +2530,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -2525,6 +2579,7 @@
         <AssemblyName>System.Security.Cryptography.Xml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

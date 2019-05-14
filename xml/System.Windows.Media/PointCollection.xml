@@ -43,10 +43,10 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Media.PointCollectionConverter))</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Windows.Markup.ValueSerializer(typeof(System.Windows.Media.Converters.PointCollectionValueSerializer))</AttributeName>
     </Attribute>
   </Attributes>
@@ -83,7 +83,7 @@
  *oneOrMorePoints*  
  One or more <xref:System.Windows.Point> values, with each pair delimited by a single comma and/or one or more spaces.  
   
- <xref:System.Windows.Point> *[delimeter* <xref:System.Windows.Point> *]\**  
+ <xref:System.Windows.Point> *[delimiter* <xref:System.Windows.Point> *]\**  
   
  For example, `"0,0 100,100 200,100"` and `"0,0,100,100,200,100"` are both valid.  
   

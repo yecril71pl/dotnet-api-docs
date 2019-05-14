@@ -7,10 +7,12 @@
   <TypeSignature Language="F#" Value="type ImmutableList&lt;'T&gt; = class&#xA;    interface ICollection&lt;'T&gt;&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable&#xA;    interface IList&lt;'T&gt;&#xA;    interface IReadOnlyCollection&lt;'T&gt;&#xA;    interface IReadOnlyList&lt;'T&gt;&#xA;    interface ICollection&#xA;    interface IList&#xA;    interface IImmutableList&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Immutable</AssemblyName>
+    <AssemblyVersion>1.1.37.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.1.0</AssemblyVersion>
     <AssemblyVersion>1.2.2.0</AssemblyVersion>
     <AssemblyVersion>1.2.3.0</AssemblyVersion>
+    <AssemblyVersion>1.2.4.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -48,10 +50,10 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;dotnet-uwp-10.0">
       <AttributeName>System.Diagnostics.DebuggerDisplay("Count = {Count}")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;dotnet-uwp-10.0">
       <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Immutable.ImmutableListDebuggerProxy`1))</AttributeName>
     </Attribute>
   </Attributes>
@@ -63,8 +65,9 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- When you add or remove items from an immutable list, a copy of the original list is made with the items added or removed, and the original list is unchanged.  
+## Remarks
+
+`ImmutableList<T>` has no public constructor; you begin by retrieving an empty `ImmutableList<T>` by using the <xref:System.Collections.Immutable.ImmutableList%601.Empty?displayProperty=nameWithType>. You can then call methods, such as <xref:System.Collections.Immutable.ImmutableList%601.Add%2A> and <xref:System.Collections.Immutable.ImmutableList%601.AddRange%2A>, to populate the collection. Note that these methods return a new object. When you add or remove items from an immutable list, a copy of the original list is made with the items added or removed, and the original list is unchanged.  
   
  ]]></format>
     </remarks>
@@ -81,10 +84,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -95,7 +100,7 @@
       <Docs>
         <param name="value">The object to add.</param>
         <summary>Adds the specified object to the end of the immutable list.</summary>
-        <returns>A new immutable list with the object added, or the current list if it already contains the specified object.</returns>
+        <returns>A new immutable list with the object added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,10 +114,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -123,7 +130,7 @@
       <Docs>
         <param name="items">The collection whose elements will be added to the end of the list.</param>
         <summary>Adds the elements of the specified collection to the end of the immutable list.</summary>
-        <returns>A new immutable list with the elements added, or the current list if it already contains the specified elements.</returns>
+        <returns>A new immutable list with the elements added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,10 +144,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -166,10 +175,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -197,10 +208,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -235,10 +248,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -263,10 +278,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -292,10 +309,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;TOutput&gt;</ReturnType>
@@ -310,7 +329,7 @@
         <typeparam name="TOutput">The type of the elements of the target array.</typeparam>
         <param name="converter">A delegate that converts each element from one type to another type.</param>
         <summary>Converts the elements in the current immutable list to another type, and returns a list containing the converted elements.</summary>
-        <returns>To be added.</returns>
+        <returns>A list of the target type containing the converted elements from the current <see cref="T:System.Collections.Immutable.ImmutableList`1" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,10 +343,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -354,10 +375,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -383,10 +406,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -421,10 +446,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -445,10 +472,12 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -468,10 +497,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -497,10 +528,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -525,10 +558,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -553,10 +588,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -581,10 +618,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -611,10 +650,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -643,10 +684,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -671,10 +714,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -699,10 +744,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -729,10 +776,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -761,10 +810,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -788,10 +839,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;+Enumerator</ReturnType>
@@ -822,10 +875,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -855,10 +910,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -886,10 +943,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -920,10 +979,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -950,10 +1011,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -980,13 +1043,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;dotnet-uwp-10.0">
           <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1013,10 +1078,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -1029,10 +1096,11 @@
         <summary>Gets the element at the specified index of the list.</summary>
         <value>The element at the specified index.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">In a get operation, <paramref name="index" /> is negative or not less than <see cref="P:System.Collections.Immutable.ImmutableList`1.Count" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ItemRef">
-      <MemberSignature Language="C#" Value="public T&amp; ItemRef (int index);" />
+      <MemberSignature Language="C#" Value="public ref readonly T&amp; ItemRef (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance T&amp; modreq(System.Runtime.InteropServices.InAttribute) ItemRef(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableList`1.ItemRef(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function ItemRef (index As Integer) As T&amp;" />
@@ -1046,19 +1114,21 @@
       <ReturnValue RefType="Readonly">
         <ReturnType>T</ReturnType>
         <Attributes>
-          <Attribute FrameworkAlternate="netcore-2.2">
+          <Attribute FrameworkAlternate="netcore-2.1">
             <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
           </Attribute>
         </Attributes>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-2.1" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">The 0-based index of the element in the set to return.</param>
+        <summary>Gets a read-only reference to the element of the set at the given <paramref name="index" />.</summary>
+        <returns>A read-only reference to the element at the given position.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="index" /> is negative or not less than <see cref="P:System.Collections.Immutable.ImmutableList`1.Count" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="LastIndexOf">
@@ -1074,10 +1144,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1108,10 +1180,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -1136,10 +1210,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -1166,10 +1242,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -1194,10 +1272,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -1222,10 +1302,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -1250,10 +1332,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -1280,10 +1364,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -1310,10 +1396,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -1342,10 +1430,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -1374,10 +1464,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -1399,10 +1491,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -1429,10 +1523,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -1459,10 +1555,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -1484,10 +1582,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -1512,10 +1612,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -1528,6 +1630,8 @@
         <summary>Sorts the elements in the entire immutable list using the specified comparer.</summary>
         <returns>The sorted list.</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="comparison" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -1540,10 +1644,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;</ReturnType>
@@ -1574,10 +1680,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1611,10 +1719,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1646,10 +1756,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1673,10 +1785,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1711,10 +1825,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;T&gt;</ReturnType>
@@ -1745,10 +1861,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1785,10 +1903,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -1817,10 +1937,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1853,10 +1975,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1892,13 +2016,15 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;dotnet-uwp-10.0">
           <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1924,13 +2050,15 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;dotnet-uwp-10.0">
           <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1955,10 +2083,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
@@ -1989,10 +2119,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2012,7 +2144,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NotImplementedException" />
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Clear">
@@ -2027,10 +2159,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2046,7 +2180,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NotImplementedException" />
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -2061,10 +2195,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2100,10 +2236,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2138,10 +2276,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2162,7 +2302,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NotImplementedException" />
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -2178,10 +2318,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2206,10 +2348,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2234,10 +2378,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -2266,10 +2412,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2288,7 +2436,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NotImplementedException" />
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.RemoveAt">
@@ -2303,10 +2451,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2325,7 +2475,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NotSupportedException" />
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Immutable.IImmutableList&lt;T&gt;.Add">
@@ -2340,10 +2490,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
@@ -2354,7 +2506,7 @@
       <Docs>
         <param name="value">The value to add.</param>
         <summary>Adds the specified value to this immutable list.</summary>
-        <returns>A new list with the element added, or this list if the element is already in the list.</returns>
+        <returns>A new list with the element added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2377,10 +2529,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
@@ -2391,7 +2545,7 @@
       <Docs>
         <param name="items">The values to add.</param>
         <summary>Adds the specified values to this immutable list.</summary>
-        <returns>A new list with the elements added, or this list if the elements are already in the list.</returns>
+        <returns>A new list with the elements added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2414,10 +2568,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
@@ -2448,10 +2604,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
@@ -2487,10 +2645,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
@@ -2526,10 +2686,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
@@ -2565,10 +2727,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
@@ -2602,10 +2766,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
@@ -2657,10 +2823,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
@@ -2698,10 +2866,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
@@ -2737,10 +2907,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
@@ -2772,10 +2944,12 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.IImmutableList&lt;T&gt;</ReturnType>
@@ -2809,10 +2983,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableList&lt;T&gt;+Builder</ReturnType>
@@ -2841,10 +3017,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

@@ -7,10 +7,12 @@
   <TypeSignature Language="F#" Value="type ImmutableInterlocked = class" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Immutable</AssemblyName>
+    <AssemblyVersion>1.1.37.0</AssemblyVersion>
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <AssemblyVersion>1.2.1.0</AssemblyVersion>
     <AssemblyVersion>1.2.2.0</AssemblyVersion>
     <AssemblyVersion>1.2.3.0</AssemblyVersion>
+    <AssemblyVersion>1.2.4.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -34,10 +36,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TValue</ReturnType>
@@ -53,8 +57,8 @@
         <Parameter Name="updateValueFactory" Type="System.Func&lt;TKey,TValue,TValue&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TValue">To be added.</typeparam>
+        <typeparam name="TKey">The type of key stored by the dictionary.</typeparam>
+        <typeparam name="TValue">The type of value stored by the dictionary.</typeparam>
         <param name="location">The variable or field to atomically update if the specified  is not in the dictionary.</param>
         <param name="key">The key for the value to add or update.</param>
         <param name="addValueFactory">The function that receives the key and returns a new value to add to the dictionary when no value previously exists.</param>
@@ -74,10 +78,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TValue</ReturnType>
@@ -93,8 +99,8 @@
         <Parameter Name="updateValueFactory" Type="System.Func&lt;TKey,TValue,TValue&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TValue">To be added.</typeparam>
+        <typeparam name="TKey">The type of key stored by the dictionary.</typeparam>
+        <typeparam name="TValue">The type of value stored by the dictionary.</typeparam>
         <param name="location">The variable or field to atomically update if the specified  is not in the dictionary.</param>
         <param name="key">The key for the value to add or update.</param>
         <param name="addValue">The value to use if no previous value exists.</param>
@@ -114,10 +120,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -147,10 +155,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TValue</ReturnType>
@@ -185,10 +195,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TValue</ReturnType>
@@ -223,10 +235,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TValue</ReturnType>
@@ -245,7 +259,7 @@
       <Docs>
         <typeparam name="TKey">The type of the keys contained in the collection.</typeparam>
         <typeparam name="TValue">The type of the values contained in the collection.</typeparam>
-        <typeparam name="TArg">To be added.</typeparam>
+        <typeparam name="TArg">The type of the argument supplied to the value factory.</typeparam>
         <param name="location">The variable or field to update if the specified is not in the dictionary.</param>
         <param name="key">The key for the value to retrieve or add.</param>
         <param name="valueFactory">The function to execute to obtain the value to insert into the dictionary if the key is not found.</param>
@@ -265,10 +279,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;T&gt;</ReturnType>
@@ -303,10 +319,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Immutable.ImmutableArray&lt;T&gt;</ReturnType>
@@ -339,10 +357,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -376,10 +396,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -409,10 +431,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -448,10 +472,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -483,10 +509,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -518,10 +546,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -557,10 +587,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -598,10 +630,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -637,10 +671,12 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.1.37.0</AssemblyVersion>
         <AssemblyVersion>1.2.0.0</AssemblyVersion>
         <AssemblyVersion>1.2.1.0</AssemblyVersion>
         <AssemblyVersion>1.2.2.0</AssemblyVersion>
         <AssemblyVersion>1.2.3.0</AssemblyVersion>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

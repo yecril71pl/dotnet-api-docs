@@ -7,6 +7,7 @@
   <TypeSignature Language="F#" Value="type Hashtable = class&#xA;    interface IDictionary&#xA;    interface ISerializable&#xA;    interface IDeserializationCallback&#xA;    interface ICloneable&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -19,6 +20,7 @@
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -72,7 +74,7 @@
 Each element is a key/value pair stored in a <xref:System.Collections.DictionaryEntry> object. A key cannot be `null`, but a value can be.  
 
 > [!IMPORTANT]
->  We don't recommend that you use the `Hashtable` class for new development. Instead, we recommend that you use the generic <xref:System.Collections.Generic.HashSet%601> class. For more information, see [Non-generic collections shouldn't be used](https://github.com/dotnet/platform-compat/blob/master/docs/DE0006.md) on GitHub.
+>  We don't recommend that you use the `Hashtable` class for new development. Instead, we recommend that you use the generic <xref:System.Collections.Generic.Dictionary%602> class. For more information, see [Non-generic collections shouldn't be used](https://github.com/dotnet/platform-compat/blob/master/docs/DE0006.md) on GitHub.
   
  The objects used as keys by a <xref:System.Collections.Hashtable> are required to override the <xref:System.Object.GetHashCode%2A?displayProperty=nameWithType> method (or the <xref:System.Collections.IHashCodeProvider> interface) and the <xref:System.Object.Equals%2A?displayProperty=nameWithType> method (or the <xref:System.Collections.IComparer> interface). The implementation of both methods and interfaces must handle case sensitivity the same way; otherwise, the <xref:System.Collections.Hashtable> might behave incorrectly. For example, when creating a <xref:System.Collections.Hashtable>, you must use the <xref:System.Collections.CaseInsensitiveHashCodeProvider> class (or any case-insensitive <xref:System.Collections.IHashCodeProvider> implementation) with the <xref:System.Collections.CaseInsensitiveComparer> class (or any case-insensitive <xref:System.Collections.IComparer> implementation).  
   
@@ -148,6 +150,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -160,6 +163,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -210,6 +214,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -222,6 +227,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -280,6 +286,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -291,6 +298,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -298,7 +306,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="equalityComparer" Type="System.Collections.IEqualityComparer" />
+        <Parameter Name="equalityComparer" Type="System.Collections.IEqualityComparer" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="equalityComparer">The <see cref="T:System.Collections.IEqualityComparer" /> object that defines the hash code provider and the comparer to use with the <see cref="T:System.Collections.Hashtable" /> object.  
@@ -351,6 +359,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -363,6 +372,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -418,6 +428,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -429,6 +440,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -436,8 +448,8 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="d" Type="System.Collections.IDictionary" />
-        <Parameter Name="equalityComparer" Type="System.Collections.IEqualityComparer" />
+        <Parameter Name="d" Type="System.Collections.IDictionary" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="equalityComparer" Type="System.Collections.IEqualityComparer" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="d">The <see cref="T:System.Collections.IDictionary" /> object to copy to a new <see cref="T:System.Collections.Hashtable" /> object.</param>
@@ -496,6 +508,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -508,6 +521,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -582,6 +596,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -592,13 +607,13 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0;netstandard-2.1">
           <AttributeName>System.Obsolete("Please use Hashtable(IEqualityComparer) instead.")</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="hcp" Type="System.Collections.IHashCodeProvider" />
-        <Parameter Name="comparer" Type="System.Collections.IComparer" />
+        <Parameter Name="hcp" Type="System.Collections.IHashCodeProvider" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="comparer" Type="System.Collections.IComparer" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="hcp">The <see cref="T:System.Collections.IHashCodeProvider" /> object that supplies the hash codes for all keys in the <see cref="T:System.Collections.Hashtable" /> object.  
@@ -657,6 +672,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -668,6 +684,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -675,8 +692,8 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="capacity" Type="System.Int32" />
-        <Parameter Name="equalityComparer" Type="System.Collections.IEqualityComparer" />
+        <Parameter Name="capacity" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="equalityComparer" Type="System.Collections.IEqualityComparer" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="capacity">The approximate number of elements that the <see cref="T:System.Collections.Hashtable" /> object can initially contain.</param>
@@ -732,6 +749,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -744,6 +762,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -819,6 +838,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -829,8 +849,8 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
-        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object containing the information required to serialize the <see cref="T:System.Collections.Hashtable" /> object.</param>
@@ -884,6 +904,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -894,14 +915,14 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0;netstandard-2.1">
           <AttributeName>System.Obsolete("Please use Hashtable(IDictionary, IEqualityComparer) instead.")</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="d" Type="System.Collections.IDictionary" />
-        <Parameter Name="hcp" Type="System.Collections.IHashCodeProvider" />
-        <Parameter Name="comparer" Type="System.Collections.IComparer" />
+        <Parameter Name="d" Type="System.Collections.IDictionary" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="hcp" Type="System.Collections.IHashCodeProvider" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="comparer" Type="System.Collections.IComparer" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="d">The <see cref="T:System.Collections.IDictionary" /> object to copy to a new <see cref="T:System.Collections.Hashtable" /> object.</param>
@@ -966,6 +987,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -977,6 +999,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -984,9 +1007,9 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="d" Type="System.Collections.IDictionary" />
-        <Parameter Name="loadFactor" Type="System.Single" />
-        <Parameter Name="equalityComparer" Type="System.Collections.IEqualityComparer" />
+        <Parameter Name="d" Type="System.Collections.IDictionary" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="loadFactor" Type="System.Single" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="equalityComparer" Type="System.Collections.IEqualityComparer" Index="2" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="d">The <see cref="T:System.Collections.IDictionary" /> object to copy to a new <see cref="T:System.Collections.Hashtable" /> object.</param>
@@ -1059,6 +1082,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1069,14 +1093,14 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0;netstandard-2.1">
           <AttributeName>System.Obsolete("Please use Hashtable(int, IEqualityComparer) instead.")</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="capacity" Type="System.Int32" />
-        <Parameter Name="hcp" Type="System.Collections.IHashCodeProvider" />
-        <Parameter Name="comparer" Type="System.Collections.IComparer" />
+        <Parameter Name="capacity" Type="System.Int32" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="hcp" Type="System.Collections.IHashCodeProvider" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="comparer" Type="System.Collections.IComparer" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="capacity">The approximate number of elements that the <see cref="T:System.Collections.Hashtable" /> object can initially contain.</param>
@@ -1138,6 +1162,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1149,6 +1174,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1156,9 +1182,9 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="capacity" Type="System.Int32" />
-        <Parameter Name="loadFactor" Type="System.Single" />
-        <Parameter Name="equalityComparer" Type="System.Collections.IEqualityComparer" />
+        <Parameter Name="capacity" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="loadFactor" Type="System.Single" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="equalityComparer" Type="System.Collections.IEqualityComparer" Index="2" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="capacity">The approximate number of elements that the <see cref="T:System.Collections.Hashtable" /> object can initially contain.</param>
@@ -1231,6 +1257,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1241,15 +1268,15 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0;netstandard-2.1">
           <AttributeName>System.Obsolete("Please use Hashtable(IDictionary, float, IEqualityComparer) instead.")</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="d" Type="System.Collections.IDictionary" />
-        <Parameter Name="loadFactor" Type="System.Single" />
-        <Parameter Name="hcp" Type="System.Collections.IHashCodeProvider" />
-        <Parameter Name="comparer" Type="System.Collections.IComparer" />
+        <Parameter Name="d" Type="System.Collections.IDictionary" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="loadFactor" Type="System.Single" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="hcp" Type="System.Collections.IHashCodeProvider" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="comparer" Type="System.Collections.IComparer" Index="3" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="d">The <see cref="T:System.Collections.IDictionary" /> object to copy to a new <see cref="T:System.Collections.Hashtable" /> object.</param>
@@ -1324,6 +1351,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1334,15 +1362,15 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0;netstandard-2.1">
           <AttributeName>System.Obsolete("Please use Hashtable(int, float, IEqualityComparer) instead.")</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="capacity" Type="System.Int32" />
-        <Parameter Name="loadFactor" Type="System.Single" />
-        <Parameter Name="hcp" Type="System.Collections.IHashCodeProvider" />
-        <Parameter Name="comparer" Type="System.Collections.IComparer" />
+        <Parameter Name="capacity" Type="System.Int32" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="loadFactor" Type="System.Single" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="hcp" Type="System.Collections.IHashCodeProvider" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="comparer" Type="System.Collections.IComparer" Index="3" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="capacity">The approximate number of elements that the <see cref="T:System.Collections.Hashtable" /> object can initially contain.</param>
@@ -1416,6 +1444,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1428,6 +1457,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1499,6 +1529,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1511,6 +1542,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1564,6 +1596,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1576,6 +1609,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1624,6 +1658,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1634,7 +1669,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0;netstandard-2.1">
           <AttributeName>System.Obsolete("Please use KeyComparer properties.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1669,6 +1704,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1681,6 +1717,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1740,6 +1777,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1752,6 +1790,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1806,6 +1845,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1818,6 +1858,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1872,6 +1913,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1884,6 +1926,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1953,6 +1996,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1965,6 +2009,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -1997,6 +2042,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -2008,6 +2054,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2048,6 +2095,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -2060,6 +2108,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2127,6 +2176,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -2139,6 +2189,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2198,6 +2249,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2216,8 +2268,8 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
-        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object containing the information required to serialize the <see cref="T:System.Collections.Hashtable" />.</param>
@@ -2259,6 +2311,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2269,7 +2322,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;netcore-3.0;netstandard-2.1">
           <AttributeName>System.Obsolete("Please use EqualityComparer property.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -2304,6 +2357,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -2316,6 +2370,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2356,6 +2411,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -2368,6 +2424,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2408,6 +2465,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -2420,6 +2478,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2475,6 +2534,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -2487,6 +2547,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2544,6 +2605,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -2556,6 +2618,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2609,6 +2672,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -2621,6 +2685,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2675,6 +2740,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2688,7 +2754,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="sender" Type="System.Object" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
         <param name="sender">The source of the deserialization event.</param>
@@ -2721,6 +2787,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -2733,6 +2800,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2793,6 +2861,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -2805,6 +2874,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2867,6 +2937,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -2879,6 +2950,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2923,6 +2995,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -2935,6 +3008,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -2993,6 +3067,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -3005,6 +3080,7 @@ Each element is a key/value pair stored in a <xref:System.Collections.Dictionary
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>

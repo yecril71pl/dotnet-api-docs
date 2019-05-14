@@ -15,7 +15,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
     </Attribute>
   </Attributes>
@@ -58,7 +58,7 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="qualifiedTypeName" Type="System.String" />
+        <Parameter Name="qualifiedTypeName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="qualifiedTypeName">The XAML type name to resolve. The type name is optionally qualified by the prefix for a XML namespace. Otherwise the current default XML namespace is assumed.</param>
