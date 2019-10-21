@@ -1,4 +1,4 @@
-﻿<Type Name="GC" FullName="System.GC">
+<Type Name="GC" FullName="System.GC">
   <TypeSignature Language="C#" Value="public static class GC" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit GC extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.GC" />
@@ -748,6 +748,34 @@ This method is most useful in monitoring scenarios for measuring the difference 
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetGCMemoryInfo">
+      <MemberSignature Language="C#" Value="public static GCMemoryInfo GetGCMemoryInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.GCMemoryInfo GetGCMemoryInfo() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.GetGCMemoryInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetGCMemoryInfo () As GCMemoryInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static GCMemoryInfo GetGCMemoryInfo();" />
+      <MemberSignature Language="F#" Value="static member GetGCMemoryInfo : unit -&gt; GCMemoryInfo" Usage="System.GC.GetGCMemoryInfo " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.GCMemoryInfo</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets garbage collection memory information.</summary>
+        <returns>An object that contains information about the garbage collector's memory usage.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <MemberGroup MemberName="GetGeneration">
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -875,6 +903,36 @@ This method is most useful in monitoring scenarios for measuring the difference 
         </remarks>
         <exception cref="T:System.ArgumentException">Garbage collection has already been performed on <paramref name="wo" />.</exception>
         <altmember cref="P:System.GC.MaxGeneration" />
+      </Docs>
+    </Member>
+    <Member MemberName="GetTotalAllocatedBytes">
+      <MemberSignature Language="C#" Value="public static long GetTotalAllocatedBytes (bool precise = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 GetTotalAllocatedBytes(bool precise) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.GC.GetTotalAllocatedBytes(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTotalAllocatedBytes (Optional precise As Boolean = false) As Long" />
+      <MemberSignature Language="F#" Value="static member GetTotalAllocatedBytes : bool -&gt; int64" Usage="System.GC.GetTotalAllocatedBytes precise" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="precise" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="precise">If <see langword="true" />, gather a precise number; otherwise, gather an approximate count. Gathering a precise value entails a significant performance penalty.</param>
+        <summary>Gets a count of the bytes allocated over the lifetime of the process.</summary>
+        <returns>The total number of bytes allocated over the lifetime of the process.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetTotalMemory">
@@ -1357,15 +1415,16 @@ This method is most useful in monitoring scenarios for measuring the difference 
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method sets a bit in the object header of `obj`, which the runtime checks when calling finalizers. A finalizer, which is represented by the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method, is used to release unmanaged resources before an object is garbage-collected. If `obj` does not have a finalizer, the call to the <xref:System.GC.SuppressFinalize%2A> method has no effect.  
+
+This method sets a bit in the object header of `obj`, which the runtime checks when calling finalizers. A finalizer, which is represented by the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method, is used to release unmanaged resources before an object is garbage-collected. 
+If `obj` does not have a finalizer or the GC has already signaled the finalizer thread to run the finalizer, the call to the <xref:System.GC.SuppressFinalize%2A> method has no effect.  
   
  Objects that implement the <xref:System.IDisposable> interface can call this method from the object's <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation to prevent the garbage collector from calling <xref:System.Object.Finalize%2A?displayProperty=nameWithType> on an object that does not require it. Typically, this is done to prevent the finalizer from releasing unmanaged resources that have already been freed by the <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation.  
   
    
   
 ## Examples  
- The following example demonstrates how to use the <xref:System.GC.SuppressFinalize%2A> method in a resource class to prevent a redundant garbage collection from being called. The example uses the [dispose pattern](~/docs/standard/garbage-collection/implementing-dispose
-.md) to free both managed resources (that is, objects that implement <xref:System.IDisposable>) and unmanaged resources.  
+ The following example demonstrates how to use the <xref:System.GC.SuppressFinalize%2A> method in a resource class to prevent a redundant garbage collection from being called. The example uses the [dispose pattern](~/docs/standard/garbage-collection/implementing-dispose.md) to free both managed resources (that is, objects that implement <xref:System.IDisposable>) and unmanaged resources.  
   
  [!code-csharp[System.GC.SuppressFinalize#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.gc.suppressfinalize/cs/suppressfinalize1.cs#1)]
  [!code-vb[System.GC.SuppressFinalize#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.gc.suppressfinalize/vb/suppressfinalize1.vb#1)]  

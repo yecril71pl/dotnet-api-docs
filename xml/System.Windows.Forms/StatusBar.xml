@@ -1,4 +1,4 @@
-﻿<Type Name="StatusBar" FullName="System.Windows.Forms.StatusBar">
+<Type Name="StatusBar" FullName="System.Windows.Forms.StatusBar">
   <TypeSignature Language="C#" Value="public class StatusBar : System.Windows.Forms.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StatusBar extends System.Windows.Forms.Control" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusBar" />
@@ -531,7 +531,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether this control should redraw its surface using a secondary buffer to reduce or prevent flicker, however this property has no effect on the <see cref="T:System.Windows.Forms.StatusBar" /> control</summary>
+        <summary>Gets or sets a value indicating whether this control should redraw its surface using a secondary buffer to reduce or prevent flicker, however this property has no effect on the <see cref="T:System.Windows.Forms.StatusBar" /> control.</summary>
         <value>
           <see langword="true" /> if the control has a secondary buffer; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -1342,7 +1342,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusBar.WndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
-      <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="statusBar.WndProc m" />
+      <MemberSignature Language="F#" Value="override this.WndProc : Message -&gt; unit" Usage="statusBar.WndProc m" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -1,4 +1,4 @@
-﻿<Type Name="Menu+MenuItemCollection" FullName="System.Windows.Forms.Menu+MenuItemCollection">
+<Type Name="Menu+MenuItemCollection" FullName="System.Windows.Forms.Menu+MenuItemCollection">
   <TypeSignature Language="C#" Value="public class Menu.MenuItemCollection : System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit Menu/MenuItemCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Menu.MenuItemCollection" />
@@ -600,7 +600,7 @@
         <param name="key">The name of the menu item to search for.</param>
         <param name="searchAllChildren">
           <see langword="true" /> to search child menu items; otherwise, <see langword="false" />.</param>
-        <summary>Finds the items with the specified key, optionally searching the submenu items</summary>
+        <summary>Finds the items with the specified key, optionally searching the submenu items.</summary>
         <returns>An array of <see cref="T:System.Windows.Forms.MenuItem" /> objects whose <see cref="P:System.Windows.Forms.Menu.Name" /> property matches the specified <paramref name="key" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

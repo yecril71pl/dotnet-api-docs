@@ -1,4 +1,4 @@
-﻿<Type Name="LinkLabel" FullName="System.Windows.Forms.LinkLabel">
+<Type Name="LinkLabel" FullName="System.Windows.Forms.LinkLabel">
   <TypeSignature Language="C#" Value="public class LinkLabel : System.Windows.Forms.Label, System.Windows.Forms.IButtonControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LinkLabel extends System.Windows.Forms.Label implements class System.Windows.Forms.IButtonControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LinkLabel" />
@@ -444,7 +444,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event is handled to perform tasks when the user clicks on a link in the control. The event handler for the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event is passed an instance of the <xref:System.Windows.Forms.LinkLabelLinkClickedEventArgs> class that contains a <xref:System.Windows.Forms.LinkLabel.Link> object that is associated with the link that was clicked. You can use information specified in the <xref:System.Windows.Forms.LinkLabel.Link.LinkData%2A> property of <xref:System.Windows.Forms.LinkLabel.Link> class to determine which link was clicked or what type of task to perform when the link is clicked. For example, if a <xref:System.Windows.Forms.LinkLabel> control has a <xref:System.Windows.Forms.LinkLabel.Link> object defined with its <xref:System.Windows.Forms.LinkLabel.Link.LinkData%2A> property set to the string www.microsoft.com, you can use this information in an event handler for the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event to display the Web site.  
+ Typically, the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event is handled to perform tasks when the user clicks on a link in the control. The event handler for the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event is passed an instance of the <xref:System.Windows.Forms.LinkLabelLinkClickedEventArgs> class that contains a <xref:System.Windows.Forms.LinkLabel.Link> object that is associated with the link that was clicked. You can use information specified in the <xref:System.Windows.Forms.LinkLabel.Link.LinkData%2A> property of <xref:System.Windows.Forms.LinkLabel.Link> class to determine which link was clicked or what type of task to perform when the link is clicked. For example, if a <xref:System.Windows.Forms.LinkLabel> control has a <xref:System.Windows.Forms.LinkLabel.Link> object defined with its <xref:System.Windows.Forms.LinkLabel.Link.LinkData%2A> property set to the string `www.microsoft.com`, you can use this information in an event handler for the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event to display the Web site.  
   
  For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
@@ -1700,7 +1700,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LinkLabel.WndProc(System.Windows.Forms.Message@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef msg As Message)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % msg);" />
-      <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="linkLabel.WndProc msg" />
+      <MemberSignature Language="F#" Value="override this.WndProc : Message -&gt; unit" Usage="linkLabel.WndProc msg" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

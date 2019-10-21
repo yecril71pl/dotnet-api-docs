@@ -1,4 +1,4 @@
-﻿<Type Name="ServicePointManager" FullName="System.Net.ServicePointManager">
+<Type Name="ServicePointManager" FullName="System.Net.ServicePointManager">
   <TypeSignature Language="C#" Value="public class ServicePointManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ServicePointManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.ServicePointManager" />
@@ -43,7 +43,7 @@
    
   
 ## Examples  
- The following code example creates a <xref:System.Net.ServicePoint> object for connections to the URI www.contoso.com.  
+ The following code example creates a <xref:System.Net.ServicePoint> object for connections to the URI `www.contoso.com`.  
   
  [!code-cpp[Classic ServicePoint Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic ServicePoint Example/CPP/source.cpp#1)]
  [!code-csharp[Classic ServicePoint Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic ServicePoint Example/CS/source.cs#1)]
@@ -308,12 +308,16 @@
       </Docs>
     </Member>
     <Member MemberName="DefaultPersistentConnectionLimit">
-      <MemberSignature Language="C#" Value="public const int DefaultPersistentConnectionLimit = 2;" />
-      <MemberSignature Language="ILAsm" Value=".field public static literal int32 DefaultPersistentConnectionLimit = (2)" />
+      <MemberSignature Language="C#" Value="public const int DefaultPersistentConnectionLimit = 2;" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 DefaultPersistentConnectionLimit = (2)" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinmac-3.0" />
       <MemberSignature Language="DocId" Value="F:System.Net.ServicePointManager.DefaultPersistentConnectionLimit" />
-      <MemberSignature Language="VB.NET" Value="Public Const DefaultPersistentConnectionLimit As Integer  = 2" />
-      <MemberSignature Language="C++ CLI" Value="public: int DefaultPersistentConnectionLimit = 2;" />
+      <MemberSignature Language="VB.NET" Value="Public Const DefaultPersistentConnectionLimit As Integer  = 2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public: int DefaultPersistentConnectionLimit = 2;" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinmac-3.0" />
       <MemberSignature Language="F#" Value="val mutable DefaultPersistentConnectionLimit : int" Usage="System.Net.ServicePointManager.DefaultPersistentConnectionLimit" />
+      <MemberSignature Language="C#" Value="public const int DefaultPersistentConnectionLimit = 10;" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 DefaultPersistentConnectionLimit = (10)" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="VB.NET" Value="Public Const DefaultPersistentConnectionLimit As Integer  = 10" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
+      <MemberSignature Language="C++ CLI" Value="public: int DefaultPersistentConnectionLimit = 10;" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -996,7 +1000,7 @@ For versions of the .NET Framework through the .NET Framework 4.6.2, no default 
 ## Remarks  
 An application can set the <xref:System.Net.ServicePointManager.ServerCertificateValidationCallback%2A> property to a method to use for custom validation by the client of the server certificate. When doing custom validation, the `sender` parameter passed to the <xref:System.Net.Security.RemoteCertificateValidationCallback> can be a host string name or an object derived from <xref:System.Net.WebRequest> (<xref:System.Net.HttpWebRequest>, for example) depending on the <xref:System.Net.ServicePointManager.CertificatePolicy%2A> property.  
   
-When custom validation is not used, the certificate name is compared with the host name used to create the request. For example, if <xref:System.Net.WebRequest.Create%28System.String%29> was passed a parameter of "https://www.contoso.com/default.html", the default behavior is for the client to check the certificate against www.contoso.com.  
+When custom validation is not used, the certificate name is compared with the host name used to create the request. For example, if <xref:System.Net.WebRequest.Create%28System.String%29> was passed a parameter of `"https://www.contoso.com/default.html"`, the default behavior is for the client to check the certificate against `www.contoso.com`.  
 
 Despite being a multicast delegate, only the value returned from the last-executed event handler is considered authoritative. 
 In other words, you can attach multiple delegates, and they all get a callback from <xref:System.Net.ServicePointManager.ServerCertificateValidationCallback%2A>. 

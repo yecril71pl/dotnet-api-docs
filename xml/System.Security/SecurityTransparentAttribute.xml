@@ -1,4 +1,4 @@
-﻿<Type Name="SecurityTransparentAttribute" FullName="System.Security.SecurityTransparentAttribute">
+<Type Name="SecurityTransparentAttribute" FullName="System.Security.SecurityTransparentAttribute">
   <TypeSignature Language="C#" Value="public sealed class SecurityTransparentAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SecurityTransparentAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Security.SecurityTransparentAttribute" />
@@ -40,6 +40,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+> [!IMPORTANT]
+> Partially trusted code is no longer supported. This attribute has no effect in .NET Core.
+
  Transparent assemblies can be accessed from partially trusted code and cannot expose access to any protected resources or functionality. Code in the assembly is not allowed to suppress code access security checks and cannot cause an elevation of privilege.  
   
 > [!NOTE]

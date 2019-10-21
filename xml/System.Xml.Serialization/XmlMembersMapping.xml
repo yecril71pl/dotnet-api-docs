@@ -1,4 +1,4 @@
-﻿<Type Name="XmlMembersMapping" FullName="System.Xml.Serialization.XmlMembersMapping">
+<Type Name="XmlMembersMapping" FullName="System.Xml.Serialization.XmlMembersMapping">
   <TypeSignature Language="C#" Value="public class XmlMembersMapping : System.Xml.Serialization.XmlMapping" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlMembersMapping extends System.Xml.Serialization.XmlMapping" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlMembersMapping" />
@@ -142,13 +142,9 @@
         <value>The unqualified name of the XML Schema element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
 ## Remarks  
-
 A SOAP message is defined in a Web Services Description Language (WSDL) document using the **message** element.
-
 See the <xref:System.Xml.Serialization.XmlMembersMapping> class for the conditions under which the `ElementName` property refers to a code entity defined in a Web service method (a parameter or return value) instead of to an extra parent or wrapper element.
-
  ]]></format>
         </remarks>
         <forInternalUseOnly />

@@ -1,4 +1,4 @@
-﻿<Type Name="Enumerable" FullName="System.Linq.Enumerable">
+<Type Name="Enumerable" FullName="System.Linq.Enumerable">
   <TypeSignature Language="C#" Value="public static class Enumerable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Enumerable extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Linq.Enumerable" />
@@ -3352,11 +3352,11 @@ Only unique elements are returned.
  This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
 > [!NOTE]
->  For examples of `GroupBy`, see the following topics.  
+>  For examples of `GroupBy`, see the following articles:
 >   
->  -   <xref:System.Linq.Enumerable.GroupBy%60%603%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Func%7B%60%600%2C%60%602%7D%29>  
-> -   <xref:System.Linq.Enumerable.GroupBy%60%603%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Func%7B%60%601%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%2C%60%602%7D%29>  
-> -   <xref:System.Linq.Enumerable.GroupBy%60%604%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Func%7B%60%600%2C%60%602%7D%2CSystem.Func%7B%60%601%2CSystem.Collections.Generic.IEnumerable%7B%60%602%7D%2C%60%603%7D%29>  
+> - <xref:System.Linq.Enumerable.GroupBy%60%603%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Func%7B%60%600%2C%60%602%7D%29>  
+> - <xref:System.Linq.Enumerable.GroupBy%60%603%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Func%7B%60%601%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%2C%60%602%7D%29>  
+> - <xref:System.Linq.Enumerable.GroupBy%60%604%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Func%7B%60%600%2C%60%602%7D%2CSystem.Func%7B%60%601%2CSystem.Collections.Generic.IEnumerable%7B%60%602%7D%2C%60%603%7D%29>  
   
  The <xref:System.Linq.Enumerable.GroupBy%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%29> method returns a collection of <xref:System.Linq.IGrouping%602> objects, one for each distinct key that was encountered. An <xref:System.Linq.IGrouping%602> is an <xref:System.Collections.Generic.IEnumerable%601> that also has a key associated with its elements.  
   
@@ -3427,11 +3427,11 @@ Only unique elements are returned.
  This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
 > [!NOTE]
->  For examples of `GroupBy`, see the following topics.  
+>  For examples of `GroupBy`, see the following articles:
 >   
->  -   <xref:System.Linq.Enumerable.GroupBy%60%603%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Func%7B%60%600%2C%60%602%7D%29>  
-> -   <xref:System.Linq.Enumerable.GroupBy%60%603%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Func%7B%60%601%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%2C%60%602%7D%29>  
-> -   <xref:System.Linq.Enumerable.GroupBy%60%604%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Func%7B%60%600%2C%60%602%7D%2CSystem.Func%7B%60%601%2CSystem.Collections.Generic.IEnumerable%7B%60%602%7D%2C%60%603%7D%29>  
+> - <xref:System.Linq.Enumerable.GroupBy%60%603%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Func%7B%60%600%2C%60%602%7D%29>  
+> - <xref:System.Linq.Enumerable.GroupBy%60%603%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Func%7B%60%601%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%2C%60%602%7D%29>  
+> - <xref:System.Linq.Enumerable.GroupBy%60%604%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Func%7B%60%600%2C%60%602%7D%2CSystem.Func%7B%60%601%2CSystem.Collections.Generic.IEnumerable%7B%60%602%7D%2C%60%603%7D%29>  
   
  The <xref:System.Linq.Enumerable.GroupBy%60%602%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Collections.Generic.IEqualityComparer%7B%60%601%7D%29> method returns a collection of <xref:System.Linq.IGrouping%602> objects, one for each distinct key that was encountered. An <xref:System.Linq.IGrouping%602> is an <xref:System.Collections.Generic.IEnumerable%601> that also has a key associated with its elements.  
   
@@ -3592,11 +3592,11 @@ Only unique elements are returned.
  This method is implemented by using deferred execution. The immediate return value is an object that stores all the information that is required to perform the action. The query represented by this method is not executed until the object is enumerated either by calling its `GetEnumerator` method directly or by using `foreach` in Visual C# or `For Each` in Visual Basic.  
   
 > [!NOTE]
->  For examples of `GroupBy`, see the following topics.  
+>  For examples of `GroupBy`, see the following articles:
 >   
->  -   <xref:System.Linq.Enumerable.GroupBy%60%603%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Func%7B%60%600%2C%60%602%7D%29>  
-> -   <xref:System.Linq.Enumerable.GroupBy%60%603%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Func%7B%60%601%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%2C%60%602%7D%29>  
-> -   <xref:System.Linq.Enumerable.GroupBy%60%604%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Func%7B%60%600%2C%60%602%7D%2CSystem.Func%7B%60%601%2CSystem.Collections.Generic.IEnumerable%7B%60%602%7D%2C%60%603%7D%29>  
+> - <xref:System.Linq.Enumerable.GroupBy%60%603%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Func%7B%60%600%2C%60%602%7D%29>  
+> - <xref:System.Linq.Enumerable.GroupBy%60%603%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Func%7B%60%601%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%2C%60%602%7D%29>  
+> - <xref:System.Linq.Enumerable.GroupBy%60%604%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Func%7B%60%600%2C%60%602%7D%2CSystem.Func%7B%60%601%2CSystem.Collections.Generic.IEnumerable%7B%60%602%7D%2C%60%603%7D%29>  
   
  The <xref:System.Linq.Enumerable.GroupBy%60%603%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D%2CSystem.Func%7B%60%600%2C%60%602%7D%2CSystem.Collections.Generic.IEqualityComparer%7B%60%601%7D%29> method returns a collection of <xref:System.Linq.IGrouping%602> objects, one for each distinct key that was encountered. An <xref:System.Linq.IGrouping%602> is an <xref:System.Collections.Generic.IEnumerable%601> that also has a key associated with its elements.  
   
@@ -11926,7 +11926,7 @@ Only unique elements are returned.
         <typeparam name="TSource">The type of the elements of <paramref name="source" />.</typeparam>
         <param name="source">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> to create a <see cref="T:System.Collections.Generic.HashSet`1" /> from.</param>
         <param name="comparer">An <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> to compare keys.</param>
-        <summary>Creates a <see cref="T:System.Collections.Generic.HashSet`1" /> from an <see cref="T:System.Collections.Generic.IEnumerable`1" /> using the <paramref name="comparer" /> to compare keys</summary>
+        <summary>Creates a <see cref="T:System.Collections.Generic.HashSet`1" /> from an <see cref="T:System.Collections.Generic.IEnumerable`1" /> using the <paramref name="comparer" /> to compare keys.</summary>
         <returns>A <see cref="T:System.Collections.Generic.HashSet`1" /> that contains values of type <paramref name="TSource" /> selected from the input sequence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -12608,12 +12608,12 @@ Only unique elements are returned.
         <Parameter Name="second" Type="System.Collections.Generic.IEnumerable&lt;TSecond&gt;" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <typeparam name="TFirst">To be added.</typeparam>
-        <typeparam name="TSecond">To be added.</typeparam>
-        <param name="first">To be added.</param>
-        <param name="second">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TFirst">The type of the elements of the first input sequence.</typeparam>
+        <typeparam name="TSecond">The type of the elements of the second input sequence.</typeparam>
+        <param name="first">The first sequence to merge.</param>
+        <param name="second">The second sequence to merge.</param>
+        <summary>Produces a sequence of tuples with elements from the two specified sequences.</summary>
+        <returns>A sequence of tuples with elements taken from the first and second sequences, in that order.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
