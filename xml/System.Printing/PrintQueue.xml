@@ -492,8 +492,8 @@
         <ReturnType>System.Printing.PrintSystemJobInfo</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="jobName" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="printTicket" Type="System.Printing.PrintTicket" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="jobName" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="printTicket" Type="System.Printing.PrintTicket" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="jobName">The path and name of the document that is being printed.</param>
@@ -596,10 +596,10 @@
         <ReturnType>System.Printing.PrintSystemJobInfo</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="jobName" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="documentPath" Type="System.String" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="fastCopy" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="printTicket" Type="System.Printing.PrintTicket" Index="3" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="jobName" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="documentPath" Type="System.String" Index="1" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="fastCopy" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="printTicket" Type="System.Printing.PrintTicket" Index="3" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="jobName">The path and name of the document that is being printed.</param>
@@ -1296,7 +1296,6 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Printing.PrintQueueException">The <see cref="T:System.Printing.PrintCapabilities" /> object could not be retrieved.</exception>
-        <permission cref="T:System.Drawing.Printing.PrintingPermission">for permission to get print capabilities. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.DefaultPrinting" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetPrintCapabilities">
@@ -1339,7 +1338,6 @@
         <exception cref="T:System.Printing.PrintQueueException">The <see cref="T:System.Printing.PrintCapabilities" /> object could not be retrieved.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="printTicket" /> is not well-formed.</exception>
-        <permission cref="T:System.Drawing.Printing.PrintingPermission">for permission to get print capabilities. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.DefaultPrinting" /></permission>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetPrintCapabilitiesAsXml">
@@ -1386,7 +1384,6 @@
         <returns>A <see cref="T:System.IO.MemoryStream" /> specifying the printer's capabilities by using the XML schema "PrintCapabilities," a part of the <see href="https://docs.microsoft.com/windows/desktop/printdocs/printschema">Print Schema</see> system.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Printing.PrintQueueException">The print capabilities could not be retrieved.</exception>
-        <permission cref="T:System.Drawing.Printing.PrintingPermission">for permission to get print capabilities. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.DefaultPrinting" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetPrintCapabilitiesAsXml">
@@ -1429,7 +1426,6 @@
         <exception cref="T:System.Printing.PrintQueueException">The print capabilities could not be retrieved.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="printTicket" /> is not well-formed.</exception>
-        <permission cref="T:System.Drawing.Printing.PrintingPermission">for permission to get print capabilities. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.DefaultPrinting" /></permission>
       </Docs>
     </Member>
     <Member MemberName="GetPrintJobInfoCollection">
@@ -2846,12 +2842,12 @@
       </Docs>
     </Member>
     <Member MemberName="Name">
-      <MemberSignature Language="C#" Value="public override sealed string Name { get; }" FrameworkAlternate="netcore-3.0" />
+      <MemberSignature Language="C#" Value="public override sealed string Name { get; }" FrameworkAlternate="netcore-3.0;netcore-3.1" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueue.Name" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Name As String" FrameworkAlternate="netcore-3.0" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" FrameworkAlternate="netcore-3.0" />
-      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Printing.PrintQueue.Name" FrameworkAlternate="netcore-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Name As String" FrameworkAlternate="netcore-3.0;netcore-3.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" FrameworkAlternate="netcore-3.0;netcore-3.1" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Printing.PrintQueue.Name" FrameworkAlternate="netcore-3.0;netcore-3.1" />
       <MemberSignature Language="C#" Value="public override sealed string Name { get; set; }" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Property Name As String" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />

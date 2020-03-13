@@ -23,7 +23,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.SystemInformation> class provides `static` properties that can be used to get information about the current system environment. The class provides access to information such as Windows display element sizes, operating system settings, network availability, and the capabilities of hardware installed on the system. This class cannot be instantiated.  
   
- For more information about system-wide parameters, see "SystemParametersInfo" in the Platform SDK documentation at [https://msdn.microsoft.com](https://msdn.microsoft.com).  
+ For more information about system-wide parameters, see [SystemParametersInfo](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa).
   
    
   
@@ -196,7 +196,6 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">to get the value of this property. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
         <altmember cref="T:System.Windows.Forms.BootMode" />
         <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
@@ -532,7 +531,6 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">to get the value of this property. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
         <altmember cref="P:System.Windows.Forms.SystemInformation.UserName" />
         <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
@@ -652,7 +650,6 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">to get the value of this property. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
         <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
@@ -1033,7 +1030,7 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dpi" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="dpi" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dpi">The DPI value for the current display device.</param>
@@ -1058,7 +1055,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dpi" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="dpi" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dpi">The DPI value for the current display device.</param>
@@ -1083,7 +1080,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dpi" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="dpi" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dpi">The DPI value for the current display device.</param>
@@ -1108,7 +1105,7 @@
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dpi" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="dpi" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dpi">The DPI value for the current display device.</param>
@@ -1133,7 +1130,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dpi" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="dpi" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dpi">The DPI value for the current display device.</param>
@@ -3181,7 +3178,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0;netcore-3.1">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3236,7 +3233,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The mouse speed determines how far the pointer will move based on the distance the mouse moves. The value of this property ranges between 1 (slowest) and 20 (fastest). A value of 10 is the default. The value can be set by an end user using the mouse control panel application or by an application using the `SystemParametersInfo` function of the Platform SDK.  
+ The mouse speed determines how far the pointer will move based on the distance the mouse moves. The value of this property ranges between 1 (slowest) and 20 (fastest). A value of 10 is the default. The value can be set by an end user using the mouse control panel application or by an application using the [SystemParametersInfo](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa) function of the Platform SDK.  
    
   
 ## Examples  
@@ -3361,7 +3358,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.SystemInformation.MouseWheelScrollLines%2A> property indicates how many lines to scroll, by default, in a multi-line control that has a scroll bar. The corresponding Platform SDK system-wide parameters are SPI_GETWHEELSCROLLLINES and SPI_SETWHEELSCROLLLINES. For more information about system-wide parameters, see "SystemParametersInfo" in the Platform SDK documentation at [https://msdn.microsoft.com](https://msdn.microsoft.com/).  
+ The <xref:System.Windows.Forms.SystemInformation.MouseWheelScrollLines%2A> property indicates how many lines to scroll, by default, in a multi-line control that has a scroll bar. The corresponding Platform SDK system-wide parameters are SPI_GETWHEELSCROLLLINES and SPI_SETWHEELSCROLLLINES. For more information about system-wide parameters, see [SystemParametersInfo](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa).  
   
 > [!NOTE]
 >  Be sure to handle the special case that occurs if the "One screen at a time" mouse option is selected. In this case, the <xref:System.Windows.Forms.SystemInformation.MouseWheelScrollLines%2A> property has a value of -1.  
@@ -3766,7 +3763,6 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">to get the value of this property. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
         <altmember cref="T:System.Windows.Forms.SystemParameter" />
       </Docs>
     </Member>
@@ -4152,7 +4148,6 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">The operating system does not support this feature.</exception>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">for reading an environment variable. Associated enumeration: <see cref="F:System.Security.Permissions.EnvironmentPermissionAccess.Read" /></permission>
         <altmember cref="P:System.Windows.Forms.SystemInformation.UserName" />
         <altmember cref="P:System.Windows.Forms.SystemInformation.ComputerName" />
         <altmember cref="T:System.Windows.Forms.SystemParameter" />
@@ -4243,7 +4238,6 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.EnvironmentPermission">to get the value of this property. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
         <altmember cref="P:System.Windows.Forms.SystemInformation.UserDomainName" />
         <altmember cref="P:System.Windows.Forms.SystemInformation.ComputerName" />
         <altmember cref="T:System.Windows.Forms.SystemParameter" />
@@ -4414,7 +4408,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dpi" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.8" />
+        <Parameter Name="dpi" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dpi">An arbitrary DPI value used to scale the vertical scroll bar arrow bitmap.</param>

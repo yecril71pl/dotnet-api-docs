@@ -9,6 +9,7 @@
     <AssemblyName>System.Threading.Channels</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -34,6 +35,7 @@
         <AssemblyName>System.Threading.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -42,7 +44,7 @@
       </Docs>
     </Member>
     <Member MemberName="Complete">
-      <MemberSignature Language="C#" Value="public void Complete (Exception error = null);" />
+      <MemberSignature Language="C#" Value="public void Complete (Exception error = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Complete(class System.Exception error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Channels.ChannelWriter`1.Complete(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Complete (Optional error As Exception = null)" />
@@ -52,6 +54,7 @@
         <AssemblyName>System.Threading.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -67,7 +70,7 @@
       </Docs>
     </Member>
     <Member MemberName="TryComplete">
-      <MemberSignature Language="C#" Value="public virtual bool TryComplete (Exception error = null);" />
+      <MemberSignature Language="C#" Value="public virtual bool TryComplete (Exception error = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryComplete(class System.Exception error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Channels.ChannelWriter`1.TryComplete(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function TryComplete (Optional error As Exception = null) As Boolean" />
@@ -77,6 +80,7 @@
         <AssemblyName>System.Threading.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -106,6 +110,7 @@
         <AssemblyName>System.Threading.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -122,7 +127,7 @@
       </Docs>
     </Member>
     <Member MemberName="WaitToWriteAsync">
-      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.ValueTask&lt;bool&gt; WaitToWriteAsync (System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.ValueTask&lt;bool&gt; WaitToWriteAsync (System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;bool&gt; WaitToWriteAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Channels.ChannelWriter`1.WaitToWriteAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member WaitToWriteAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;bool&gt;" Usage="channelWriter.WaitToWriteAsync cancellationToken" />
@@ -131,6 +136,7 @@
         <AssemblyName>System.Threading.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask&lt;System.Boolean&gt;</ReturnType>
@@ -147,7 +153,7 @@
       </Docs>
     </Member>
     <Member MemberName="WriteAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.ValueTask WriteAsync (T item, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.ValueTask WriteAsync (T item, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask WriteAsync(!T item, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Channels.ChannelWriter`1.WriteAsync(`0,System.Threading.CancellationToken)" />
       <MemberSignature Language="F#" Value="abstract member WriteAsync : 'T * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&#xA;override this.WriteAsync : 'T * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask" Usage="channelWriter.WriteAsync (item, cancellationToken)" />
@@ -156,6 +162,7 @@
         <AssemblyName>System.Threading.Channels</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask</ReturnType>

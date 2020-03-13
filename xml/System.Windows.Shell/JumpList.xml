@@ -92,7 +92,6 @@ Windows Media Player Jump List
   
  ]]></format>
     </remarks>
-    <permission cref="T:System.Security.Permissions.UIPermission">for full access to modify the Windows shell. Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -124,7 +123,6 @@ Windows Media Player Jump List
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Shell.JumpList" /> class.</summary>
         <remarks>To be added.</remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -162,7 +160,6 @@ Windows Media Player Jump List
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="P:System.Windows.Shell.JumpList.JumpItems" />
         <altmember cref="P:System.Windows.Shell.JumpList.ShowFrequentCategory" />
         <altmember cref="P:System.Windows.Shell.JumpList.ShowRecentCategory" />
@@ -213,7 +210,6 @@ Windows Media Player Jump List
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="P:System.Windows.Shell.JumpList.ShowRecentCategory" />
       </Docs>
     </Member>
@@ -252,7 +248,6 @@ Windows Media Player Jump List
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="P:System.Windows.Shell.JumpList.ShowRecentCategory" />
       </Docs>
     </Member>
@@ -291,7 +286,6 @@ Windows Media Player Jump List
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="P:System.Windows.Shell.JumpList.ShowRecentCategory" />
       </Docs>
     </Member>
@@ -334,7 +328,6 @@ Windows Media Player Jump List
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Shell.JumpList" /> is not completely initialized.</exception>
-        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
     <Member MemberName="BeginInit">
@@ -503,7 +496,7 @@ Windows Media Player Jump List
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Shell.JumpItemsRejectedEventArgs&gt; JumpItemsRejected;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Shell.JumpItemsRejectedEventArgs&gt; JumpItemsRejected" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Shell.JumpList.JumpItemsRejected" />
-      <MemberSignature Language="VB.NET" Value="Public Custom Event JumpItemsRejected As EventHandler(Of JumpItemsRejectedEventArgs) " FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event JumpItemsRejected As EventHandler(Of JumpItemsRejectedEventArgs) " FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Windows::Shell::JumpItemsRejectedEventArgs ^&gt; ^ JumpItemsRejected;" />
       <MemberSignature Language="F#" Value="member this.JumpItemsRejected : EventHandler&lt;System.Windows.Shell.JumpItemsRejectedEventArgs&gt; " Usage="member this.JumpItemsRejected : System.EventHandler&lt;System.Windows.Shell.JumpItemsRejectedEventArgs&gt; " />
       <MemberSignature Language="VB.NET" Value="Public Event JumpItemsRejected As EventHandler(Of JumpItemsRejectedEventArgs) " FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
@@ -538,7 +531,7 @@ Windows Media Player Jump List
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Shell.JumpItemsRemovedEventArgs&gt; JumpItemsRemovedByUser;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Shell.JumpItemsRemovedEventArgs&gt; JumpItemsRemovedByUser" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Shell.JumpList.JumpItemsRemovedByUser" />
-      <MemberSignature Language="VB.NET" Value="Public Custom Event JumpItemsRemovedByUser As EventHandler(Of JumpItemsRemovedEventArgs) " FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event JumpItemsRemovedByUser As EventHandler(Of JumpItemsRemovedEventArgs) " FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Windows::Shell::JumpItemsRemovedEventArgs ^&gt; ^ JumpItemsRemovedByUser;" />
       <MemberSignature Language="F#" Value="member this.JumpItemsRemovedByUser : EventHandler&lt;System.Windows.Shell.JumpItemsRemovedEventArgs&gt; " Usage="member this.JumpItemsRemovedByUser : System.EventHandler&lt;System.Windows.Shell.JumpItemsRemovedEventArgs&gt; " />
       <MemberSignature Language="VB.NET" Value="Public Event JumpItemsRemovedByUser As EventHandler(Of JumpItemsRemovedEventArgs) " FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />

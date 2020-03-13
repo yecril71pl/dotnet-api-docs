@@ -8,6 +8,7 @@
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.2.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
@@ -34,7 +35,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public FileSystemEnumerable (string directory, System.IO.Enumeration.FileSystemEnumerable&lt;TResult&gt;.FindTransform transform, System.IO.EnumerationOptions options = null);" />
+      <MemberSignature Language="C#" Value="public FileSystemEnumerable (string directory, System.IO.Enumeration.FileSystemEnumerable&lt;TResult&gt;.FindTransform transform, System.IO.EnumerationOptions options = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string directory, class System.IO.Enumeration.FileSystemEnumerable`1/FindTransform&lt;!TResult&gt; transform, class System.IO.EnumerationOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Enumeration.FileSystemEnumerable`1.#ctor(System.String,System.IO.Enumeration.FileSystemEnumerable`1.FindTransform{`0},System.IO.EnumerationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (directory As String, transform As FileSystemEnumerable(Of TResult).FindTransform, Optional options As EnumerationOptions = null)" />
@@ -43,6 +44,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -58,9 +60,10 @@
         <param name="transform">A delegate method for transforming raw find data into a result.</param>
         <param name="options">An object describing the enumeration options.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IO.Enumeration.FileSystemEnumerable`1" /> class with specific search and filtering options.</summary>
-         <remarks>To be added.</remarks>
-         <exception cref="T:System.ArgumentNullException"><paramref name="directory" /> or <paramref name="transform" /> is <see langword="null" />.</exception>
-         <exception cref="T:System.ArgumentException">The <paramref name="directory" /> path is empty.
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="directory" /> or <paramref name="transform" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="directory" /> path is empty.
 
 -or-
 
@@ -81,6 +84,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -107,6 +111,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -132,6 +137,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -159,6 +165,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>

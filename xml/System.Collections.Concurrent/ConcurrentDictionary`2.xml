@@ -10,6 +10,7 @@
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.0.14.0</AssemblyVersion>
+    <AssemblyVersion>4.0.15.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -107,7 +108,7 @@
  ]]></format>
     </remarks>
     <threadsafe>All public and protected members of <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> are thread-safe and may be used concurrently from multiple threads. However, members accessed through one of the interfaces the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> implements, including extension methods, are not guaranteed to be thread safe and may need to be synchronized by the caller.</threadsafe>
-    <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+    <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
     <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
   </Docs>
   <Members>
@@ -120,7 +121,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> class.</summary>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </MemberGroup>
@@ -136,6 +137,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -158,7 +160,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -175,6 +177,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -197,7 +200,7 @@
           <paramref name="collection" /> or any of its keys is  <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="collection" /> contains one or more duplicate keys.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -214,6 +217,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -234,7 +238,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="comparer" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -251,6 +255,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -273,7 +278,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="collection" /> or <paramref name="comparer" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -290,6 +295,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -316,7 +322,7 @@
  -or-  
   
  <paramref name="capacity" /> is less than 0.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -333,6 +339,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -361,7 +368,7 @@
           <paramref name="concurrencyLevel" /> is less than 1.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="collection" /> contains one or more duplicate keys.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -378,6 +385,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -404,7 +412,7 @@
           <paramref name="comparer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="concurrencyLevel" /> or <paramref name="capacity" /> is less than 1.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -427,7 +435,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </MemberGroup>
@@ -444,6 +452,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -481,8 +490,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" />, <paramref name="addValueFactory" />, or <paramref name="updateValueFactory" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.OverflowException">The dictionary already contains the maximum number of elements (<see cref="F:System.Int32.MaxValue" />).</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <exception cref="T:System.OverflowException">The dictionary contains too many elements.</exception>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -499,6 +508,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -540,8 +550,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> or <paramref name="updateValueFactory" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.OverflowException">The dictionary already contains the maximum number of elements (<see cref="F:System.Int32.MaxValue" />).</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <exception cref="T:System.OverflowException">The dictionary contains too many elements.</exception>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -556,6 +566,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -572,10 +583,10 @@
         <TypeParameter Name="TArg" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="key" Type="TKey" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7.2;netframework-4.8;netstandard-2.1" />
-        <Parameter Name="addValueFactory" Type="System.Func&lt;TKey,TArg,TValue&gt;" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7.2;netframework-4.8;netstandard-2.1" />
-        <Parameter Name="updateValueFactory" Type="System.Func&lt;TKey,TValue,TArg,TValue&gt;" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7.2;netframework-4.8;netstandard-2.1" />
-        <Parameter Name="factoryArgument" Type="TArg" Index="3" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7.2;netframework-4.8;netstandard-2.1" />
+        <Parameter Name="key" Type="TKey" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="addValueFactory" Type="System.Func&lt;TKey,TArg,TValue&gt;" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="updateValueFactory" Type="System.Func&lt;TKey,TValue,TArg,TValue&gt;" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="factoryArgument" Type="TArg" Index="3" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
         <typeparam name="TArg">The type of an argument to pass into <paramref name="addValueFactory" /> and <paramref name="updateValueFactory" />.</typeparam>
@@ -609,14 +620,15 @@
       <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="concurrentDictionary.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:System.Collections.IDictionary.Clear</InterfaceMember>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
+        <InterfaceMember>M:System.Collections.IDictionary.Clear</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -635,7 +647,7 @@
       <Docs>
         <summary>Removes all keys and values from the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" />.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -656,6 +668,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -681,7 +694,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -696,12 +709,14 @@
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
         <InterfaceMember>P:System.Collections.Generic.IReadOnlyCollection`1.Count</InterfaceMember>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -727,8 +742,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.OverflowException">The dictionary already contains the maximum number of elements (<see cref="F:System.Int32.MaxValue" />).</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <exception cref="T:System.OverflowException">The dictionary contains too many elements.</exception>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -736,7 +751,7 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt; GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;!TKey, !TValue&gt;&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.GetEnumerator" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of KeyValuePair(Of TKey, TValue))" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of KeyValuePair(Of TKey, TValue))" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ GetEnumerator();" />
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt;" Usage="concurrentDictionary.GetEnumerator " />
       <MemberSignature Language="VB.NET" Value="Public Iterator Overridable NotOverridable Function GetEnumerator () As IEnumerator(Of KeyValuePair(Of TKey, TValue))" FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
@@ -749,6 +764,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -786,7 +802,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -809,7 +825,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </MemberGroup>
@@ -826,6 +842,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -869,8 +886,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> or <paramref name="valueFactory" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.OverflowException">The dictionary already contains the maximum number of elements (<see cref="F:System.Int32.MaxValue" />).</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <exception cref="T:System.OverflowException">The dictionary contains too many elements.</exception>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -887,6 +904,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -913,8 +931,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.OverflowException">The dictionary already contains the maximum number of elements (<see cref="F:System.Int32.MaxValue" />).</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <exception cref="T:System.OverflowException">The dictionary contains too many elements.</exception>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -929,6 +947,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -945,9 +964,9 @@
         <TypeParameter Name="TArg" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="key" Type="TKey" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7.2;netframework-4.8;netstandard-2.1" />
-        <Parameter Name="valueFactory" Type="System.Func&lt;TKey,TArg,TValue&gt;" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7.2;netframework-4.8;netstandard-2.1" />
-        <Parameter Name="factoryArgument" Type="TArg" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7.2;netframework-4.8;netstandard-2.1" />
+        <Parameter Name="key" Type="TKey" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="valueFactory" Type="System.Func&lt;TKey,TArg,TValue&gt;" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
+        <Parameter Name="factoryArgument" Type="TArg" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.7.2;netframework-4.8;netstandard-2.1;netcore-3.1" />
       </Parameters>
       <Docs>
         <typeparam name="TArg">The type of an argument to pass into <paramref name="valueFactory" />.</typeparam>
@@ -992,6 +1011,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1011,7 +1031,7 @@
         <value>
           <see langword="true" /> if the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> is empty; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -1031,6 +1051,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1056,7 +1077,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is  <see langword="null" />.</exception>
         <exception cref="T:System.Collections.Generic.KeyNotFoundException">The property is retrieved and <paramref name="key" /> does not exist in the collection.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -1076,6 +1097,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1094,7 +1116,7 @@
         <summary>Gets a collection containing the keys in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</summary>
         <value>A collection of keys in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -1113,6 +1135,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1134,7 +1157,7 @@
         <param name="keyValuePair">The <see cref="T:System.Collections.Generic.KeyValuePair`2" /> to add to the dictionary.</param>
         <summary>Adds an item to the collection.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -1153,6 +1176,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1176,7 +1200,7 @@
         <returns>
           <see langword="true" /> if the <see cref="T:System.Collections.Generic.ICollection`1" /> contains an element with the specified key; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -1192,6 +1216,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1215,7 +1240,7 @@
         <param name="index">The zero-based index in <paramref name="array" /> at which copying begins.</param>
         <summary>Copies the elements of the <see cref="T:System.Collections.ICollection" /> to an array, starting at the specified array index.</summary>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -1235,6 +1260,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1254,7 +1280,7 @@
         <value>
           <see langword="true" /> if the <see cref="T:System.Collections.ICollection" /> is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -1273,6 +1299,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1296,7 +1323,7 @@
         <returns>
           <see langword="true" /> if the element is successfully removed; otherwise, <see langword="false" />. This method also returns false if <paramref name="key" /> was not found in the original <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -1315,6 +1342,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1341,8 +1369,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">An element with the same key already exists in the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" />.</exception>
-        <exception cref="T:System.OverflowException">The dictionary already contains the maximum number of elements (<see cref="F:System.Int32.MaxValue" />).</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <exception cref="T:System.OverflowException">The dictionary contains too many elements.</exception>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -1361,6 +1389,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1386,7 +1415,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -1405,6 +1434,7 @@
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1440,6 +1470,7 @@
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1474,6 +1505,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1507,7 +1539,7 @@
  -or-  
   
  The number of elements in the source <see cref="T:System.Collections.ICollection" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -1527,6 +1559,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1546,7 +1579,7 @@
         <value>
           <see langword="true" /> if access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe); otherwise, <see langword="false" />. For <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> this property always returns <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -1566,6 +1599,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1585,7 +1619,7 @@
         <value>Always returns null.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">This property is not supported.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -1604,6 +1638,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1639,8 +1674,8 @@
  -or-  
   
  A value with the same key already exists in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</exception>
-        <exception cref="T:System.OverflowException">The dictionary already contains the maximum number of elements (<see cref="F:System.Int32.MaxValue" />).</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <exception cref="T:System.OverflowException">The dictionary contains too many elements.</exception>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -1659,6 +1694,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1684,7 +1720,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -1703,6 +1739,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1722,7 +1759,7 @@
         <summary>Provides a <see cref="T:System.Collections.IDictionaryEnumerator" /> for the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
         <returns>A <see cref="T:System.Collections.IDictionaryEnumerator" /> for the <see cref="T:System.Collections.Generic.IDictionary`2" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -1742,6 +1779,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1761,7 +1799,7 @@
         <value>
           <see langword="true" /> if the <see cref="T:System.Collections.Generic.IDictionary`2" /> has a fixed size; otherwise, <see langword="false" />. For <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" />, this property always returns <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -1781,6 +1819,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1800,7 +1839,7 @@
         <value>
           <see langword="true" /> if the <see cref="T:System.Collections.Generic.IDictionary`2" /> is read-only; otherwise, <see langword="false" />. For <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" />, this property always returns <see langword="false" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -1820,6 +1859,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1845,7 +1885,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is  <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">A value is being assigned, and <paramref name="key" /> is of a type that is not assignable to the key type or the value type of the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -1865,6 +1905,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1883,7 +1924,7 @@
         <summary>Gets an <see cref="T:System.Collections.ICollection" /> that contains the keys of the  <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
         <value>An interface that contains the keys of the <see cref="T:System.Collections.Generic.IDictionary`2" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -1902,6 +1943,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1925,7 +1967,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -1945,6 +1987,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1963,7 +2006,7 @@
         <summary>Gets an <see cref="T:System.Collections.ICollection" /> that contains the values in the <see cref="T:System.Collections.IDictionary" />.</summary>
         <value>An interface that contains the values in the <see cref="T:System.Collections.IDictionary" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -1982,6 +2025,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2008,7 +2052,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -2025,6 +2069,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2044,7 +2089,7 @@
         <summary>Copies the key and value pairs stored in the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> to a new array.</summary>
         <returns>A new array containing a snapshot of key and value pairs copied from the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" />.</returns>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -2061,6 +2106,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2103,8 +2149,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is  <see langword="null" />.</exception>
-        <exception cref="T:System.OverflowException">The dictionary already contains the maximum number of elements (<see cref="F:System.Int32.MaxValue" />).</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <exception cref="T:System.OverflowException">The dictionary contains too many elements.</exception>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -2125,6 +2171,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2152,7 +2199,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is  <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -2169,6 +2216,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2206,7 +2254,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is  <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -2223,6 +2271,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2262,7 +2311,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
@@ -2282,6 +2331,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.14.0</AssemblyVersion>
+        <AssemblyVersion>4.0.15.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2300,7 +2350,7 @@
         <summary>Gets a collection that contains the values in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</summary>
         <value>A collection that contains the values in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</value>
         <remarks>To be added.</remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="~/docs/standard/collections/thread-safe/index.md">Thread-Safe Collections</related>
         <related type="Article" href="https://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>

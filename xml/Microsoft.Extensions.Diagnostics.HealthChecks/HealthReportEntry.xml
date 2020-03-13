@@ -9,6 +9,7 @@
     <AssemblyName>Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions</AssemblyName>
     <AssemblyVersion>2.2.0.0</AssemblyVersion>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
@@ -30,6 +31,7 @@
         <AssemblyName>Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="status" Type="Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus" />
@@ -50,7 +52,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public HealthReportEntry (Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus status, string description, TimeSpan duration, Exception exception, System.Collections.Generic.IReadOnlyDictionary&lt;string,object&gt; data, System.Collections.Generic.IEnumerable&lt;string&gt; tags = null);" />
+      <MemberSignature Language="C#" Value="public HealthReportEntry (Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus status, string description, TimeSpan duration, Exception exception, System.Collections.Generic.IReadOnlyDictionary&lt;string,object&gt; data, System.Collections.Generic.IEnumerable&lt;string&gt; tags = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus status, string description, valuetype System.TimeSpan duration, class System.Exception exception, class System.Collections.Generic.IReadOnlyDictionary`2&lt;string, object&gt; data, class System.Collections.Generic.IEnumerable`1&lt;string&gt; tags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry.#ctor(Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,System.String,System.TimeSpan,System.Exception,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Object},System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="F#" Value="new Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry : Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus * string * TimeSpan * Exception * System.Collections.Generic.IReadOnlyDictionary&lt;string, obj&gt; * seq&lt;string&gt; -&gt; Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry" Usage="new Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry (status, description, duration, exception, data, tags)" />
@@ -58,14 +60,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="status" Type="Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0" />
-        <Parameter Name="description" Type="System.String" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
-        <Parameter Name="duration" Type="System.TimeSpan" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0" />
-        <Parameter Name="exception" Type="System.Exception" Index="3" FrameworkAlternate="dotnet-plat-ext-3.0" />
-        <Parameter Name="data" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.Object&gt;" Index="4" FrameworkAlternate="dotnet-plat-ext-3.0" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="5" FrameworkAlternate="dotnet-plat-ext-3.0" />
+        <Parameter Name="status" Type="Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0;dotnet-plat-ext-3.1" />
+        <Parameter Name="description" Type="System.String" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0;dotnet-plat-ext-3.1" />
+        <Parameter Name="duration" Type="System.TimeSpan" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0;dotnet-plat-ext-3.1" />
+        <Parameter Name="exception" Type="System.Exception" Index="3" FrameworkAlternate="dotnet-plat-ext-3.0;dotnet-plat-ext-3.1" />
+        <Parameter Name="data" Type="System.Collections.Generic.IReadOnlyDictionary&lt;System.String,System.Object&gt;" Index="4" FrameworkAlternate="dotnet-plat-ext-3.0;dotnet-plat-ext-3.1" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" Index="5" FrameworkAlternate="dotnet-plat-ext-3.0;dotnet-plat-ext-3.1" />
       </Parameters>
       <Docs>
         <param name="status">A value indicating the health status of the component that was checked.</param>
@@ -91,6 +94,7 @@
         <AssemblyName>Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="dotnet-plat-ext-3.0">
@@ -118,6 +122,7 @@
         <AssemblyName>Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="dotnet-plat-ext-3.0">
@@ -145,6 +150,7 @@
         <AssemblyName>Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="dotnet-plat-ext-3.0">
@@ -172,6 +178,7 @@
         <AssemblyName>Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="dotnet-plat-ext-3.0">
@@ -199,6 +206,7 @@
         <AssemblyName>Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="dotnet-plat-ext-3.0">
@@ -225,6 +233,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="dotnet-plat-ext-3.0">
