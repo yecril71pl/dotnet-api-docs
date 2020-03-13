@@ -8080,7 +8080,7 @@ A string is empty if it  is explicitly assigned an empty string ("") or <xref:Sy
 <see cref="F:System.String.Empty" /> if <paramref name="values" /> has zero elements or all the elements of <paramref name="values" /> are <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException"><paramref name="value" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.OutOfMemoryException">The length of the resulting string overflows the maximum allowed length (<see cref="P:System.Int32.MaxValue" />).</exception>
+        <exception cref="T:System.OutOfMemoryException">The length of the resulting string overflows the maximum allowed length (<see cref="F:System.Int32.MaxValue" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="Join">
@@ -8127,7 +8127,7 @@ A string is empty if it  is explicitly assigned an empty string ("") or <xref:Sy
 <see cref="F:System.String.Empty" /> if <paramref name="value" /> has zero elements or all the elements of <paramref name="value" /> are <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException"><paramref name="value" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.OutOfMemoryException">The length of the resulting string overflows the maximum allowed length (<see cref="P:System.Int32.MaxValue" />).</exception>
+        <exception cref="T:System.OutOfMemoryException">The length of the resulting string overflows the maximum allowed length (<see cref="F:System.Int32.MaxValue" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="Join">
@@ -8200,7 +8200,7 @@ A string is empty if it  is explicitly assigned an empty string ("") or <xref:Sy
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException"><paramref name="values" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.OutOfMemoryException">The length of the resulting string overflows the maximum allowed length (<see cref="P:System.Int32.MaxValue" />).</exception>
+        <exception cref="T:System.OutOfMemoryException">The length of the resulting string overflows the maximum allowed length (<see cref="F:System.Int32.MaxValue" />).</exception>
         <altmember cref="M:System.String.Split(System.Char[])" />
       </Docs>
     </Member>
@@ -8273,7 +8273,7 @@ A string is empty if it  is explicitly assigned an empty string ("") or <xref:Sy
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException"><paramref name="values" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.OutOfMemoryException">The length of the resulting string overflows the maximum allowed length (<see cref="P:System.Int32.MaxValue" />).</exception>
+        <exception cref="T:System.OutOfMemoryException">The length of the resulting string overflows the maximum allowed length (<see cref="F:System.Int32.MaxValue" />).</exception>
         <block subset="none" type="usage">
           <para>If the first element of <paramref name="values" /> is <see langword="null" />, the <see cref="M:System.String.Join(System.String,System.Object[])" /> method does not concatenate the elements in <paramref name="values" /> but instead returns <see cref="F:System.String.Empty" />. A number of workarounds for this issue are available. The easiest is to assign a value of <see cref="F:System.String.Empty" /> to the first element of the array, as the following example shows.  
   
@@ -8353,7 +8353,7 @@ A string is empty if it  is explicitly assigned an empty string ("") or <xref:Sy
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException"><paramref name="value" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.OutOfMemoryException">The length of the resulting string overflows the maximum allowed length (<see cref="P:System.Int32.MaxValue" />).</exception>
+        <exception cref="T:System.OutOfMemoryException">The length of the resulting string overflows the maximum allowed length (<see cref="F:System.Int32.MaxValue" />).</exception>
         <altmember cref="M:System.String.Concat(System.Object)" />
       </Docs>
     </Member>
@@ -8404,7 +8404,7 @@ A string is empty if it  is explicitly assigned an empty string ("") or <xref:Sy
 -or-
 
 <paramref name="startIndex" /> is greater than the length of <paramref name="value" />  - <paramref name="count" />.</exception>
-        <exception cref="T:System.OutOfMemoryException">The length of the resulting string overflows the maximum allowed length (<see cref="P:System.Int32.MaxValue" />).</exception>
+        <exception cref="T:System.OutOfMemoryException">The length of the resulting string overflows the maximum allowed length (<see cref="F:System.Int32.MaxValue" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="Join">
@@ -8528,7 +8528,7 @@ A string is empty if it  is explicitly assigned an empty string ("") or <xref:Sy
         <returns>A string that consists of the members of <paramref name="values" /> delimited by the <paramref name="separator" /> character. If <paramref name="values" /> has no members, the method returns <see cref="F:System.String.Empty" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException"><paramref name="values" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.OutOfMemoryException">The length of the resulting string overflows the maximum allowed length (<see cref="P:System.Int32.MaxValue" />).</exception>
+        <exception cref="T:System.OutOfMemoryException">The length of the resulting string overflows the maximum allowed length (<see cref="F:System.Int32.MaxValue" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="Join&lt;T&gt;">
@@ -8603,7 +8603,7 @@ A string is empty if it  is explicitly assigned an empty string ("") or <xref:Sy
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException"><paramref name="values" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.OutOfMemoryException">The length of the resulting string overflows the maximum allowed length (<see cref="P:System.Int32.MaxValue" />).</exception>
+        <exception cref="T:System.OutOfMemoryException">The length of the resulting string overflows the maximum allowed length (<see cref="F:System.Int32.MaxValue" />).</exception>
         <altmember cref="M:System.String.Split(System.Char[])" />
       </Docs>
     </Member>
@@ -14119,8 +14119,7 @@ The following example uses the <xref:System.String.Trim?displayProperty=nameWith
         <summary>Removes all leading and trailing instances of a character from the current string.</summary>
         <returns>The string that remains after all instances of the <paramref name="trimChar" /> character are removed from the start and end of the current string. If no characters can be trimmed from the current instance, the method returns the current instance unchanged.</returns>
         <remarks>
-          <format type="text/markdown">
-  <![CDATA[
+          <format type="text/markdown"><![CDATA[
 
 ## Remarks
 
@@ -14186,8 +14185,7 @@ If the current string equals <xref:System.String.Empty?displayProperty=nameWitht
         <summary>Removes all leading and trailing occurrences of a set of characters specified in an array from the current string.</summary>
         <returns>The string that remains after all occurrences of the characters in the <paramref name="trimChars" /> parameter are removed from the start and end of the current string. If <paramref name="trimChars" /> is <see langword="null" /> or an empty array, white-space characters are removed instead. If no characters can be trimmed from the current instance, the method returns the current instance unchanged.</returns>
         <remarks>
-          <format type="text/markdown">
-  <![CDATA[
+          <format type="text/markdown"><![CDATA[
 
 ## Remarks
 
@@ -14355,8 +14353,7 @@ The `TrimEnd(System.Char)` method removes from the current string all trailing `
         <summary>Removes all the trailing occurrences of a set of characters specified in an array from the current string.</summary>
         <returns>The string that remains after all occurrences of the characters in the <paramref name="trimChars" /> parameter are removed from the end of the current string. If <paramref name="trimChars" /> is <see langword="null" /> or an empty array, Unicode white-space characters are removed instead. If no characters can be trimmed from the current instance, the method returns the current instance unchanged.</returns>
         <remarks>
-          <format type="text/markdown">
-  <![CDATA[
+          <format type="text/markdown"><![CDATA[
 
 ## Remarks
 
