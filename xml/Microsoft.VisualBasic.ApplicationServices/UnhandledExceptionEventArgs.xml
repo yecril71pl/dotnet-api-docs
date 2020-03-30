@@ -14,6 +14,10 @@
     <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
     <AssemblyVersion>10.0.4.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Forms</AssemblyName>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Threading.ThreadExceptionEventArgs</BaseTypeName>
   </Base>
@@ -46,6 +50,7 @@
       <MemberSignature Language="C#" Value="public UnhandledExceptionEventArgs (bool exitApplication, Exception exception);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(bool exitApplication, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs.#ctor(System.Boolean,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (exitApplication As Boolean, exception As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; UnhandledExceptionEventArgs(bool exitApplication, Exception ^ exception);" />
       <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs : bool * Exception -&gt; Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs" Usage="new Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs (exitApplication, exception)" />
       <MemberType>Constructor</MemberType>
@@ -57,6 +62,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
         <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Forms</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -101,6 +110,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
         <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Forms</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">

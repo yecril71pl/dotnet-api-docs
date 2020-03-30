@@ -22,6 +22,7 @@
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -81,6 +82,7 @@
       <MemberSignature Language="C#" Value="public int Fill (System.Data.DataSet dataSet);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Fill(class System.Data.DataSet dataSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IDataAdapter.Fill(System.Data.DataSet)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Fill (dataSet As DataSet) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Fill(System::Data::DataSet ^ dataSet);" />
       <MemberSignature Language="F#" Value="abstract member Fill : System.Data.DataSet -&gt; int" Usage="iDataAdapter.Fill dataSet" />
       <MemberType>Method</MemberType>
@@ -101,6 +103,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -140,6 +143,7 @@
       <MemberSignature Language="C#" Value="public System.Data.DataTable[] FillSchema (System.Data.DataSet dataSet, System.Data.SchemaType schemaType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.DataTable[] FillSchema(class System.Data.DataSet dataSet, valuetype System.Data.SchemaType schemaType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IDataAdapter.FillSchema(System.Data.DataSet,System.Data.SchemaType)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FillSchema (dataSet As DataSet, schemaType As SchemaType) As DataTable()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataTable ^&gt; ^ FillSchema(System::Data::DataSet ^ dataSet, System::Data::SchemaType schemaType);" />
       <MemberSignature Language="F#" Value="abstract member FillSchema : System.Data.DataSet * System.Data.SchemaType -&gt; System.Data.DataTable[]" Usage="iDataAdapter.FillSchema (dataSet, schemaType)" />
       <MemberType>Method</MemberType>
@@ -160,6 +164,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTable[]</ReturnType>
@@ -237,6 +242,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDataParameter[]</ReturnType>
@@ -302,6 +308,7 @@ private static void GetParameters(string connectionString)
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.MissingMappingAction</ReturnType>
@@ -346,6 +353,7 @@ private static void GetParameters(string connectionString)
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.MissingSchemaAction</ReturnType>
@@ -383,6 +391,7 @@ private static void GetParameters(string connectionString)
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.ITableMappingCollection</ReturnType>
@@ -404,6 +413,7 @@ private static void GetParameters(string connectionString)
       <MemberSignature Language="C#" Value="public int Update (System.Data.DataSet dataSet);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Update(class System.Data.DataSet dataSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IDataAdapter.Update(System.Data.DataSet)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Update (dataSet As DataSet) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Update(System::Data::DataSet ^ dataSet);" />
       <MemberSignature Language="F#" Value="abstract member Update : System.Data.DataSet -&gt; int" Usage="iDataAdapter.Update dataSet" />
       <MemberType>Method</MemberType>
@@ -424,6 +434,7 @@ private static void GetParameters(string connectionString)
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

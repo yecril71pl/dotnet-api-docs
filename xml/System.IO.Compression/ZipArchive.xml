@@ -13,6 +13,7 @@
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>netstandard</AssemblyName>
@@ -88,6 +89,7 @@
       <MemberSignature Language="C#" Value="public ZipArchive (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipArchive.#ctor(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (stream As Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ZipArchive(System::IO::Stream ^ stream);" />
       <MemberSignature Language="F#" Value="new System.IO.Compression.ZipArchive : System.IO.Stream -&gt; System.IO.Compression.ZipArchive" Usage="new System.IO.Compression.ZipArchive stream" />
       <MemberType>Constructor</MemberType>
@@ -99,6 +101,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -122,6 +125,7 @@
       <MemberSignature Language="C#" Value="public ZipArchive (System.IO.Stream stream, System.IO.Compression.ZipArchiveMode mode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, valuetype System.IO.Compression.ZipArchiveMode mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipArchive.#ctor(System.IO.Stream,System.IO.Compression.ZipArchiveMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (stream As Stream, mode As ZipArchiveMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ZipArchive(System::IO::Stream ^ stream, System::IO::Compression::ZipArchiveMode mode);" />
       <MemberSignature Language="F#" Value="new System.IO.Compression.ZipArchive : System.IO.Stream * System.IO.Compression.ZipArchiveMode -&gt; System.IO.Compression.ZipArchive" Usage="new System.IO.Compression.ZipArchive (stream, mode)" />
       <MemberType>Constructor</MemberType>
@@ -133,6 +137,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -175,6 +180,7 @@
       <MemberSignature Language="C#" Value="public ZipArchive (System.IO.Stream stream, System.IO.Compression.ZipArchiveMode mode, bool leaveOpen);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, valuetype System.IO.Compression.ZipArchiveMode mode, bool leaveOpen) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipArchive.#ctor(System.IO.Stream,System.IO.Compression.ZipArchiveMode,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (stream As Stream, mode As ZipArchiveMode, leaveOpen As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ZipArchive(System::IO::Stream ^ stream, System::IO::Compression::ZipArchiveMode mode, bool leaveOpen);" />
       <MemberSignature Language="F#" Value="new System.IO.Compression.ZipArchive : System.IO.Stream * System.IO.Compression.ZipArchiveMode * bool -&gt; System.IO.Compression.ZipArchive" Usage="new System.IO.Compression.ZipArchive (stream, mode, leaveOpen)" />
       <MemberType>Constructor</MemberType>
@@ -186,6 +192,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -231,6 +238,7 @@
       <MemberSignature Language="C#" Value="public ZipArchive (System.IO.Stream stream, System.IO.Compression.ZipArchiveMode mode, bool leaveOpen, System.Text.Encoding entryNameEncoding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, valuetype System.IO.Compression.ZipArchiveMode mode, bool leaveOpen, class System.Text.Encoding entryNameEncoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipArchive.#ctor(System.IO.Stream,System.IO.Compression.ZipArchiveMode,System.Boolean,System.Text.Encoding)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (stream As Stream, mode As ZipArchiveMode, leaveOpen As Boolean, entryNameEncoding As Encoding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ZipArchive(System::IO::Stream ^ stream, System::IO::Compression::ZipArchiveMode mode, bool leaveOpen, System::Text::Encoding ^ entryNameEncoding);" />
       <MemberSignature Language="F#" Value="new System.IO.Compression.ZipArchive : System.IO.Stream * System.IO.Compression.ZipArchiveMode * bool * System.Text.Encoding -&gt; System.IO.Compression.ZipArchive" Usage="new System.IO.Compression.ZipArchive (stream, mode, leaveOpen, entryNameEncoding)" />
       <MemberType>Constructor</MemberType>
@@ -242,6 +250,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -333,6 +342,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -379,6 +389,7 @@
       <MemberSignature Language="C#" Value="public System.IO.Compression.ZipArchiveEntry CreateEntry (string entryName, System.IO.Compression.CompressionLevel compressionLevel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Compression.ZipArchiveEntry CreateEntry(string entryName, valuetype System.IO.Compression.CompressionLevel compressionLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipArchive.CreateEntry(System.String,System.IO.Compression.CompressionLevel)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateEntry (entryName As String, compressionLevel As CompressionLevel) As ZipArchiveEntry" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Compression::ZipArchiveEntry ^ CreateEntry(System::String ^ entryName, System::IO::Compression::CompressionLevel compressionLevel);" />
       <MemberSignature Language="F#" Value="member this.CreateEntry : string * System.IO.Compression.CompressionLevel -&gt; System.IO.Compression.ZipArchiveEntry" Usage="zipArchive.CreateEntry (entryName, compressionLevel)" />
       <MemberType>Method</MemberType>
@@ -390,6 +401,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -465,6 +477,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -507,6 +520,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -559,6 +573,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -608,6 +623,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -665,6 +681,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>

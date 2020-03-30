@@ -9,6 +9,7 @@
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Windows.Input.InputDevice</BaseTypeName>
@@ -37,6 +38,7 @@
       <MemberSignature Language="C#" Value="protected KeyboardDevice (System.Windows.Input.InputManager inputManager);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.InputManager inputManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardDevice.#ctor(System.Windows.Input.InputManager)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (inputManager As InputManager)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; KeyboardDevice(System::Windows::Input::InputManager ^ inputManager);" />
       <MemberSignature Language="F#" Value="new System.Windows.Input.KeyboardDevice : System.Windows.Input.InputManager -&gt; System.Windows.Input.KeyboardDevice" Usage="new System.Windows.Input.KeyboardDevice inputManager" />
       <MemberType>Constructor</MemberType>
@@ -44,6 +46,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -74,6 +77,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -100,6 +104,7 @@
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -133,6 +138,7 @@
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -163,6 +169,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -196,6 +203,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.IInputElement</ReturnType>
@@ -210,6 +218,7 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.KeyStates GetKeyStates (System.Windows.Input.Key key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Input.KeyStates GetKeyStates(valuetype System.Windows.Input.Key key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardDevice.GetKeyStates(System.Windows.Input.Key)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetKeyStates (key As Key) As KeyStates" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Input::KeyStates GetKeyStates(System::Windows::Input::Key key);" />
       <MemberSignature Language="F#" Value="member this.GetKeyStates : System.Windows.Input.Key -&gt; System.Windows.Input.KeyStates" Usage="keyboardDevice.GetKeyStates key" />
       <MemberType>Method</MemberType>
@@ -217,6 +226,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.KeyStates</ReturnType>
@@ -237,6 +247,7 @@
       <MemberSignature Language="C#" Value="protected abstract System.Windows.Input.KeyStates GetKeyStatesFromSystem (System.Windows.Input.Key key);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance valuetype System.Windows.Input.KeyStates GetKeyStatesFromSystem(valuetype System.Windows.Input.Key key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardDevice.GetKeyStatesFromSystem(System.Windows.Input.Key)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetKeyStatesFromSystem (key As Key) As KeyStates" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Windows::Input::KeyStates GetKeyStatesFromSystem(System::Windows::Input::Key key);" />
       <MemberSignature Language="F#" Value="abstract member GetKeyStatesFromSystem : System.Windows.Input.Key -&gt; System.Windows.Input.KeyStates" Usage="keyboardDevice.GetKeyStatesFromSystem key" />
       <MemberType>Method</MemberType>
@@ -244,6 +255,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.KeyStates</ReturnType>
@@ -262,6 +274,7 @@
       <MemberSignature Language="C#" Value="public bool IsKeyDown (System.Windows.Input.Key key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsKeyDown(valuetype System.Windows.Input.Key key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardDevice.IsKeyDown(System.Windows.Input.Key)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsKeyDown (key As Key) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsKeyDown(System::Windows::Input::Key key);" />
       <MemberSignature Language="F#" Value="member this.IsKeyDown : System.Windows.Input.Key -&gt; bool" Usage="keyboardDevice.IsKeyDown key" />
       <MemberType>Method</MemberType>
@@ -269,6 +282,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -290,6 +304,7 @@
       <MemberSignature Language="C#" Value="public bool IsKeyToggled (System.Windows.Input.Key key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsKeyToggled(valuetype System.Windows.Input.Key key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardDevice.IsKeyToggled(System.Windows.Input.Key)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsKeyToggled (key As Key) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsKeyToggled(System::Windows::Input::Key key);" />
       <MemberSignature Language="F#" Value="member this.IsKeyToggled : System.Windows.Input.Key -&gt; bool" Usage="keyboardDevice.IsKeyToggled key" />
       <MemberType>Method</MemberType>
@@ -297,6 +312,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -318,6 +334,7 @@
       <MemberSignature Language="C#" Value="public bool IsKeyUp (System.Windows.Input.Key key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsKeyUp(valuetype System.Windows.Input.Key key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardDevice.IsKeyUp(System.Windows.Input.Key)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsKeyUp (key As Key) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsKeyUp(System::Windows::Input::Key key);" />
       <MemberSignature Language="F#" Value="member this.IsKeyUp : System.Windows.Input.Key -&gt; bool" Usage="keyboardDevice.IsKeyUp key" />
       <MemberType>Method</MemberType>
@@ -325,6 +342,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -354,6 +372,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.ModifierKeys</ReturnType>
@@ -376,6 +395,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.IInputElement</ReturnType>

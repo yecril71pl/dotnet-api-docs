@@ -17,6 +17,14 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Bcl.AsyncInterfaces</AssemblyName>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="Microsoft.Bcl.AsyncInterfaces" FromVersion="1.0.0.0" To="netstandard" ToVersion="2.1.0.0" FrameworkAlternate="dotnet-plat-ext-5.0" />
+    <TypeForwarding From="System.Threading.Tasks" FromVersion="5.0.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+  </TypeForwardingChain>
   <TypeParameters>
     <TypeParameter Name="T" />
   </TypeParameters>
@@ -54,6 +62,10 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bcl.AsyncInterfaces</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;T&gt;</ReturnType>
@@ -93,6 +105,10 @@ This will replace any previous value set by <xref:System.Runtime.CompilerService
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bcl.AsyncInterfaces</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;T&gt;+Enumerator</ReturnType>
       </ReturnValue>
@@ -107,6 +123,7 @@ This will replace any previous value set by <xref:System.Runtime.CompilerService
       <MemberSignature Language="C#" Value="public System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;T&gt; WithCancellation (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1&lt;!T&gt; WithCancellation(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.WithCancellation(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WithCancellation (cancellationToken As CancellationToken) As ConfiguredCancelableAsyncEnumerable(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::CompilerServices::ConfiguredCancelableAsyncEnumerable&lt;T&gt; WithCancellation(System::Threading::CancellationToken cancellationToken);" />
       <MemberSignature Language="F#" Value="member this.WithCancellation : System.Threading.CancellationToken -&gt; System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;'T&gt;" Usage="configuredCancelableAsyncEnumerable.WithCancellation cancellationToken" />
       <MemberType>Method</MemberType>
@@ -121,6 +138,10 @@ This will replace any previous value set by <xref:System.Runtime.CompilerService
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Bcl.AsyncInterfaces</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable&lt;T&gt;</ReturnType>

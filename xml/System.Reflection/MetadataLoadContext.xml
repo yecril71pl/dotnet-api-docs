@@ -9,6 +9,7 @@
     <AssemblyName>System.Reflection.MetadataLoadContext</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -44,6 +45,7 @@ Assemblies are treated strictly as metadata. There are no restrictions on loadin
         <AssemblyName>System.Reflection.MetadataLoadContext</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="resolver" Type="System.Reflection.MetadataAssemblyResolver" />
@@ -68,6 +70,7 @@ Assemblies are treated strictly as metadata. There are no restrictions on loadin
         <AssemblyName>System.Reflection.MetadataLoadContext</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Assembly</ReturnType>
@@ -141,6 +144,7 @@ If a core assembly cannot be found or if the core assembly is missing types, thi
         <AssemblyName>System.Reflection.MetadataLoadContext</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -172,6 +176,7 @@ Some APIs may return fixed or previously cached data. Accessing objects *during*
         <AssemblyName>System.Reflection.MetadataLoadContext</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Reflection.Assembly&gt;</ReturnType>
@@ -187,6 +192,7 @@ Some APIs may return fixed or previously cached data. Accessing objects *during*
       <MemberSignature Language="C#" Value="public System.Reflection.Assembly LoadFromAssemblyName (System.Reflection.AssemblyName assemblyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.Assembly LoadFromAssemblyName(class System.Reflection.AssemblyName assemblyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MetadataLoadContext.LoadFromAssemblyName(System.Reflection.AssemblyName)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoadFromAssemblyName (assemblyName As AssemblyName) As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Assembly ^ LoadFromAssemblyName(System::Reflection::AssemblyName ^ assemblyName);" />
       <MemberSignature Language="F#" Value="member this.LoadFromAssemblyName : System.Reflection.AssemblyName -&gt; System.Reflection.Assembly" Usage="metadataLoadContext.LoadFromAssemblyName assemblyName" />
       <MemberType>Method</MemberType>
@@ -194,6 +200,7 @@ Some APIs may return fixed or previously cached data. Accessing objects *during*
         <AssemblyName>System.Reflection.MetadataLoadContext</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Assembly</ReturnType>
@@ -227,6 +234,7 @@ Note that the behavior of this method matches the behavior of the <xref:System.R
         <AssemblyName>System.Reflection.MetadataLoadContext</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Assembly</ReturnType>
@@ -261,6 +269,7 @@ Note that the behavior of this method matches the behavior of the <xref:System.R
         <AssemblyName>System.Reflection.MetadataLoadContext</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Assembly</ReturnType>
@@ -280,6 +289,7 @@ Note that the behavior of this method matches the behavior of the <xref:System.R
       <MemberSignature Language="C#" Value="public System.Reflection.Assembly LoadFromByteArray (byte[] assembly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.Assembly LoadFromByteArray(unsigned int8[] assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MetadataLoadContext.LoadFromByteArray(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoadFromByteArray (assembly As Byte()) As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Assembly ^ LoadFromByteArray(cli::array &lt;System::Byte&gt; ^ assembly);" />
       <MemberSignature Language="F#" Value="member this.LoadFromByteArray : byte[] -&gt; System.Reflection.Assembly" Usage="metadataLoadContext.LoadFromByteArray assembly" />
       <MemberType>Method</MemberType>
@@ -287,6 +297,7 @@ Note that the behavior of this method matches the behavior of the <xref:System.R
         <AssemblyName>System.Reflection.MetadataLoadContext</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Assembly</ReturnType>
@@ -306,6 +317,7 @@ Note that the behavior of this method matches the behavior of the <xref:System.R
       <MemberSignature Language="C#" Value="public System.Reflection.Assembly LoadFromStream (System.IO.Stream assembly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.Assembly LoadFromStream(class System.IO.Stream assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MetadataLoadContext.LoadFromStream(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoadFromStream (assembly As Stream) As Assembly" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Assembly ^ LoadFromStream(System::IO::Stream ^ assembly);" />
       <MemberSignature Language="F#" Value="member this.LoadFromStream : System.IO.Stream -&gt; System.Reflection.Assembly" Usage="metadataLoadContext.LoadFromStream assembly" />
       <MemberType>Method</MemberType>
@@ -313,6 +325,7 @@ Note that the behavior of this method matches the behavior of the <xref:System.R
         <AssemblyName>System.Reflection.MetadataLoadContext</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Assembly</ReturnType>

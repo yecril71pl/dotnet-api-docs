@@ -14,6 +14,7 @@
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
     <AssemblyVersion>4.2.2.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -27,6 +28,9 @@
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Runtime" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+  </TypeForwardingChain>
   <Interfaces>
     <Interface>
       <InterfaceName>System.Collections.ICollection</InterfaceName>
@@ -53,7 +57,7 @@
    
   
 ## Examples  
- The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple list, fixed-size list.  
+ The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple, fixed-size list.  
   
  [!code-csharp[System.Collections.IList_Implementation#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.IList_Implementation/cs/Program.cs#01)]
  [!code-vb[System.Collections.IList_Implementation#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.IList_Implementation/vb/Program.vb#01)]  
@@ -82,6 +86,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -140,6 +145,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -168,7 +174,7 @@
    
   
 ## Examples  
- The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple list, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
+ The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
   
  [!code-csharp[System.Collections.IList_Implementation#02](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.IList_Implementation/cs/Program.cs#02)]
  [!code-vb[System.Collections.IList_Implementation#02](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.IList_Implementation/vb/Program.vb#02)]  
@@ -195,6 +201,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -228,7 +235,7 @@
    
   
 ## Examples  
- The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple list, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
+ The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
   
  [!code-csharp[System.Collections.IList_Implementation#02](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.IList_Implementation/cs/Program.cs#02)]
  [!code-vb[System.Collections.IList_Implementation#02](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.IList_Implementation/vb/Program.vb#02)]  
@@ -254,6 +261,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -286,7 +294,7 @@
    
   
 ## Examples  
- The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple list, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
+ The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
   
  [!code-csharp[System.Collections.IList_Implementation#02](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.IList_Implementation/cs/Program.cs#02)]
  [!code-vb[System.Collections.IList_Implementation#02](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.IList_Implementation/vb/Program.vb#02)]  
@@ -312,6 +320,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -347,7 +356,7 @@
    
   
 ## Examples  
- The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple list, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
+ The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
   
  [!code-csharp[System.Collections.IList_Implementation#02](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.IList_Implementation/cs/Program.cs#02)]
  [!code-vb[System.Collections.IList_Implementation#02](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.IList_Implementation/vb/Program.vb#02)]  
@@ -382,6 +391,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -411,7 +421,7 @@
    
   
 ## Examples  
- The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple list, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
+ The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
   
  [!code-csharp[System.Collections.IList_Implementation#02](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.IList_Implementation/cs/Program.cs#02)]
  [!code-vb[System.Collections.IList_Implementation#02](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.IList_Implementation/vb/Program.vb#02)]  
@@ -437,6 +447,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -466,7 +477,7 @@
    
   
 ## Examples  
- The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple list, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
+ The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
   
  [!code-csharp[System.Collections.IList_Implementation#02](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.IList_Implementation/cs/Program.cs#02)]
  [!code-vb[System.Collections.IList_Implementation#02](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.IList_Implementation/vb/Program.vb#02)]  
@@ -492,6 +503,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -526,7 +538,7 @@
    
   
 ## Examples  
- The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple list, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
+ The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
   
  [!code-csharp[System.Collections.IList_Implementation#02](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.IList_Implementation/cs/Program.cs#02)]
  [!code-vb[System.Collections.IList_Implementation#02](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.IList_Implementation/vb/Program.vb#02)]  
@@ -555,6 +567,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -586,7 +599,7 @@
    
   
 ## Examples  
- The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple list, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
+ The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
   
  [!code-csharp[System.Collections.IList_Implementation#02](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.IList_Implementation/cs/Program.cs#02)]
  [!code-vb[System.Collections.IList_Implementation#02](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.IList_Implementation/vb/Program.vb#02)]  
@@ -620,6 +633,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.2.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -651,7 +665,7 @@
    
   
 ## Examples  
- The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple list, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
+ The following example demonstrates the implementation of the <xref:System.Collections.IList> interface to create a simple, fixed-size list. This code is part of a larger example for the <xref:System.Collections.IList> interface.  
   
  [!code-csharp[System.Collections.IList_Implementation#02](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.IList_Implementation/cs/Program.cs#02)]
  [!code-vb[System.Collections.IList_Implementation#02](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.IList_Implementation/vb/Program.vb#02)]  

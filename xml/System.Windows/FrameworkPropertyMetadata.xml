@@ -9,6 +9,7 @@
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Windows.UIPropertyMetadata</BaseTypeName>
@@ -66,6 +67,7 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -93,6 +95,7 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="defaultValue" Type="System.Object" />
@@ -127,6 +130,7 @@
       <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (System.Windows.PropertyChangedCallback propertyChangedCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.PropertyChangedCallback propertyChangedCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Windows.PropertyChangedCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (propertyChangedCallback As PropertyChangedCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkPropertyMetadata(System::Windows::PropertyChangedCallback ^ propertyChangedCallback);" />
       <MemberSignature Language="F#" Value="new System.Windows.FrameworkPropertyMetadata : System.Windows.PropertyChangedCallback -&gt; System.Windows.FrameworkPropertyMetadata" Usage="new System.Windows.FrameworkPropertyMetadata propertyChangedCallback" />
       <MemberType>Constructor</MemberType>
@@ -134,6 +138,7 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="propertyChangedCallback" Type="System.Windows.PropertyChangedCallback" />
@@ -166,6 +171,7 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="defaultValue" Type="System.Object" />
@@ -204,6 +210,7 @@
       <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (object defaultValue, System.Windows.PropertyChangedCallback propertyChangedCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, class System.Windows.PropertyChangedCallback propertyChangedCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.PropertyChangedCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (defaultValue As Object, propertyChangedCallback As PropertyChangedCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkPropertyMetadata(System::Object ^ defaultValue, System::Windows::PropertyChangedCallback ^ propertyChangedCallback);" />
       <MemberSignature Language="F#" Value="new System.Windows.FrameworkPropertyMetadata : obj * System.Windows.PropertyChangedCallback -&gt; System.Windows.FrameworkPropertyMetadata" Usage="new System.Windows.FrameworkPropertyMetadata (defaultValue, propertyChangedCallback)" />
       <MemberType>Constructor</MemberType>
@@ -211,6 +218,7 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="defaultValue" Type="System.Object" />
@@ -247,6 +255,7 @@
       <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (System.Windows.PropertyChangedCallback propertyChangedCallback, System.Windows.CoerceValueCallback coerceValueCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.PropertyChangedCallback propertyChangedCallback, class System.Windows.CoerceValueCallback coerceValueCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (propertyChangedCallback As PropertyChangedCallback, coerceValueCallback As CoerceValueCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkPropertyMetadata(System::Windows::PropertyChangedCallback ^ propertyChangedCallback, System::Windows::CoerceValueCallback ^ coerceValueCallback);" />
       <MemberSignature Language="F#" Value="new System.Windows.FrameworkPropertyMetadata : System.Windows.PropertyChangedCallback * System.Windows.CoerceValueCallback -&gt; System.Windows.FrameworkPropertyMetadata" Usage="new System.Windows.FrameworkPropertyMetadata (propertyChangedCallback, coerceValueCallback)" />
       <MemberType>Constructor</MemberType>
@@ -254,6 +263,7 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="propertyChangedCallback" Type="System.Windows.PropertyChangedCallback" />
@@ -286,6 +296,7 @@
       <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (object defaultValue, System.Windows.FrameworkPropertyMetadataOptions flags, System.Windows.PropertyChangedCallback propertyChangedCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, valuetype System.Windows.FrameworkPropertyMetadataOptions flags, class System.Windows.PropertyChangedCallback propertyChangedCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.FrameworkPropertyMetadataOptions,System.Windows.PropertyChangedCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (defaultValue As Object, flags As FrameworkPropertyMetadataOptions, propertyChangedCallback As PropertyChangedCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkPropertyMetadata(System::Object ^ defaultValue, System::Windows::FrameworkPropertyMetadataOptions flags, System::Windows::PropertyChangedCallback ^ propertyChangedCallback);" />
       <MemberSignature Language="F#" Value="new System.Windows.FrameworkPropertyMetadata : obj * System.Windows.FrameworkPropertyMetadataOptions * System.Windows.PropertyChangedCallback -&gt; System.Windows.FrameworkPropertyMetadata" Usage="new System.Windows.FrameworkPropertyMetadata (defaultValue, flags, propertyChangedCallback)" />
       <MemberType>Constructor</MemberType>
@@ -293,6 +304,7 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="defaultValue" Type="System.Object" />
@@ -333,6 +345,7 @@
       <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (object defaultValue, System.Windows.PropertyChangedCallback propertyChangedCallback, System.Windows.CoerceValueCallback coerceValueCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, class System.Windows.PropertyChangedCallback propertyChangedCallback, class System.Windows.CoerceValueCallback coerceValueCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (defaultValue As Object, propertyChangedCallback As PropertyChangedCallback, coerceValueCallback As CoerceValueCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkPropertyMetadata(System::Object ^ defaultValue, System::Windows::PropertyChangedCallback ^ propertyChangedCallback, System::Windows::CoerceValueCallback ^ coerceValueCallback);" />
       <MemberSignature Language="F#" Value="new System.Windows.FrameworkPropertyMetadata : obj * System.Windows.PropertyChangedCallback * System.Windows.CoerceValueCallback -&gt; System.Windows.FrameworkPropertyMetadata" Usage="new System.Windows.FrameworkPropertyMetadata (defaultValue, propertyChangedCallback, coerceValueCallback)" />
       <MemberType>Constructor</MemberType>
@@ -340,6 +353,7 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="defaultValue" Type="System.Object" />
@@ -378,6 +392,7 @@
       <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (object defaultValue, System.Windows.FrameworkPropertyMetadataOptions flags, System.Windows.PropertyChangedCallback propertyChangedCallback, System.Windows.CoerceValueCallback coerceValueCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, valuetype System.Windows.FrameworkPropertyMetadataOptions flags, class System.Windows.PropertyChangedCallback propertyChangedCallback, class System.Windows.CoerceValueCallback coerceValueCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.FrameworkPropertyMetadataOptions,System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (defaultValue As Object, flags As FrameworkPropertyMetadataOptions, propertyChangedCallback As PropertyChangedCallback, coerceValueCallback As CoerceValueCallback)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkPropertyMetadata(System::Object ^ defaultValue, System::Windows::FrameworkPropertyMetadataOptions flags, System::Windows::PropertyChangedCallback ^ propertyChangedCallback, System::Windows::CoerceValueCallback ^ coerceValueCallback);" />
       <MemberSignature Language="F#" Value="new System.Windows.FrameworkPropertyMetadata : obj * System.Windows.FrameworkPropertyMetadataOptions * System.Windows.PropertyChangedCallback * System.Windows.CoerceValueCallback -&gt; System.Windows.FrameworkPropertyMetadata" Usage="new System.Windows.FrameworkPropertyMetadata (defaultValue, flags, propertyChangedCallback, coerceValueCallback)" />
       <MemberType>Constructor</MemberType>
@@ -385,6 +400,7 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="defaultValue" Type="System.Object" />
@@ -427,6 +443,7 @@
       <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (object defaultValue, System.Windows.FrameworkPropertyMetadataOptions flags, System.Windows.PropertyChangedCallback propertyChangedCallback, System.Windows.CoerceValueCallback coerceValueCallback, bool isAnimationProhibited);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, valuetype System.Windows.FrameworkPropertyMetadataOptions flags, class System.Windows.PropertyChangedCallback propertyChangedCallback, class System.Windows.CoerceValueCallback coerceValueCallback, bool isAnimationProhibited) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.FrameworkPropertyMetadataOptions,System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (defaultValue As Object, flags As FrameworkPropertyMetadataOptions, propertyChangedCallback As PropertyChangedCallback, coerceValueCallback As CoerceValueCallback, isAnimationProhibited As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkPropertyMetadata(System::Object ^ defaultValue, System::Windows::FrameworkPropertyMetadataOptions flags, System::Windows::PropertyChangedCallback ^ propertyChangedCallback, System::Windows::CoerceValueCallback ^ coerceValueCallback, bool isAnimationProhibited);" />
       <MemberSignature Language="F#" Value="new System.Windows.FrameworkPropertyMetadata : obj * System.Windows.FrameworkPropertyMetadataOptions * System.Windows.PropertyChangedCallback * System.Windows.CoerceValueCallback * bool -&gt; System.Windows.FrameworkPropertyMetadata" Usage="new System.Windows.FrameworkPropertyMetadata (defaultValue, flags, propertyChangedCallback, coerceValueCallback, isAnimationProhibited)" />
       <MemberType>Constructor</MemberType>
@@ -434,6 +451,7 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="defaultValue" Type="System.Object" />
@@ -481,6 +499,7 @@
       <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (object defaultValue, System.Windows.FrameworkPropertyMetadataOptions flags, System.Windows.PropertyChangedCallback propertyChangedCallback, System.Windows.CoerceValueCallback coerceValueCallback, bool isAnimationProhibited, System.Windows.Data.UpdateSourceTrigger defaultUpdateSourceTrigger);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, valuetype System.Windows.FrameworkPropertyMetadataOptions flags, class System.Windows.PropertyChangedCallback propertyChangedCallback, class System.Windows.CoerceValueCallback coerceValueCallback, bool isAnimationProhibited, valuetype System.Windows.Data.UpdateSourceTrigger defaultUpdateSourceTrigger) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.FrameworkPropertyMetadataOptions,System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback,System.Boolean,System.Windows.Data.UpdateSourceTrigger)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (defaultValue As Object, flags As FrameworkPropertyMetadataOptions, propertyChangedCallback As PropertyChangedCallback, coerceValueCallback As CoerceValueCallback, isAnimationProhibited As Boolean, defaultUpdateSourceTrigger As UpdateSourceTrigger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkPropertyMetadata(System::Object ^ defaultValue, System::Windows::FrameworkPropertyMetadataOptions flags, System::Windows::PropertyChangedCallback ^ propertyChangedCallback, System::Windows::CoerceValueCallback ^ coerceValueCallback, bool isAnimationProhibited, System::Windows::Data::UpdateSourceTrigger defaultUpdateSourceTrigger);" />
       <MemberSignature Language="F#" Value="new System.Windows.FrameworkPropertyMetadata : obj * System.Windows.FrameworkPropertyMetadataOptions * System.Windows.PropertyChangedCallback * System.Windows.CoerceValueCallback * bool * System.Windows.Data.UpdateSourceTrigger -&gt; System.Windows.FrameworkPropertyMetadata" Usage="new System.Windows.FrameworkPropertyMetadata (defaultValue, flags, propertyChangedCallback, coerceValueCallback, isAnimationProhibited, defaultUpdateSourceTrigger)" />
       <MemberType>Constructor</MemberType>
@@ -488,6 +507,7 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="defaultValue" Type="System.Object" />
@@ -545,6 +565,7 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -595,6 +616,7 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -646,6 +668,7 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -690,6 +713,7 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -734,6 +758,7 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -784,6 +809,7 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -836,6 +862,7 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Data.UpdateSourceTrigger</ReturnType>
@@ -871,6 +898,7 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -922,6 +950,7 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -969,6 +998,7 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1010,6 +1040,7 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1047,6 +1078,7 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1093,6 +1125,7 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1133,6 +1166,7 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1171,6 +1205,7 @@
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

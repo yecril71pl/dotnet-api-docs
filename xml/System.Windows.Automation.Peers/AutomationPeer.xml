@@ -1,14 +1,16 @@
 <Type Name="AutomationPeer" FullName="System.Windows.Automation.Peers.AutomationPeer">
   <TypeSignature Language="C#" Value="public abstract class AutomationPeer : System.Windows.Threading.DispatcherObject" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract AutomationPeer extends System.Windows.Threading.DispatcherObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AutomationPeer extends System.Windows.Threading.DispatcherObject" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-3.0;netframework-3.5;netframework-4.0" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.AutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class AutomationPeer&#xA;Inherits DispatcherObject" />
   <TypeSignature Language="C++ CLI" Value="public ref class AutomationPeer abstract : System::Windows::Threading::DispatcherObject" />
   <TypeSignature Language="F#" Value="type AutomationPeer = class&#xA;    inherit DispatcherObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract AutomationPeer extends System.Windows.Threading.DispatcherObject" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Windows.Threading.DispatcherObject</BaseTypeName>
@@ -38,13 +40,14 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Provides initialization for base class values when they are called by the constructor of a derived class.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="EventsSource">
@@ -59,6 +62,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -90,6 +94,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -101,7 +106,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">A public call to this method is currently in progress.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="GetAcceleratorKeyCore">
@@ -116,6 +121,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -147,6 +153,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -172,6 +179,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -203,6 +211,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
@@ -214,7 +223,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">A public call to this method is currently in progress.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="GetAutomationControlTypeCore">
@@ -229,6 +238,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
@@ -253,6 +263,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -286,6 +297,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -316,6 +328,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Rect</ReturnType>
@@ -340,6 +353,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Rect</ReturnType>
@@ -365,6 +379,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;</ReturnType>
@@ -390,6 +405,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;</ReturnType>
@@ -414,6 +430,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -439,6 +456,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -463,6 +481,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Point</ReturnType>
@@ -495,6 +514,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Point</ReturnType>
@@ -518,6 +538,7 @@
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;</ReturnType>
@@ -541,6 +562,7 @@
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;</ReturnType>
@@ -564,6 +586,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -596,6 +619,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -620,6 +644,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -655,7 +680,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/03b98058-bdb3-47a0-8ff7-45e6cdf67166">UI Automation Tree Overview</related>
+        <related type="Article" href="~/docs/framework/ui-automation/ui-automation-tree-overview.md">UI Automation Tree Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetItemStatus">
@@ -670,6 +695,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -702,6 +728,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -726,6 +753,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -758,6 +786,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -782,6 +811,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationPeer</ReturnType>
@@ -806,7 +836,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">A public call to this method is currently in progress.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="GetLabeledByCore">
@@ -821,6 +851,7 @@
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationPeer</ReturnType>
@@ -831,7 +862,7 @@
         <returns>The <see cref="T:System.Windows.Automation.Peers.LabelAutomationPeer" /> for the element that is targeted by the <see cref="T:System.Windows.Controls.Label" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="GetLiveSetting">
@@ -845,6 +876,7 @@
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationLiveSetting</ReturnType>
@@ -875,6 +907,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationLiveSetting</ReturnType>
@@ -898,6 +931,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -909,7 +943,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">A public call to this method is currently in progress.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="GetLocalizedControlTypeCore">
@@ -924,6 +958,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -934,7 +969,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <returns>The type of the control.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="GetName">
@@ -949,6 +984,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -967,7 +1003,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         </remarks>
         <exception cref="T:System.InvalidOperationException">A public call to this method is currently in progress.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="GetNameCore">
@@ -982,6 +1018,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1001,7 +1038,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="GetOrientation">
@@ -1016,6 +1053,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationOrientation</ReturnType>
@@ -1027,7 +1065,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">A public call to this method is currently in progress.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="GetOrientationCore">
@@ -1042,6 +1080,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationOrientation</ReturnType>
@@ -1052,7 +1091,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <returns>The orientation of the control.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="GetParent">
@@ -1067,6 +1106,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationPeer</ReturnType>
@@ -1077,13 +1117,14 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <returns>The parent automation peer.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="GetPattern">
       <MemberSignature Language="C#" Value="public abstract object GetPattern (System.Windows.Automation.Peers.PatternInterface patternInterface);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.AutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetPattern (patternInterface As PatternInterface) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
       <MemberSignature Language="F#" Value="abstract member GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="automationPeer.GetPattern patternInterface" />
       <MemberType>Method</MemberType>
@@ -1091,6 +1132,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -1104,25 +1146,27 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <returns>The object that implements the pattern interface; <see langword="null" /> if this peer does not support this interface.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="GetPeerFromPoint">
-      <MemberSignature Language="C#" Value="public System.Windows.Automation.Peers.AutomationPeer GetPeerFromPoint (System.Windows.Point point);" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.Peers.AutomationPeer GetPeerFromPoint(valuetype System.Windows.Point point) cil managed" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.AutomationPeer.GetPeerFromPoint(System.Windows.Point)" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Peers::AutomationPeer ^ GetPeerFromPoint(System::Windows::Point point);" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="F#" Value="member this.GetPeerFromPoint : System.Windows.Point -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="automationPeer.GetPeerFromPoint point" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.Peers.AutomationPeer GetPeerFromPoint (System.Windows.Point point);" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.Peers.AutomationPeer GetPeerFromPoint(valuetype System.Windows.Point point) cil managed" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.AutomationPeer.GetPeerFromPoint(System.Windows.Point)" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPeerFromPoint (point As Point) As AutomationPeer" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Peers::AutomationPeer ^ GetPeerFromPoint(System::Windows::Point point);" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="member this.GetPeerFromPoint : System.Windows.Point -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="automationPeer.GetPeerFromPoint point" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationPeer</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="point" Type="System.Windows.Point" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="point" Type="System.Windows.Point" Index="0" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="point">The position on the screen to get the <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> from.</param>
@@ -1135,18 +1179,20 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
       <MemberSignature Language="C#" Value="protected virtual System.Windows.Automation.Peers.AutomationPeer GetPeerFromPointCore (System.Windows.Point point);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Windows.Automation.Peers.AutomationPeer GetPeerFromPointCore(valuetype System.Windows.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.AutomationPeer.GetPeerFromPointCore(System.Windows.Point)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetPeerFromPointCore (point As Point) As AutomationPeer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Windows::Automation::Peers::AutomationPeer ^ GetPeerFromPointCore(System::Windows::Point point);" />
       <MemberSignature Language="F#" Value="abstract member GetPeerFromPointCore : System.Windows.Point -&gt; System.Windows.Automation.Peers.AutomationPeer&#xA;override this.GetPeerFromPointCore : System.Windows.Point -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="automationPeer.GetPeerFromPointCore point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationPeer</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="point" Type="System.Windows.Point" Index="0" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="point" Type="System.Windows.Point" Index="0" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="point">The position on the screen to get the <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> from.</param>
@@ -1166,6 +1212,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1189,6 +1236,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1211,6 +1259,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1234,6 +1283,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1257,6 +1307,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1269,7 +1320,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">A public call to this method is currently in progress.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="HasKeyboardFocusCore">
@@ -1284,6 +1335,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1295,7 +1347,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
           <see langword="true" /> if the element has keyboard focus; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="InvalidatePeer">
@@ -1310,6 +1362,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1328,7 +1381,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsContentElement">
@@ -1343,6 +1396,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1362,7 +1416,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         </remarks>
         <exception cref="T:System.InvalidOperationException">A public call to this method is currently in progress.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsContentElementCore">
@@ -1377,6 +1431,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1388,7 +1443,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
           <see langword="true" /> if the element is a content element; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsControlElement">
@@ -1403,6 +1458,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1415,7 +1471,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">A public call to this method is currently in progress.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsControlElementCore">
@@ -1430,6 +1486,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1441,7 +1498,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
           <see langword="true" /> if the element is a control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -1456,6 +1513,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1468,7 +1526,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">A public call to this method is currently in progress.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsEnabledCore">
@@ -1483,6 +1541,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1494,7 +1553,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
           <see langword="true" /> if the automation peer can receive and send events; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsHwndHost">
@@ -1509,6 +1568,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1542,6 +1602,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1554,7 +1615,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">A public call to this method is currently in progress.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsKeyboardFocusableCore">
@@ -1569,6 +1630,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1580,7 +1642,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
           <see langword="true" /> if the element can accept keyboard focus; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsOffscreen">
@@ -1595,6 +1657,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1614,7 +1677,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         </remarks>
         <exception cref="T:System.InvalidOperationException">A public call to this method is currently in progress.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsOffscreenCore">
@@ -1629,6 +1692,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1640,7 +1704,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
           <see langword="true" /> if the element is not on the screen; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsPassword">
@@ -1655,6 +1719,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1667,7 +1732,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">A public call to this method is currently in progress.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsPasswordCore">
@@ -1682,6 +1747,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1693,7 +1759,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
           <see langword="true" /> if the element contains sensitive content; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsRequiredForForm">
@@ -1708,6 +1774,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1721,7 +1788,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <exception cref="T:System.InvalidOperationException">A public call to this method is currently in progress.</exception>
         <altmember cref="P:System.Windows.Automation.AutomationProperties.IsRequiredForForm" />
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="IsRequiredForFormCore">
@@ -1736,6 +1803,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1747,7 +1815,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
           <see langword="true" /> if the element is must be completed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="ListenerExists">
@@ -1762,6 +1830,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1799,6 +1868,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationPeer</ReturnType>
@@ -1812,7 +1882,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <returns>An <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> for the specified <see cref="T:System.Windows.Automation.Provider.IRawElementProviderSimple" /> proxy.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="ProviderFromPeer">
@@ -1827,6 +1897,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Provider.IRawElementProviderSimple</ReturnType>
@@ -1840,7 +1911,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <returns>The proxy.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="RaiseAsyncContentLoadedEvent">
@@ -1855,6 +1926,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1883,6 +1955,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1909,6 +1982,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1925,7 +1999,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <summary>Raises an event to notify the automation client of a changed property value.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="ResetChildrenCache">
@@ -1940,6 +2014,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -1962,7 +2037,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
         <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="SetFocus">
@@ -1977,6 +2052,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1987,7 +2063,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">A public call to this method is currently in progress.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
     <Member MemberName="SetFocusCore">
@@ -2002,6 +2078,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2011,7 +2088,7 @@ This method calls the derived implementation of <xref:System.Windows.Automation.
         <summary>When overridden in a derived class, is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.SetFocus" />.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/65847654-9994-4a9e-b36d-2dd5d998770b">UI Automation Overview</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+        <related type="Article" href="~/docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md">Server-side UI Automation Provider Implementation</related>
       </Docs>
     </Member>
   </Members>
