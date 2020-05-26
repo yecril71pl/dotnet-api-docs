@@ -1,0 +1,218 @@
+<Type Name="HttpPipeline" FullName="Azure.Core.Pipeline.HttpPipeline">
+  <TypeSignature Language="C#" Value="public class HttpPipeline" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpPipeline extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Azure.Core.Pipeline.HttpPipeline" />
+  <TypeSignature Language="VB.NET" Value="Public Class HttpPipeline" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpPipeline" />
+  <TypeSignature Language="F#" Value="type HttpPipeline = class" />
+  <AssemblyInfo>
+    <AssemblyName>Azure.Core</AssemblyName>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HttpPipeline (Azure.Core.Pipeline.HttpPipelineTransport transport, Azure.Core.Pipeline.HttpPipelinePolicy[] policies = default, Azure.Core.ResponseClassifier responseClassifier = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Azure.Core.Pipeline.HttpPipelineTransport transport, class Azure.Core.Pipeline.HttpPipelinePolicy[] policies, class Azure.Core.ResponseClassifier responseClassifier) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Core.Pipeline.HttpPipeline.#ctor(Azure.Core.Pipeline.HttpPipelineTransport,Azure.Core.Pipeline.HttpPipelinePolicy[],Azure.Core.ResponseClassifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (transport As HttpPipelineTransport, Optional policies As HttpPipelinePolicy() = null, Optional responseClassifier As ResponseClassifier = null)" />
+      <MemberSignature Language="F#" Value="new Azure.Core.Pipeline.HttpPipeline : Azure.Core.Pipeline.HttpPipelineTransport * Azure.Core.Pipeline.HttpPipelinePolicy[] * Azure.Core.ResponseClassifier -&gt; Azure.Core.Pipeline.HttpPipeline" Usage="new Azure.Core.Pipeline.HttpPipeline (transport, policies, responseClassifier)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Core</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="transport" Type="Azure.Core.Pipeline.HttpPipelineTransport" />
+        <Parameter Name="policies" Type="Azure.Core.Pipeline.HttpPipelinePolicy[]" />
+        <Parameter Name="responseClassifier" Type="Azure.Core.ResponseClassifier" />
+      </Parameters>
+      <Docs>
+        <param name="transport">To be added.</param>
+        <param name="policies">To be added.</param>
+        <param name="responseClassifier">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateMessage">
+      <MemberSignature Language="C#" Value="public Azure.Core.HttpMessage CreateMessage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.Core.HttpMessage CreateMessage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Core.Pipeline.HttpPipeline.CreateMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateMessage () As HttpMessage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Azure::Core::HttpMessage ^ CreateMessage();" />
+      <MemberSignature Language="F#" Value="member this.CreateMessage : unit -&gt; Azure.Core.HttpMessage" Usage="httpPipeline.CreateMessage " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Core</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Core.HttpMessage</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRequest">
+      <MemberSignature Language="C#" Value="public Azure.Core.Request CreateRequest ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.Core.Request CreateRequest() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Core.Pipeline.HttpPipeline.CreateRequest" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateRequest () As Request" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Azure::Core::Request ^ CreateRequest();" />
+      <MemberSignature Language="F#" Value="member this.CreateRequest : unit -&gt; Azure.Core.Request" Usage="httpPipeline.CreateRequest " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Core</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Core.Request</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseClassifier">
+      <MemberSignature Language="C#" Value="public Azure.Core.ResponseClassifier ResponseClassifier { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Azure.Core.ResponseClassifier ResponseClassifier" />
+      <MemberSignature Language="DocId" Value="P:Azure.Core.Pipeline.HttpPipeline.ResponseClassifier" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResponseClassifier As ResponseClassifier" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Azure::Core::ResponseClassifier ^ ResponseClassifier { Azure::Core::ResponseClassifier ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResponseClassifier : Azure.Core.ResponseClassifier" Usage="Azure.Core.Pipeline.HttpPipeline.ResponseClassifier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Core</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Core.ResponseClassifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Send">
+      <MemberSignature Language="C#" Value="public void Send (Azure.Core.HttpMessage message, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Send(class Azure.Core.HttpMessage message, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Core.Pipeline.HttpPipeline.Send(Azure.Core.HttpMessage,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Send (message As HttpMessage, cancellationToken As CancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Send(Azure::Core::HttpMessage ^ message, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="member this.Send : Azure.Core.HttpMessage * System.Threading.CancellationToken -&gt; unit" Usage="httpPipeline.Send (message, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Core</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="Azure.Core.HttpMessage" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.ValueTask SendAsync (Azure.Core.HttpMessage message, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Threading.Tasks.ValueTask SendAsync(class Azure.Core.HttpMessage message, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Core.Pipeline.HttpPipeline.SendAsync(Azure.Core.HttpMessage,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendAsync (message As HttpMessage, cancellationToken As CancellationToken) As ValueTask" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::ValueTask SendAsync(Azure::Core::HttpMessage ^ message, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="member this.SendAsync : Azure.Core.HttpMessage * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask" Usage="httpPipeline.SendAsync (message, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Core</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="Azure.Core.HttpMessage" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendRequest">
+      <MemberSignature Language="C#" Value="public Azure.Response SendRequest (Azure.Core.Request request, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Azure.Response SendRequest(class Azure.Core.Request request, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Core.Pipeline.HttpPipeline.SendRequest(Azure.Core.Request,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendRequest (request As Request, cancellationToken As CancellationToken) As Response" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Azure::Response ^ SendRequest(Azure::Core::Request ^ request, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="member this.SendRequest : Azure.Core.Request * System.Threading.CancellationToken -&gt; Azure.Response" Usage="httpPipeline.SendRequest (request, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Core</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Azure.Response</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Azure.Core.Request" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="request">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendRequestAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.ValueTask&lt;Azure.Response&gt; SendRequestAsync (Azure.Core.Request request, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Threading.Tasks.ValueTask`1&lt;class Azure.Response&gt; SendRequestAsync(class Azure.Core.Request request, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Azure.Core.Pipeline.HttpPipeline.SendRequestAsync(Azure.Core.Request,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendRequestAsync (request As Request, cancellationToken As CancellationToken) As ValueTask(Of Response)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::ValueTask&lt;Azure::Response ^&gt; SendRequestAsync(Azure::Core::Request ^ request, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="member this.SendRequestAsync : Azure.Core.Request * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;Azure.Response&gt;" Usage="httpPipeline.SendRequestAsync (request, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Azure.Core</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask&lt;Azure.Response&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Azure.Core.Request" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="request">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

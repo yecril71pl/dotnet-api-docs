@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Framework Name="azurecore-1.6.0">
+  <Assemblies>
+    <Assembly Name="Azure.Core" Version="1.3.0.0" />
+  </Assemblies>
+  <Namespace Name="Azure">
+    <Type Name="Azure.AsyncPageable`1" Id="T:Azure.AsyncPageable`1">
+      <Member Id="M:Azure.AsyncPageable`1.#ctor" />
+      <Member Id="M:Azure.AsyncPageable`1.#ctor(System.Threading.CancellationToken)" />
+      <Member Id="M:Azure.AsyncPageable`1.AsPages(System.String,System.Nullable{System.Int32})" />
+      <Member Id="M:Azure.AsyncPageable`1.Equals(System.Object)" />
+      <Member Id="M:Azure.AsyncPageable`1.GetAsyncEnumerator(System.Threading.CancellationToken)" />
+      <Member Id="M:Azure.AsyncPageable`1.GetHashCode" />
+      <Member Id="M:Azure.AsyncPageable`1.ToString" />
+      <Member Id="P:Azure.AsyncPageable`1.CancellationToken" />
+    </Type>
+    <Type Name="Azure.AzureKeyCredential" Id="T:Azure.AzureKeyCredential">
+      <Member Id="M:Azure.AzureKeyCredential.#ctor(System.String)" />
+      <Member Id="M:Azure.AzureKeyCredential.Update(System.String)" />
+      <Member Id="P:Azure.AzureKeyCredential.Key" />
+    </Type>
+    <Type Name="Azure.ETag" Id="T:Azure.ETag">
+      <Member Id="F:Azure.ETag.All" />
+      <Member Id="M:Azure.ETag.#ctor(System.String)" />
+      <Member Id="M:Azure.ETag.Equals(Azure.ETag)" />
+      <Member Id="M:Azure.ETag.Equals(System.Object)" />
+      <Member Id="M:Azure.ETag.Equals(System.String)" />
+      <Member Id="M:Azure.ETag.GetHashCode" />
+      <Member Id="M:Azure.ETag.op_Equality(Azure.ETag,Azure.ETag)" />
+      <Member Id="M:Azure.ETag.op_Inequality(Azure.ETag,Azure.ETag)" />
+      <Member Id="M:Azure.ETag.ToString" />
+    </Type>
+    <Type Name="Azure.HttpRange" Id="T:Azure.HttpRange">
+      <Member Id="M:Azure.HttpRange.#ctor(System.Int64,System.Nullable{System.Int64})" />
+      <Member Id="M:Azure.HttpRange.Equals(Azure.HttpRange)" />
+      <Member Id="M:Azure.HttpRange.Equals(System.Object)" />
+      <Member Id="M:Azure.HttpRange.GetHashCode" />
+      <Member Id="M:Azure.HttpRange.op_Equality(Azure.HttpRange,Azure.HttpRange)" />
+      <Member Id="M:Azure.HttpRange.op_Inequality(Azure.HttpRange,Azure.HttpRange)" />
+      <Member Id="M:Azure.HttpRange.ToString" />
+      <Member Id="P:Azure.HttpRange.Length" />
+      <Member Id="P:Azure.HttpRange.Offset" />
+    </Type>
+    <Type Name="Azure.MatchConditions" Id="T:Azure.MatchConditions">
+      <Member Id="M:Azure.MatchConditions.#ctor" />
+      <Member Id="P:Azure.MatchConditions.IfMatch" />
+      <Member Id="P:Azure.MatchConditions.IfNoneMatch" />
+    </Type>
+    <Type Name="Azure.Operation`1" Id="T:Azure.Operation`1">
+      <Member Id="M:Azure.Operation`1.#ctor" />
+      <Member Id="M:Azure.Operation`1.Equals(System.Object)" />
+      <Member Id="M:Azure.Operation`1.GetHashCode" />
+      <Member Id="M:Azure.Operation`1.GetRawResponse" />
+      <Member Id="M:Azure.Operation`1.ToString" />
+      <Member Id="M:Azure.Operation`1.UpdateStatus(System.Threading.CancellationToken)" />
+      <Member Id="M:Azure.Operation`1.UpdateStatusAsync(System.Threading.CancellationToken)" />
+      <Member Id="M:Azure.Operation`1.WaitForCompletionAsync(System.Threading.CancellationToken)" />
+      <Member Id="M:Azure.Operation`1.WaitForCompletionAsync(System.TimeSpan,System.Threading.CancellationToken)" />
+      <Member Id="P:Azure.Operation`1.HasCompleted" />
+      <Member Id="P:Azure.Operation`1.HasValue" />
+      <Member Id="P:Azure.Operation`1.Id" />
+      <Member Id="P:Azure.Operation`1.Value" />
+    </Type>
+    <Type Name="Azure.Page`1" Id="T:Azure.Page`1">
+      <Member Id="M:Azure.Page`1.#ctor" />
+      <Member Id="M:Azure.Page`1.Equals(System.Object)" />
+      <Member Id="M:Azure.Page`1.FromValues(System.Collections.Generic.IReadOnlyList{`0},System.String,Azure.Response)" />
+      <Member Id="M:Azure.Page`1.GetHashCode" />
+      <Member Id="M:Azure.Page`1.GetRawResponse" />
+      <Member Id="M:Azure.Page`1.ToString" />
+      <Member Id="P:Azure.Page`1.ContinuationToken" />
+      <Member Id="P:Azure.Page`1.Values" />
+    </Type>
+    <Type Name="Azure.Pageable`1" Id="T:Azure.Pageable`1">
+      <Member Id="M:Azure.Pageable`1.#ctor" />
+      <Member Id="M:Azure.Pageable`1.#ctor(System.Threading.CancellationToken)" />
+      <Member Id="M:Azure.Pageable`1.AsPages(System.String,System.Nullable{System.Int32})" />
+      <Member Id="M:Azure.Pageable`1.Equals(System.Object)" />
+      <Member Id="M:Azure.Pageable`1.GetEnumerator" />
+      <Member Id="M:Azure.Pageable`1.GetHashCode" />
+      <Member Id="M:Azure.Pageable`1.System#Collections#IEnumerable#GetEnumerator" />
+      <Member Id="M:Azure.Pageable`1.ToString" />
+      <Member Id="P:Azure.Pageable`1.CancellationToken" />
+    </Type>
+    <Type Name="Azure.RequestConditions" Id="T:Azure.RequestConditions">
+      <Member Id="M:Azure.RequestConditions.#ctor" />
+      <Member Id="P:Azure.RequestConditions.IfModifiedSince" />
+      <Member Id="P:Azure.RequestConditions.IfUnmodifiedSince" />
+    </Type>
+    <Type Name="Azure.RequestFailedException" Id="T:Azure.RequestFailedException">
+      <Member Id="M:Azure.RequestFailedException.#ctor(System.Int32,System.String)" />
+      <Member Id="M:Azure.RequestFailedException.#ctor(System.Int32,System.String,System.Exception)" />
+      <Member Id="M:Azure.RequestFailedException.#ctor(System.Int32,System.String,System.String,System.Exception)" />
+      <Member Id="M:Azure.RequestFailedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <Member Id="M:Azure.RequestFailedException.#ctor(System.String)" />
+      <Member Id="M:Azure.RequestFailedException.#ctor(System.String,System.Exception)" />
+      <Member Id="M:Azure.RequestFailedException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <Member Id="P:Azure.RequestFailedException.ErrorCode" />
+      <Member Id="P:Azure.RequestFailedException.Status" />
+    </Type>
+    <Type Name="Azure.Response" Id="T:Azure.Response">
+      <Member Id="M:Azure.Response.#ctor" />
+      <Member Id="M:Azure.Response.ContainsHeader(System.String)" />
+      <Member Id="M:Azure.Response.Dispose" />
+      <Member Id="M:Azure.Response.EnumerateHeaders" />
+      <Member Id="M:Azure.Response.FromValue``1(``0,Azure.Response)" />
+      <Member Id="M:Azure.Response.ToString" />
+      <Member Id="M:Azure.Response.TryGetHeader(System.String,System.String@)" />
+      <Member Id="M:Azure.Response.TryGetHeaderValues(System.String,System.Collections.Generic.IEnumerable{System.String}@)" />
+      <Member Id="P:Azure.Response.ClientRequestId" />
+      <Member Id="P:Azure.Response.ContentStream" />
+      <Member Id="P:Azure.Response.Headers" />
+      <Member Id="P:Azure.Response.ReasonPhrase" />
+      <Member Id="P:Azure.Response.Status" />
+    </Type>
+    <Type Name="Azure.Response`1" Id="T:Azure.Response`1">
+      <Member Id="M:Azure.Response`1.#ctor" />
+      <Member Id="M:Azure.Response`1.Equals(System.Object)" />
+      <Member Id="M:Azure.Response`1.GetHashCode" />
+      <Member Id="M:Azure.Response`1.GetRawResponse" />
+      <Member Id="M:Azure.Response`1.op_Implicit(Azure.Response{`0})~`0" />
+      <Member Id="M:Azure.Response`1.ToString" />
+      <Member Id="P:Azure.Response`1.Value" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Azure.Core">
+    <Type Name="Azure.Core.AccessToken" Id="T:Azure.Core.AccessToken">
+      <Member Id="M:Azure.Core.AccessToken.#ctor(System.String,System.DateTimeOffset)" />
+      <Member Id="M:Azure.Core.AccessToken.Equals(System.Object)" />
+      <Member Id="M:Azure.Core.AccessToken.GetHashCode" />
+      <Member Id="P:Azure.Core.AccessToken.ExpiresOn" />
+      <Member Id="P:Azure.Core.AccessToken.Token" />
+    </Type>
+    <Type Name="Azure.Core.ClientOptions" Id="T:Azure.Core.ClientOptions">
+      <Member Id="M:Azure.Core.ClientOptions.#ctor" />
+      <Member Id="M:Azure.Core.ClientOptions.AddPolicy(Azure.Core.Pipeline.HttpPipelinePolicy,Azure.Core.HttpPipelinePosition)" />
+      <Member Id="M:Azure.Core.ClientOptions.Equals(System.Object)" />
+      <Member Id="M:Azure.Core.ClientOptions.GetHashCode" />
+      <Member Id="M:Azure.Core.ClientOptions.ToString" />
+      <Member Id="P:Azure.Core.ClientOptions.Diagnostics" />
+      <Member Id="P:Azure.Core.ClientOptions.Retry" />
+      <Member Id="P:Azure.Core.ClientOptions.Transport" />
+    </Type>
+    <Type Name="Azure.Core.DiagnosticsOptions" Id="T:Azure.Core.DiagnosticsOptions">
+      <Member Id="P:Azure.Core.DiagnosticsOptions.ApplicationId" />
+      <Member Id="P:Azure.Core.DiagnosticsOptions.DefaultApplicationId" />
+      <Member Id="P:Azure.Core.DiagnosticsOptions.IsDistributedTracingEnabled" />
+      <Member Id="P:Azure.Core.DiagnosticsOptions.IsLoggingContentEnabled" />
+      <Member Id="P:Azure.Core.DiagnosticsOptions.IsLoggingEnabled" />
+      <Member Id="P:Azure.Core.DiagnosticsOptions.IsTelemetryEnabled" />
+      <Member Id="P:Azure.Core.DiagnosticsOptions.LoggedContentSizeLimit" />
+      <Member Id="P:Azure.Core.DiagnosticsOptions.LoggedHeaderNames" />
+      <Member Id="P:Azure.Core.DiagnosticsOptions.LoggedQueryParameters" />
+    </Type>
+    <Type Name="Azure.Core.HttpHeader" Id="T:Azure.Core.HttpHeader">
+      <Member Id="M:Azure.Core.HttpHeader.#ctor(System.String,System.String)" />
+      <Member Id="M:Azure.Core.HttpHeader.Equals(Azure.Core.HttpHeader)" />
+      <Member Id="M:Azure.Core.HttpHeader.Equals(System.Object)" />
+      <Member Id="M:Azure.Core.HttpHeader.GetHashCode" />
+      <Member Id="M:Azure.Core.HttpHeader.ToString" />
+      <Member Id="P:Azure.Core.HttpHeader.Name" />
+      <Member Id="P:Azure.Core.HttpHeader.Value" />
+    </Type>
+    <Type Name="Azure.Core.HttpHeader/Common" Id="T:Azure.Core.HttpHeader.Common">
+      <Member Id="F:Azure.Core.HttpHeader.Common.FormUrlEncodedContentType" />
+      <Member Id="F:Azure.Core.HttpHeader.Common.JsonAccept" />
+      <Member Id="F:Azure.Core.HttpHeader.Common.JsonContentType" />
+      <Member Id="F:Azure.Core.HttpHeader.Common.OctetStreamContentType" />
+    </Type>
+    <Type Name="Azure.Core.HttpHeader/Names" Id="T:Azure.Core.HttpHeader.Names">
+      <Member Id="P:Azure.Core.HttpHeader.Names.Accept" />
+      <Member Id="P:Azure.Core.HttpHeader.Names.Authorization" />
+      <Member Id="P:Azure.Core.HttpHeader.Names.ContentLength" />
+      <Member Id="P:Azure.Core.HttpHeader.Names.ContentType" />
+      <Member Id="P:Azure.Core.HttpHeader.Names.Date" />
+      <Member Id="P:Azure.Core.HttpHeader.Names.ETag" />
+      <Member Id="P:Azure.Core.HttpHeader.Names.IfMatch" />
+      <Member Id="P:Azure.Core.HttpHeader.Names.IfModifiedSince" />
+      <Member Id="P:Azure.Core.HttpHeader.Names.IfNoneMatch" />
+      <Member Id="P:Azure.Core.HttpHeader.Names.IfUnmodifiedSince" />
+      <Member Id="P:Azure.Core.HttpHeader.Names.Range" />
+      <Member Id="P:Azure.Core.HttpHeader.Names.UserAgent" />
+      <Member Id="P:Azure.Core.HttpHeader.Names.XMsDate" />
+      <Member Id="P:Azure.Core.HttpHeader.Names.XMsRange" />
+      <Member Id="P:Azure.Core.HttpHeader.Names.XMsRequestId" />
+    </Type>
+    <Type Name="Azure.Core.HttpMessage" Id="T:Azure.Core.HttpMessage">
+      <Member Id="M:Azure.Core.HttpMessage.#ctor(Azure.Core.Request,Azure.Core.ResponseClassifier)" />
+      <Member Id="M:Azure.Core.HttpMessage.Dispose" />
+      <Member Id="M:Azure.Core.HttpMessage.ExtractResponseContent" />
+      <Member Id="M:Azure.Core.HttpMessage.SetProperty(System.String,System.Object)" />
+      <Member Id="M:Azure.Core.HttpMessage.TryGetProperty(System.String,System.Object@)" />
+      <Member Id="P:Azure.Core.HttpMessage.BufferResponse" />
+      <Member Id="P:Azure.Core.HttpMessage.CancellationToken" />
+      <Member Id="P:Azure.Core.HttpMessage.HasResponse" />
+      <Member Id="P:Azure.Core.HttpMessage.Request" />
+      <Member Id="P:Azure.Core.HttpMessage.Response" />
+      <Member Id="P:Azure.Core.HttpMessage.ResponseClassifier" />
+    </Type>
+    <Type Name="Azure.Core.HttpPipelinePosition" Id="T:Azure.Core.HttpPipelinePosition">
+      <Member Id="F:Azure.Core.HttpPipelinePosition.PerCall" />
+      <Member Id="F:Azure.Core.HttpPipelinePosition.PerRetry" />
+    </Type>
+    <Type Name="Azure.Core.Request" Id="T:Azure.Core.Request">
+      <Member Id="M:Azure.Core.Request.#ctor" />
+      <Member Id="M:Azure.Core.Request.AddHeader(System.String,System.String)" />
+      <Member Id="M:Azure.Core.Request.ContainsHeader(System.String)" />
+      <Member Id="M:Azure.Core.Request.Dispose" />
+      <Member Id="M:Azure.Core.Request.EnumerateHeaders" />
+      <Member Id="M:Azure.Core.Request.RemoveHeader(System.String)" />
+      <Member Id="M:Azure.Core.Request.SetHeader(System.String,System.String)" />
+      <Member Id="M:Azure.Core.Request.TryGetHeader(System.String,System.String@)" />
+      <Member Id="M:Azure.Core.Request.TryGetHeaderValues(System.String,System.Collections.Generic.IEnumerable{System.String}@)" />
+      <Member Id="P:Azure.Core.Request.ClientRequestId" />
+      <Member Id="P:Azure.Core.Request.Content" />
+      <Member Id="P:Azure.Core.Request.Headers" />
+      <Member Id="P:Azure.Core.Request.Method" />
+      <Member Id="P:Azure.Core.Request.Uri" />
+    </Type>
+    <Type Name="Azure.Core.RequestContent" Id="T:Azure.Core.RequestContent">
+      <Member Id="M:Azure.Core.RequestContent.#ctor" />
+      <Member Id="M:Azure.Core.RequestContent.Create(System.Buffers.ReadOnlySequence{System.Byte})" />
+      <Member Id="M:Azure.Core.RequestContent.Create(System.Byte[])" />
+      <Member Id="M:Azure.Core.RequestContent.Create(System.Byte[],System.Int32,System.Int32)" />
+      <Member Id="M:Azure.Core.RequestContent.Create(System.IO.Stream)" />
+      <Member Id="M:Azure.Core.RequestContent.Create(System.ReadOnlyMemory{System.Byte})" />
+      <Member Id="M:Azure.Core.RequestContent.Dispose" />
+      <Member Id="M:Azure.Core.RequestContent.TryComputeLength(System.Int64@)" />
+      <Member Id="M:Azure.Core.RequestContent.WriteTo(System.IO.Stream,System.Threading.CancellationToken)" />
+      <Member Id="M:Azure.Core.RequestContent.WriteToAsync(System.IO.Stream,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Azure.Core.RequestHeaders" Id="T:Azure.Core.RequestHeaders">
+      <Member Id="M:Azure.Core.RequestHeaders.Add(Azure.Core.HttpHeader)" />
+      <Member Id="M:Azure.Core.RequestHeaders.Add(System.String,System.String)" />
+      <Member Id="M:Azure.Core.RequestHeaders.Contains(System.String)" />
+      <Member Id="M:Azure.Core.RequestHeaders.GetEnumerator" />
+      <Member Id="M:Azure.Core.RequestHeaders.Remove(System.String)" />
+      <Member Id="M:Azure.Core.RequestHeaders.SetValue(System.String,System.String)" />
+      <Member Id="M:Azure.Core.RequestHeaders.System#Collections#IEnumerable#GetEnumerator" />
+      <Member Id="M:Azure.Core.RequestHeaders.TryGetValue(System.String,System.String@)" />
+      <Member Id="M:Azure.Core.RequestHeaders.TryGetValues(System.String,System.Collections.Generic.IEnumerable{System.String}@)" />
+    </Type>
+    <Type Name="Azure.Core.RequestMethod" Id="T:Azure.Core.RequestMethod">
+      <Member Id="M:Azure.Core.RequestMethod.#ctor(System.String)" />
+      <Member Id="M:Azure.Core.RequestMethod.Equals(Azure.Core.RequestMethod)" />
+      <Member Id="M:Azure.Core.RequestMethod.Equals(System.Object)" />
+      <Member Id="M:Azure.Core.RequestMethod.GetHashCode" />
+      <Member Id="M:Azure.Core.RequestMethod.op_Equality(Azure.Core.RequestMethod,Azure.Core.RequestMethod)" />
+      <Member Id="M:Azure.Core.RequestMethod.op_Inequality(Azure.Core.RequestMethod,Azure.Core.RequestMethod)" />
+      <Member Id="M:Azure.Core.RequestMethod.Parse(System.String)" />
+      <Member Id="M:Azure.Core.RequestMethod.ToString" />
+      <Member Id="P:Azure.Core.RequestMethod.Delete" />
+      <Member Id="P:Azure.Core.RequestMethod.Get" />
+      <Member Id="P:Azure.Core.RequestMethod.Head" />
+      <Member Id="P:Azure.Core.RequestMethod.Method" />
+      <Member Id="P:Azure.Core.RequestMethod.Options" />
+      <Member Id="P:Azure.Core.RequestMethod.Patch" />
+      <Member Id="P:Azure.Core.RequestMethod.Post" />
+      <Member Id="P:Azure.Core.RequestMethod.Put" />
+      <Member Id="P:Azure.Core.RequestMethod.Trace" />
+    </Type>
+    <Type Name="Azure.Core.RequestUriBuilder" Id="T:Azure.Core.RequestUriBuilder">
+      <Member Id="M:Azure.Core.RequestUriBuilder.#ctor" />
+      <Member Id="M:Azure.Core.RequestUriBuilder.AppendPath(System.String)" />
+      <Member Id="M:Azure.Core.RequestUriBuilder.AppendPath(System.String,System.Boolean)" />
+      <Member Id="M:Azure.Core.RequestUriBuilder.AppendQuery(System.String,System.String)" />
+      <Member Id="M:Azure.Core.RequestUriBuilder.AppendQuery(System.String,System.String,System.Boolean)" />
+      <Member Id="M:Azure.Core.RequestUriBuilder.Reset(System.Uri)" />
+      <Member Id="M:Azure.Core.RequestUriBuilder.ToString" />
+      <Member Id="M:Azure.Core.RequestUriBuilder.ToUri" />
+      <Member Id="P:Azure.Core.RequestUriBuilder.Host" />
+      <Member Id="P:Azure.Core.RequestUriBuilder.Path" />
+      <Member Id="P:Azure.Core.RequestUriBuilder.PathAndQuery" />
+      <Member Id="P:Azure.Core.RequestUriBuilder.Port" />
+      <Member Id="P:Azure.Core.RequestUriBuilder.Query" />
+      <Member Id="P:Azure.Core.RequestUriBuilder.Scheme" />
+    </Type>
+    <Type Name="Azure.Core.ResponseClassifier" Id="T:Azure.Core.ResponseClassifier">
+      <Member Id="M:Azure.Core.ResponseClassifier.#ctor" />
+      <Member Id="M:Azure.Core.ResponseClassifier.IsErrorResponse(Azure.Core.HttpMessage)" />
+      <Member Id="M:Azure.Core.ResponseClassifier.IsRetriable(Azure.Core.HttpMessage,System.Exception)" />
+      <Member Id="M:Azure.Core.ResponseClassifier.IsRetriableException(System.Exception)" />
+      <Member Id="M:Azure.Core.ResponseClassifier.IsRetriableResponse(Azure.Core.HttpMessage)" />
+    </Type>
+    <Type Name="Azure.Core.ResponseHeaders" Id="T:Azure.Core.ResponseHeaders">
+      <Member Id="M:Azure.Core.ResponseHeaders.Contains(System.String)" />
+      <Member Id="M:Azure.Core.ResponseHeaders.GetEnumerator" />
+      <Member Id="M:Azure.Core.ResponseHeaders.System#Collections#IEnumerable#GetEnumerator" />
+      <Member Id="M:Azure.Core.ResponseHeaders.TryGetValue(System.String,System.String@)" />
+      <Member Id="M:Azure.Core.ResponseHeaders.TryGetValues(System.String,System.Collections.Generic.IEnumerable{System.String}@)" />
+      <Member Id="P:Azure.Core.ResponseHeaders.ContentLength" />
+      <Member Id="P:Azure.Core.ResponseHeaders.ContentType" />
+      <Member Id="P:Azure.Core.ResponseHeaders.Date" />
+      <Member Id="P:Azure.Core.ResponseHeaders.ETag" />
+      <Member Id="P:Azure.Core.ResponseHeaders.RequestId" />
+    </Type>
+    <Type Name="Azure.Core.RetryMode" Id="T:Azure.Core.RetryMode">
+      <Member Id="F:Azure.Core.RetryMode.Exponential" />
+      <Member Id="F:Azure.Core.RetryMode.Fixed" />
+    </Type>
+    <Type Name="Azure.Core.RetryOptions" Id="T:Azure.Core.RetryOptions">
+      <Member Id="P:Azure.Core.RetryOptions.Delay" />
+      <Member Id="P:Azure.Core.RetryOptions.MaxDelay" />
+      <Member Id="P:Azure.Core.RetryOptions.MaxRetries" />
+      <Member Id="P:Azure.Core.RetryOptions.Mode" />
+      <Member Id="P:Azure.Core.RetryOptions.NetworkTimeout" />
+    </Type>
+    <Type Name="Azure.Core.TokenCredential" Id="T:Azure.Core.TokenCredential">
+      <Member Id="M:Azure.Core.TokenCredential.#ctor" />
+      <Member Id="M:Azure.Core.TokenCredential.GetToken(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)" />
+      <Member Id="M:Azure.Core.TokenCredential.GetTokenAsync(Azure.Core.TokenRequestContext,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Azure.Core.TokenRequestContext" Id="T:Azure.Core.TokenRequestContext">
+      <Member Id="M:Azure.Core.TokenRequestContext.#ctor(System.String[],System.String)" />
+      <Member Id="P:Azure.Core.TokenRequestContext.ParentRequestId" />
+      <Member Id="P:Azure.Core.TokenRequestContext.Scopes" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Azure.Core.Cryptography">
+    <Type Name="Azure.Core.Cryptography.IKeyEncryptionKey" Id="T:Azure.Core.Cryptography.IKeyEncryptionKey">
+      <Member Id="M:Azure.Core.Cryptography.IKeyEncryptionKey.UnwrapKey(System.String,System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)" />
+      <Member Id="M:Azure.Core.Cryptography.IKeyEncryptionKey.UnwrapKeyAsync(System.String,System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)" />
+      <Member Id="M:Azure.Core.Cryptography.IKeyEncryptionKey.WrapKey(System.String,System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)" />
+      <Member Id="M:Azure.Core.Cryptography.IKeyEncryptionKey.WrapKeyAsync(System.String,System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)" />
+      <Member Id="P:Azure.Core.Cryptography.IKeyEncryptionKey.KeyId" />
+    </Type>
+    <Type Name="Azure.Core.Cryptography.IKeyEncryptionKeyResolver" Id="T:Azure.Core.Cryptography.IKeyEncryptionKeyResolver">
+      <Member Id="M:Azure.Core.Cryptography.IKeyEncryptionKeyResolver.Resolve(System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Azure.Core.Cryptography.IKeyEncryptionKeyResolver.ResolveAsync(System.String,System.Threading.CancellationToken)" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Azure.Core.Diagnostics">
+    <Type Name="Azure.Core.Diagnostics.AzureEventSourceListener" Id="T:Azure.Core.Diagnostics.AzureEventSourceListener">
+      <Member Id="F:Azure.Core.Diagnostics.AzureEventSourceListener.TraitName" />
+      <Member Id="F:Azure.Core.Diagnostics.AzureEventSourceListener.TraitValue" />
+      <Member Id="M:Azure.Core.Diagnostics.AzureEventSourceListener.#ctor(System.Action{System.Diagnostics.Tracing.EventWrittenEventArgs,System.String},System.Diagnostics.Tracing.EventLevel)" />
+      <Member Id="M:Azure.Core.Diagnostics.AzureEventSourceListener.CreateConsoleLogger(System.Diagnostics.Tracing.EventLevel)" />
+      <Member Id="M:Azure.Core.Diagnostics.AzureEventSourceListener.CreateTraceLogger(System.Diagnostics.Tracing.EventLevel)" />
+      <Member Id="M:Azure.Core.Diagnostics.AzureEventSourceListener.OnEventSourceCreated(System.Diagnostics.Tracing.EventSource)" />
+      <Member Id="M:Azure.Core.Diagnostics.AzureEventSourceListener.OnEventWritten(System.Diagnostics.Tracing.EventWrittenEventArgs)" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Azure.Core.Extensions">
+    <Type Name="Azure.Core.Extensions.IAzureClientBuilder`2" Id="T:Azure.Core.Extensions.IAzureClientBuilder`2" />
+    <Type Name="Azure.Core.Extensions.IAzureClientFactoryBuilder" Id="T:Azure.Core.Extensions.IAzureClientFactoryBuilder">
+      <Member Id="M:Azure.Core.Extensions.IAzureClientFactoryBuilder.RegisterClientFactory``2(System.Func{``1,``0})" />
+    </Type>
+    <Type Name="Azure.Core.Extensions.IAzureClientFactoryBuilderWithConfiguration`1" Id="T:Azure.Core.Extensions.IAzureClientFactoryBuilderWithConfiguration`1">
+      <Member Id="M:Azure.Core.Extensions.IAzureClientFactoryBuilderWithConfiguration`1.RegisterClientFactory``2(`0)" />
+    </Type>
+    <Type Name="Azure.Core.Extensions.IAzureClientFactoryBuilderWithCredential" Id="T:Azure.Core.Extensions.IAzureClientFactoryBuilderWithCredential">
+      <Member Id="M:Azure.Core.Extensions.IAzureClientFactoryBuilderWithCredential.RegisterClientFactory``2(System.Func{``1,Azure.Core.TokenCredential,``0},System.Boolean)" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Azure.Core.Pipeline">
+    <Type Name="Azure.Core.Pipeline.BearerTokenAuthenticationPolicy" Id="T:Azure.Core.Pipeline.BearerTokenAuthenticationPolicy">
+      <Member Id="M:Azure.Core.Pipeline.BearerTokenAuthenticationPolicy.#ctor(Azure.Core.TokenCredential,System.Collections.Generic.IEnumerable{System.String})" />
+      <Member Id="M:Azure.Core.Pipeline.BearerTokenAuthenticationPolicy.#ctor(Azure.Core.TokenCredential,System.String)" />
+      <Member Id="M:Azure.Core.Pipeline.BearerTokenAuthenticationPolicy.Process(Azure.Core.HttpMessage,System.ReadOnlyMemory{Azure.Core.Pipeline.HttpPipelinePolicy})" />
+      <Member Id="M:Azure.Core.Pipeline.BearerTokenAuthenticationPolicy.ProcessAsync(Azure.Core.HttpMessage,System.ReadOnlyMemory{Azure.Core.Pipeline.HttpPipelinePolicy})" />
+    </Type>
+    <Type Name="Azure.Core.Pipeline.HttpClientTransport" Id="T:Azure.Core.Pipeline.HttpClientTransport">
+      <Member Id="F:Azure.Core.Pipeline.HttpClientTransport.Shared" />
+      <Member Id="M:Azure.Core.Pipeline.HttpClientTransport.#ctor" />
+      <Member Id="M:Azure.Core.Pipeline.HttpClientTransport.#ctor(System.Net.Http.HttpClient)" />
+      <Member Id="M:Azure.Core.Pipeline.HttpClientTransport.CreateRequest" />
+      <Member Id="M:Azure.Core.Pipeline.HttpClientTransport.Process(Azure.Core.HttpMessage)" />
+      <Member Id="M:Azure.Core.Pipeline.HttpClientTransport.ProcessAsync(Azure.Core.HttpMessage)" />
+    </Type>
+    <Type Name="Azure.Core.Pipeline.HttpPipeline" Id="T:Azure.Core.Pipeline.HttpPipeline">
+      <Member Id="M:Azure.Core.Pipeline.HttpPipeline.#ctor(Azure.Core.Pipeline.HttpPipelineTransport,Azure.Core.Pipeline.HttpPipelinePolicy[],Azure.Core.ResponseClassifier)" />
+      <Member Id="M:Azure.Core.Pipeline.HttpPipeline.CreateMessage" />
+      <Member Id="M:Azure.Core.Pipeline.HttpPipeline.CreateRequest" />
+      <Member Id="M:Azure.Core.Pipeline.HttpPipeline.Send(Azure.Core.HttpMessage,System.Threading.CancellationToken)" />
+      <Member Id="M:Azure.Core.Pipeline.HttpPipeline.SendAsync(Azure.Core.HttpMessage,System.Threading.CancellationToken)" />
+      <Member Id="M:Azure.Core.Pipeline.HttpPipeline.SendRequest(Azure.Core.Request,System.Threading.CancellationToken)" />
+      <Member Id="M:Azure.Core.Pipeline.HttpPipeline.SendRequestAsync(Azure.Core.Request,System.Threading.CancellationToken)" />
+      <Member Id="P:Azure.Core.Pipeline.HttpPipeline.ResponseClassifier" />
+    </Type>
+    <Type Name="Azure.Core.Pipeline.HttpPipelineBuilder" Id="T:Azure.Core.Pipeline.HttpPipelineBuilder">
+      <Member Id="M:Azure.Core.Pipeline.HttpPipelineBuilder.Build(Azure.Core.ClientOptions,Azure.Core.Pipeline.HttpPipelinePolicy[])" />
+      <Member Id="M:Azure.Core.Pipeline.HttpPipelineBuilder.Build(Azure.Core.ClientOptions,Azure.Core.Pipeline.HttpPipelinePolicy[],Azure.Core.Pipeline.HttpPipelinePolicy[],Azure.Core.ResponseClassifier)" />
+    </Type>
+    <Type Name="Azure.Core.Pipeline.HttpPipelinePolicy" Id="T:Azure.Core.Pipeline.HttpPipelinePolicy">
+      <Member Id="M:Azure.Core.Pipeline.HttpPipelinePolicy.#ctor" />
+      <Member Id="M:Azure.Core.Pipeline.HttpPipelinePolicy.Process(Azure.Core.HttpMessage,System.ReadOnlyMemory{Azure.Core.Pipeline.HttpPipelinePolicy})" />
+      <Member Id="M:Azure.Core.Pipeline.HttpPipelinePolicy.ProcessAsync(Azure.Core.HttpMessage,System.ReadOnlyMemory{Azure.Core.Pipeline.HttpPipelinePolicy})" />
+      <Member Id="M:Azure.Core.Pipeline.HttpPipelinePolicy.ProcessNext(Azure.Core.HttpMessage,System.ReadOnlyMemory{Azure.Core.Pipeline.HttpPipelinePolicy})" />
+      <Member Id="M:Azure.Core.Pipeline.HttpPipelinePolicy.ProcessNextAsync(Azure.Core.HttpMessage,System.ReadOnlyMemory{Azure.Core.Pipeline.HttpPipelinePolicy})" />
+    </Type>
+    <Type Name="Azure.Core.Pipeline.HttpPipelineSynchronousPolicy" Id="T:Azure.Core.Pipeline.HttpPipelineSynchronousPolicy">
+      <Member Id="M:Azure.Core.Pipeline.HttpPipelineSynchronousPolicy.#ctor" />
+      <Member Id="M:Azure.Core.Pipeline.HttpPipelineSynchronousPolicy.OnReceivedResponse(Azure.Core.HttpMessage)" />
+      <Member Id="M:Azure.Core.Pipeline.HttpPipelineSynchronousPolicy.OnSendingRequest(Azure.Core.HttpMessage)" />
+      <Member Id="M:Azure.Core.Pipeline.HttpPipelineSynchronousPolicy.Process(Azure.Core.HttpMessage,System.ReadOnlyMemory{Azure.Core.Pipeline.HttpPipelinePolicy})" />
+      <Member Id="M:Azure.Core.Pipeline.HttpPipelineSynchronousPolicy.ProcessAsync(Azure.Core.HttpMessage,System.ReadOnlyMemory{Azure.Core.Pipeline.HttpPipelinePolicy})" />
+    </Type>
+    <Type Name="Azure.Core.Pipeline.HttpPipelineTransport" Id="T:Azure.Core.Pipeline.HttpPipelineTransport">
+      <Member Id="M:Azure.Core.Pipeline.HttpPipelineTransport.#ctor" />
+      <Member Id="M:Azure.Core.Pipeline.HttpPipelineTransport.CreateRequest" />
+      <Member Id="M:Azure.Core.Pipeline.HttpPipelineTransport.Process(Azure.Core.HttpMessage)" />
+      <Member Id="M:Azure.Core.Pipeline.HttpPipelineTransport.ProcessAsync(Azure.Core.HttpMessage)" />
+    </Type>
+  </Namespace>
+</Framework>
