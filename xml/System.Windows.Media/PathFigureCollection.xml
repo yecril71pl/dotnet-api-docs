@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.PathFigureCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PathFigureCollection&#xA;Inherits Animatable&#xA;Implements ICollection(Of PathFigure), IEnumerable(Of PathFigure), IFormattable, IList, IList(Of PathFigure)" />
   <TypeSignature Language="C++ CLI" Value="public ref class PathFigureCollection sealed : System::Windows::Media::Animation::Animatable, IFormattable, System::Collections::Generic::ICollection&lt;System::Windows::Media::PathFigure ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Windows::Media::PathFigure ^&gt;, System::Collections::Generic::IList&lt;System::Windows::Media::PathFigure ^&gt;, System::Collections::IList" />
-  <TypeSignature Language="F#" Value="type PathFigureCollection = class&#xA;    inherit Animatable&#xA;    interface ICollection&lt;PathFigure&gt;&#xA;    interface seq&lt;PathFigure&gt;&#xA;    interface IEnumerable&#xA;    interface IList&lt;PathFigure&gt;&#xA;    interface ICollection&#xA;    interface IList&#xA;    interface IFormattable" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1" />
+  <TypeSignature Language="F#" Value="type PathFigureCollection = class&#xA;    inherit Animatable&#xA;    interface ICollection&lt;PathFigure&gt;&#xA;    interface seq&lt;PathFigure&gt;&#xA;    interface IEnumerable&#xA;    interface IList&lt;PathFigure&gt;&#xA;    interface ICollection&#xA;    interface IList&#xA;    interface IFormattable" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1" />
   <TypeSignature Language="F#" Value="type PathFigureCollection = class&#xA;    inherit Animatable&#xA;    interface IFormattable&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IList&lt;PathFigure&gt;&#xA;    interface ICollection&lt;PathFigure&gt;&#xA;    interface seq&lt;PathFigure&gt;&#xA;    interface IEnumerable" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2" />
   <TypeSignature Language="F#" Value="type PathFigureCollection = class&#xA;    inherit Animatable&#xA;    interface IFormattable&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable&#xA;    interface IList&lt;PathFigure&gt;&#xA;    interface ICollection&lt;PathFigure&gt;&#xA;    interface seq&lt;PathFigure&gt;" FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
   <AssemblyInfo>
@@ -61,7 +61,7 @@
 ## Remarks  
  Except as noted, members of this class behave exactly as described by the <xref:System.Collections.Generic.IList%601>, <xref:System.Collections.Generic.ICollection%601>, and <xref:System.Collections.Generic.IEnumerable%601> documentation.  
   
- **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.PathFigureCollection> class provides several special features: <xref:System.Windows.Media.PathFigureCollection> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+ **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.PathFigureCollection> class provides several special features: <xref:System.Windows.Media.PathFigureCollection> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](/dotnet/framework/wpf/advanced/freezable-objects-overview).  
   
 <a name="xamlImplicitCollectionUsage_PathFigureCollection"></a>   
 ## XAML Implicit Collection Usage  
@@ -84,7 +84,7 @@
 <a name="xamlValues_PathFigureCollection"></a>   
 ## XAML Values  
  *drawingCommands*  
- A space-delimited list of drawing commands, starting with a move-to command. For more information, see the [Path Markup Syntax](~/docs/framework/wpf/graphics-multimedia/path-markup-syntax.md) overview.  
+ A space-delimited list of drawing commands, starting with a move-to command. For more information, see the [Path Markup Syntax](/dotnet/framework/wpf/graphics-multimedia/path-markup-syntax) overview.  
   
  *oneOrMorePathFigureObjectElements*  
  One or more <xref:System.Windows.Media.PathFigure> objects, declared using object element syntax.  

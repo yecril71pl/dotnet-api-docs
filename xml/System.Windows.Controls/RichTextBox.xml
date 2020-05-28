@@ -1,6 +1,6 @@
 <Type Name="RichTextBox" FullName="System.Windows.Controls.RichTextBox">
   <TypeSignature Language="C#" Value="public class RichTextBox : System.Windows.Controls.Primitives.TextBoxBase, System.Windows.Markup.IAddChild" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RichTextBox extends System.Windows.Controls.Primitives.TextBoxBase implements class System.Windows.Markup.IAddChild" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RichTextBox extends System.Windows.Controls.Primitives.TextBoxBase implements class System.Windows.Markup.IAddChild" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.RichTextBox" />
   <TypeSignature Language="VB.NET" Value="Public Class RichTextBox&#xA;Inherits TextBoxBase&#xA;Implements IAddChild" />
   <TypeSignature Language="C++ CLI" Value="public ref class RichTextBox : System::Windows::Controls::Primitives::TextBoxBase, System::Windows::Markup::IAddChild" />
@@ -56,7 +56,7 @@
   
  Scrollbars are not visible on a <xref:System.Windows.Controls.RichTextBox> by default. To make a scrollbar visible, set the <xref:System.Windows.Controls.Primitives.TextBoxBase.VerticalScrollBarVisibility%2A> property to <xref:System.Windows.Controls.ScrollBarVisibility.Visible> or <xref:System.Windows.Controls.ScrollBarVisibility.Auto>.  
   
- Usually, the <xref:System.Windows.Controls.Primitives.TextBoxBase.TextChanged> event should be used to detect when the text in a <xref:System.Windows.Controls.TextBox> or <xref:System.Windows.Controls.RichTextBox> changes, rather then <xref:System.Windows.UIElement.KeyDown> as you might expect. For an example, see [How to: Detect When Text in a TextBox Has Changed](~/docs/framework/wpf/controls/how-to-detect-when-text-in-a-textbox-has-changed.md).  
+ Usually, the <xref:System.Windows.Controls.Primitives.TextBoxBase.TextChanged> event should be used to detect when the text in a <xref:System.Windows.Controls.TextBox> or <xref:System.Windows.Controls.RichTextBox> changes, rather then <xref:System.Windows.UIElement.KeyDown> as you might expect. For an example, see [How to: Detect When Text in a TextBox Has Changed](/dotnet/framework/wpf/controls/how-to-detect-when-text-in-a-textbox-has-changed).  
   
  <xref:System.Windows.Controls.RichTextBox> supports a variety of keyboard commands. For a list of keyboard commands, see <xref:System.Windows.Documents.EditingCommands>.  
   
@@ -402,7 +402,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Controls.RichTextBox.IsDocumentEnabled%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+ <xref:System.Windows.Controls.RichTextBox.IsDocumentEnabled%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](/dotnet/framework/migration-guide/versions-and-dependencies).  
   
    
   
@@ -542,8 +542,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="oldDpiScaleInfo" Type="System.Windows.DpiScale" Index="0" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="newDpiScaleInfo" Type="System.Windows.DpiScale" Index="1" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="oldDpiScaleInfo" Type="System.Windows.DpiScale" Index="0" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="newDpiScaleInfo" Type="System.Windows.DpiScale" Index="1" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="oldDpiScaleInfo">The previous DPI scale setting.</param>

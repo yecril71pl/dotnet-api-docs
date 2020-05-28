@@ -32,6 +32,9 @@
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <TypeForwardingChain>
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Security.Cryptography.Algorithms" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+  </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Security.Cryptography.HMAC</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-1.1">System.Security.Cryptography.KeyedHashAlgorithm</BaseTypeName>
@@ -69,7 +72,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
+    <related type="Article" href="/dotnet/standard/security/cryptographic-services">Cryptographic Services</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -128,7 +131,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
+        <related type="Article" href="/dotnet/standard/security/cryptographic-services">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -234,7 +237,7 @@ Due to collision problems with SHA1, Microsoft recommends a security model based
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> parameter is <see langword="null" />.</exception>
-        <related type="Article" href="~/docs/standard/security/cryptographic-services.md">Cryptographic Services</related>
+        <related type="Article" href="/dotnet/standard/security/cryptographic-services">Cryptographic Services</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">

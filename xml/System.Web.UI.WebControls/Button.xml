@@ -23,7 +23,7 @@
     <Interface>
       <InterfaceName>System.Web.UI.IPostBackEventHandler</InterfaceName>
     </Interface>
-    <Interface>
+    <Interface FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <InterfaceName>System.Web.UI.WebControls.IButtonControl</InterfaceName>
     </Interface>
   </Interfaces>
@@ -308,7 +308,7 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CausesValidation { bool get(); void set(bool value); };" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:System.Web.UI.WebControls.IButtonControl.CausesValidation</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">P:System.Web.UI.WebControls.IButtonControl.CausesValidation</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -379,7 +379,7 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Click;" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberType>Event</MemberType>
       <Implements>
-        <InterfaceMember>E:System.Web.UI.WebControls.IButtonControl.Click</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">E:System.Web.UI.WebControls.IButtonControl.Click</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -398,7 +398,7 @@
 ## Remarks
  The <xref:System.Web.UI.WebControls.Button.Click> event is raised when the <xref:System.Web.UI.WebControls.Button> control is clicked. This event is commonly used when no command name is associated with the <xref:System.Web.UI.WebControls.Button> control (for instance, with a Submit button).
 
- For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).
+ For more information about handling events, see [Handling and Raising Events](/dotnet/standard/events/).
 
 
 
@@ -425,7 +425,7 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::Web::UI::WebControls::CommandEventHandler ^ Command;" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberType>Event</MemberType>
       <Implements>
-        <InterfaceMember>E:System.Web.UI.WebControls.IButtonControl.Command</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">E:System.Web.UI.WebControls.IButtonControl.Command</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -447,7 +447,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.Button.Command> event is raised through the control hierarchy in the form of the `BubbleEvent`.
 
- For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).
+ For more information about how to handle events, see [Handling and Raising Events](/dotnet/standard/events/).
 
 
 
@@ -478,7 +478,7 @@
       <MemberSignature Language="F#" Value="member this.CommandArgument : string with get, set" Usage="System.Web.UI.WebControls.Button.CommandArgument" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:System.Web.UI.WebControls.IButtonControl.CommandArgument</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">P:System.Web.UI.WebControls.IButtonControl.CommandArgument</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -541,7 +541,7 @@
       <MemberSignature Language="F#" Value="member this.CommandName : string with get, set" Usage="System.Web.UI.WebControls.Button.CommandName" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:System.Web.UI.WebControls.IButtonControl.CommandName</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">P:System.Web.UI.WebControls.IButtonControl.CommandName</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -656,7 +656,7 @@
 ## Remarks
  The <xref:System.Web.UI.WebControls.Button.Click> event is raised when the <xref:System.Web.UI.WebControls.Button> control is clicked. This event is commonly used when no command name is associated with the <xref:System.Web.UI.WebControls.Button> control (for instance, with a Submit button).
 
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).
 
  The <xref:System.Web.UI.WebControls.Button.OnClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.
 
@@ -761,7 +761,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.Button.Command> event is raised through the control hierarchy in the form of the `BubbleEvent`.
 
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).
 
  The <xref:System.Web.UI.WebControls.Button.OnCommand%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.
 
@@ -1054,7 +1054,7 @@ End Sub
       <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Web.UI.WebControls.Button.Text" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:System.Web.UI.WebControls.IButtonControl.Text</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">P:System.Web.UI.WebControls.IButtonControl.Text</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

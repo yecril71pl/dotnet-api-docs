@@ -16,10 +16,10 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0;netcore-3.1;net-5.0">
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0;netcore-3.1;net-5.0;dotnet-plat-ext-5.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0;netcore-3.1;net-5.0">
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0;netcore-3.1;net-5.0;dotnet-plat-ext-5.0">
       <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
     </Attribute>
   </Attributes>
@@ -364,7 +364,7 @@
         <Attribute>
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0;netcore-3.1;net-5.0">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0;netcore-3.1;net-5.0;dotnet-plat-ext-5.0">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.MdiWindowListItemConverter))</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0">
@@ -425,7 +425,7 @@
 ## Remarks  
  When activated by the ALT key, the <xref:System.Windows.Forms.MenuStrip> or <xref:System.Windows.Forms.ToolStrip> typically neither take nor remove the focus from the control that currently has the focus. If there is a control hosted within the <xref:System.Windows.Forms.MenuStrip> or a drop-down of the <xref:System.Windows.Forms.MenuStrip>, the control gains focus when the user presses the TAB key. In general, the <xref:System.Windows.Forms.Control.GotFocus>, <xref:System.Windows.Forms.Control.LostFocus>, <xref:System.Windows.Forms.Control.Enter>, and <xref:System.Windows.Forms.Control.Leave> events of <xref:System.Windows.Forms.MenuStrip> might not be raised when they are activated by the keyboard. In such cases, use the <xref:System.Windows.Forms.MenuStrip.MenuActivate> and <xref:System.Windows.Forms.MenuStrip.MenuDeactivate> events instead.  
   
- For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ For more information about handling events, see [Handling and Raising Events](/dotnet/standard/events/).  
   
    
   
@@ -466,7 +466,7 @@
 ## Remarks  
  When activated by the ALT key, the <xref:System.Windows.Forms.MenuStrip> or <xref:System.Windows.Forms.ToolStrip> typically neither take nor remove the focus from the control that currently has the focus. If there is a control hosted within the <xref:System.Windows.Forms.MenuStrip> or a drop-down of the <xref:System.Windows.Forms.MenuStrip>, the control gains focus when the user presses the TAB key. In general, the <xref:System.Windows.Forms.Control.GotFocus>, <xref:System.Windows.Forms.Control.LostFocus>, <xref:System.Windows.Forms.Control.Enter>, and <xref:System.Windows.Forms.Control.Leave> events of <xref:System.Windows.Forms.MenuStrip> might not be raised when they are activated by the keyboard. In such cases, use the <xref:System.Windows.Forms.MenuStrip.MenuActivate> and <xref:System.Windows.Forms.MenuStrip.MenuDeactivate> events instead.  
   
- For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ For more information about handling events, see [Handling and Raising Events](/dotnet/standard/events/).  
   
    
   
@@ -509,7 +509,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.MenuStrip.OnMenuActivate%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -547,7 +547,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](~/docs/standard/events/index.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](/dotnet/standard/events/).  
   
  The <xref:System.Windows.Forms.MenuStrip.OnMenuDeactivate%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

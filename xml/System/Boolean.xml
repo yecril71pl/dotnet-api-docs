@@ -40,6 +40,7 @@
   </AssemblyInfo>
   <TypeForwardingChain>
     <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Runtime" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
   </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
@@ -48,13 +49,13 @@
     <Interface>
       <InterfaceName>System.IComparable</InterfaceName>
     </Interface>
-    <Interface>
+    <Interface FrameworkAlternate="dotnet-uwp-10.0;net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <InterfaceName>System.IComparable&lt;System.Boolean&gt;</InterfaceName>
     </Interface>
-    <Interface>
+    <Interface FrameworkAlternate="dotnet-uwp-10.0;net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <InterfaceName>System.IConvertible</InterfaceName>
     </Interface>
-    <Interface>
+    <Interface FrameworkAlternate="dotnet-uwp-10.0;net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.5;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <InterfaceName>System.IEquatable&lt;System.Boolean&gt;</InterfaceName>
     </Interface>
   </Interfaces>
@@ -101,12 +102,12 @@
 
  You use the <xref:System.Boolean.ToString%2A> method to convert Boolean values to strings. The Boolean structure includes two <xref:System.Boolean.ToString%2A> overloads: the parameterless <xref:System.Boolean.ToString> method and the <xref:System.Boolean.ToString%28System.IFormatProvider%29> method, which includes a parameter that controls formatting. However, because this parameter is ignored, the two overloads produce identical strings. The <xref:System.Boolean.ToString%28System.IFormatProvider%29> method does not support culture-sensitive formatting.
 
- The following example illustrates formatting with the <xref:System.Boolean.ToString%2A> method. Note that the example uses the [composite formatting](~/docs/standard/base-types/composite-formatting.md) feature, so the <xref:System.Boolean.ToString%2A> method is called implicitly.
+ The following example illustrates formatting with the <xref:System.Boolean.ToString%2A> method. Note that the example uses the [composite formatting](/dotnet/standard/base-types/composite-formatting) feature, so the <xref:System.Boolean.ToString%2A> method is called implicitly.
 
  [!code-csharp[System.Boolean.Structure#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.boolean.structure/cs/tostring1.cs#3)]
  [!code-vb[System.Boolean.Structure#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.boolean.structure/vb/tostring1.vb#3)]
 
- Because the <xref:System.Boolean> structure can have only two values, it is easy to add custom formatting. For simple custom formatting in which other string literals are substituted for "True" and "False", you can use any conditional evaluation feature supported by your language, such as the [conditional operator](~/docs/csharp/language-reference/operators/conditional-operator.md) in C# or the [If operator](~/docs/visual-basic/language-reference/operators/if-operator.md) in Visual Basic. The following example uses this technique to format <xref:System.Boolean> values as "Yes" and "No" rather than "True" and "False".
+ Because the <xref:System.Boolean> structure can have only two values, it is easy to add custom formatting. For simple custom formatting in which other string literals are substituted for "True" and "False", you can use any conditional evaluation feature supported by your language, such as the [conditional operator](/dotnet/csharp/language-reference/operators/conditional-operator) in C# or the [If operator](/dotnet/visual-basic/language-reference/operators/if-operator) in Visual Basic. The following example uses this technique to format <xref:System.Boolean> values as "Yes" and "No" rather than "True" and "False".
 
  [!code-csharp[System.Boolean.Structure#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.boolean.structure/cs/tostring2.cs#4)]
  [!code-vb[System.Boolean.Structure#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.boolean.structure/vb/tostring2.vb#4)]
@@ -116,7 +117,7 @@
  [!code-csharp[System.Boolean.Structure#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.boolean.structure/cs/format3.cs#5)]
  [!code-vb[System.Boolean.Structure#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.boolean.structure/vb/format3.vb#5)]
 
- Optionally, you can use [resource files](~/docs/framework/resources/index.md) to define culture-specific Boolean strings.
+ Optionally, you can use [resource files](/dotnet/framework/resources/) to define culture-specific Boolean strings.
 
 <a name="Converting"></a>
 ## Converting to and from Boolean values
@@ -766,7 +767,7 @@
           <paramref name="value" /> is not equivalent to <see cref="F:System.Boolean.TrueString" /> or <see cref="F:System.Boolean.FalseString" />.</exception>
         <altmember cref="F:System.Boolean.TrueString" />
         <altmember cref="F:System.Boolean.FalseString" />
-        <related type="Article" href="~/docs/standard/base-types/parsing-other.md">Parsing Other Strings</related>
+        <related type="Article" href="/dotnet/standard/base-types/parsing-other">Parsing Other Strings</related>
       </Docs>
     </Member>
     <Member MemberName="System.IComparable.CompareTo">
@@ -2022,7 +2023,7 @@ This member is an explicit interface member implementation. It can be used only 
         <altmember cref="M:System.Boolean.Parse(System.String)" />
         <altmember cref="F:System.Boolean.TrueString" />
         <altmember cref="F:System.Boolean.FalseString" />
-        <related type="Article" href="~/docs/standard/base-types/parsing-other.md">Parsing Other Strings in the .NET Framework</related>
+        <related type="Article" href="/dotnet/standard/base-types/parsing-other">Parsing Other Strings in the .NET Framework</related>
       </Docs>
     </Member>
   </Members>

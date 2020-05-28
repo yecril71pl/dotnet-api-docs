@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputBindingCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InputBindingCollection&#xA;Implements IList" />
   <TypeSignature Language="C++ CLI" Value="public ref class InputBindingCollection sealed : System::Collections::IList" />
-  <TypeSignature Language="F#" Value="type InputBindingCollection = class&#xA;    interface ICollection&#xA;    interface IEnumerable&#xA;    interface IList" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1" />
+  <TypeSignature Language="F#" Value="type InputBindingCollection = class&#xA;    interface ICollection&#xA;    interface IEnumerable&#xA;    interface IList" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1" />
   <TypeSignature Language="F#" Value="type InputBindingCollection = class&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
@@ -65,7 +65,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [Commanding Overview](~/docs/framework/wpf/advanced/commanding-overview.md)  
+ [Commanding Overview](/dotnet/framework/wpf/advanced/commanding-overview)  
   
  <xref:System.Windows.Input.KeyBinding>  
   
@@ -169,7 +169,7 @@
  [!code-csharp[commandingoverviewsnippets#CommandingOverviewKeyBinding](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#commandingoverviewkeybinding)]
  [!code-vb[commandingoverviewsnippets#CommandingOverviewKeyBinding](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#commandingoverviewkeybinding)]  
   
- The [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] example does not literally use <xref:System.Windows.Input.InputBindingCollection.Add%2A>, but <xref:System.Windows.Input.InputBindingCollection.Add%2A> is called implicitly by the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] processing support for collections. For details on [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] and collections, see [XAML Overview (WPF)](~/docs/framework/wpf/advanced/xaml-overview-wpf.md).  
+ The [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] example does not literally use <xref:System.Windows.Input.InputBindingCollection.Add%2A>, but <xref:System.Windows.Input.InputBindingCollection.Add%2A> is called implicitly by the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] processing support for collections. For details on [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] and collections, see [XAML Overview (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf).  
   
  ]]></format>
         </remarks>

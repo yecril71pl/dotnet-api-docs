@@ -1,6 +1,6 @@
 <Type Name="XmlStreamStore" FullName="System.Windows.Annotations.Storage.XmlStreamStore">
   <TypeSignature Language="C#" Value="public sealed class XmlStreamStore : System.Windows.Annotations.Storage.AnnotationStore" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlStreamStore extends System.Windows.Annotations.Storage.AnnotationStore" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlStreamStore extends System.Windows.Annotations.Storage.AnnotationStore" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.Storage.XmlStreamStore" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlStreamStore&#xA;Inherits AnnotationStore" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlStreamStore sealed : System::Windows::Annotations::Storage::AnnotationStore" />
@@ -91,7 +91,7 @@
   
  The `knownNamespace` dictionary defines application namespaces that are used when you store custom content as part of an annotation.  The dictionary key is the primary namespace known to the application program.  The namespace key is associated with a value list of older namespaces that are compatible with the "key" namespace.  When annotations are loaded all namespaces from this list will be replaced by the "key" namespace.  
   
- `stream` must be in valid XML format and comply with the [Annotations Schema](~/docs/framework/wpf/advanced/annotations-schema.md).  
+ `stream` must be in valid XML format and comply with the [Annotations Schema](/dotnet/framework/wpf/advanced/annotations-schema).  
   
  ]]></format>
         </remarks>

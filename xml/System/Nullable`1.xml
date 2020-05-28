@@ -30,6 +30,7 @@
   </AssemblyInfo>
   <TypeForwardingChain>
     <TypeForwarding From="mscorlib" FromVersion="4.0.0.0" To="System.Runtime" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
   </TypeForwardingChain>
   <TypeParameters>
     <TypeParameter Name="T">
@@ -330,7 +331,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Nullable%601.GetValueOrDefault%2A> method returns a value even if the <xref:System.Nullable%601.HasValue%2A> property is `false` (unlike the <xref:System.Nullable%601.Value%2A> property, which throws an exception). If the <xref:System.Nullable%601.HasValue%2A> property is `false`, the method returns the [default](~/docs/csharp/language-reference/keywords/default-values-table.md) value of the underlying type.  
+ The <xref:System.Nullable%601.GetValueOrDefault%2A> method returns a value even if the <xref:System.Nullable%601.HasValue%2A> property is `false` (unlike the <xref:System.Nullable%601.Value%2A> property, which throws an exception). If the <xref:System.Nullable%601.HasValue%2A> property is `false`, the method returns the [default](/dotnet/csharp/language-reference/keywords/default-values-table) value of the underlying type.  
   
    
   

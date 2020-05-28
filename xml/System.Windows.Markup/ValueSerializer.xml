@@ -1,6 +1,6 @@
 <Type Name="ValueSerializer" FullName="System.Windows.Markup.ValueSerializer">
   <TypeSignature Language="C#" Value="public abstract class ValueSerializer" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ValueSerializer extends System.Object" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ValueSerializer extends System.Object" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.ValueSerializer" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ValueSerializer" />
   <TypeSignature Language="C++ CLI" Value="public ref class ValueSerializer abstract" />
@@ -16,7 +16,7 @@
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeForwardingChain>
-    <TypeForwarding From="WindowsBase" FromVersion="5.0.0.0" To="System.Xaml" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
+    <TypeForwarding From="WindowsBase" FromVersion="5.0.0.0" To="System.Xaml" ToVersion="5.0.0.0" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0" />
     <TypeForwarding From="WindowsBase" FromVersion="4.0.0.0" To="System.Xaml" ToVersion="4.0.0.0" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
   </TypeForwardingChain>
   <Base>
@@ -43,7 +43,7 @@
   
  <xref:System.Windows.Markup.IValueSerializerContext> for a <xref:System.Windows.Markup.ValueSerializer> and its APIs is analogous to <xref:System.ComponentModel.ITypeDescriptorContext> for a <xref:System.ComponentModel.TypeConverter>. In fact, <xref:System.Windows.Markup.IValueSerializerContext> inherits <xref:System.ComponentModel.ITypeDescriptorContext>. When a <xref:System.Windows.Markup.ValueSerializer> derived class API is called, the caller (typically a serializer process) passes a context that may provide certain services. Because of the general guidance that a <xref:System.Windows.Markup.ValueSerializer> must not throw exceptions. Failure to return a particular service from the context must also not throw any exceptions.  
   
- In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.ValueSerializer> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
+ In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.ValueSerializer> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](/dotnet/framework/xaml-services/types-migrated-from-wpf-to-system-xaml).  
   
  ]]></format>
     </remarks>

@@ -1,4 +1,4 @@
-﻿<Type Name="ImmutableList&lt;T&gt;+Builder" FullName="System.Collections.Immutable.ImmutableList&lt;T&gt;+Builder">
+<Type Name="ImmutableList&lt;T&gt;+Builder" FullName="System.Collections.Immutable.ImmutableList&lt;T&gt;+Builder">
   <TypeSignature Language="C#" Value="public sealed class ImmutableList&lt;T&gt;.Builder : System.Collections.Generic.ICollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IList&lt;T&gt;, System.Collections.Generic.IReadOnlyCollection&lt;T&gt;, System.Collections.Generic.IReadOnlyList&lt;T&gt;, System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit ImmutableList`1/Builder&lt;T&gt; extends System.Object implements class System.Collections.Generic.ICollection`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IList`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyList`1&lt;!T&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Immutable.ImmutableList`1.Builder" />
@@ -511,7 +511,7 @@
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
         <InterfaceMember>P:System.Collections.Generic.IReadOnlyCollection`1.Count</InterfaceMember>
-        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-5.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1">P:System.Collections.ICollection.Count</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>
@@ -1261,7 +1261,7 @@
       <ReturnValue RefType="Readonly">
         <ReturnType>T</ReturnType>
         <Attributes>
-          <Attribute FrameworkAlternate="netcore-2.2">
+          <Attribute FrameworkAlternate="net-5.0">
             <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
           </Attribute>
         </Attributes>

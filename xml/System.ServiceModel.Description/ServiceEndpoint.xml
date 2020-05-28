@@ -25,8 +25,7 @@
   </AssemblyInfo>
   <TypeForwardingChain>
     <TypeForwarding From="System.ServiceModel" FromVersion="4.0.0.0" To="System.ServiceModel.Primitives" ToVersion="4.6.0.0" FrameworkAlternate="dotnet-plat-ext-2.1;dotnet-plat-ext-2.2;dotnet-plat-ext-3.0" />
-    <TypeForwarding From="System.ServiceModel" FromVersion="4.0.0.0" To="System.ServiceModel.Primitives" ToVersion="4.7.0.0" FrameworkAlternate="dotnet-plat-ext-3.1" />
-    <TypeForwarding From="System.ServiceModel" FromVersion="4.0.0.0" To="System.ServiceModel.Primitives" ToVersion="5.0.0.0" FrameworkAlternate="dotnet-plat-ext-5.0" />
+    <TypeForwarding From="System.ServiceModel" FromVersion="4.0.0.0" To="System.ServiceModel.Primitives" ToVersion="4.7.0.0" FrameworkAlternate="dotnet-plat-ext-3.1;dotnet-plat-ext-5.0" />
     <TypeForwarding From="System.ServiceModel" FromVersion="4.0.0.0" To="System.ServiceModel.Primitives" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
   </TypeForwardingChain>
   <Base>
@@ -319,7 +318,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The binding for an endpoint can also be specified in the configuration file in the [&lt;bindings&gt;](~/docs/framework/configure-apps/file-schema/wcf/bindings.md) element.  
+ The binding for an endpoint can also be specified in the configuration file in the [&lt;bindings&gt;](/dotnet/framework/configure-apps/file-schema/wcf/bindings) element.  
   
    
   

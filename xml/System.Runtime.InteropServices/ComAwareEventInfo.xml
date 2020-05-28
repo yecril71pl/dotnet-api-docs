@@ -29,6 +29,7 @@
   </AssemblyInfo>
   <TypeForwardingChain>
     <TypeForwarding From="System.Core" FromVersion="4.0.0.0" To="System.Runtime.InteropServices" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Runtime.InteropServices" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
   </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Reflection.EventInfo</BaseTypeName>
@@ -355,7 +356,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">This member belongs to a type that is loaded into the reflection-only context. See [How to: Load Assemblies into the Reflection-Only Context](~/docs/framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md).</exception>
+        <exception cref="T:System.InvalidOperationException">This member belongs to a type that is loaded into the reflection-only context. See [How to: Load Assemblies into the Reflection-Only Context](/dotnet/framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context).</exception>
         <exception cref="T:System.TypeLoadException">A custom attribute type cannot be loaded.</exception>
         <altmember cref="T:System.Reflection.MemberInfo" />
       </Docs>
@@ -401,7 +402,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="attributeType" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">This member belongs to a type that is loaded into the reflection-only context. See [How to: Load Assemblies into the Reflection-Only Context](~/docs/framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md)</exception>
+        <exception cref="T:System.InvalidOperationException">This member belongs to a type that is loaded into the reflection-only context. See [How to: Load Assemblies into the Reflection-Only Context](/dotnet/framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context)</exception>
         <exception cref="T:System.TypeLoadException">A custom attribute type cannot be loaded.</exception>
         <altmember cref="T:System.Reflection.MemberInfo" />
       </Docs>

@@ -1,9 +1,9 @@
 <Type Name="ProgressBarRenderer" FullName="System.Windows.Forms.ProgressBarRenderer">
-  <TypeSignature Language="C#" Value="public static class ProgressBarRenderer" FrameworkAlternate="net-5.0" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ProgressBarRenderer extends System.Object" FrameworkAlternate="net-5.0" />
+  <TypeSignature Language="C#" Value="public static class ProgressBarRenderer" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ProgressBarRenderer extends System.Object" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ProgressBarRenderer" />
-  <TypeSignature Language="VB.NET" Value="Public Class ProgressBarRenderer" FrameworkAlternate="net-5.0" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ProgressBarRenderer abstract sealed" FrameworkAlternate="net-5.0" />
+  <TypeSignature Language="VB.NET" Value="Public Class ProgressBarRenderer" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProgressBarRenderer abstract sealed" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0" />
   <TypeSignature Language="F#" Value="type ProgressBarRenderer = class" />
   <TypeSignature Language="C#" Value="public sealed class ProgressBarRenderer" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProgressBarRenderer extends System.Object" FrameworkAlternate="netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
@@ -29,7 +29,7 @@
   
  If visual styles are enabled in the operating system and visual styles are applied to the client area of application windows, the methods of this class will draw the progress bar with the current visual style. Otherwise, the methods and properties of this class will throw an <xref:System.InvalidOperationException>. To determine whether the members of this class can be used, you can check the value of the <xref:System.Windows.Forms.ProgressBarRenderer.IsSupported%2A> property.  
   
- This class wraps the functionality of a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer?displayProperty=nameWithType> that is set to one of the elements exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar.Bar?displayProperty=nameWithType>, <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar.BarVertical?displayProperty=nameWithType>, <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar.Chunk?displayProperty=nameWithType>, and <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar.ChunkVertical?displayProperty=nameWithType> classes. For more information, see [Rendering Controls with Visual Styles](~/docs/framework/winforms/controls/rendering-controls-with-visual-styles.md).  
+ This class wraps the functionality of a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer?displayProperty=nameWithType> that is set to one of the elements exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar.Bar?displayProperty=nameWithType>, <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar.BarVertical?displayProperty=nameWithType>, <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar.Chunk?displayProperty=nameWithType>, and <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar.ChunkVertical?displayProperty=nameWithType> classes. For more information, see [Rendering Controls with Visual Styles](/dotnet/framework/winforms/controls/rendering-controls-with-visual-styles).  
   
    
   

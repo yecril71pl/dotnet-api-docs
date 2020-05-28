@@ -1,4 +1,4 @@
-﻿<Type Name="ImmutableArray&lt;T&gt;" FullName="System.Collections.Immutable.ImmutableArray&lt;T&gt;">
+<Type Name="ImmutableArray&lt;T&gt;" FullName="System.Collections.Immutable.ImmutableArray&lt;T&gt;">
   <TypeSignature Language="C#" Value="public struct ImmutableArray&lt;T&gt; : IEquatable&lt;System.Collections.Immutable.ImmutableArray&lt;T&gt;&gt;, System.Collections.Generic.ICollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IList&lt;T&gt;, System.Collections.Generic.IReadOnlyCollection&lt;T&gt;, System.Collections.Generic.IReadOnlyList&lt;T&gt;, System.Collections.IList, System.Collections.Immutable.IImmutableList&lt;T&gt;, System.Collections.IStructuralComparable, System.Collections.IStructuralEquatable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ImmutableArray`1&lt;T&gt; extends System.ValueType implements class System.Collections.Generic.ICollection`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IList`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyList`1&lt;!T&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList, class System.Collections.Immutable.IImmutableList`1&lt;!T&gt;, class System.Collections.IStructuralComparable, class System.Collections.IStructuralEquatable, class System.IEquatable`1&lt;valuetype System.Collections.Immutable.ImmutableArray`1&lt;!T&gt;&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Immutable.ImmutableArray`1" />
@@ -1142,7 +1142,7 @@
       <ReturnValue RefType="Readonly">
         <ReturnType>T</ReturnType>
         <Attributes>
-          <Attribute FrameworkAlternate="netcore-2.1">
+          <Attribute FrameworkAlternate="net-5.0">
             <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
           </Attribute>
         </Attributes>
@@ -2515,9 +2515,9 @@
       <MemberSignature Language="F#" Value="member this.System.Collections.ICollection.Count : int" Usage="System.Collections.ICollection.Count" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:System.Collections.Generic.IReadOnlyCollection`1.Count</InterfaceMember>
-        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
-        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1">P:System.Collections.Generic.IReadOnlyCollection`1.Count</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1">P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
+        <InterfaceMember FrameworkAlternate="net-5.0;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1">P:System.Collections.ICollection.Count</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Immutable</AssemblyName>

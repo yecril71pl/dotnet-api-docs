@@ -1,6 +1,6 @@
 <Type Name="GeometryGroup" FullName="System.Windows.Media.GeometryGroup">
   <TypeSignature Language="C#" Value="public sealed class GeometryGroup : System.Windows.Media.Geometry" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit GeometryGroup extends System.Windows.Media.Geometry" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit GeometryGroup extends System.Windows.Media.Geometry" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.GeometryGroup" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GeometryGroup&#xA;Inherits Geometry" />
   <TypeSignature Language="C++ CLI" Value="public ref class GeometryGroup sealed : System::Windows::Media::Geometry" />
@@ -29,7 +29,7 @@
 ## Remarks  
  Composite geometry objects can be created using a <xref:System.Windows.Media.GeometryGroup>, a <xref:System.Windows.Media.CombinedGeometry>, or by calling the static <xref:System.Windows.Media.Geometry> method <xref:System.Windows.Media.Geometry.Combine%2A>. A <xref:System.Windows.Media.CombinedGeometry> creates a composite geometry from exactly two geometry objects. A <xref:System.Windows.Media.GeometryGroup>, on the other hand, creates a composite geometry from any number of geometry objects.  
   
- <xref:System.Windows.Media.GeometryGroup> uses the <xref:System.Windows.Media.GeometryGroup.FillRule%2A> property to specify how its geometry objects are combined. See [How to: Control the Fill of a Composite Shape](~/docs/framework/wpf/graphics-multimedia/how-to-control-the-fill-of-a-composite-shape.md) for more information on using <xref:System.Windows.Media.GeometryGroup.FillRule%2A>.  
+ <xref:System.Windows.Media.GeometryGroup> uses the <xref:System.Windows.Media.GeometryGroup.FillRule%2A> property to specify how its geometry objects are combined. See [How to: Control the Fill of a Composite Shape](/dotnet/framework/wpf/graphics-multimedia/how-to-control-the-fill-of-a-composite-shape) for more information on using <xref:System.Windows.Media.GeometryGroup.FillRule%2A>.  
   
  Geometries can be combined in several ways: using a <xref:System.Windows.Media.GeometryGroup>, a <xref:System.Windows.Media.CombinedGeometry>, or the <xref:System.Windows.Media.Geometry.Combine%2A> method of the <xref:System.Windows.Media.Geometry> class.  
   

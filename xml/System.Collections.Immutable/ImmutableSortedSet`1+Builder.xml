@@ -1,4 +1,4 @@
-﻿<Type Name="ImmutableSortedSet&lt;T&gt;+Builder" FullName="System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;+Builder">
+<Type Name="ImmutableSortedSet&lt;T&gt;+Builder" FullName="System.Collections.Immutable.ImmutableSortedSet&lt;T&gt;+Builder">
   <TypeSignature Language="C#" Value="public sealed class ImmutableSortedSet&lt;T&gt;.Builder : System.Collections.Generic.ICollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IReadOnlyCollection&lt;T&gt;, System.Collections.Generic.ISet&lt;T&gt;, System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit ImmutableSortedSet`1/Builder&lt;T&gt; extends System.Object implements class System.Collections.Generic.ICollection`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!T&gt;, class System.Collections.Generic.ISet`1&lt;!T&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Immutable.ImmutableSortedSet`1.Builder" />
@@ -499,7 +499,7 @@
       <ReturnValue RefType="Readonly">
         <ReturnType>T</ReturnType>
         <Attributes>
-          <Attribute FrameworkAlternate="netcore-2.1">
+          <Attribute FrameworkAlternate="net-5.0">
             <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
           </Attribute>
         </Attributes>
@@ -1135,6 +1135,33 @@ This member is an explicit interface member implementation. It can be used only 
   
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetValue">
+      <MemberSignature Language="C#" Value="public bool TryGetValue (T equalValue, out T actualValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValue(!T equalValue, [out] !T&amp; actualValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableSortedSet`1.Builder.TryGetValue(`0,`0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetValue (equalValue As T, ByRef actualValue As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetValue(T equalValue, [Runtime::InteropServices::Out] T % actualValue);" />
+      <MemberSignature Language="F#" Value="member this.TryGetValue : 'T * 'T -&gt; bool" Usage="builder.TryGetValue (equalValue, actualValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="equalValue" Type="T" Index="0" FrameworkAlternate="net-5.0" />
+        <Parameter Name="actualValue" Type="T" RefType="out" Index="1" FrameworkAlternate="net-5.0" />
+      </Parameters>
+      <Docs>
+        <param name="equalValue">To be added.</param>
+        <param name="actualValue">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="UnionWith">

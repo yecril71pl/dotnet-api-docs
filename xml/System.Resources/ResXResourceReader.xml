@@ -1,13 +1,13 @@
 <Type Name="ResXResourceReader" FullName="System.Resources.ResXResourceReader">
-  <TypeSignature Language="C#" Value="public class ResXResourceReader : System.Resources.IResourceReader" FrameworkAlternate="net-5.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+  <TypeSignature Language="C#" Value="public class ResXResourceReader : IDisposable, System.Collections.IEnumerable, System.Resources.IResourceReader" FrameworkAlternate="dotnet-plat-ext-5.0;netcore-3.0;netcore-3.1" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResXResourceReader extends System.Object implements class System.Collections.IEnumerable, class System.IDisposable, class System.Resources.IResourceReader" />
   <TypeSignature Language="DocId" Value="T:System.Resources.ResXResourceReader" />
+  <TypeSignature Language="VB.NET" Value="Public Class ResXResourceReader&#xA;Implements IDisposable, IEnumerable, IResourceReader" FrameworkAlternate="dotnet-plat-ext-5.0;netcore-3.0;netcore-3.1" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResXResourceReader : IDisposable, System::Collections::IEnumerable, System::Resources::IResourceReader" FrameworkAlternate="dotnet-plat-ext-5.0;netcore-3.0;netcore-3.1" />
+  <TypeSignature Language="F#" Value="type ResXResourceReader = class&#xA;    interface IResourceReader&#xA;    interface IEnumerable&#xA;    interface IDisposable" />
+  <TypeSignature Language="C#" Value="public class ResXResourceReader : System.Resources.IResourceReader" FrameworkAlternate="net-5.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
   <TypeSignature Language="VB.NET" Value="Public Class ResXResourceReader&#xA;Implements IResourceReader" FrameworkAlternate="net-5.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResXResourceReader : System::Resources::IResourceReader" FrameworkAlternate="net-5.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-  <TypeSignature Language="F#" Value="type ResXResourceReader = class&#xA;    interface IResourceReader&#xA;    interface IEnumerable&#xA;    interface IDisposable" />
-  <TypeSignature Language="C#" Value="public class ResXResourceReader : IDisposable, System.Collections.IEnumerable, System.Resources.IResourceReader" FrameworkAlternate="netcore-3.0;netcore-3.1" />
-  <TypeSignature Language="VB.NET" Value="Public Class ResXResourceReader&#xA;Implements IDisposable, IEnumerable, IResourceReader" FrameworkAlternate="netcore-3.0;netcore-3.1" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ResXResourceReader : IDisposable, System::Collections::IEnumerable, System::Resources::IResourceReader" FrameworkAlternate="netcore-3.0;netcore-3.1" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -75,8 +75,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Resources.ResXResourceWriter" />
-    <related type="Article" href="~/docs/framework/resources/creating-resource-files-for-desktop-apps.md">Creating Resource Files for Desktop Apps</related>
-    <related type="Article" href="~/docs/framework/resources/working-with-resx-files-programmatically.md">Working with .resx Files Programmatically</related>
+    <related type="Article" href="/dotnet/framework/resources/creating-resource-files-for-desktop-apps">Creating Resource Files for Desktop Apps</related>
+    <related type="Article" href="/dotnet/framework/resources/working-with-resx-files-programmatically">Working with .resx Files Programmatically</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -246,8 +246,8 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="stream" Type="System.IO.Stream" Index="0" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="assemblyNames" Type="System.Reflection.AssemblyName[]" Index="1" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="stream" Type="System.IO.Stream" Index="0" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="assemblyNames" Type="System.Reflection.AssemblyName[]" Index="1" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="stream">An input stream that contains resources.</param>
@@ -307,8 +307,8 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="reader" Type="System.IO.TextReader" Index="0" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="assemblyNames" Type="System.Reflection.AssemblyName[]" Index="1" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="reader" Type="System.IO.TextReader" Index="0" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="assemblyNames" Type="System.Reflection.AssemblyName[]" Index="1" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="reader">An object used to read resources from a stream of text.</param>
@@ -368,8 +368,8 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="fileName" Type="System.String" Index="0" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="assemblyNames" Type="System.Reflection.AssemblyName[]" Index="1" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="fileName" Type="System.String" Index="0" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="assemblyNames" Type="System.Reflection.AssemblyName[]" Index="1" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="fileName">The name of an XML resource file that contains resources.</param>
@@ -453,7 +453,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling <xref:System.Resources.ResXResourceReader.Close%2A> enables the resources used by the <xref:System.Resources.ResXResourceReader> to be reallocated for other purposes. For more information about <xref:System.Resources.ResXResourceReader.Close%2A>, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).  
+ Calling <xref:System.Resources.ResXResourceReader.Close%2A> enables the resources used by the <xref:System.Resources.ResXResourceReader> to be reallocated for other purposes. For more information about <xref:System.Resources.ResXResourceReader.Close%2A>, see [Cleaning Up Unmanaged Resources](/dotnet/standard/garbage-collection/unmanaged).  
   
    
   
@@ -505,7 +505,7 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" /> and about the disposable pattern, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md), <see cref="T:System.IDisposable" />, and <see cref="M:System.Object.Finalize" />.</para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" /> and about the disposable pattern, see [Implementing a Dispose Method](/dotnet/standard/garbage-collection/implementing-dispose), <see cref="T:System.IDisposable" />, and <see cref="M:System.Object.Finalize" />.</para>
         </block>
       </Docs>
     </Member>
@@ -623,8 +623,8 @@
         <ReturnType>System.Resources.ResXResourceReader</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="fileContents" Type="System.String" Index="0" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="assemblyNames" Type="System.Reflection.AssemblyName[]" Index="1" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="fileContents" Type="System.String" Index="0" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="assemblyNames" Type="System.Reflection.AssemblyName[]" Index="1" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="fileContents">A string whose contents are in the form of an XML resource file.</param>

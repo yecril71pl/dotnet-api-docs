@@ -34,12 +34,13 @@
   </AssemblyInfo>
   <TypeForwardingChain>
     <TypeForwarding From="System.Xml" FromVersion="4.0.0.0" To="System.Xml.ReaderWriter" ToVersion="0.0.0.0" FrameworkAlternate="dotnet-uwp-10.0" />
+    <TypeForwarding From="netstandard" FromVersion="2.1.0.0" To="System.Xml.ReaderWriter" ToVersion="5.0.0.0" FrameworkAlternate="net-5.0" />
   </TypeForwardingChain>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface>
+    <Interface FrameworkAlternate="dotnet-uwp-10.0;net-5.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <InterfaceName>System.IDisposable</InterfaceName>
     </Interface>
   </Interfaces>
@@ -171,7 +172,7 @@
   
  For default XSD data types that correspond to CLR types, see the <xref:System.Xml.XmlWriter.WriteValue%2A> method.  
   
- The <xref:System.Xml.XmlWriter> can also be used to write to an XML data store. For example, the <xref:System.Xml.XPath.XPathNavigator> class can create an <xref:System.Xml.XmlWriter> object to create nodes for an <xref:System.Xml.XmlDocument> object. If the data store has schema information available to it, the <xref:System.Xml.XmlWriter.WriteValue%2A> method throws an exception if you try to convert to a type that is not allowed.If the data store does not have schema information available to it, the <xref:System.Xml.XmlWriter.WriteValue%2A> method treats all values as an `xsd:anySimpleType` type.  
+ The <xref:System.Xml.XmlWriter> can also be used to write to an XML data store. For example, the <xref:System.Xml.XPath.XPathNavigator> class can create an <xref:System.Xml.XmlWriter> object to create nodes for an <xref:System.Xml.XmlDocument> object. If the data store has schema information available to it, the <xref:System.Xml.XmlWriter.WriteValue%2A> method throws an exception if you try to convert to a type that is not allowed. If the data store does not have schema information available to it, the <xref:System.Xml.XmlWriter.WriteValue%2A> method treats all values as an `xsd:anySimpleType` type.  
   
 <a name="close"></a>   
 ## Closing the XML writer  
@@ -219,7 +220,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
     </remarks>
-    <related type="Article" href="~/docs/standard/data/xml/index.md">XML Documents and Data</related>
+    <related type="Article" href="/dotnet/standard/data/xml/">XML Documents and Data</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

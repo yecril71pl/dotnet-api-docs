@@ -1,6 +1,6 @@
 <Type Name="ResXFileRef" FullName="System.Resources.ResXFileRef">
   <TypeSignature Language="C#" Value="public class ResXFileRef" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResXFileRef extends System.Object" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResXFileRef extends System.Object" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1" />
   <TypeSignature Language="DocId" Value="T:System.Resources.ResXFileRef" />
   <TypeSignature Language="VB.NET" Value="Public Class ResXFileRef" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResXFileRef" />
@@ -49,11 +49,11 @@
   
  To add a <xref:System.Resources.ResXFileRef> object to a .resx file programmatically, you call the <xref:System.Resources.ResXDataNode.%23ctor%28System.String%2CSystem.Resources.ResXFileRef%29?displayProperty=nameWithType> constructor to instantiate a <xref:System.Resources.ResXDataNode> object. You then pass this <xref:System.Resources.ResXDataNode> object to the <xref:System.Resources.ResXResourceWriter.AddResource%2A?displayProperty=nameWithType> method.  
   
- When you compile a .resx file with [Resgen.exe (Resource File Generator)](~/docs/framework/tools/resgen-exe-resource-file-generator.md), the resources specified in the .resx file are embedded in the resulting document resource file.  
+ When you compile a .resx file with [Resgen.exe (Resource File Generator)](/dotnet/framework/tools/resgen-exe-resource-file-generator), the resources specified in the .resx file are embedded in the resulting document resource file.  
   
  ]]></format>
     </remarks>
-    <related type="Article" href="~/docs/framework/resources/working-with-resx-files-programmatically.md">Working with .resx Files Programmatically</related>
+    <related type="Article" href="/dotnet/framework/resources/working-with-resx-files-programmatically">Working with .resx Files Programmatically</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -120,9 +120,9 @@
         </Attribute>
       </Attributes>
       <Parameters>
-        <Parameter Name="fileName" Type="System.String" Index="0" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="typeName" Type="System.String" Index="1" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="textFileEncoding" Type="System.Text.Encoding" Index="2" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="fileName" Type="System.String" Index="0" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="typeName" Type="System.String" Index="1" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="textFileEncoding" Type="System.Text.Encoding" Index="2" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="fileName">The file to reference.</param>

@@ -74,7 +74,7 @@
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1">System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="code" Type="System.Reflection.Metadata.ILOpCode" Index="0" FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />
@@ -105,14 +105,14 @@
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1">System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="methodHandle" Type="System.Reflection.Metadata.EntityHandle" Index="0" FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="methodHandle">To be added.</param>
-        <summary>Encodes <code>call</code> instruction and its operand.</summary>
+        <summary>Encodes <c>call</c> instruction and its operand.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -141,7 +141,7 @@
       </Parameters>
       <Docs>
         <param name="methodHandle">To be added.</param>
-        <summary>Encodes <code>call</code> instruction and its operand.</summary>
+        <summary>Encodes <c>call</c> instruction and its operand.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,7 +170,7 @@
       </Parameters>
       <Docs>
         <param name="methodHandle">To be added.</param>
-        <summary>Encodes <code>call</code> instruction and its operand.</summary>
+        <summary>Encodes <c>call</c> instruction and its operand.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -199,7 +199,7 @@
       </Parameters>
       <Docs>
         <param name="methodHandle">To be added.</param>
-        <summary>Encodes <code>call</code> instruction and its operand.</summary>
+        <summary>Encodes <c>call</c> instruction and its operand.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,14 +221,14 @@
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1">System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="signature" Type="System.Reflection.Metadata.StandaloneSignatureHandle" Index="0" FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="signature">To be added.</param>
-        <summary>Encodes <code>calli</code> instruction and its operand.</summary>
+        <summary>Encodes <c>calli</c> instruction and its operand.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -310,7 +310,7 @@ If `null` the encoder doesn't support construction of control flow.
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Reflection.Metadata.Ecma335.LabelHandle</ReturnType>
+        <ReturnType FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1">System.Reflection.Metadata.Ecma335.LabelHandle</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
@@ -337,7 +337,7 @@ If `null` the encoder doesn't support construction of control flow.
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1">System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="argumentIndex" Type="System.Int32" Index="0" FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />
@@ -366,7 +366,7 @@ If `null` the encoder doesn't support construction of control flow.
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1">System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="argumentIndex" Type="System.Int32" Index="0" FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />
@@ -395,7 +395,7 @@ If `null` the encoder doesn't support construction of control flow.
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1">System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="value" Type="System.Int32" Index="0" FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />
@@ -424,7 +424,7 @@ If `null` the encoder doesn't support construction of control flow.
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1">System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="value" Type="System.Int64" Index="0" FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />
@@ -453,7 +453,7 @@ If `null` the encoder doesn't support construction of control flow.
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1">System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="value" Type="System.Single" Index="0" FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />
@@ -482,7 +482,7 @@ If `null` the encoder doesn't support construction of control flow.
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1">System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="value" Type="System.Double" Index="0" FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />
@@ -511,7 +511,7 @@ If `null` the encoder doesn't support construction of control flow.
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1">System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="slotIndex" Type="System.Int32" Index="0" FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />
@@ -540,7 +540,7 @@ If `null` the encoder doesn't support construction of control flow.
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1">System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="slotIndex" Type="System.Int32" Index="0" FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />
@@ -569,14 +569,14 @@ If `null` the encoder doesn't support construction of control flow.
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1">System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="handle" Type="System.Reflection.Metadata.UserStringHandle" Index="0" FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />
       </Parameters>
       <Docs>
         <param name="handle">To be added.</param>
-        <summary>Encodes <code>ldstr</code> instruction and its operand.</summary>
+        <summary>Encodes <c>ldstr</c> instruction and its operand.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -598,7 +598,7 @@ If `null` the encoder doesn't support construction of control flow.
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1">System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="label" Type="System.Reflection.Metadata.Ecma335.LabelHandle" Index="0" FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />
@@ -635,7 +635,7 @@ A single label may be marked multiple times, the last offset wins.
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
+        <ReturnType FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1">System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Offset of the next encoded instruction.</summary>
@@ -661,7 +661,7 @@ A single label may be marked multiple times, the last offset wins.
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1">System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="code" Type="System.Reflection.Metadata.ILOpCode" Index="0" FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />
@@ -690,7 +690,7 @@ A single label may be marked multiple times, the last offset wins.
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1">System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="argumentIndex" Type="System.Int32" Index="0" FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />
@@ -719,7 +719,7 @@ A single label may be marked multiple times, the last offset wins.
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1">System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="slotIndex" Type="System.Int32" Index="0" FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />
@@ -748,7 +748,7 @@ A single label may be marked multiple times, the last offset wins.
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1">System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="token" Type="System.Int32" Index="0" FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />
@@ -777,7 +777,7 @@ A single label may be marked multiple times, the last offset wins.
         <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1">System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="handle" Type="System.Reflection.Metadata.EntityHandle" Index="0" FrameworkAlternate="net-5.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netcore-3.1" />

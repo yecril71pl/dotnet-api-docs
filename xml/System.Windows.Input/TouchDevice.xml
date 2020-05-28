@@ -27,7 +27,7 @@
  You typically access a <xref:System.Windows.Input.TouchDevice> by using the <xref:System.Windows.Input.TouchEventArgs.TouchDevice%2A?displayProperty=nameWithType> property. A <xref:System.Windows.Input.TouchDevice> represents a single touch on a screen. If multiple touches are present, use the <xref:System.Windows.Input.TouchDevice.Id%2A> property to distinguish between them.  
   
 > [!NOTE]
->  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For more information about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/x4yx82e6(v=vs.100)).  
+>  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For more information about security demands, see [Link Demands](/dotnet/framework/misc/link-demands) and [Inheritance Demands](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/x4yx82e6(v=vs.100)).  
   
    
   
@@ -108,7 +108,7 @@
       <MemberSignature Language="C#" Value="public event EventHandler Activated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Activated" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.TouchDevice.Activated" />
-      <MemberSignature Language="VB.NET" Value="Public Custom Event Activated As EventHandler " FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Activated As EventHandler " FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Activated;" />
       <MemberSignature Language="F#" Value="member this.Activated : EventHandler " Usage="member this.Activated : System.EventHandler " />
       <MemberSignature Language="VB.NET" Value="Public Event Activated As EventHandler " FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
@@ -357,7 +357,7 @@
       <MemberSignature Language="C#" Value="public event EventHandler Deactivated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Deactivated" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.TouchDevice.Deactivated" />
-      <MemberSignature Language="VB.NET" Value="Public Custom Event Deactivated As EventHandler " FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Deactivated As EventHandler " FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Deactivated;" />
       <MemberSignature Language="F#" Value="member this.Deactivated : EventHandler " Usage="member this.Deactivated : System.EventHandler " />
       <MemberSignature Language="VB.NET" Value="Public Event Deactivated As EventHandler " FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
@@ -940,7 +940,7 @@
       <MemberSignature Language="C#" Value="public event EventHandler Updated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Updated" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.TouchDevice.Updated" />
-      <MemberSignature Language="VB.NET" Value="Public Custom Event Updated As EventHandler " FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Updated As EventHandler " FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Updated;" />
       <MemberSignature Language="F#" Value="member this.Updated : EventHandler " Usage="member this.Updated : System.EventHandler " />
       <MemberSignature Language="VB.NET" Value="Public Event Updated As EventHandler " FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />

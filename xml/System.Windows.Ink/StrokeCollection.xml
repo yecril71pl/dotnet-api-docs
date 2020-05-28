@@ -4,7 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.StrokeCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class StrokeCollection&#xA;Inherits Collection(Of Stroke)&#xA;Implements INotifyCollectionChanged, INotifyPropertyChanged" />
   <TypeSignature Language="C++ CLI" Value="public ref class StrokeCollection : System::Collections::ObjectModel::Collection&lt;System::Windows::Ink::Stroke ^&gt;, System::Collections::Specialized::INotifyCollectionChanged, System::ComponentModel::INotifyPropertyChanged" />
-  <TypeSignature Language="F#" Value="type StrokeCollection = class&#xA;    inherit Collection&lt;Stroke&gt;&#xA;    interface INotifyCollectionChanged&#xA;    interface INotifyPropertyChanged" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1" />
+  <TypeSignature Language="F#" Value="type StrokeCollection = class&#xA;    inherit Collection&lt;Stroke&gt;&#xA;    interface INotifyCollectionChanged&#xA;    interface INotifyPropertyChanged" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1" />
   <TypeSignature Language="F#" Value="type StrokeCollection = class&#xA;    inherit Collection&lt;Stroke&gt;&#xA;    interface INotifyPropertyChanged&#xA;    interface INotifyCollectionChanged" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
@@ -43,9 +43,9 @@
   
 |To do this…|See this article|  
 |-----------------|----------------------|  
-|Create a control that collects digital ink|[Creating an Ink Input Control](~/docs/framework/wpf/advanced/creating-an-ink-input-control.md)|  
-|Create a control that enables the user to select ink|[How to: Select Ink from a Custom Control](~/docs/framework/wpf/advanced/how-to-select-ink-from-a-custom-control.md)|  
-|Create a control that enables the user to point-erase ink|[How to: Erase Ink on a Custom Control](~/docs/framework/wpf/advanced/how-to-erase-ink-on-a-custom-control.md)|  
+|Create a control that collects digital ink|[Creating an Ink Input Control](/dotnet/framework/wpf/advanced/creating-an-ink-input-control)|  
+|Create a control that enables the user to select ink|[How to: Select Ink from a Custom Control](/dotnet/framework/wpf/advanced/how-to-select-ink-from-a-custom-control)|  
+|Create a control that enables the user to point-erase ink|[How to: Erase Ink on a Custom Control](/dotnet/framework/wpf/advanced/how-to-erase-ink-on-a-custom-control)|  
   
 <a name="xamlAttributeUsage_StrokeCollection"></a>   
 ## XAML Attribute Usage  
@@ -719,7 +719,7 @@
    
   
 ## Examples  
- The following example demonstrates how to get an <xref:System.Windows.Ink.IncrementalLassoHitTester> that enables a user to select strokes with a lasso tool. To create a control that enables a user to select ink, see [How to: Select Ink from a Custom Control](~/docs/framework/wpf/advanced/how-to-select-ink-from-a-custom-control.md).  
+ The following example demonstrates how to get an <xref:System.Windows.Ink.IncrementalLassoHitTester> that enables a user to select strokes with a lasso tool. To create a control that enables a user to select ink, see [How to: Select Ink from a Custom Control](/dotnet/framework/wpf/advanced/how-to-select-ink-from-a-custom-control).  
   
  [!code-csharp[StrokeCollectionMethods#17](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/InkSelector.cs#17)]
  [!code-vb[StrokeCollectionMethods#17](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/InkSelector.vb#17)]  
@@ -761,7 +761,7 @@
    
   
 ## Examples  
- The following example demonstrates how to get an <xref:System.Windows.Ink.IncrementalStrokeHitTester> that can be used to erase part of a <xref:System.Windows.Ink.Stroke>. To create a control that enables a user to erase ink, see [How to: Erase Ink on a Custom Control](~/docs/framework/wpf/advanced/how-to-erase-ink-on-a-custom-control.md).  
+ The following example demonstrates how to get an <xref:System.Windows.Ink.IncrementalStrokeHitTester> that can be used to erase part of a <xref:System.Windows.Ink.Stroke>. To create a control that enables a user to erase ink, see [How to: Erase Ink on a Custom Control](/dotnet/framework/wpf/advanced/how-to-erase-ink-on-a-custom-control).  
   
  [!code-csharp[InkEraser#4](~/samples/snippets/csharp/VS_Snippets_Wpf/InkEraser/CSharp/InkEraser.cs#4)]
  [!code-vb[InkEraser#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkEraser/VisualBasic/InkEraser.vb#4)]  
@@ -924,7 +924,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example demonstrates how to remove all strokes that are at least 80 percent within the specified lasso from a <xref:System.Windows.Ink.StrokeCollection>. This is useful when a custom control enables the user to select ink with a lasso. To create a control that enables a user to select ink with a lasso, see [How to: Select Ink from a Custom Control](~/docs/framework/wpf/advanced/how-to-select-ink-from-a-custom-control.md).  
+ The following example demonstrates how to remove all strokes that are at least 80 percent within the specified lasso from a <xref:System.Windows.Ink.StrokeCollection>. This is useful when a custom control enables the user to select ink with a lasso. To create a control that enables a user to select ink with a lasso, see [How to: Select Ink from a Custom Control](/dotnet/framework/wpf/advanced/how-to-select-ink-from-a-custom-control).  
   
  [!code-csharp[StrokeCollectionMethods#16](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#16)]
  [!code-vb[StrokeCollectionMethods#16](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#16)]  
@@ -1253,7 +1253,7 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Ink.PropertyDataChangedEventHandler PropertyDataChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Ink.PropertyDataChangedEventHandler PropertyDataChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Ink.StrokeCollection.PropertyDataChanged" />
-      <MemberSignature Language="VB.NET" Value="Public Custom Event PropertyDataChanged As PropertyDataChangedEventHandler " FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PropertyDataChanged As PropertyDataChangedEventHandler " FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Ink::PropertyDataChangedEventHandler ^ PropertyDataChanged;" />
       <MemberSignature Language="F#" Value="member this.PropertyDataChanged : System.Windows.Ink.PropertyDataChangedEventHandler " Usage="member this.PropertyDataChanged : System.Windows.Ink.PropertyDataChangedEventHandler " />
       <MemberSignature Language="VB.NET" Value="Public Event PropertyDataChanged As PropertyDataChangedEventHandler " FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
@@ -1314,7 +1314,7 @@
    
   
 ## Examples  
- The following example demonstrates how to remove all strokes that are at least 80 percent within the specified lasso from a <xref:System.Windows.Ink.StrokeCollection>. This is useful when a custom control enables the user to select ink with a lasso. To create a control that enables a user to select ink with a lasso, see [How to: Select Ink from a Custom Control](~/docs/framework/wpf/advanced/how-to-select-ink-from-a-custom-control.md).  
+ The following example demonstrates how to remove all strokes that are at least 80 percent within the specified lasso from a <xref:System.Windows.Ink.StrokeCollection>. This is useful when a custom control enables the user to select ink with a lasso. To create a control that enables a user to select ink with a lasso, see [How to: Select Ink from a Custom Control](/dotnet/framework/wpf/advanced/how-to-select-ink-from-a-custom-control).  
   
  [!code-csharp[StrokeCollectionMethods#16](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionMethods/CSharp/StrokeCollectionDemo.cs#16)]
  [!code-vb[StrokeCollectionMethods#16](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionMethods/VisualBasic/StrokeCollectionDemo.vb#16)]  
@@ -1635,7 +1635,7 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Ink.StrokeCollectionChangedEventHandler StrokesChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Ink.StrokeCollectionChangedEventHandler StrokesChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Ink.StrokeCollection.StrokesChanged" />
-      <MemberSignature Language="VB.NET" Value="Public Custom Event StrokesChanged As StrokeCollectionChangedEventHandler " FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event StrokesChanged As StrokeCollectionChangedEventHandler " FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Ink::StrokeCollectionChangedEventHandler ^ StrokesChanged;" />
       <MemberSignature Language="F#" Value="member this.StrokesChanged : System.Windows.Ink.StrokeCollectionChangedEventHandler " Usage="member this.StrokesChanged : System.Windows.Ink.StrokeCollectionChangedEventHandler " />
       <MemberSignature Language="VB.NET" Value="Public Event StrokesChanged As StrokeCollectionChangedEventHandler " FrameworkAlternate="netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />

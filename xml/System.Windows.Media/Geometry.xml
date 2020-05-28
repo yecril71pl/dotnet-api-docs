@@ -1,10 +1,10 @@
 <Type Name="Geometry" FullName="System.Windows.Media.Geometry">
   <TypeSignature Language="C#" Value="public abstract class Geometry : System.Windows.Media.Animation.Animatable, IFormattable" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Geometry extends System.Windows.Media.Animation.Animatable implements class System.IFormattable" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Geometry extends System.Windows.Media.Animation.Animatable implements class System.IFormattable" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Geometry" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Geometry&#xA;Inherits Animatable&#xA;Implements IFormattable" />
   <TypeSignature Language="C++ CLI" Value="public ref class Geometry abstract : System::Windows::Media::Animation::Animatable, IFormattable" />
-  <TypeSignature Language="F#" Value="type Geometry = class&#xA;    inherit Animatable&#xA;    interface IFormattable" FrameworkAlternate="net-5.0;netcore-3.0;netcore-3.1" />
+  <TypeSignature Language="F#" Value="type Geometry = class&#xA;    inherit Animatable&#xA;    interface IFormattable" FrameworkAlternate="dotnet-plat-ext-5.0;net-5.0;netcore-3.0;netcore-3.1" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract Geometry extends System.Windows.Media.Animation.Animatable implements class System.IFormattable" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
   <TypeSignature Language="F#" Value="type Geometry = class&#xA;    inherit Animatable&#xA;    interface IFormattable&#xA;    interface DUCE.IResource" FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
   <AssemblyInfo>
@@ -44,7 +44,7 @@
   
  The <xref:System.Windows.Media.Geometry> class, on the other hand, simply defines the geometry of a shape, and cannot render itself. Because of its simplicity, it has a wider range of uses.  
   
- **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.Geometry> class provides several special features: <xref:System.Windows.Media.Geometry> objects can be declared as [resources](~/docs/framework/wpf/advanced/xaml-resources.md), shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+ **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.Geometry> class provides several special features: <xref:System.Windows.Media.Geometry> objects can be declared as [resources](/dotnet/framework/wpf/advanced/xaml-resources), shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](/dotnet/framework/wpf/advanced/freezable-objects-overview).  
   
  ]]></format>
     </remarks>
@@ -1037,7 +1037,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [Path Markup Syntax](~/docs/framework/wpf/graphics-multimedia/path-markup-syntax.md) for information about how this string is formatted  
+ See [Path Markup Syntax](/dotnet/framework/wpf/graphics-multimedia/path-markup-syntax) for information about how this string is formatted  
   
  ]]></format>
         </remarks>

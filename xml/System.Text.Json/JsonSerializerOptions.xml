@@ -22,7 +22,7 @@
 
 ## Remarks
 
-For more information, see [How to serialize and deserialize JSON](~/docs/standard/serialization/system-text-json-how-to.md).
+For more information, see [How to serialize and deserialize JSON](/dotnet/standard/serialization/system-text-json-how-to).
 
  ]]></format>
     </remarks>
@@ -44,6 +44,27 @@ For more information, see [How to serialize and deserialize JSON](~/docs/standar
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Text.Json.JsonSerializerOptions" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JsonSerializerOptions (System.Text.Json.JsonSerializerOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Text.Json.JsonSerializerOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.Json.JsonSerializerOptions.#ctor(System.Text.Json.JsonSerializerOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (options As JsonSerializerOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonSerializerOptions(System::Text::Json::JsonSerializerOptions ^ options);" />
+      <MemberSignature Language="F#" Value="new System.Text.Json.JsonSerializerOptions : System.Text.Json.JsonSerializerOptions -&gt; System.Text.Json.JsonSerializerOptions" Usage="new System.Text.Json.JsonSerializerOptions options" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Json</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="options" Type="System.Text.Json.JsonSerializerOptions" Index="0" FrameworkAlternate="net-5.0" />
+      </Parameters>
+      <Docs>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,7 +96,7 @@ For more information, see [How to serialize and deserialize JSON](~/docs/standar
 
 By default, `AllowTrailingCommas` is set to `false`, and a <xref:System.Text.Json.JsonException> is thrown during deserialization if a trailing comma is encountered.
 
-For more information, see [How to serialize and deserialize JSON](~/docs/standard/serialization/system-text-json-how-to.md#allow-comments-and-trailing-commas).
+For more information, see [How to serialize and deserialize JSON](/dotnet/standard/serialization/system-text-json-how-to#allow-comments-and-trailing-commas).
 
           ]]></format>
         </remarks>
@@ -109,7 +130,7 @@ For more information, see [How to serialize and deserialize JSON](~/docs/standar
 
 Once serialization or deserialization occurs, the list cannot be modified.
 
-For more information, see [How to write custom converters](~/docs/standard/serialization/system-text-json-converters-how-to.md#registration-sample---converters-collection).
+For more information, see [How to write custom converters](/dotnet/standard/serialization/system-text-json-converters-how-to#registration-sample---converters-collection).
 
           ]]></format>
         </remarks>
@@ -184,7 +205,7 @@ This property can be set to <xref:System.Text.Json.JsonNamingPolicy.CamelCase> t
 
 It is not used when deserializing.
 
-For more information, see [How to serialize and deserialize JSON](~/docs/standard/serialization/system-text-json-how-to.md#camel-case-dictionary-keys).
+For more information, see [How to serialize and deserialize JSON](/dotnet/standard/serialization/system-text-json-how-to#camel-case-dictionary-keys).
 
           ]]></format>
         </remarks>
@@ -215,7 +236,7 @@ For more information, see [How to serialize and deserialize JSON](~/docs/standar
 
 ## Remarks
 
-For more information, see [How to serialize and deserialize JSON](~/docs/standard/serialization/system-text-json-how-to.md#customize-character-encoding).
+For more information, see [How to serialize and deserialize JSON](/dotnet/standard/serialization/system-text-json-how-to#customize-character-encoding).
 
  ]]></format>
         </remarks>
@@ -250,10 +271,12 @@ For more information, see [How to serialize and deserialize JSON](~/docs/standar
 
 ## Remarks
 
-For more information, see [How to serialize and deserialize JSON](~/docs/standard/serialization/system-text-json-how-to.md#sample-factory-pattern-converter).
+For more information, see [How to serialize and deserialize JSON](/dotnet/standard/serialization/system-text-json-how-to#sample-factory-pattern-converter).
 
  ]]></format>
         </remarks>
+        <exception cref="T:System.InvalidOperationException">The configured <see cref="System.Text.Json.Serialization.JsonConverter" /> for <paramref name="typeToConvert" /> returned an invalid converter.</exception>
+        <exception cref="T:System.NotSupportedException">There is no compatible <see cref="System.Text.Json.Serialization.JsonConverter" /> for <paramref name="typeToConvert" /> or its serializable members.</exception>
       </Docs>
     </Member>
     <Member MemberName="IgnoreNullValues">
@@ -282,7 +305,7 @@ For more information, see [How to serialize and deserialize JSON](~/docs/standar
 
 ## Remarks
 
-For more information, see [Exclude all null value properties](~/docs/standard/serialization/system-text-json-how-to.md#exclude-all-null-value-properties) and [Ignore null when deserializing](~/docs/standard/serialization/system-text-json-how-to.md#ignore-null-when-deserializing).
+For more information, see [Exclude all null value properties](/dotnet/standard/serialization/system-text-json-how-to#exclude-all-null-value-properties) and [Ignore null when deserializing](/dotnet/standard/serialization/system-text-json-how-to#ignore-null-when-deserializing).
 
  ]]></format>
         </remarks>
@@ -319,7 +342,7 @@ A property is read-only if it contains a public getter but not a public setter.
 
 Read-only properties are not deserialized regardless of this setting.
 
-For more information, see [How to serialize and deserialize JSON](~/docs/standard/serialization/system-text-json-how-to.md#exclude-all-read-only-properties).
+For more information, see [How to serialize and deserialize JSON](/dotnet/standard/serialization/system-text-json-how-to#exclude-all-read-only-properties).
 
           ]]></format>
         </remarks>
@@ -387,7 +410,7 @@ Going past this depth throws a <xref:System.Text.Json.JsonException>.
 
 There is a performance cost associated with case-insensitive comparison (that is, when `PropertyNameCaseInsensitive` is `true`).
 
-For more information, see [How to serialize and deserialize JSON](~/docs/standard/serialization/system-text-json-how-to.md#case-insensitive-property-matching).
+For more information, see [How to serialize and deserialize JSON](/dotnet/standard/serialization/system-text-json-how-to#case-insensitive-property-matching).
 
           ]]></format>
         </remarks>
@@ -424,7 +447,7 @@ The policy is not used for properties that have a <xref:System.Text.Json.Seriali
 
 This property can be set to <xref:System.Text.Json.JsonNamingPolicy.CamelCase?displayProperty=nameWithType> to specify a camel-casing policy.
 
-For more information, see [How to serialize and deserialize JSON](~/docs/standard/serialization/system-text-json-how-to.md#customize-json-names-and-values).
+For more information, see [How to serialize and deserialize JSON](/dotnet/standard/serialization/system-text-json-how-to#customize-json-names-and-values).
 
           ]]></format>
         </remarks>
@@ -457,7 +480,7 @@ For more information, see [How to serialize and deserialize JSON](~/docs/standar
 
 By default, a <xref:System.Text.Json.JsonException> is thrown during deserialization if a comment is encountered.
 
-For more information, see [How to serialize and deserialize JSON](~/docs/standard/serialization/system-text-json-how-to.md#allow-comments-and-trailing-commas).
+For more information, see [How to serialize and deserialize JSON](/dotnet/standard/serialization/system-text-json-how-to#allow-comments-and-trailing-commas).
 
           ]]></format>
         </remarks>
@@ -516,7 +539,7 @@ Pretty printing includes:
 - Adding new lines
 - Adding white space between property names and values. 
 
-For more information, see [How to serialize and deserialize JSON](~/docs/standard/serialization/system-text-json-how-to.md#serialize-to-formatted-json).
+For more information, see [How to serialize and deserialize JSON](/dotnet/standard/serialization/system-text-json-how-to#serialize-to-formatted-json).
 
          ]]></format>
         </remarks>
