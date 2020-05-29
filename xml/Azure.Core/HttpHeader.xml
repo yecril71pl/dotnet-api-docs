@@ -18,7 +18,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents an HTTP header.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,9 +41,11 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="name">The header name.</param>
+        <param name="value">The header value.</param>
+        <summary>
+            Creates a new instance of <see cref="T:Azure.Core.HttpHeader" /> with provided name and value.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,6 +75,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -96,6 +101,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -118,6 +124,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -136,7 +143,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets header name.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -161,6 +170,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -179,7 +189,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets header value. If the header has multiple values they would be joined with a comma. To get separate values use <see cref="M:Azure.Core.RequestHeaders.TryGetValues(System.String,System.Collections.Generic.IEnumerable{System.String}@)" /> or <see cref="M:Azure.Core.ResponseHeaders.TryGetValues(System.String,System.Collections.Generic.IEnumerable{System.String}@)" />.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

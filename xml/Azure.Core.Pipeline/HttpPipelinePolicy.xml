@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represent an extension point for the <see cref="T:Azure.Core.Pipeline.HttpPipeline" /> that can mutate the <see cref="T:Azure.Core.Request" /> and react to received <see cref="T:Azure.Response" />.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -55,9 +57,11 @@
         <Parameter Name="pipeline" Type="System.ReadOnlyMemory&lt;Azure.Core.Pipeline.HttpPipelinePolicy&gt;" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="pipeline">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The <see cref="T:Azure.Core.HttpMessage" /> this policy would be applied to.</param>
+        <param name="pipeline">The set of <see cref="T:Azure.Core.Pipeline.HttpPipelinePolicy" /> to execute after current one.</param>
+        <summary>
+            Applies the policy to the <paramref name="message" />. Implementers are expected to mutate <see cref="P:Azure.Core.HttpMessage.Request" /> before calling <see cref="M:Azure.Core.Pipeline.HttpPipelinePolicy.ProcessNextAsync(Azure.Core.HttpMessage,System.ReadOnlyMemory{Azure.Core.Pipeline.HttpPipelinePolicy})" /> and observe the <see cref="P:Azure.Core.HttpMessage.Response" /> changes after.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,10 +85,12 @@
         <Parameter Name="pipeline" Type="System.ReadOnlyMemory&lt;Azure.Core.Pipeline.HttpPipelinePolicy&gt;" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="pipeline">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The <see cref="T:Azure.Core.HttpMessage" /> this policy would be applied to.</param>
+        <param name="pipeline">The set of <see cref="T:Azure.Core.Pipeline.HttpPipelinePolicy" /> to execute after current one.</param>
+        <summary>
+            Applies the policy to the <paramref name="message" />. Implementers are expected to mutate <see cref="P:Azure.Core.HttpMessage.Request" /> before calling <see cref="M:Azure.Core.Pipeline.HttpPipelinePolicy.ProcessNextAsync(Azure.Core.HttpMessage,System.ReadOnlyMemory{Azure.Core.Pipeline.HttpPipelinePolicy})" /> and observe the <see cref="P:Azure.Core.HttpMessage.Response" /> changes after.
+            </summary>
+        <returns>The <see cref="T:System.Threading.Tasks.ValueTask" /> representing the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,9 +114,11 @@
         <Parameter Name="pipeline" Type="System.ReadOnlyMemory&lt;Azure.Core.Pipeline.HttpPipelinePolicy&gt;" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="pipeline">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The <see cref="T:Azure.Core.HttpMessage" /> next policy would be applied to.</param>
+        <param name="pipeline">The set of <see cref="T:Azure.Core.Pipeline.HttpPipelinePolicy" /> to execute after next one.</param>
+        <summary>
+            Invokes the next <see cref="T:Azure.Core.Pipeline.HttpPipelinePolicy" /> in the <paramref name="pipeline" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,10 +142,12 @@
         <Parameter Name="pipeline" Type="System.ReadOnlyMemory&lt;Azure.Core.Pipeline.HttpPipelinePolicy&gt;" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="pipeline">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The <see cref="T:Azure.Core.HttpMessage" /> next policy would be applied to.</param>
+        <param name="pipeline">The set of <see cref="T:Azure.Core.Pipeline.HttpPipelinePolicy" /> to execute after next one.</param>
+        <summary>
+            Invokes the next <see cref="T:Azure.Core.Pipeline.HttpPipelinePolicy" /> in the <paramref name="pipeline" />.
+            </summary>
+        <returns>The <see cref="T:System.Threading.Tasks.ValueTask" /> representing the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

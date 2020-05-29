@@ -18,7 +18,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents HTTP methods sent as part of a <see cref="T:Azure.Core.Request" />.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,8 +40,11 @@
         <Parameter Name="method" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="method">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="method">The method to use.</param>
+        <summary>
+            Creates an instance of <see cref="T:Azure.Core.RequestMethod" /> with provided method. Method must be all uppercase.
+            Prefer <see cref="M:Azure.Core.RequestMethod.Parse(System.String)" /> if <paramref name="method" /> can be one of predefined method names.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,7 +64,9 @@
         <ReturnType>Azure.Core.RequestMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets <see cref="T:Azure.Core.RequestMethod" /> instance for DELETE method.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,6 +97,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -115,6 +123,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Get">
@@ -133,7 +142,9 @@
         <ReturnType>Azure.Core.RequestMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets <see cref="T:Azure.Core.RequestMethod" /> instance for GET method.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -158,6 +169,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Head">
@@ -176,7 +188,9 @@
         <ReturnType>Azure.Core.RequestMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets <see cref="T:Azure.Core.RequestMethod" /> instance for HEAD method.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -197,7 +211,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the HTTP method.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -222,10 +238,13 @@
         <Parameter Name="right" Type="Azure.Core.RequestMethod" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The method to compare.</param>
+        <param name="right">The method to compare against.</param>
+        <summary>
+            Compares equality of two <see cref="T:Azure.Core.RequestMethod" /> instances.
+            </summary>
+        <returns>
+          <c>true</c> if <see cref="P:Azure.Core.RequestMethod.Method" /> values are equal for <paramref name="left" /> and <paramref name="right" />, otherwise <c>false</c>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -249,10 +268,13 @@
         <Parameter Name="right" Type="Azure.Core.RequestMethod" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The method to compare.</param>
+        <param name="right">The method to compare against.</param>
+        <summary>
+            Compares inequality of two <see cref="T:Azure.Core.RequestMethod" /> instances.
+            </summary>
+        <returns>
+          <c>true</c> if <see cref="P:Azure.Core.RequestMethod.Method" /> values are equal for <paramref name="left" /> and <paramref name="right" />, otherwise <c>false</c>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -272,7 +294,9 @@
         <ReturnType>Azure.Core.RequestMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets <see cref="T:Azure.Core.RequestMethod" /> instance for OPTIONS method.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -296,8 +320,10 @@
         <Parameter Name="method" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="method">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="method">The method string to parse.</param>
+        <summary>
+            Parses string to it's <see cref="T:Azure.Core.RequestMethod" /> representation.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -318,7 +344,9 @@
         <ReturnType>Azure.Core.RequestMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets <see cref="T:Azure.Core.RequestMethod" /> instance for PATCH method.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -339,7 +367,9 @@
         <ReturnType>Azure.Core.RequestMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets <see cref="T:Azure.Core.RequestMethod" /> instance for POST method.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -360,7 +390,9 @@
         <ReturnType>Azure.Core.RequestMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets <see cref="T:Azure.Core.RequestMethod" /> instance for PUT method.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -385,6 +417,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Trace">
@@ -403,7 +436,9 @@
         <ReturnType>Azure.Core.RequestMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets <see cref="T:Azure.Core.RequestMethod" /> instance for TRACE method.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

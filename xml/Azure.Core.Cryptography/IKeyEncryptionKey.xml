@@ -11,7 +11,9 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            A key which is used to encrypt, or wrap, another key.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +33,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The Id of the key used to perform cryptographic operations for the client.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -56,11 +60,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <param name="encryptedKey">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="algorithm">The key wrap algorithm which was used to encrypt the specified encrypted key.</param>
+        <param name="encryptedKey">The encrypted key to be decrypted.</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> controlling the request lifetime.</param>
+        <summary>
+            Decrypts the specified encrypted key using the specified algorithm.
+            </summary>
+        <returns>The decrypted key bytes.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,11 +90,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <param name="encryptedKey">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="algorithm">The key wrap algorithm which was used to encrypt the specified encrypted key.</param>
+        <param name="encryptedKey">The encrypted key to be decrypted.</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> controlling the request lifetime.</param>
+        <summary>
+            Decrypts the specified encrypted key using the specified algorithm.
+            </summary>
+        <returns>The decrypted key bytes.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,11 +120,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <param name="key">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="algorithm">The key wrap algorithm used to encrypt the specified key.</param>
+        <param name="key">The key to be encrypted.</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> controlling the request lifetime.</param>
+        <summary>
+            Encrypts the specified key using the specified algorithm.
+            </summary>
+        <returns>The encrypted key bytes.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,11 +150,13 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="algorithm">To be added.</param>
-        <param name="key">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="algorithm">The key wrap algorithm used to encrypt the specified key.</param>
+        <param name="key">The key to be encrypted.</param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> controlling the request lifetime.</param>
+        <summary>
+            Encrypts the specified key using the specified algorithm.
+            </summary>
+        <returns>The encrypted key bytes.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

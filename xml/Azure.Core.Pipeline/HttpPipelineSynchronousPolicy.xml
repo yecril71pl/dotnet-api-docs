@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents a <see cref="T:Azure.Core.Pipeline.HttpPipelinePolicy" /> that doesn't do any asynchronous or synchronously blocking operations.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -54,8 +56,10 @@
         <Parameter Name="message" Type="Azure.Core.HttpMessage" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The <see cref="T:Azure.Core.HttpMessage" /> containing the response.</param>
+        <summary>
+            Method is invoked after the response is received.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,8 +82,10 @@
         <Parameter Name="message" Type="Azure.Core.HttpMessage" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The <see cref="T:Azure.Core.HttpMessage" /> containing the request.</param>
+        <summary>
+            Method is invoked before the request is sent.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,6 +113,7 @@
         <param name="pipeline">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="ProcessAsync">
@@ -134,6 +141,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
   </Members>

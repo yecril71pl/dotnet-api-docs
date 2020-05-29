@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents a primitive for sending HTTP requests and receiving responses extensible by adding <see cref="T:Azure.Core.Pipeline.HttpPipelinePolicy" /> processing steps.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,10 +37,12 @@
         <Parameter Name="responseClassifier" Type="Azure.Core.ResponseClassifier" />
       </Parameters>
       <Docs>
-        <param name="transport">To be added.</param>
-        <param name="policies">To be added.</param>
-        <param name="responseClassifier">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="transport">The <see cref="T:Azure.Core.Pipeline.HttpPipelineTransport" /> to use for sending the requests.</param>
+        <param name="policies">Policies to be invoked as part of the pipeline in order.</param>
+        <param name="responseClassifier">The response classifier to be used in invocations.</param>
+        <summary>
+            Creates a new instance of <see cref="T:Azure.Core.Pipeline.HttpPipeline" /> with the provided transport, policies and response classifier.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,8 +63,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Creates a new <see cref="T:Azure.Core.HttpMessage" /> instance.
+            </summary>
+        <returns>The message.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,8 +87,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Creates a new <see cref="T:Azure.Core.Request" /> instance.
+            </summary>
+        <returns>The request.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,7 +110,9 @@
         <ReturnType>Azure.Core.ResponseClassifier</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The <see cref="P:Azure.Core.Pipeline.HttpPipeline.ResponseClassifier" /> instance used in this pipeline invocations.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -127,9 +137,11 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The <see cref="T:Azure.Core.HttpMessage" /> to send.</param>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> to use.</param>
+        <summary>
+            Invokes the pipeline synchronously. After the task completes response would be set to the <see cref="P:Azure.Core.HttpMessage.Response" /> property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,10 +165,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The <see cref="T:Azure.Core.HttpMessage" /> to send.</param>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> to use.</param>
+        <summary>
+            Invokes the pipeline asynchronously. After the task completes response would be set to the <see cref="P:Azure.Core.HttpMessage.Response" /> property.
+            </summary>
+        <returns>The <see cref="T:System.Threading.Tasks.ValueTask" /> representing the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,10 +194,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The <see cref="T:Azure.Core.Request" /> to send.</param>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> to use.</param>
+        <summary>
+            Invokes the pipeline synchronously with the provided request.
+            </summary>
+        <returns>The <see cref="T:Azure.Response" /> from the server.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,10 +223,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">The <see cref="T:Azure.Core.Request" /> to send.</param>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> to use.</param>
+        <summary>
+            Invokes the pipeline asynchronously with the provided request.
+            </summary>
+        <returns>The <see cref="T:System.Threading.Tasks.ValueTask`1" /> representing the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

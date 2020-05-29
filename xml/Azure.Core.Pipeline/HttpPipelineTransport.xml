@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents an HTTP pipeline transport used to send HTTP requests and receive responses.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -52,8 +54,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Creates a new transport specific instance of <see cref="T:Azure.Core.Request" />. This should not be called directly, <see cref="M:Azure.Core.Pipeline.HttpPipeline.CreateRequest" /> or
+            <see cref="M:Azure.Core.Pipeline.HttpPipeline.CreateMessage" /> should be used instead.
+            </summary>
+        <returns />
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,8 +81,10 @@
         <Parameter Name="message" Type="Azure.Core.HttpMessage" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The <see cref="T:Azure.Core.HttpMessage" /> containing request and response.</param>
+        <summary>
+            Sends the request contained by the <paramref name="message" /> and sets the <see cref="P:Azure.Core.HttpMessage.Response" /> property to received response synchronously.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +107,10 @@
         <Parameter Name="message" Type="Azure.Core.HttpMessage" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="message">The <see cref="T:Azure.Core.HttpMessage" /> containing request and response.</param>
+        <summary>
+            Sends the request contained by the <paramref name="message" /> and sets the <see cref="P:Azure.Core.HttpMessage.Response" /> property to received response asynchronously.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

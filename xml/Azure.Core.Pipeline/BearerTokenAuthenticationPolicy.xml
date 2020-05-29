@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            A policy that sends an <see cref="T:Azure.Core.AccessToken" /> provided by a <see cref="T:Azure.Core.TokenCredential" /> as an Authentication header.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,9 +37,11 @@
         <Parameter Name="scopes" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="credential">To be added.</param>
-        <param name="scopes">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="credential">The token credential to use for authentication.</param>
+        <param name="scopes">Scopes to authenticate for.</param>
+        <summary>
+            Creates a new instance of <see cref="T:Azure.Core.Pipeline.BearerTokenAuthenticationPolicy" /> using provided token credential and scopes to authenticate for.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,9 +62,11 @@
         <Parameter Name="scope" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="credential">To be added.</param>
-        <param name="scope">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="credential">The token credential to use for authentication.</param>
+        <param name="scope">The scope to authenticate for.</param>
+        <summary>
+            Creates a new instance of <see cref="T:Azure.Core.Pipeline.BearerTokenAuthenticationPolicy" /> using provided token credential and scope to authenticate for.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,6 +94,7 @@
         <param name="pipeline">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="ProcessAsync">
@@ -115,6 +122,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
   </Members>

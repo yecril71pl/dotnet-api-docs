@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            An <see cref="T:Azure.Core.Pipeline.HttpPipelineTransport" /> implementation that uses <see cref="T:System.Net.Http.HttpClient" /> as the transport.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +33,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Creates a new <see cref="T:Azure.Core.Pipeline.HttpClientTransport" /> instance using default configuration.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,8 +55,10 @@
         <Parameter Name="client" Type="System.Net.Http.HttpClient" />
       </Parameters>
       <Docs>
-        <param name="client">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="client">The instance of <see cref="T:System.Net.Http.HttpClient" /> to use.</param>
+        <summary>
+            Creates a new instance of <see cref="T:Azure.Core.Pipeline.HttpClientTransport" /> using the provided client instance.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,6 +82,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Process">
@@ -100,6 +107,7 @@
         <param name="message">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="ProcessAsync">
@@ -125,6 +133,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Shared">
@@ -143,7 +152,9 @@
         <ReturnType>Azure.Core.Pipeline.HttpClientTransport</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            A shared instance of <see cref="T:Azure.Core.Pipeline.HttpClientTransport" /> with default parameters.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

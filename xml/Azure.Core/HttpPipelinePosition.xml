@@ -13,7 +13,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents a position of the policy in the pipeline.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,7 +36,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The policy would be invoked once per pipeline invocation (service call).
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="PerRetry">
@@ -54,7 +58,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The policy would be invoked every time request is retried.
+            </summary>
       </Docs>
     </Member>
   </Members>

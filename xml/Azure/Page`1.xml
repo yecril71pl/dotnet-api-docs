@@ -17,8 +17,11 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">The type of values.</typeparam>
+    <summary>
+            A single <see cref="T:Azure.Page`1" /> of values from a request that may return
+            zero or more <see cref="T:Azure.Page`1" />s of values.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -55,7 +58,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the continuation token used to request the next
+            <see cref="T:Azure.Page`1" />.  The continuation token may be null or
+            empty when there are no more pages.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,9 +91,11 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The instance to compare to.</param>
+        <summary>
+            Check if two <see cref="T:Azure.Page`1" /> instances are equal.
+            </summary>
+        <returns>True if they're equal, false otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,10 +120,18 @@
         <Parameter Name="response" Type="Azure.Response" />
       </Parameters>
       <Docs>
-        <param name="values">To be added.</param>
-        <param name="continuationToken">To be added.</param>
-        <param name="response">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="values">
+            The values in this <see cref="T:Azure.Page`1" />.
+            </param>
+        <param name="continuationToken">
+            The continuation token used to request the next <see cref="T:Azure.Page`1" />.
+            </param>
+        <param name="response">
+            The <see cref="T:Azure.Response" /> that provided this <see cref="T:Azure.Page`1" />.
+            </param>
+        <summary>
+            Creates a new <see cref="T:Azure.Page`1" />.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -141,8 +158,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Get a hash code for the <see cref="T:Azure.Page`1" />.
+            </summary>
+        <returns>Hash code for the <see cref="T:Azure.Page`1" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,7 +182,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the <see cref="T:Azure.Response" /> that provided this
+            <see cref="T:Azure.Page`1" />.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -190,8 +212,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Creates a string representation of an <see cref="T:Azure.Page`1" />.
+            </summary>
+        <returns>
+            A string representation of an <see cref="T:Azure.Page`1" />.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,7 +237,9 @@
         <ReturnType>System.Collections.Generic.IReadOnlyList&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the values in this <see cref="T:Azure.Page`1" />.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

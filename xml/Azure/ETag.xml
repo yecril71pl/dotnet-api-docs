@@ -18,7 +18,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents an HTTP ETag.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,8 +40,10 @@
         <Parameter Name="etag" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="etag">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="etag">The string value of the ETag.</param>
+        <summary>
+            Creates a new instance of <see cref="T:Azure.ETag" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,7 +63,8 @@
         <ReturnType>Azure.ETag</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Instance of <see cref="T:Azure.ETag" /> with the value. <code>*</code></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,6 +94,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -114,6 +120,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -135,9 +142,10 @@
         <Parameter Name="other" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">An object to compare with this object.</param>
+        <summary>
+            Indicates whether the value of current <see cref="T:Azure.ETag" /> is equal to the provided string.</summary>
+        <returns>true if the current object is equal to the <paramref name="other">other</paramref> parameter; otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,6 +169,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -183,10 +192,13 @@
         <Parameter Name="right" Type="Azure.ETag" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The <see cref="T:Azure.ETag" /> to compare.</param>
+        <param name="right">The <see cref="T:Azure.ETag" /> to compare to.</param>
+        <summary>
+            Compares equality of two <see cref="T:Azure.ETag" /> instances.
+            </summary>
+        <returns>
+          <c>true</c> if values of both ETags are equal, otherwise <c>false</c>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,10 +222,13 @@
         <Parameter Name="right" Type="Azure.ETag" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The <see cref="T:Azure.ETag" /> to compare.</param>
+        <param name="right">The <see cref="T:Azure.ETag" /> to compare to.</param>
+        <summary>
+            Compares inequality of two <see cref="T:Azure.ETag" /> instances.
+            </summary>
+        <returns>
+          <c>true</c> if values of both ETags are not equal, otherwise <c>false</c>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,8 +249,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary />
+        <returns>The string representation of this <see cref="T:Azure.ETag" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

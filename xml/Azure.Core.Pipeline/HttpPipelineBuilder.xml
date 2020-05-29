@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Factory for creating instances of <see cref="T:Azure.Core.Pipeline.HttpPipeline" /> populated with default policies.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -44,10 +46,12 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="options">To be added.</param>
-        <param name="perRetryPolicies">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="options">The customer provided client options object.</param>
+        <param name="perRetryPolicies">Client provided per-call policies.</param>
+        <summary>
+            Creates an instance of <see cref="T:Azure.Core.Pipeline.HttpPipeline" /> populated with default policies, customer provided policies from <paramref name="options" /> and client provided per call policies.
+            </summary>
+        <returns>A new instance of <see cref="T:Azure.Core.Pipeline.HttpPipeline" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,12 +77,14 @@
         <Parameter Name="responseClassifier" Type="Azure.Core.ResponseClassifier" />
       </Parameters>
       <Docs>
-        <param name="options">To be added.</param>
-        <param name="perCallPolicies">To be added.</param>
-        <param name="perRetryPolicies">To be added.</param>
-        <param name="responseClassifier">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="options">The customer provided client options object.</param>
+        <param name="perCallPolicies">Client provided per-call policies.</param>
+        <param name="perRetryPolicies">Client provided per-retry policies.</param>
+        <param name="responseClassifier">The client provided response classifier.</param>
+        <summary>
+            Creates an instance of <see cref="T:Azure.Core.Pipeline.HttpPipeline" /> populated with default policies, customer provided policies from <paramref name="options" /> and client provided per call policies.
+            </summary>
+        <returns>A new instance of <see cref="T:Azure.Core.Pipeline.HttpPipeline" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -18,7 +18,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Represents the content sent as part of the <see cref="T:Azure.Core.Request" />.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -58,9 +60,11 @@
         <Parameter Name="bytes" Type="System.Buffers.ReadOnlySequence&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="bytes">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bytes">The <see cref="T:System.Buffers.ReadOnlySequence`1" /> to use.</param>
+        <summary>
+            Creates an instance of <see cref="T:Azure.Core.RequestContent" /> that wraps a <see cref="T:System.Buffers.ReadOnlySequence`1" />.
+            </summary>
+        <returns>An instance of <see cref="T:Azure.Core.RequestContent" /> that wraps a <see cref="T:System.Buffers.ReadOnlySequence`1" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,9 +87,11 @@
         <Parameter Name="bytes" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="bytes">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bytes">The <see cref="T:System.Array" />of <see cref="T:System.Byte" /> to use.</param>
+        <summary>
+            Creates an instance of <see cref="T:Azure.Core.RequestContent" /> that wraps an <see cref="T:System.Array" />of <see cref="T:System.Byte" />.
+            </summary>
+        <returns>An instance of <see cref="T:Azure.Core.RequestContent" /> that wraps provided <see cref="T:System.Array" />of <see cref="T:System.Byte" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,9 +114,11 @@
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> to use.</param>
+        <summary>
+            Creates an instance of <see cref="T:Azure.Core.RequestContent" /> that wraps a <see cref="T:System.IO.Stream" />.
+            </summary>
+        <returns>An instance of <see cref="T:Azure.Core.RequestContent" /> that wraps a <see cref="T:System.IO.Stream" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,9 +141,11 @@
         <Parameter Name="bytes" Type="System.ReadOnlyMemory&lt;System.Byte&gt;" />
       </Parameters>
       <Docs>
-        <param name="bytes">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bytes">The <see cref="T:System.ReadOnlyMemory`1" /> to use.</param>
+        <summary>
+            Creates an instance of <see cref="T:Azure.Core.RequestContent" /> that wraps a <see cref="T:System.IO.Stream" />.
+            </summary>
+        <returns>An instance of <see cref="T:Azure.Core.RequestContent" /> that wraps a <see cref="T:System.ReadOnlyMemory`1" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,11 +170,13 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="bytes">To be added.</param>
-        <param name="index">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bytes">The <see cref="T:System.Array" />of <see cref="T:System.Byte" /> to use.</param>
+        <param name="index">The offset in <paramref name="bytes" /> to start from.</param>
+        <param name="length">The length of the segment to use.</param>
+        <summary>
+            Creates an instance of <see cref="T:Azure.Core.RequestContent" /> that wraps an <see cref="T:System.Array" />of <see cref="T:System.Byte" />.
+            </summary>
+        <returns>An instance of <see cref="T:Azure.Core.RequestContent" /> that wraps provided <see cref="T:System.Array" />of <see cref="T:System.Byte" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,7 +200,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Frees resources held by the <see cref="T:Azure.Core.RequestContent" /> object.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -211,8 +225,10 @@
         <Parameter Name="length" Type="System.Int64" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="length">The length of the underlying data.</param>
+        <summary>
+            Attempts to compute the length of the underlying content, if available.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -237,9 +253,11 @@
         <Parameter Name="cancellation" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="cancellation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="stream">The stream to write to.</param>
+        <param name="cancellation">To cancellation token to use.</param>
+        <summary>
+            Writes contents of this object to an instance of <see cref="T:System.IO.Stream" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -263,9 +281,11 @@
         <Parameter Name="cancellation" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="cancellation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="stream">The stream to write to.</param>
+        <param name="cancellation">To cancellation token to use.</param>
+        <summary>
+            Writes contents of this object to an instance of <see cref="T:System.IO.Stream" />.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

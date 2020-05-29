@@ -18,7 +18,10 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Defines a range of bytes within an HTTP resource, starting at an offset and
+            ending at offset+count-1 inclusively.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,9 +41,11 @@
         <Parameter Name="length" Type="System.Nullable&lt;System.Int64&gt;" />
       </Parameters>
       <Docs>
-        <param name="offset">To be added.</param>
-        <param name="length">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="offset">The starting offset of the <see cref="T:Azure.HttpRange" />. Defaults to 0.</param>
+        <param name="length">The length of the range. null means to the end.</param>
+        <summary>
+            Creates an instance of HttpRange.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,9 +71,11 @@
         <Parameter Name="other" Type="Azure.HttpRange" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">The instance to compare to.</param>
+        <summary>
+            Check if two <see cref="T:Azure.HttpRange" /> instances are equal.
+            </summary>
+        <returns>True if they're equal, false otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,9 +103,11 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">The instance to compare to.</param>
+        <summary>
+            Check if two <see cref="T:Azure.HttpRange" /> instances are equal.
+            </summary>
+        <returns>True if they're equal, false otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,8 +133,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Get a hash code for the <see cref="T:Azure.HttpRange" />.
+            </summary>
+        <returns>Hash code for the <see cref="T:Azure.HttpRange" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,7 +156,10 @@
         <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the size of the <see cref="T:Azure.HttpRange" />.  null means the range
+            extends all the way to the end.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -166,7 +180,9 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the starting offset of the <see cref="T:Azure.HttpRange" />.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -191,10 +207,12 @@
         <Parameter Name="right" Type="Azure.HttpRange" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first instance to compare.</param>
+        <param name="right">The second instance to compare.</param>
+        <summary>
+            Check if two <see cref="T:Azure.HttpRange" /> instances are equal.
+            </summary>
+        <returns>True if they're equal, false otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,10 +236,12 @@
         <Parameter Name="right" Type="Azure.HttpRange" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first instance to compare.</param>
+        <param name="right">The second instance to compare.</param>
+        <summary>
+            Check if two <see cref="T:Azure.HttpRange" /> instances are not equal.
+            </summary>
+        <returns>True if they're not equal, false otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,9 +262,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+            Converts the specified range to a string.
+            </summary>
+        <returns>String representation of the range.</returns>
+        <remarks>For more information, see https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-the-range-header-for-file-service-operations. </remarks>
       </Docs>
     </Member>
   </Members>
