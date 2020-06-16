@@ -196,26 +196,44 @@
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.Core</AssemblyName>
+        <AssemblyVersion>15.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Build.Utilities.AssemblyFoldersExInfo&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="registryRoot" Type="System.String" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="targetFrameworkVersion" Type="System.String" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="registryKeySuffix" Type="System.String" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="osVersion" Type="System.String" Index="3" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="platform" Type="System.String" Index="4" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="targetProcessorArchitecture" Type="System.Reflection.ProcessorArchitecture" Index="5" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="registryRoot" Type="System.String" Index="0" FrameworkAlternate="msbuild-15;msbuild-16;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="targetFrameworkVersion" Type="System.String" Index="1" FrameworkAlternate="msbuild-15;msbuild-16;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="registryKeySuffix" Type="System.String" Index="2" FrameworkAlternate="msbuild-15;msbuild-16;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="osVersion" Type="System.String" Index="3" FrameworkAlternate="msbuild-15;msbuild-16;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="platform" Type="System.String" Index="4" FrameworkAlternate="msbuild-15;msbuild-16;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="targetProcessorArchitecture" Type="System.Reflection.ProcessorArchitecture" Index="5" FrameworkAlternate="msbuild-15;msbuild-16;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="registryRoot">The root registry location for the targeted framework. For .NET this is SOFTWARE\MICROSOFT\\.NETFramework.</param>
-        <param name="targetFrameworkVersion">The target framework version (2.0, 3.0, 3.5, 4.0, etc.).</param>
-        <param name="registryKeySuffix">The name of the folder, (AssemblyFoldersEx) could also be PocketPC\AssemblyFoldersEx, or others.</param>
-        <param name="osVersion">The targeted minimum and maximum OS versions in the registry. These values are used to return only directories for OS versions between the declared minimum and maximum. If this value is blank or null, no filtering is done.</param>
-        <param name="platform">The targeted platform GUIDs. Used to return only directories which have a matching platform GUID. If this value is blank or null no filtering is done.</param>
-        <param name="targetProcessorArchitecture">The targeted processor architecture. This determines which registry hives are searched and in which order.</param>
-        <summary>Gets a sorted list of <see cref="T:Microsoft.Build.Utilities.AssemblyFoldersExInfo" /> objects that contain information about the directories in which the third party assemblies are registered. This information is used at build and design time.</summary>
-        <returns>Returns list of <see langword="AssemblyFoldersExInfo" />.</returns>
+        <param name="registryRoot">The root registry location for the targeted framework. For .NET this is SOFTWARE\MICROSOFT\.NETFramework</param>
+        <param name="targetFrameworkVersion">The targeted framework version (2.0, 3.0, 3.5, 4.0, etc)</param>
+        <param name="registryKeySuffix">The name of the folder (AssemblyFoldersEx) could also be PocketPC\AssemblyFoldersEx, or others</param>
+        <param name="osVersion">Components may declare Min and Max OSVersions in the registry this value can be used filter directories returned based on whether or not the osversion is bounded by the Min  and Max versions declared by the component. If this value is blank or null no filtering is done</param>
+        <param name="platform">Components may declare platform guids in the registry this can be used to return only directories which have a certain platform guid. If this value is blank or null no filtering is done</param>
+        <param name="targetProcessorArchitecture">What processor architecture is being targeted. This determines which registry hives are searched in what order.
+            On a 64 bit operating system we do the following
+                    If you are targeting 64 bit (target x64 or ia64)
+                        Add in the 64 bit hive first
+                        Add in the 32 bit hive second
+                    If you are not targeting a 64 bit
+                       Add in the 32 bit hive first
+                       Add in the 64 bit hive second
+            On a 32 bit machine we only add in the 32 bit hive.
+            </param>
+        <summary>
+            Get a sorted list of AssemblyFoldersExInfo which contain information about what directories the 3rd party assemblies are registered under for use during build and design time.
+            
+            This method will enumerate the AssemblyFoldersEx registry location and return a list of AssemblyFoldersExInfo in the same order in which
+            they will be searched during both design and build time for reference assemblies.
+            </summary>
+        <returns>List of AssemblyFoldersExInfo</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
